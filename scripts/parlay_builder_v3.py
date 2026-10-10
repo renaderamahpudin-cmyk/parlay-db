@@ -11,6 +11,9 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from pick_policy import (
+    MAX_OU_GAP, MAX_OU_ODDS, MIN_OU_GAP, MIN_OU_ODDS, is_eligible_ou_pick,
+)
 from settlement import settle_pick
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(BASE_DIR)
@@ -861,6 +864,112 @@ def bandingkan_opsi_2(gol_pairs, ou_lines, odds_home, odds_draw, odds_away,
     top_ou = max(opsi_ou, key=lambda item: item["gap"]) if opsi_ou else None
 
     return top_1x2, top_ou, titik_buta
+
+
+def analisa_ou(h2h, home_web, ou_lines=None):
+    """Build one O/U-only pick; 1X2 and BTTS are not prediction candidates."""
+    if ou_lines is None:
+        ou_lines = []
+    if h2h is None or len(h2h) < MIN_H2H or not ou_lines:
+        return None
+
+    home_norm = normalize(home_web)
+    h2h = h2h.copy()
+    h2h["home_is_A"] = h2h["home"].apply(
+        lambda name: (
+            normalize(name) == home_norm
+            or (len(home_norm) >= 5 and home_norm in normalize(name))
+        )
+    )
+
+    goal_pairs = [
+        (row.hg, row.ag) if row.home_is_A else (row.ag, row.hg)
+        for row in h2h[["hg", "ag", "home_is_A"]].itertuples(index=False)
+    ]
+    if not goal_pairs:
+        return None
+
+    total_goals = [home_goals + away_goals for home_goals, away_goals in goal_pairs]
+    home_a = int(h2h["home_is_A"].sum())
+    home_b = len(h2h) - home_a
+    score = (
+        max(0, len(h2h) - MIN_H2H) * BOBOT_H2H
+        + max(0, home_a - MIN_HOME) * BOBOT_HOME
+        + max(0, home_b - MIN_AWAY) * BOBOT_AWAY
+    )
+    tier = "🔥 T1" if score >= 400 else "⚡ T2" if score >= 250 else "✅ T3"
+
+    candidates = []
+    for market_line in ou_lines:
+        line = market_line.get("line")
+        for side, odds in (
+            ("OVER", market_line.get("over")),
+            ("UNDER", market_line.get("under")),
+        ):
+            metrics = _nilai_ou_historis(goal_pairs, side, line, odds)
+            if metrics is None:
+                continue
+            option = {
+                "jenis": "OU",
+                "pick": f"{side} {float(line):g}",
+                "odds": round(float(odds), 2),
+                "prob": metrics["prob"],
+                "gap": metrics["gap"],
+                "push_rate": metrics["push_rate"],
+                "expected_profit": metrics["expected_profit"],
+                "line": float(line),
+            }
+            eligibility_record = {
+                "pick_jenis": "OU",
+                "pick": option["pick"],
+                "pick_odds": option["odds"],
+                "value_gap": option["gap"],
+            }
+            if (
+                MIN_OU_ODDS <= option["odds"] <= MAX_OU_ODDS
+                and MIN_OU_GAP <= option["gap"] <= MAX_OU_GAP
+                and is_eligible_ou_pick(eligibility_record)
+            ):
+                candidates.append(option)
+
+    if not candidates:
+        return None
+    best = max(candidates, key=lambda option: (option["gap"], option["prob"]))
+    over_25_rate = round(
+        sum(goals > 2.5 for goals in total_goals) / len(total_goals) * 100, 1
+    )
+    market_has_25 = any(
+        abs(float(item.get("line")) - 2.5) < 0.01
+        for item in ou_lines
+        if item.get("line") is not None
+    )
+
+    return {
+        "h2h": len(h2h),
+        "gol_pairs": [tuple(pair) for pair in goal_pairs],
+        "gol_total": round(sum(total_goals) / len(total_goals), 2),
+        "skor": int(score),
+        "tier": tier,
+        "pick_jenis": "OU",
+        "pick": best["pick"],
+        "pick_conf": best["prob"],
+        "pick_push_rate": best["push_rate"],
+        "pick_odds": best["odds"],
+        "pick_implied": round(100 / best["odds"], 1),
+        "value_gap": best["gap"],
+        "kategori_gap": "VALUE" if best["gap"] >= 10 else "FAIR",
+        "pick_alasan": (
+            f"{best['pick']}: peluang bersyarat {best['prob']}%, "
+            f"push {best['push_rate']}%, gap {best['gap']:+.1f}%"
+        ),
+        "top_ou": best,
+        "titik_buta": {
+            "line": 2.5,
+            "over_rate": over_25_rate,
+            "ada_di_market": market_has_25,
+        },
+    }
+
 
 def main():
     print("=" * 70)
