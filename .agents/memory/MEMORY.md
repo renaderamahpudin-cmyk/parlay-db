@@ -1,0 +1,1 @@
+- [Development status](project-stage.md) — the project is still being built; distinguish pending decisions from confirmed requirements.

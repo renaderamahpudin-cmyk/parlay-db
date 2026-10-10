@@ -7,10 +7,14 @@ import os
 import requests
 import pandas as pd
 from datetime import datetime
+import re
+
+from settlement import TRACK_COLUMNS, match_key, settle_pick
 
 MAPPING_FILE = "output/mapping_liga.json"
 PICK_FILE = "output/best_pick.json"
 TRACK_FILE = "output/track_record.csv"
+DRAFT_FILE = "output/draft_pending.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36",
@@ -24,8 +28,46 @@ def load_mapping():
 
 
 def load_picks():
-    with open(PICK_FILE) as f:
-        return json.load(f)
+    pending = None
+    if os.path.exists(DRAFT_FILE):
+        with open(DRAFT_FILE, encoding="utf-8") as f:
+            draft = json.load(f)
+        pending = draft.get("pending_auto")
+        if not isinstance(pending, list):
+            raise ValueError(f"Format {DRAFT_FILE} tidak memiliki pending_auto berupa list.")
+
+    if not os.path.exists(PICK_FILE):
+        if pending is not None:
+            return pending
+        raise FileNotFoundError(f"File pick tidak ditemukan: {PICK_FILE}")
+    with open(PICK_FILE, encoding="utf-8") as f:
+        latest_picks = json.load(f)
+
+    if pending is None:
+        return latest_picks
+
+    # Lengkapi draft lama yang belum menyimpan odds/confidence tanpa mengganti
+    # pilihan historisnya dengan pick baru yang berbeda.
+    latest_by_key = {}
+    for item in latest_picks:
+        key = (*match_key(item.get("liga"), item.get("home"), item.get("away")),
+               str(item.get("waktu", "")).strip(),
+               str(item.get("pick", "")).strip().upper())
+        latest_by_key[key] = item
+    fields_to_recover = (
+        "pick_conf", "pick_odds", "pick_implied", "pick_alasan",
+        "value_gap", "kategori_gap", "skor", "tier", "pick_push_rate",
+    )
+    for item in pending:
+        key = (*match_key(item.get("liga"), item.get("home"), item.get("away")),
+               str(item.get("waktu", "")).strip(),
+               str(item.get("pick", "")).strip().upper())
+        latest = latest_by_key.get(key)
+        if latest:
+            for field in fields_to_recover:
+                if item.get(field) in (None, "") and field in latest:
+                    item[field] = latest[field]
+    return pending
 
 
 import unicodedata
@@ -123,12 +165,14 @@ def fetch_liga_fixtures(liga_id):
     url = f"https://www.fotmob.com/api/data/leagues?id={liga_id}"
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
-        if r.status_code != 200:
-            return []
+        r.raise_for_status()
         data = r.json()
-        return data.get("fixtures", {}).get("allMatches", [])
-    except:
-        return []
+        fixtures = data.get("fixtures", {}).get("allMatches")
+        if not isinstance(fixtures, list):
+            return None
+        return fixtures
+    except (requests.RequestException, ValueError, AttributeError):
+        return None
 
 
 def cari_match_di_fixtures(fixtures, home_target, away_target):
@@ -143,38 +187,44 @@ def cari_match_di_fixtures(fixtures, home_target, away_target):
 
 
 def tentukan_hasil(pick, total_gol, skor_home, skor_away, odds):
-    """Tentukan WIN/LOSE/PUSH"""
-    if "OVER" in pick:
-        line = float(pick.replace("OVER ", ""))
-        if total_gol > line:
-            return "WIN", round(odds - 1, 2)
-        elif total_gol == line:
-            return "PUSH", 0
-        else:
-            return "LOSE", -1
-    
-    elif "UNDER" in pick:
-        line = float(pick.replace("UNDER ", ""))
-        if total_gol < line:
-            return "WIN", round(odds - 1, 2)
-        elif total_gol == line:
-            return "PUSH", 0
-        else:
-            return "LOSE", -1
-    
-    elif pick == "HOME":
-        if skor_home > skor_away:
-            return "WIN", round(odds - 1, 2)
-        else:
-            return "LOSE", -1
-    
-    elif pick == "AWAY":
-        if skor_away > skor_home:
-            return "WIN", round(odds - 1, 2)
-        else:
-            return "LOSE", -1
-    
-    return "?", 0
+    """Tentukan hasil O/U Asia atau 1X2, termasuk DRAW dan half-result."""
+    return settle_pick(pick, skor_home, skor_away, odds)
+
+
+def tanggal_match(status):
+    """Ambil tanggal fixture dari waktu FotMob; fallback ke tanggal pencatatan."""
+    utc_time = status.get("utcTime")
+    if utc_time:
+        try:
+            return datetime.fromisoformat(
+                utc_time.replace("Z", "+00:00")
+            ).date().isoformat()
+        except (AttributeError, TypeError, ValueError):
+            pass
+    return datetime.now().strftime("%Y-%m-%d")
+
+
+def hapus_draft_selesai(completed_keys):
+    """Hapus pick dari antrean hanya setelah hasilnya sudah tercatat."""
+    if not os.path.exists(DRAFT_FILE):
+        return
+    try:
+        with open(DRAFT_FILE, encoding="utf-8") as f:
+            draft = json.load(f)
+        pending = draft.get("pending_auto", [])
+        draft["pending_auto"] = [
+            item for item in pending
+            if match_key(item.get("liga"), item.get("home"), item.get("away"))
+            not in completed_keys
+        ]
+        draft["total_pending_auto"] = len(draft["pending_auto"])
+        draft["saved_at"] = datetime.now().isoformat()
+        tmp_file = f"{DRAFT_FILE}.tmp"
+        with open(tmp_file, "w", encoding="utf-8") as f:
+            json.dump(draft, f, indent=2, ensure_ascii=False)
+        os.replace(tmp_file, DRAFT_FILE)
+    except (OSError, json.JSONDecodeError, AttributeError, TypeError) as exc:
+        print(f"⚠️ Draft belum bisa diperbarui: {exc}")
 
 
 def main():
@@ -188,8 +238,8 @@ def main():
     print(f"Liga di mapping: {len(mapping)}")
     
     # Filter pick yang liga-nya ada di mapping
-    picks_valid = [p for p in picks if p["liga"] in mapping]
-    picks_skip = [p for p in picks if p["liga"] not in mapping]
+    picks_valid = [p for p in picks if p.get("liga") in mapping]
+    picks_skip = [p for p in picks if p.get("liga") not in mapping]
     
     print(f"\n✅ Lolos (liga di mapping): {len(picks_valid)}")
     print(f"❌ Skip (liga nggak ada): {len(picks_skip)}")
@@ -198,32 +248,38 @@ def main():
     if os.path.exists(TRACK_FILE):
         df_track = pd.read_csv(TRACK_FILE)
     else:
-        df_track = pd.DataFrame(columns=[
-            "tanggal", "liga", "home", "away", "pick", "conf", "odds",
-            "skor_home", "skor_away", "total_gol", "hasil", "profit_loss"
-        ])
+        df_track = pd.DataFrame(columns=TRACK_COLUMNS)
+    for column in TRACK_COLUMNS:
+        if column not in df_track.columns:
+            df_track[column] = pd.NA
     
-    # Cek sudah ada di track?
-    existing = set()
-    if len(df_track) > 0:
-        existing = set(zip(df_track["home"], df_track["away"]))
+    # Kunci memasukkan liga agar nama tim sama di kompetisi berbeda tidak tabrakan.
+    existing = {
+        match_key(row.liga, row.home, row.away)
+        for row in df_track[["liga", "home", "away"]].itertuples(index=False)
+        if pd.notna(row.home) and pd.notna(row.away)
+    }
+    completed_keys = set(existing)
     
     # Fetch per liga
     liga_cache = {}
     found = 0
     not_finished = 0
     not_found = 0
+    fetch_failed = 0
+    invalid_pick = 0
     
     print("\n" + "=" * 70)
     
     for p in picks_valid:
-        home = p["home"]
-        away = p["away"]
-        liga = p["liga"]
+        home = p.get("home", "")
+        away = p.get("away", "")
+        liga = p.get("liga", "")
+        fixture_key = match_key(liga, home, away)
         liga_id = mapping[liga]["id"]
         
         # Skip kalau sudah ada di track
-        if (home, away) in existing:
+        if fixture_key in existing:
             print(f"⏭️  SKIP (sudah ditrack): {home} vs {away}")
             continue
         
@@ -233,6 +289,10 @@ def main():
             liga_cache[liga_id] = fetch_liga_fixtures(liga_id)
         
         fixtures = liga_cache[liga_id]
+        if fixtures is None:
+            print(f"⚠️ FETCH GAGAL: {liga}; pick tetap tersimpan untuk dicoba lagi.")
+            fetch_failed += 1
+            continue
         
         # Cari match
         m = cari_match_di_fixtures(fixtures, home, away)
@@ -253,63 +313,88 @@ def main():
             continue
         
         # Parse skor
-        try:
-            parts = score_str.replace(" ", "").split("-")
-            skor_home = int(parts[0])
-            skor_away = int(parts[1])
-            total_gol = skor_home + skor_away
-        except:
+        score_match = re.fullmatch(r"\s*(\d+)\s*[-–]\s*(\d+)\s*", str(score_str))
+        if not score_match:
             print(f"⚠️ Parse error: {score_str}")
             continue
+        skor_home = int(score_match.group(1))
+        skor_away = int(score_match.group(2))
+        total_gol = skor_home + skor_away
         
         # Tentukan hasil
         pick = p.get("pick", "")
-        odds = p.get("pick_odds", 0) or p.get("odds", 0)
-        hasil, profit = tentukan_hasil(pick, total_gol, skor_home, skor_away, odds)
+        odds = p.get("pick_odds") or p.get("odds")
+        try:
+            hasil, profit = tentukan_hasil(
+                pick, total_gol, skor_home, skor_away, odds
+            )
+        except (TypeError, ValueError) as exc:
+            print(f"⚠️ Pick tidak bisa dihitung untuk {home} vs {away}: {exc}")
+            invalid_pick += 1
+            continue
         
         # Simpan
         row = {
-            "tanggal": datetime.now().strftime("%Y-%m-%d"),
+            "tanggal": tanggal_match(status),
             "liga": liga,
             "home": home,
             "away": away,
             "pick": pick,
             "conf": p.get("pick_conf", 0),
             "odds": odds,
+            "skor": p.get("skor", 0),
+            "tier": p.get("tier", "?"),
+            "pick_push_rate": p.get("pick_push_rate", 0),
             "skor_home": skor_home,
             "skor_away": skor_away,
             "total_gol": total_gol,
             "hasil": hasil,
             "profit_loss": profit,
+            "catatan": "",
         }
-        df_track = pd.concat([df_track, pd.DataFrame([row])], ignore_index=True)
+        df_track = pd.concat([
+            df_track, pd.DataFrame([row], columns=TRACK_COLUMNS)
+        ], ignore_index=True)
+        existing.add(fixture_key)
+        completed_keys.add(fixture_key)
         found += 1
         
-        emoji = "✅" if hasil == "WIN" else "❌" if hasil == "LOSE" else "⚖️"
+        emoji = (
+            "✅" if hasil in {"WIN", "HALF_WIN"}
+            else "❌" if hasil in {"LOSE", "HALF_LOSE"}
+            else "⚖️"
+        )
         print(f"{emoji} {home} {skor_home}-{skor_away} {away} — {pick} → {hasil} ({profit:+.2f})")
     
     # Simpan
+    df_track = df_track[TRACK_COLUMNS]
     df_track.to_csv(TRACK_FILE, index=False)
+    hapus_draft_selesai(completed_keys)
     
     print("\n" + "=" * 70)
     print(f"✅ Ditrack: {found}")
     print(f"⏳ Belum selesai: {not_finished}")
     print(f"❌ Tidak ditemukan: {not_found}")
+    print(f"⚠️ Fetch gagal: {fetch_failed}")
+    print(f"⚠️ Pick tidak valid/tidak ada odds: {invalid_pick}")
     print(f"💾 File: {TRACK_FILE}")
     print("=" * 70)
     
     # Summary kalau ada data
     if len(df_track) > 0:
         total = len(df_track)
-        win = len(df_track[df_track["hasil"] == "WIN"])
-        lose = len(df_track[df_track["hasil"] == "LOSE"])
-        push = len(df_track[df_track["hasil"] == "PUSH"])
-        
+        result_counts = df_track["hasil"].value_counts()
         print(f"\n📊 SUMMARY:")
         print(f"   Total: {total}")
-        print(f"   ✅ Win: {win} ({win/total*100:.1f}%)")
-        print(f"   ❌ Lose: {lose} ({lose/total*100:.1f}%)")
-        print(f"   ⚖️  Push: {push} ({push/total*100:.1f}%)")
+        for result, label in (
+            ("WIN", "✅ Menang"),
+            ("HALF_WIN", "🟢 Menang setengah"),
+            ("LOSE", "❌ Kalah"),
+            ("HALF_LOSE", "🟠 Kalah setengah"),
+            ("PUSH", "⚖️ Push"),
+        ):
+            count = int(result_counts.get(result, 0))
+            print(f"   {label}: {count} ({count/total*100:.1f}%)")
         print(f"   💰 Total profit: {df_track['profit_loss'].sum():+.2f}x")
 
 

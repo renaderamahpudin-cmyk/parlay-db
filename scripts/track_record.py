@@ -6,19 +6,29 @@ import os
 import pandas as pd
 from datetime import datetime
 
+from settlement import TRACK_COLUMNS, match_key, settle_pick
+
 TRACK_FILE = "output/track_record.csv"
+
+
+def load_track():
+    if os.path.exists(TRACK_FILE):
+        df = pd.read_csv(TRACK_FILE)
+    else:
+        df = pd.DataFrame(columns=TRACK_COLUMNS)
+    for column in TRACK_COLUMNS:
+        if column not in df.columns:
+            df[column] = pd.NA
+    return df
 
 
 def init_track():
     """Bikin file track kalau belum ada"""
     if os.path.exists(TRACK_FILE):
+        df = load_track()
+        df.to_csv(TRACK_FILE, index=False)
         return
-    df = pd.DataFrame(columns=[
-        "tanggal", "liga", "home", "away",
-        "pick", "conf", "odds", "skor", "tier",
-        "skor_home", "skor_away", "total_gol",
-        "hasil", "profit_loss", "catatan"
-    ])
+    df = pd.DataFrame(columns=TRACK_COLUMNS)
     df.to_csv(TRACK_FILE, index=False)
     print(f"✅ File baru: {TRACK_FILE}")
 
@@ -29,11 +39,24 @@ def add_match_manual():
     print("INPUT HASIL MATCH")
     print("=" * 60)
     
-    # Load best_pick
+    # Load best_pick and omit fixtures already recorded automatically or manually.
     with open("output/best_pick.json") as f:
         picks = json.load(f)
+    df = load_track()
+    tracked = {
+        match_key(row.liga, row.home, row.away)
+        for row in df[["liga", "home", "away"]].itertuples(index=False)
+        if pd.notna(row.home) and pd.notna(row.away)
+    }
+    picks = [
+        p for p in picks
+        if match_key(p.get("liga"), p.get("home"), p.get("away")) not in tracked
+    ]
     
     print(f"\nTotal pick tersedia: {len(picks)}")
+    if not picks:
+        print("📭 Tidak ada pick baru yang belum ditrack.")
+        return
     print("\nPilih match (nomor):")
     for i, p in enumerate(picks, 1):
         print(f"  [{i}] {p['home']} vs {p['away']} — {p['pick']}")
@@ -49,56 +72,16 @@ def add_match_manual():
         # Input skor
         skor_home = int(input(f"Skor {p['home']}: "))
         skor_away = int(input(f"Skor {p['away']}: "))
+        if skor_home < 0 or skor_away < 0:
+            print("❌ Skor tidak boleh negatif")
+            return
         total_gol = skor_home + skor_away
         
         # Tentukan hasil
         pick = p.get("pick", "")
         conf = p.get("pick_conf", 0)
-        odds = p.get("pick_odds", 0)
-        
-        # Cek hasil
-        hasil = "?"
-        profit = 0
-        
-        if "OVER" in pick:
-            line = float(pick.replace("OVER ", ""))
-            if total_gol > line:
-                hasil = "WIN"
-                profit = odds - 1 if odds > 0 else 0
-            elif total_gol == line:
-                hasil = "PUSH"
-                profit = 0
-            else:
-                hasil = "LOSE"
-                profit = -1
-        
-        elif "UNDER" in pick:
-            line = float(pick.replace("UNDER ", ""))
-            if total_gol < line:
-                hasil = "WIN"
-                profit = odds - 1 if odds > 0 else 0
-            elif total_gol == line:
-                hasil = "PUSH"
-                profit = 0
-            else:
-                hasil = "LOSE"
-                profit = -1
-        
-        elif pick == "HOME":
-            if skor_home > skor_away:
-                hasil = "WIN"
-                profit = odds - 1 if odds > 0 else 0
-            else:
-                hasil = "LOSE"
-                profit = -1
-        
-        elif pick == "AWAY":
-            if skor_away > skor_home:
-                hasil = "WIN"
-                profit = odds - 1 if odds > 0 else 0
-            else:
-                hasil = "LOSE"
-                profit = -1
+        odds = p.get("pick_odds") or p.get("odds")
+        hasil, profit = settle_pick(pick, skor_home, skor_away, odds)
         
         # Simpan
         row = {
@@ -111,6 +94,7 @@ def add_match_manual():
             "odds": odds,
             "skor": p.get("skor", 0),
             "tier": p.get("tier", "?"),
+            "pick_push_rate": p.get("pick_push_rate", 0),
             "skor_home": skor_home,
             "skor_away": skor_away,
             "total_gol": total_gol,
@@ -119,9 +103,9 @@ def add_match_manual():
             "catatan": "",
         }
         
-        df = pd.read_csv(TRACK_FILE)
         df = pd.concat([df, pd.DataFrame([row])], ignore_index=True)
-        df.to_csv(TRACK_FILE, index=False)
+        extra_columns = [column for column in df.columns if column not in TRACK_COLUMNS]
+        df[TRACK_COLUMNS + extra_columns].to_csv(TRACK_FILE, index=False)
         
         print(f"\n✅ Dicatat:")
         print(f"   {p['home']} {skor_home}-{skor_away} {p['away']}")
@@ -138,7 +122,7 @@ def show_track():
         print("❌ Belum ada track record")
         return
     
-    df = pd.read_csv(TRACK_FILE)
+    df = load_track()
     if len(df) == 0:
         print("📭 Track record kosong")
         return
@@ -154,14 +138,17 @@ def show_track():
     print("=" * 70)
     
     total = len(df)
-    win = len(df[df["hasil"] == "WIN"])
-    lose = len(df[df["hasil"] == "LOSE"])
-    push = len(df[df["hasil"] == "PUSH"])
-    
+    result_counts = df["hasil"].value_counts()
     print(f"  Total bet:  {total}")
-    print(f"  ✅ Win:     {win} ({win/total*100:.1f}%)")
-    print(f"  ❌ Lose:    {lose} ({lose/total*100:.1f}%)")
-    print(f"  ⚖️  Push:    {push} ({push/total*100:.1f}%)")
+    for result, label in (
+        ("WIN", "✅ Menang"),
+        ("HALF_WIN", "🟢 Menang setengah"),
+        ("LOSE", "❌ Kalah"),
+        ("HALF_LOSE", "🟠 Kalah setengah"),
+        ("PUSH", "⚖️ Push"),
+    ):
+        count = int(result_counts.get(result, 0))
+        print(f"  {label}: {count} ({count/total*100:.1f}%)")
     
     total_profit = df["profit_loss"].sum()
     avg_profit = df["profit_loss"].mean()
@@ -175,8 +162,14 @@ def show_track():
         sub = df[df["tier"] == tier]
         if len(sub) == 0:
             continue
-        w = len(sub[sub["hasil"] == "WIN"])
-        print(f"     {tier}: {w}/{len(sub)} win ({w/len(sub)*100:.0f}%)")
+        win_equivalent = (
+            len(sub[sub["hasil"] == "WIN"])
+            + 0.5 * len(sub[sub["hasil"] == "HALF_WIN"])
+        )
+        print(
+            f"     {tier}: {win_equivalent:.1f}/{len(sub)} "
+            f"win-equivalent ({win_equivalent/len(sub)*100:.0f}%)"
+        )
 
 
 def main():

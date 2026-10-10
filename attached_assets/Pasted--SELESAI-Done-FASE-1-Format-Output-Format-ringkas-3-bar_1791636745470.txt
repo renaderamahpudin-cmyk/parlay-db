@@ -1,0 +1,178 @@
+
+✅ SELESAI (Done)
+
+FASE 1: Format Output ✅
+
+· Format ringkas (3 baris)
+· Edge + Value display
+· Probabilitas per line O/U
+· Multi-line O/U + rekomendasi
+· Pick dari market (bukan 2.5 buta)
+· Titik buta netral (5 zona)
+· UTAMA (1X2) + ALTERNATIF (O/U)
+· Slip per tier (T1/T2/T3)
+· Alasan konsisten
+
+Database H2H ✅
+
+· 15 liga top (football-data.co.uk)
+· 15 liga extra (Brazil, Argentina, dll)
+· 167.117 baris total
+· 21 musim (0506 - 2526)
+
+FASE 2: Data Pemain ✅ (Komponen)
+
+· Fotmob API works
+· Parse cedera works
+· Mapping 156 tim
+· Cache system
+· E2E test works
+· Belum integrasi ke builder
+
+Auto-Track Record ✅
+
+· Fotmob leagues?id=X endpoint works
+· Fuzzy matching fixed (normalisasi + alias)
+· 21 match auto-trackable
+· Mapping 15 liga:
+  · EPL (47), Championship (48), La Liga (87), Bundesliga (54), Bundesliga 2 (146), Serie A (55), Ligue 1 (53), Eredivisie (57), Portugal (61), Süper Lig (71), Greece SL1 (135), Sweden (67), Austria (38), MLS (130), Mexico (230)
+
+Analisa Menit Gol ✅
+
+· 47.660 gol dianalisa
+· Distribusi: 21.5% gol di 76-90
+· Top scorer: Ronaldo (124)
+· Pola: Babak 2 > Babak 1
+· Data gol turun per era (4.17 → 2.96)
+
+Backup ✅
+
+· parlay_builder_v3.py.PRE_CLEAN
+· parlay_builder_v3.py.FIX_UNDER
+· parlay_builder_v3.py.FINAL_V2
+· main.py.FINAL
+· mapping_liga.json
+· Draft pending (21 match)
+
+---
+
+⏳ SEDANG PROSES (Running)
+
+Download Database 2627 ⏳
+
+· Progress: [10/330] (3% selesai)
+· Status: Baru mulai
+· Estimasi: 30-60 menit
+· File: download.log
+· Yang diharapkan: Musim 26/27 (match Agustus-Oktober 2026)
+
+---
+
+📋 PENDING / DRAFT (Belum Dikerjakan)
+
+FASE 1.5: Value Comparison ⏳
+
+· Bug under push sudah di-fix di test
+· Clean output (hapus BTTS/1X2) — belum di-commit
+· Rollback ke PRE_CLEAN sementara
+
+Track Record Full ⏳
+
+· Script auto_track.py ✅
+· Script manual_track.py ✅ (belum dipakai)
+· Belum dijalankan — tunggu match selesai malam ini
+
+Update Database H2H dari Fotmob ⏳ (Draft)
+
+· Konsep: ambil match selesai dari Fotmob → tambah ke DB
+· Tantangan: format beda, duplicate, flag source
+· Status: diskusi nanti
+
+FASE 3-7 ⏳
+
+· FASE 3: Data lineup (Sofascore)
+· FASE 4: Data cuaca
+· FASE 5: Backtest v3
+· FASE 6: Tuning
+· FASE 7: Fitur tambahan
+
+Slip Top Score ⏳ (Draft)
+
+· 1 slip = 3 match terbaik
+· Tunggu FASE 2 selesai
+
+BTTS ⏳ (Draft)
+
+· Masih ada di kode
+· Kalah prioritas dari O/U
+· Data: PSV BTTS 73% → kalah tanggal 10
+· Keputusan: diskusi setelah result
+
+Kecenderungan UNDER ⏳ (Draft)
+
+· Observasi: 6 UNDER vs 1 OVER
+· Data terbaru: UNDER akurat 83% (5/6)
+· Status: valid, lanjutkan
+
+---
+
+📌 POIN DISKUSI (Tertunda)
+
+Dari Tanggal 9:
+
+1. ✅ Evaluasi slip — sudah dilakukan (4W, 1P, 2L)
+2. ✅ Kecenderungan UNDER — terbukti akurat
+3. ⏳ BTTS — diskusi setelah result tanggal 10
+4. ⏳ Slip Top Score — pending FASE 2
+5. ⏳ FASE 2 — data pemain
+6. ⏳ Data international — arsip
+7. ⏳ Menit gol — data internasional sudah dianalisa
+8. ⏳ Track record — script sudah dibuat
+9. ❌ Stake API — skip
+10. ✅ Sumber data — web indo
+11. ⏳ Team O/U + HT O/U — daftar tunggu
+
+---
+
+📊 File di Folder
+
+Root:
+
+```
+parlay-db/
+├── main.py
+├── main.py.FINAL
+├── run.py
+├── build_db.py (SEASONS: 21 musim, sedang diupdate ke 22)
+├── build_db_extra.py
+├── data/
+│   ├── football_data/ (all_football_data.csv — 167rb baris)
+│   ├── football_data_extra/
+│   └── international/
+├── scripts/
+│   ├── parse_full.py
+│   ├── parlay_builder_v3.py
+│   ├── parlay_builder_v3.py.PRE_CLEAN
+│   ├── parlay_builder_v3.py.FIX_UNDER
+│   ├── parlay_builder_v3.py.FINAL_V2
+│   ├── audit_team.py
+│   ├── backtest.py
+│   ├── backtest_v2.py
+│   ├── auto_track.py
+│   ├── manual_track.py
+│   ├── save_draft.py
+│   ├── analisa_menit.py
+│   ├── team_ids.json
+│   └── cache_cedera/
+├── output/
+│   ├── best_pick.json (21 match)
+│   ├── track_record.csv
+│   ├── draft_pending.json
+│   ├── mapping_liga.json (15 liga)
+│   ├── POIN_DISKUSI.md
+│   └── roadmap.md
+├── test_fase2/
+└── venv/
+```
+
+---

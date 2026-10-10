@@ -11,6 +11,7 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from settlement import settle_pick
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(BASE_DIR)
 
@@ -665,6 +666,54 @@ def dampak_cedera(home_cedera, away_cedera):
 
 
 # ========== FASE 1.5: VALUE COMPARISON ==========
+def _nilai_ou_historis(gol_pairs, side, line, odds):
+    """Hitung peluang bersyarat, frekuensi push, dan profit historis O/U."""
+    try:
+        line_value = float(line)
+        odds_value = float(odds)
+    except (TypeError, ValueError):
+        return None
+    if not pd.notna(line_value) or not pd.notna(odds_value) or odds_value <= 1:
+        return None
+
+    win_units = 0.0
+    loss_units = 0.0
+    push_units = 0.0
+    profit_total = 0.0
+    for home_goals, away_goals in gol_pairs:
+        try:
+            result, profit = settle_pick(
+                f"{side} {line_value}", home_goals, away_goals, odds_value
+            )
+        except (TypeError, ValueError):
+            continue
+        profit_total += profit
+        if result == "WIN":
+            win_units += 1
+        elif result == "HALF_WIN":
+            win_units += 0.5
+            push_units += 0.5
+        elif result == "LOSE":
+            loss_units += 1
+        elif result == "HALF_LOSE":
+            loss_units += 0.5
+            push_units += 0.5
+        else:
+            push_units += 1
+
+    decided_units = win_units + loss_units
+    if not gol_pairs or decided_units == 0:
+        return None
+
+    probability = win_units / decided_units * 100
+    return {
+        "prob": round(probability, 1),
+        "gap": round(probability - (100 / odds_value), 1),
+        "push_rate": round(push_units / len(gol_pairs) * 100, 1),
+        "expected_profit": round(profit_total / len(gol_pairs), 3),
+    }
+
+
 def bandingkan_opsi(gol_pairs, ou_lines, odds_home, odds_draw, odds_away, 
                     home_win_rate=0, away_win_rate=0, draw_rate=0):
     """
@@ -737,41 +786,24 @@ def bandingkan_opsi(gol_pairs, ou_lines, odds_home, odds_draw, odds_away,
             over_odds = ou.get("over")
             under_odds = ou.get("under")
             
-            if not line or not over_odds or not under_odds:
+            if line is None:
                 continue
-            
-            # Probabilitas over
-            over_count = sum(1 for g in total_gols if g > line)
-            over_prob = (over_count / n) * 100
-            under_prob = 100 - over_prob
-            
-            # Over
-            over_implied = 100 / over_odds
-            over_gap = over_prob - over_implied
-            
-            # Under
-            under_implied = 100 / under_odds
-            under_gap = under_prob - under_implied
-            
-            # Ambil yang terbaik per line
-            if over_gap >= under_gap:
-                opsi.append({
-                    "jenis": "OU",
-                    "pick": f"OVER {line}",
-                    "odds": round(over_odds, 2),
-                    "prob": round(over_prob, 1),
-                    "gap": round(over_gap, 1),
-                    "line": line,
-                })
-            else:
-                opsi.append({
-                    "jenis": "OU",
-                    "pick": f"UNDER {line}",
-                    "odds": round(under_odds, 2),
-                    "prob": round(under_prob, 1),
-                    "gap": round(under_gap, 1),
-                    "line": line,
-                })
+            candidates = []
+            for side, odds in (("OVER", over_odds), ("UNDER", under_odds)):
+                metrics = _nilai_ou_historis(gol_pairs, side, line, odds)
+                if metrics is not None:
+                    candidates.append({
+                        "jenis": "OU",
+                        "pick": f"{side} {float(line):g}",
+                        "odds": round(float(odds), 2),
+                        "prob": metrics["prob"],
+                        "gap": metrics["gap"],
+                        "push_rate": metrics["push_rate"],
+                        "expected_profit": metrics["expected_profit"],
+                        "line": float(line),
+                    })
+            if candidates:
+                opsi.append(max(candidates, key=lambda item: item["gap"]))
     
     # Sort by gap tertinggi
     opsi.sort(key=lambda x: -x["gap"])
@@ -788,16 +820,14 @@ def bandingkan_opsi_2(gol_pairs, ou_lines, odds_home, odds_draw, odds_away,
     - top_ou: 1 opsi terbaik dari O/U (atau None)
     - titik_buta: info probabilitas 2.5
     """
-    # Konversi gol_pairs
     if hasattr(gol_pairs, "tolist"):
         gol_pairs = gol_pairs.tolist()
     elif gol_pairs is None:
         gol_pairs = []
-    
-    if not gol_pairs or len(gol_pairs) == 0:
+    if not gol_pairs:
         return None, None, None
     
-    total_gols = [g[0] + g[1] for g in gol_pairs]
+    total_gols = [float(g[0]) + float(g[1]) for g in gol_pairs]
     n = len(total_gols)
     
     # ===== Hitung titik buta 2.5 =====
@@ -812,91 +842,24 @@ def bandingkan_opsi_2(gol_pairs, ou_lines, odds_home, odds_draw, odds_away,
     # Cek apakah 2.5 ada di market
     if ou_lines:
         for ou in ou_lines:
-            if abs(ou.get("line", 0) - 2.5) < 0.01:
-                titik_buta["ada_di_market"] = True
-                break
-    
-    # ===== Hitung opsi 1X2 =====
-    opsi_1x2 = []
-    if odds_home and odds_home > 1:
-        gap = home_win_rate - (100 / odds_home)
-        opsi_1x2.append({
-            "jenis": "1X2", "pick": "HOME", "odds": round(odds_home, 2),
-            "prob": round(home_win_rate, 1), "gap": round(gap, 1),
-        })
-    if odds_draw and odds_draw > 1:
-        gap = draw_rate - (100 / odds_draw)
-        opsi_1x2.append({
-            "jenis": "1X2", "pick": "DRAW", "odds": round(odds_draw, 2),
-            "prob": round(draw_rate, 1), "gap": round(gap, 1),
-        })
-    if odds_away and odds_away > 1:
-        gap = away_win_rate - (100 / odds_away)
-        opsi_1x2.append({
-            "jenis": "1X2", "pick": "AWAY", "odds": round(odds_away, 2),
-            "prob": round(away_win_rate, 1), "gap": round(gap, 1),
-        })
-    
-    # ===== Hitung opsi O/U =====
-    opsi_ou = []
-    if ou_lines:
-        for ou in ou_lines:
-            line = ou.get("line")
-            over_odds = ou.get("over")
-            under_odds = ou.get("under")
-            
-            if not line or not over_odds or not under_odds:
+            try:
+                if abs(float(ou.get("line")) - 2.5) < 0.01:
+                    titik_buta["ada_di_market"] = True
+                    break
+            except (TypeError, ValueError):
                 continue
-            
-            over_count = sum(1 for g in total_gols if g > line)
-            over_prob = (over_count / n) * 100
-            under_prob = 100 - over_prob
-            
-            over_gap = over_prob - (100 / over_odds)
-            under_gap = under_prob - (100 / under_odds)
-            
-            if over_gap >= under_gap:
-                opsi_ou.append({
-                    "jenis": "OU", "pick": f"OVER {line}", "odds": round(over_odds, 2),
-                    "prob": round(over_prob, 1), "gap": round(over_gap, 1),
-                })
-            else:
-                opsi_ou.append({
-                    "jenis": "OU", "pick": f"UNDER {line}", "odds": round(under_odds, 2),
-                    "prob": round(under_prob, 1), "gap": round(under_gap, 1),
-                })
-    
-    # ===== Pilih top 1 dari masing-masing =====
-    top_1x2 = max(opsi_1x2, key=lambda x: x["gap"]) if opsi_1x2 else None
-    top_ou = max(opsi_ou, key=lambda x: x["gap"]) if opsi_ou else None
-    
-    # ===== HANDLE KASUS 2.5 ADA DI MARKET =====
-    # Kalau 2.5 ada, pakai titik buta untuk arah
-    if titik_buta and titik_buta.get("ada_di_market"):
-        for ou in ou_lines:
-            if abs(ou.get("line", 0) - 2.5) < 0.01:
-                # Arah dari titik buta
-                if titik_buta["over_rate"] > 50:
-                    pick_25 = "OVER 2.5"
-                    odds_25 = ou.get("over", 0)
-                    prob_25 = titik_buta["over_rate"]
-                else:
-                    pick_25 = "UNDER 2.5"
-                    odds_25 = ou.get("under", 0)
-                    prob_25 = 100 - titik_buta["over_rate"]
-                
-                if odds_25 and odds_25 > 1:
-                    gap_25 = prob_25 - (100 / odds_25)
-                    top_ou = {
-                        "jenis": "OU",
-                        "pick": pick_25,
-                        "odds": round(odds_25, 2),
-                        "prob": round(prob_25, 1),
-                        "gap": round(gap_25, 1),
-                        "line": 2.5,
-                    }
-                break
-    
+
+    opsi = bandingkan_opsi(
+        gol_pairs, ou_lines, odds_home, odds_draw, odds_away,
+        home_win_rate=home_win_rate,
+        away_win_rate=away_win_rate,
+        draw_rate=draw_rate,
+    )
+    opsi_1x2 = [item for item in opsi if item["jenis"] == "1X2"]
+    opsi_ou = [item for item in opsi if item["jenis"] == "OU"]
+    top_1x2 = max(opsi_1x2, key=lambda item: item["gap"]) if opsi_1x2 else None
+    top_ou = max(opsi_ou, key=lambda item: item["gap"]) if opsi_ou else None
+
     return top_1x2, top_ou, titik_buta
 
 def main():
@@ -924,35 +887,38 @@ def main():
             ou_lines=m.get("ou_lines", []),
         )
 
-        # ===== OVERRIDE PICK DARI MARKET =====
+        # ===== Pilih market dari harga yang benar-benar tersedia =====
         if stats is not None:
-            top_ou_m = stats.get("top_ou")
-            titik_m = stats.get("titik_buta")
-            ou_lines_m = m.get("ou_lines", [])
-            
-            # Cek apakah 2.5 ada di market
-            has_25 = any(abs(ou.get("line", 0) - 2.5) < 0.01 for ou in ou_lines_m)
-            
-            if has_25 and titik_m:
-                # 2.5 ada — pakai arah dari titik buta
-                for ou in ou_lines_m:
-                    if abs(ou.get("line", 0) - 2.5) < 0.01:
-                        if titik_m["over_rate"] > 50:
-                            stats["pick"] = "OVER 2.5"
-                            stats["pick_odds"] = ou.get("over", 0)
-                            stats["pick_conf"] = titik_m["over_rate"]
-                        else:
-                            stats["pick"] = "UNDER 2.5"
-                            stats["pick_odds"] = ou.get("under", 0)
-                            stats["pick_conf"] = 100 - titik_m["over_rate"]
-                        stats["pick_jenis"] = "OU"
-                        break
-            elif top_ou_m and top_ou_m.get("gap", 0) >= 5:
-                # 2.5 nggak ada — pakai top_ou dari market
-                stats["pick"] = top_ou_m["pick"]
-                stats["pick_odds"] = top_ou_m["odds"]
-                stats["pick_conf"] = top_ou_m["prob"]
-                stats["pick_jenis"] = "OU"
+            if stats.get("pick_jenis") in {"1X2", "OU"}:
+                market_options = [
+                    option for option in (stats.get("top_1x2"), stats.get("top_ou"))
+                    if option and option.get("gap", 0) >= 5
+                ]
+                best_market = max(
+                    market_options, key=lambda option: option["gap"]
+                ) if market_options else None
+
+                if best_market:
+                    # Jangan paksa line 2.5; bandingkan pick terbaik yang
+                    # tersedia dengan odds riil pada market 1X2 dan O/U.
+                    odds_real = best_market["odds"]
+                    stats["pick"] = best_market["pick"]
+                    stats["pick_jenis"] = best_market["jenis"]
+                    stats["pick_odds"] = odds_real
+                    stats["pick_conf"] = best_market["prob"]
+                    stats["pick_push_rate"] = best_market.get("push_rate", 0)
+                    stats["pick_implied"] = round(100 / odds_real, 1)
+                    stats["value_gap"] = best_market["gap"]
+                    stats["kategori_gap"] = (
+                        "VALUE" if best_market["gap"] >= 10 else "FAIR"
+                    )
+                    stats["pick_alasan"] = (
+                        f"{best_market['pick']}: peluang bersyarat "
+                        f"{best_market['prob']}%, gap {best_market['gap']:+.1f}%"
+                    )
+                elif stats.get("pick_jenis") == "OU":
+                    # Jangan terbitkan O/U dari odds asumsi 1.90.
+                    stats = None
 
         if stats is None:
             continue
@@ -1004,8 +970,12 @@ def main():
             pick_display = m["top_ou"]["pick"]
             conf_display = m["top_ou"]["prob"]
             odds_display = m["top_ou"]["odds"]
+        push_display = (
+            f" | push {m.get('pick_push_rate', 0)}%"
+            if jenis_display == "OU" else ""
+        )
         
-        print(f"    H2H:{m['h2h']} Skor:{m['skor']} Gol:{m['gol_total']} | {emoji} {pick_display} {conf_display}% ({odds_display})")
+        print(f"    H2H:{m['h2h']} Skor:{m['skor']} Gol:{m['gol_total']} | {emoji} {pick_display} {conf_display}%{push_display} ({odds_display})")
         gol_pairs_m = m.get("gol_pairs", [])
         if gol_pairs_m:
             total_gols = [g[0] + g[1] for g in gol_pairs_m]
@@ -1064,7 +1034,11 @@ def main():
                     # ALTERNATIF (O/U)
                     if top_ou_m:
                         status_gap = "✅" if top_ou_m["gap"] >= 10 else "⚠️" if top_ou_m["gap"] >= 5 else "🟡" if top_ou_m["gap"] >= 0 else "❌"
-                        print(f"    ⚽ ALTERNATIF (O/U): {top_ou_m['pick']} @ {top_ou_m['odds']} | prob {top_ou_m['prob']}% | gap {top_ou_m['gap']:+}% {status_gap}")
+                        push_text = (
+                            f" | push {top_ou_m.get('push_rate', 0)}%"
+                            if "push_rate" in top_ou_m else ""
+                        )
+                        print(f"    ⚽ ALTERNATIF (O/U): {top_ou_m['pick']} @ {top_ou_m['odds']} | prob {top_ou_m['prob']}%{push_text} | gap {top_ou_m['gap']:+}% {status_gap}")
 
     # ===== GENERATE SLIP =====
 
@@ -1113,7 +1087,7 @@ def main():
             if pick_now.startswith("OVER") or pick_now.startswith("UNDER"):
                 top_ou_a = m.get("top_ou")
                 if top_ou_a:
-                    print(f"   └─ {top_ou_a['pick']}: prob {top_ou_a['prob']}% | gap {top_ou_a['gap']:+}%")
+                    print(f"   └─ {top_ou_a['pick']}: prob bersyarat {top_ou_a['prob']}% | push {top_ou_a.get('push_rate', 0)}% | gap {top_ou_a['gap']:+}%")
                 else:
                     print(f"   └─ {m['pick_alasan']}")
             else:
@@ -1202,7 +1176,7 @@ def main():
             if pick_now.startswith("OVER") or pick_now.startswith("UNDER"):
                 top_ou_a = m.get("top_ou")
                 if top_ou_a:
-                    print(f"   └─ {top_ou_a['pick']}: prob {top_ou_a['prob']}% | gap {top_ou_a['gap']:+}%")
+                    print(f"   └─ {top_ou_a['pick']}: prob bersyarat {top_ou_a['prob']}% | push {top_ou_a.get('push_rate', 0)}% | gap {top_ou_a['gap']:+}%")
                 else:
                     print(f"   └─ {m['pick_alasan']}")
             else:
