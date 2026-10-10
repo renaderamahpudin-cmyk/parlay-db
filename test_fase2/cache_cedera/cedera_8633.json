@@ -1,0 +1,32 @@
+{
+  "team_name": "Real Madrid",
+  "team_id": 8633,
+  "fetched_at": "2026-10-09T03:22:15.451930",
+  "total_cedera": 4,
+  "cedera": [
+    {
+      "nama": "Raúl Asencio",
+      "posisi": "Defender",
+      "expectedReturn": "Early January 2027",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Éder Militao",
+      "posisi": "Defender",
+      "expectedReturn": "Back in training",
+      "severity": "RINGAN"
+    },
+    {
+      "nama": "Ibrahima Konaté",
+      "posisi": "Defender",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Rodrygo",
+      "posisi": "Attacker",
+      "expectedReturn": "Late December 2026",
+      "severity": "SEDANG"
+    }
+  ]
+}

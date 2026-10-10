@@ -1,0 +1,69 @@
+{
+  "ENGLISH PREMIER LEAGUE": {
+    "id": 47,
+    "negara": "ENG"
+  },
+  "ITALY SERIE A": {
+    "id": 55,
+    "negara": "ITA"
+  },
+  "FRANCE LIGUE 1": {
+    "id": 53,
+    "negara": "FRA"
+  },
+  "NETHERLANDS EREDIVISIE": {
+    "id": 57,
+    "negara": "NED"
+  },
+  "TURKIYE SUPER LEAGUE": {
+    "id": 71,
+    "negara": "TUR"
+  },
+  "SWEDEN ALLSVENSKAN": {
+    "id": 67,
+    "negara": "SWE"
+  },
+  "AUSTRIA BUNDESLIGA": {
+    "id": 38,
+    "negara": "AUT"
+  },
+  "USA MAJOR LEAGUE SOCCER": {
+    "id": 130,
+    "negara": "USA"
+  },
+  "LIGA PORTUGAL": {
+    "id": 61,
+    "negara": "POR",
+    "divisi": "Primeira Liga"
+  },
+  "GREECE SUPER LEAGUE": {
+    "id": 135,
+    "negara": "GRE",
+    "divisi": "Super League 1"
+  },
+  "MEXICO PRIMERA DIVISION": {
+    "id": 230,
+    "negara": "MEX",
+    "divisi": "Liga MX"
+  },
+  "SPAIN LA LIGA": {
+    "id": 87,
+    "negara": "ESP",
+    "divisi": "Liga 1"
+  },
+  "GERMANY BUNDESLIGA": {
+    "id": 54,
+    "negara": "GER",
+    "divisi": "Liga 1"
+  },
+  "ENGLISH CHAMPIONSHIP": {
+    "id": 48,
+    "negara": "ENG",
+    "divisi": "Liga 2"
+  },
+  "GERMANY BUNDESLIGA 2": {
+    "id": 146,
+    "negara": "GER",
+    "divisi": "Liga 2"
+  }
+}

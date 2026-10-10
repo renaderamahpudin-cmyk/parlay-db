@@ -1,0 +1,200 @@
+[
+  {
+    "liga": "ARGENTINA LIGA PROFESIONAL",
+    "waktu": "08:45",
+    "home": "Union de Santa Fe",
+    "away": "Defensa y Justicia",
+    "is_live": true,
+    "odds_home": 2.4,
+    "odds_draw": 3.15,
+    "odds_away": 2.89,
+    "ou_lines": [
+      {
+        "line": 2.25,
+        "over": 2.06,
+        "under": 1.84
+      },
+      {
+        "line": 2.5,
+        "over": 1.66,
+        "under": 2.31
+      },
+      {
+        "line": 2.0,
+        "over": 2.4,
+        "under": 1.61
+      }
+    ]
+  },
+  {
+    "liga": "MEXICO PRIMERA DIVISION",
+    "waktu": "09:00",
+    "home": "Puebla FC",
+    "away": "Club Leon",
+    "is_live": true,
+    "odds_home": 2.69,
+    "odds_draw": 3.3,
+    "odds_away": 2.47,
+    "ou_lines": [
+      {
+        "line": 2.5,
+        "over": 1.8,
+        "under": 2.11
+      },
+      {
+        "line": 2.75,
+        "over": 2.2,
+        "under": 1.73
+      },
+      {
+        "line": 2.25,
+        "over": 1.58,
+        "under": 2.47
+      }
+    ]
+  },
+  {
+    "liga": "MEXICO PRIMERA DIVISION",
+    "waktu": "11:00",
+    "home": "Tigres UANL",
+    "away": "Deportivo Toluca",
+    "is_live": true,
+    "odds_home": 2.7,
+    "odds_draw": 3.5,
+    "odds_away": 2.36,
+    "ou_lines": [
+      {
+        "line": 2.75,
+        "over": 1.87,
+        "under": 2.03
+      },
+      {
+        "line": 3.0,
+        "over": 2.25,
+        "under": 1.7
+      },
+      {
+        "line": 2.5,
+        "over": 1.63,
+        "under": 2.36
+      }
+    ]
+  },
+  {
+    "liga": "COLOMBIA PRIMERA A",
+    "waktu": "09:10",
+    "home": "Once Caldas",
+    "away": "Llaneros SA",
+    "is_live": true,
+    "odds_home": 1.52,
+    "odds_draw": 3.7,
+    "odds_away": 5.1,
+    "ou_lines": [
+      {
+        "line": 2.5,
+        "over": 1.99,
+        "under": 1.85
+      },
+      {
+        "line": 2.25,
+        "over": 1.69,
+        "under": 2.17
+      }
+    ]
+  },
+  {
+    "liga": "MEXICO LIGA DE EXPANSION",
+    "waktu": "09:00",
+    "home": "Tepatitlan FC",
+    "away": "Atletico Morelia",
+    "is_live": true,
+    "odds_home": 5.2,
+    "odds_draw": 4.3,
+    "odds_away": 1.44,
+    "ou_lines": [
+      {
+        "line": 3.0,
+        "over": 1.89,
+        "under": 1.99
+      },
+      {
+        "line": 3.25,
+        "over": 2.26,
+        "under": 1.67
+      }
+    ]
+  },
+  {
+    "liga": "PERU LIGA 1",
+    "waktu": "09:00",
+    "home": "Deportivo Garcilaso",
+    "away": "Sport Huancayo",
+    "is_live": true,
+    "odds_home": 1.99,
+    "odds_draw": 3.3,
+    "odds_away": 3.2,
+    "ou_lines": [
+      {
+        "line": 2.5,
+        "over": 1.9,
+        "under": 1.94
+      },
+      {
+        "line": 2.25,
+        "over": 1.54,
+        "under": 2.42
+      }
+    ]
+  },
+  {
+    "liga": "COSTA RICA PRIMERA DIVISION",
+    "waktu": "10:00",
+    "home": "Sporting San Jose",
+    "away": "Cartagines",
+    "is_live": true,
+    "odds_home": 2.12,
+    "odds_draw": 3.25,
+    "odds_away": 2.96,
+    "ou_lines": [
+      {
+        "line": 2.25,
+        "over": 1.96,
+        "under": 1.88
+      }
+    ]
+  },
+  {
+    "liga": "MEXICO LIGA PRIMERA PREMIER",
+    "waktu": "10:00",
+    "home": "Reboceros De La Piedad",
+    "away": "Los Cabos United",
+    "is_live": true,
+    "odds_home": 1.79,
+    "odds_draw": 3.25,
+    "odds_away": 3.95,
+    "ou_lines": [
+      {
+        "line": 2.25,
+        "over": 1.79,
+        "under": 2.01
+      }
+    ]
+  },
+  {
+    "liga": "ARGENTINA TORNEO FEDERAL A PLAYOFF",
+    "waktu": "09:00",
+    "home": "Juventud Antoniana",
+    "away": "CA Huracan Las Heras",
+    "is_live": true,
+    "odds_home": 1.92,
+    "odds_draw": 2.71,
+    "odds_away": 3.94,
+    "ou_lines": [
+      {
+        "line": 1.75,
+        "over": 1.91,
+        "under": 1.85
+      }
+    ]
+  }
+]

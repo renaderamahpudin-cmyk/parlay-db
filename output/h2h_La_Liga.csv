@@ -1,0 +1,645 @@
+Team_A,Team_B,H2H_Count
+Ath Bilbao,Real Madrid,42
+Ath Bilbao,Valencia,42
+Ath Madrid,Real Madrid,42
+Ath Madrid,Sevilla,42
+Ath Bilbao,Ath Madrid,42
+Ath Madrid,Valencia,42
+Ath Bilbao,Barcelona,42
+Real Madrid,Sevilla,42
+Barcelona,Sevilla,42
+Real Madrid,Valencia,42
+Ath Madrid,Barcelona,42
+Barcelona,Valencia,42
+Sevilla,Valencia,42
+Barcelona,Real Madrid,42
+Ath Bilbao,Sevilla,42
+Valencia,Villarreal,40
+Getafe,Sevilla,40
+Ath Bilbao,Villarreal,40
+Ath Bilbao,Getafe,40
+Getafe,Valencia,40
+Ath Madrid,Getafe,40
+Ath Madrid,Villarreal,40
+Real Madrid,Villarreal,40
+Getafe,Real Madrid,40
+Barcelona,Villarreal,40
+Barcelona,Getafe,40
+Sevilla,Villarreal,40
+Espanol,Real Madrid,38
+Ath Madrid,Espanol,38
+Espanol,Sevilla,38
+Espanol,Valencia,38
+Ath Bilbao,Espanol,38
+Getafe,Villarreal,38
+Barcelona,Espanol,38
+Ath Madrid,Sociedad,36
+Betis,Valencia,36
+Barcelona,Betis,36
+Ath Bilbao,Betis,36
+Espanol,Getafe,36
+Sevilla,Sociedad,36
+Ath Bilbao,Sociedad,36
+Betis,Sevilla,36
+Real Madrid,Sociedad,36
+Ath Madrid,Betis,36
+Betis,Real Madrid,36
+Espanol,Villarreal,36
+Barcelona,Sociedad,36
+Sociedad,Valencia,36
+Ath Bilbao,Osasuna,34
+Ath Madrid,Osasuna,34
+Osasuna,Valencia,34
+Osasuna,Real Madrid,34
+Getafe,Sociedad,34
+Sociedad,Villarreal,34
+Osasuna,Sevilla,34
+Barcelona,Osasuna,34
+Betis,Getafe,34
+Betis,Villarreal,34
+Osasuna,Villarreal,32
+Ath Bilbao,Celta,32
+Getafe,Osasuna,32
+Ath Madrid,Celta,32
+Celta,Sevilla,32
+Espanol,Sociedad,32
+Celta,Valencia,32
+Betis,Sociedad,32
+Barcelona,Celta,32
+Celta,Real Madrid,32
+Celta,Sociedad,32
+Betis,Espanol,32
+Espanol,Osasuna,30
+Celta,Getafe,30
+Celta,Villarreal,30
+Betis,Osasuna,30
+Betis,Celta,30
+Ath Madrid,Levante,28
+Ath Bilbao,Mallorca,28
+Ath Bilbao,Levante,28
+Celta,Espanol,28
+Levante,Valencia,28
+Osasuna,Sociedad,28
+Levante,Sevilla,28
+Getafe,Mallorca,28
+Ath Madrid,Mallorca,28
+Levante,Real Madrid,28
+Mallorca,Osasuna,28
+Barcelona,Mallorca,28
+Barcelona,Levante,28
+Mallorca,Real Madrid,28
+Mallorca,Valencia,28
+Getafe,Levante,28
+Mallorca,Sevilla,28
+Espanol,Mallorca,26
+Espanol,Levante,26
+Levante,Sociedad,26
+Mallorca,Villarreal,26
+Levante,Villarreal,26
+Betis,Mallorca,24
+Betis,Levante,24
+Celta,Osasuna,24
+La Coruna,Real Madrid,22
+Celta,Levante,22
+Mallorca,Sociedad,22
+Ath Madrid,Vallecano,22
+Sociedad,Vallecano,22
+Espanol,Malaga,22
+Espanol,La Coruna,22
+Ath Bilbao,Malaga,22
+La Coruna,Sevilla,22
+Ath Madrid,La Coruna,22
+Malaga,Sevilla,22
+Barcelona,Malaga,22
+Malaga,Real Madrid,22
+La Coruna,Valencia,22
+Sevilla,Vallecano,22
+Barcelona,Vallecano,22
+Real Madrid,Vallecano,22
+Malaga,Valencia,22
+Ath Madrid,Malaga,22
+Barcelona,La Coruna,22
+Valencia,Vallecano,22
+Ath Bilbao,La Coruna,22
+Getafe,Vallecano,22
+Ath Bilbao,Vallecano,22
+Espanol,Vallecano,20
+Alaves,Sociedad,20
+Alaves,Celta,20
+Getafe,Malaga,20
+Valencia,Valladolid,20
+Vallecano,Villarreal,20
+Alaves,Villarreal,20
+Ath Bilbao,Granada,20
+La Coruna,Villarreal,20
+Alaves,Valencia,20
+Barcelona,Valladolid,20
+Alaves,Barcelona,20
+Ath Bilbao,Valladolid,20
+Alaves,Sevilla,20
+Sevilla,Valladolid,20
+Real Madrid,Valladolid,20
+Alaves,Real Madrid,20
+Malaga,Villarreal,20
+Levante,Osasuna,20
+Celta,Vallecano,20
+Getafe,Valladolid,20
+Barcelona,Granada,20
+Alaves,Ath Madrid,20
+Granada,Sociedad,20
+Granada,Real Madrid,20
+Ath Madrid,Granada,20
+Alaves,Betis,20
+Betis,Vallecano,20
+Ath Madrid,Valladolid,20
+Granada,Sevilla,20
+Granada,Valencia,20
+Getafe,La Coruna,20
+Alaves,Ath Bilbao,20
+Betis,Valladolid,18
+Valladolid,Villarreal,18
+Granada,Villarreal,18
+Celta,Mallorca,18
+La Coruna,Malaga,18
+Getafe,Granada,18
+Alaves,Getafe,18
+Malaga,Sociedad,18
+Celta,Granada,18
+Osasuna,Valladolid,18
+Betis,Granada,18
+Espanol,Valladolid,18
+Levante,Mallorca,16
+Alaves,Osasuna,16
+Malaga,Osasuna,16
+Levante,Vallecano,16
+Almeria,Valencia,16
+Betis,Malaga,16
+Betis,La Coruna,16
+Almeria,Sevilla,16
+Espanol,Granada,16
+Almeria,Real Madrid,16
+Alaves,Espanol,16
+Granada,Osasuna,16
+Almeria,Ath Bilbao,16
+Osasuna,Vallecano,16
+Almeria,Ath Madrid,16
+Almeria,Barcelona,16
+La Coruna,Sociedad,16
+Almeria,Villarreal,16
+La Coruna,Osasuna,16
+Granada,Levante,16
+Almeria,Getafe,16
+Celta,La Coruna,14
+Celta,Malaga,14
+Santander,Sevilla,14
+Celta,Eibar,14
+Getafe,Santander,14
+Real Madrid,Zaragoza,14
+Levante,Malaga,14
+Getafe,Zaragoza,14
+Osasuna,Santander,14
+Santander,Villarreal,14
+Espanol,Zaragoza,14
+Osasuna,Zaragoza,14
+Granada,Vallecano,14
+Espanol,Santander,14
+Mallorca,Zaragoza,14
+Mallorca,Vallecano,14
+Mallorca,Valladolid,14
+Mallorca,Santander,14
+La Coruna,Levante,14
+La Coruna,Mallorca,14
+Real Madrid,Santander,14
+Eibar,Villarreal,14
+Eibar,Valencia,14
+Eibar,Sociedad,14
+Eibar,Sevilla,14
+Eibar,Real Madrid,14
+Santander,Valencia,14
+Celta,Valladolid,14
+Ath Bilbao,Zaragoza,14
+Ath Bilbao,Eibar,14
+Almeria,Osasuna,14
+Barcelona,Eibar,14
+Sociedad,Valladolid,14
+Ath Madrid,Zaragoza,14
+Valencia,Zaragoza,14
+Sevilla,Zaragoza,14
+Ath Madrid,Santander,14
+Barcelona,Santander,14
+Almeria,Espanol,14
+Ath Madrid,Eibar,14
+Ath Bilbao,Santander,14
+Barcelona,Zaragoza,14
+Eibar,Levante,12
+Ath Bilbao,Sp Gijon,12
+Elche,Valencia,12
+La Coruna,Santander,12
+Eibar,Getafe,12
+Almeria,Mallorca,12
+Eibar,Espanol,12
+Elche,Getafe,12
+Barcelona,Sp Gijon,12
+Elche,Real Madrid,12
+Elche,Sevilla,12
+Elche,Sociedad,12
+Barcelona,Elche,12
+Elche,Villarreal,12
+Espanol,Sp Gijon,12
+Sp Gijon,Villarreal,12
+Ath Madrid,Elche,12
+Getafe,Girona,12
+Ath Bilbao,Girona,12
+Ath Madrid,Girona,12
+Ath Bilbao,Elche,12
+Sp Gijon,Valencia,12
+Girona,Real Madrid,12
+Barcelona,Girona,12
+Girona,Sevilla,12
+Ath Madrid,Sp Gijon,12
+Girona,Sociedad,12
+Girona,Valencia,12
+Girona,Villarreal,12
+La Coruna,Zaragoza,12
+Granada,Malaga,12
+Betis,Eibar,12
+Real Madrid,Sp Gijon,12
+Celta,Elche,12
+Malaga,Sp Gijon,12
+Santander,Zaragoza,12
+Sevilla,Sp Gijon,12
+Villarreal,Zaragoza,12
+Alaves,Levante,12
+Levante,Valladolid,12
+Betis,Girona,12
+Malaga,Mallorca,12
+Alaves,Mallorca,12
+Celta,Girona,12
+Barcelona,Cadiz,10
+Levante,Zaragoza,10
+Cadiz,Getafe,10
+Las Palmas,Real Madrid,10
+Girona,Vallecano,10
+Alaves,Leganes,10
+Espanol,Girona,10
+Celta,Las Palmas,10
+Celta,Leganes,10
+Elche,Vallecano,10
+Espanol,Leganes,10
+Alaves,Girona,10
+Alaves,Granada,10
+Las Palmas,Sevilla,10
+Ath Madrid,Cadiz,10
+Getafe,Sp Gijon,10
+Cadiz,Osasuna,10
+Ath Bilbao,Leganes,10
+Cadiz,Real Madrid,10
+Osasuna,Sp Gijon,10
+Alaves,Eibar,10
+Cadiz,Sevilla,10
+Cadiz,Sociedad,10
+Cadiz,Valencia,10
+Malaga,Santander,10
+Ath Madrid,Las Palmas,10
+Ath Madrid,Leganes,10
+Malaga,Vallecano,10
+Ath Bilbao,Cadiz,10
+Cadiz,Villarreal,10
+Sociedad,Zaragoza,10
+Granada,Mallorca,10
+Cadiz,Celta,10
+Betis,Zaragoza,10
+Leganes,Valencia,10
+Betis,Leganes,10
+Almeria,La Coruna,10
+Betis,Las Palmas,10
+Leganes,Sociedad,10
+Almeria,Betis,10
+Eibar,Granada,10
+La Coruna,Sp Gijon,10
+Leganes,Sevilla,10
+Leganes,Real Madrid,10
+Alaves,Vallecano,10
+Las Palmas,Villarreal,10
+Las Palmas,Valencia,10
+Betis,Cadiz,10
+Las Palmas,Sociedad,10
+Betis,Elche,10
+Valladolid,Vallecano,10
+Ath Bilbao,Las Palmas,10
+Almeria,Malaga,10
+Betis,Santander,10
+Leganes,Villarreal,10
+Barcelona,Leganes,10
+Elche,Espanol,10
+Malaga,Zaragoza,10
+Barcelona,Las Palmas,10
+Elche,Osasuna,10
+Almeria,Valladolid,10
+Almeria,Sociedad,10
+Elche,Levante,10
+Mallorca,Sp Gijon,8
+La Coruna,Valladolid,8
+Alaves,Valladolid,8
+Alaves,Cadiz,8
+Almeria,Vallecano,8
+Alaves,Las Palmas,8
+Granada,La Coruna,8
+Almeria,Santander,8
+Almeria,Levante,8
+Granada,Valladolid,8
+Almeria,Celta,8
+Girona,Mallorca,8
+Levante,Santander,8
+Girona,Osasuna,8
+Malaga,Valladolid,8
+Espanol,Las Palmas,8
+Santander,Sociedad,8
+Getafe,Leganes,8
+Betis,Sp Gijon,8
+Eibar,Leganes,8
+Cadiz,Mallorca,8
+Getafe,Las Palmas,8
+Eibar,Malaga,8
+Santander,Sp Gijon,8
+Elche,Granada,8
+Eibar,La Coruna,8
+Sociedad,Sp Gijon,8
+Granada,Sp Gijon,6
+Recreativo,Sevilla,6
+Almeria,Sp Gijon,6
+Elche,Mallorca,6
+Almeria,Zaragoza,6
+Elche,Valladolid,6
+Real Madrid,Recreativo,6
+Recreativo,Valencia,6
+Granada,Las Palmas,6
+Las Palmas,Vallecano,6
+Leganes,Levante,6
+Las Palmas,Osasuna,6
+La Coruna,Vallecano,6
+Las Palmas,Malaga,6
+Las Palmas,Leganes,6
+Recreativo,Santander,6
+Girona,Valladolid,6
+Eibar,Vallecano,6
+Eibar,Valladolid,6
+La Coruna,Recreativo,6
+Barcelona,Recreativo,6
+Eibar,Osasuna,6
+Eibar,Las Palmas,6
+Valladolid,Zaragoza,6
+Mallorca,Recreativo,6
+Almeria,Elche,6
+Almeria,Granada,6
+La Coruna,Las Palmas,6
+Sp Gijon,Zaragoza,6
+Leganes,Valladolid,6
+Getafe,Recreativo,6
+Cadiz,Espanol,6
+Alaves,La Coruna,6
+Cadiz,Elche,6
+Alaves,Malaga,6
+Cadiz,Granada,6
+Betis,Recreativo,6
+Alaves,Elche,6
+Cadiz,Vallecano,6
+Osasuna,Recreativo,6
+Santander,Valladolid,6
+Levante,Sp Gijon,6
+Girona,Las Palmas,6
+Girona,Leganes,6
+Girona,Levante,6
+Celta,Zaragoza,6
+Ath Madrid,Recreativo,6
+Recreativo,Villarreal,6
+Ath Bilbao,Recreativo,6
+Espanol,Recreativo,6
+Leganes,Osasuna,6
+Cadiz,Valladolid,4
+Almeria,Girona,4
+Cadiz,Girona,4
+Alaves,Huesca,4
+Almeria,Cadiz,4
+Leganes,Malaga,4
+Levante,Recreativo,4
+Eibar,Huesca,4
+Eibar,Girona,4
+Eibar,Elche,4
+Celta,Huesca,4
+Vallecano,Zaragoza,4
+Leganes,Mallorca,4
+Las Palmas,Levante,4
+Las Palmas,Mallorca,4
+Recreativo,Zaragoza,4
+Celta,Santander,4
+Leganes,Vallecano,4
+Las Palmas,Sp Gijon,4
+Celta,Sp Gijon,4
+Betis,Huesca,4
+Recreativo,Valladolid,4
+La Coruna,Leganes,4
+Huesca,Real Madrid,4
+Huesca,Villarreal,4
+Cadiz,Levante,4
+Huesca,Valladolid,4
+Granada,Leganes,4
+Ath Madrid,Huesca,4
+Elche,Malaga,4
+Barcelona,Huesca,4
+Almeria,Recreativo,4
+Elche,Girona,4
+Granada,Zaragoza,4
+Sp Gijon,Vallecano,4
+Ath Bilbao,Huesca,4
+Sp Gijon,Valladolid,4
+Huesca,Sociedad,4
+Eibar,Sp Gijon,4
+Huesca,Valencia,4
+Huesca,Levante,4
+Huesca,Sevilla,4
+Getafe,Huesca,4
+Santander,Tenerife,2
+Sevilla,Tenerife,2
+Villarreal,Xerez,2
+Numancia,Santander,2
+Numancia,Sevilla,2
+Numancia,Sp Gijon,2
+Malaga,Xerez,2
+Numancia,Valencia,2
+Numancia,Valladolid,2
+Numancia,Villarreal,2
+Oviedo,Real Madrid,2
+Osasuna,Oviedo,2
+Tenerife,Valencia,2
+Tenerife,Valladolid,2
+Santander,Xerez,2
+Tenerife,Villarreal,2
+Numancia,Real Madrid,2
+Tenerife,Zaragoza,2
+Osasuna,Xerez,2
+Tenerife,Xerez,2
+Osasuna,Tenerife,2
+Numancia,Recreativo,2
+Oviedo,Sociedad,2
+Numancia,Osasuna,2
+Murcia,Santander,2
+Valladolid,Xerez,2
+Sp Gijon,Xerez,2
+Mallorca,Tenerife,2
+Sevilla,Xerez,2
+Mallorca,Xerez,2
+Valencia,Xerez,2
+Mallorca,Oviedo,2
+Murcia,Osasuna,2
+Real Madrid,Tenerife,2
+Murcia,Real Madrid,2
+Real Madrid,Xerez,2
+Murcia,Recreativo,2
+Murcia,Sevilla,2
+Mallorca,Murcia,2
+Recreativo,Sociedad,2
+Recreativo,Sp Gijon,2
+Murcia,Valencia,2
+Mallorca,Numancia,2
+Oviedo,Villarreal,2
+Murcia,Valladolid,2
+Oviedo,Vallecano,2
+Oviedo,Valencia,2
+Oviedo,Sevilla,2
+Murcia,Villarreal,2
+Sp Gijon,Tenerife,2
+Murcia,Zaragoza,2
+Santander,Vallecano,2
+Alaves,Almeria,2
+Malaga,Tenerife,2
+Barcelona,Murcia,2
+Barcelona,Oviedo,2
+Barcelona,Tenerife,2
+Barcelona,Xerez,2
+Betis,Gimnastic,2
+Betis,Murcia,2
+Betis,Numancia,2
+Betis,Oviedo,2
+Cadiz,Eibar,2
+Cadiz,Huesca,2
+Cadiz,La Coruna,2
+Cadiz,Las Palmas,2
+Cadiz,Malaga,2
+Cadiz,Santander,2
+Cadiz,Zaragoza,2
+Celta,Cordoba,2
+Celta,Gimnastic,2
+Celta,Oviedo,2
+Celta,Recreativo,2
+Cordoba,Eibar,2
+Cordoba,Elche,2
+Cordoba,Espanol,2
+Cordoba,Getafe,2
+Cordoba,Granada,2
+Cordoba,La Coruna,2
+Cordoba,Levante,2
+Cordoba,Malaga,2
+Cordoba,Real Madrid,2
+Cordoba,Sevilla,2
+Cordoba,Sociedad,2
+Barcelona,Numancia,2
+Barcelona,Hercules,2
+Cordoba,Vallecano,2
+Barcelona,Gimnastic,2
+Alaves,Oviedo,2
+Alaves,Santander,2
+Alaves,Sp Gijon,2
+Alaves,Zaragoza,2
+Almeria,Cordoba,2
+Almeria,Eibar,2
+Almeria,Hercules,2
+Almeria,Las Palmas,2
+Almeria,Murcia,2
+Almeria,Numancia,2
+Almeria,Tenerife,2
+Almeria,Xerez,2
+Ath Bilbao,Cordoba,2
+Ath Bilbao,Gimnastic,2
+Ath Bilbao,Hercules,2
+Ath Bilbao,Murcia,2
+Ath Bilbao,Numancia,2
+Ath Bilbao,Oviedo,2
+Ath Bilbao,Tenerife,2
+Ath Bilbao,Xerez,2
+Ath Madrid,Cordoba,2
+Ath Madrid,Gimnastic,2
+Ath Madrid,Hercules,2
+Ath Madrid,Murcia,2
+Ath Madrid,Numancia,2
+Ath Madrid,Oviedo,2
+Ath Madrid,Tenerife,2
+Ath Madrid,Xerez,2
+Barcelona,Cordoba,2
+Cordoba,Valencia,2
+Cordoba,Villarreal,2
+Malaga,Recreativo,2
+Girona,Huesca,2
+Girona,Malaga,2
+Girona,Oviedo,2
+Granada,Huesca,2
+Granada,Santander,2
+Hercules,La Coruna,2
+Hercules,Levante,2
+Hercules,Malaga,2
+Hercules,Mallorca,2
+Hercules,Osasuna,2
+Hercules,Real Madrid,2
+Hercules,Santander,2
+Hercules,Sevilla,2
+Hercules,Sociedad,2
+Hercules,Sp Gijon,2
+Hercules,Valencia,2
+Hercules,Villarreal,2
+Hercules,Zaragoza,2
+Huesca,Leganes,2
+Huesca,Osasuna,2
+Huesca,Vallecano,2
+La Coruna,Murcia,2
+La Coruna,Numancia,2
+La Coruna,Tenerife,2
+La Coruna,Xerez,2
+Las Palmas,Valladolid,2
+Leganes,Sp Gijon,2
+Levante,Murcia,2
+Levante,Oviedo,2
+Malaga,Numancia,2
+Girona,La Coruna,2
+Girona,Granada,2
+Eibar,Mallorca,2
+Gimnastic,Zaragoza,2
+Elche,Huesca,2
+Elche,La Coruna,2
+Elche,Oviedo,2
+Espanol,Gimnastic,2
+Espanol,Hercules,2
+Espanol,Huesca,2
+Espanol,Murcia,2
+Espanol,Numancia,2
+Espanol,Oviedo,2
+Espanol,Tenerife,2
+Espanol,Xerez,2
+Getafe,Gimnastic,2
+Getafe,Hercules,2
+Getafe,Murcia,2
+Getafe,Numancia,2
+Getafe,Oviedo,2
+Getafe,Tenerife,2
+Getafe,Xerez,2
+Gimnastic,La Coruna,2
+Gimnastic,Levante,2
+Gimnastic,Mallorca,2
+Gimnastic,Osasuna,2
+Gimnastic,Real Madrid,2
+Gimnastic,Recreativo,2
+Gimnastic,Santander,2
+Gimnastic,Sevilla,2
+Gimnastic,Sociedad,2
+Gimnastic,Valencia,2
+Gimnastic,Villarreal,2
+Xerez,Zaragoza,2

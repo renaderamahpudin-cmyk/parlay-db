@@ -1,0 +1,38 @@
+{
+  "team_name": "Barcelona",
+  "team_id": 8634,
+  "fetched_at": "2026-10-09T03:22:14.639651",
+  "total_cedera": 5,
+  "cedera": [
+    {
+      "nama": "Joan García",
+      "posisi": "Keeper",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Andreas Christensen",
+      "posisi": "Defender",
+      "expectedReturn": "Late October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Frenkie de Jong",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Raphinha",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Roony Bardghji",
+      "posisi": "Attacker",
+      "expectedReturn": "Late February 2027",
+      "severity": "SEDANG"
+    }
+  ]
+}

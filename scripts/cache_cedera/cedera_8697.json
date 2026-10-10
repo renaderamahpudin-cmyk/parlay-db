@@ -1,0 +1,54 @@
+{
+  "team_id": 8697,
+  "total_cedera": 8,
+  "cedera": [
+    {
+      "nama": "Moussa N'Diaye",
+      "posisi": "Defender",
+      "expectedReturn": "Early October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Jens Stage",
+      "posisi": "Midfielder",
+      "expectedReturn": "Late October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Senne Lynen",
+      "posisi": "Midfielder",
+      "expectedReturn": "About 1-2 weeks",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Felix Agu",
+      "posisi": "Midfielder",
+      "expectedReturn": "Mid October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Skelly Alvero",
+      "posisi": "Midfielder",
+      "expectedReturn": "Late October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Keke Topp",
+      "posisi": "Attacker",
+      "expectedReturn": "Early January 2027",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Justin Njinmah",
+      "posisi": "Attacker",
+      "expectedReturn": "Late October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Salim Musah",
+      "posisi": "Attacker",
+      "expectedReturn": "Early January 2027",
+      "severity": "SEDANG"
+    }
+  ]
+}

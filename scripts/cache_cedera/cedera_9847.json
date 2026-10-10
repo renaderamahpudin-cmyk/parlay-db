@@ -1,0 +1,26 @@
+{
+  "team_name": "PSG",
+  "team_id": 9847,
+  "fetched_at": "2026-10-09T03:22:16.900988",
+  "total_cedera": 3,
+  "cedera": [
+    {
+      "nama": "Senny Mayulu",
+      "posisi": "Midfielder",
+      "expectedReturn": "Late October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Warren Zaïre-Emery",
+      "posisi": "Midfielder",
+      "expectedReturn": "Early October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Ferrán Torres",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    }
+  ]
+}

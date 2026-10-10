@@ -1,0 +1,437 @@
+Team_A,Team_B,H2H_Count
+Feyenoord,Utrecht,42
+Ajax,PSV Eindhoven,42
+Heerenveen,PSV Eindhoven,41
+AZ Alkmaar,PSV Eindhoven,41
+PSV Eindhoven,Utrecht,41
+AZ Alkmaar,Heerenveen,41
+AZ Alkmaar,Utrecht,41
+Ajax,Heerenveen,41
+AZ Alkmaar,Ajax,41
+AZ Alkmaar,Feyenoord,41
+Feyenoord,PSV Eindhoven,41
+Ajax,Utrecht,41
+Ajax,Feyenoord,41
+Feyenoord,Heerenveen,41
+Heerenveen,Twente,40
+Ajax,Groningen,40
+AZ Alkmaar,Twente,40
+Heerenveen,Heracles,40
+Groningen,PSV Eindhoven,40
+Twente,Utrecht,40
+PSV Eindhoven,Twente,40
+Ajax,Heracles,40
+Heerenveen,Utrecht,40
+Feyenoord,Heracles,40
+Groningen,Heerenveen,39
+Heracles,PSV Eindhoven,39
+AZ Alkmaar,Groningen,39
+Heracles,Utrecht,39
+Feyenoord,Twente,39
+Groningen,Utrecht,39
+Feyenoord,Groningen,39
+Ajax,Twente,38
+Heerenveen,Vitesse,38
+Groningen,Twente,38
+AZ Alkmaar,Heracles,38
+Ajax,Vitesse,37
+AZ Alkmaar,Vitesse,37
+Groningen,Heracles,37
+PSV Eindhoven,Vitesse,37
+Heracles,Twente,37
+Feyenoord,Vitesse,37
+Groningen,Vitesse,36
+Utrecht,Vitesse,36
+Twente,Vitesse,36
+Heracles,Vitesse,34
+Groningen,Willem II,32
+Nijmegen,PSV Eindhoven,32
+Feyenoord,Nijmegen,32
+Utrecht,Willem II,32
+Feyenoord,Willem II,32
+AZ Alkmaar,Nijmegen,32
+PSV Eindhoven,Willem II,32
+Nijmegen,Utrecht,32
+AZ Alkmaar,Willem II,32
+Heerenveen,Nijmegen,32
+Heerenveen,Willem II,31
+Heracles,Willem II,31
+Ajax,Willem II,31
+Ajax,Nijmegen,31
+Nijmegen,Twente,31
+Den Haag,Utrecht,30
+AZ Alkmaar,Den Haag,30
+Groningen,Nijmegen,30
+Heracles,Nijmegen,30
+Ajax,Den Haag,30
+Den Haag,Heerenveen,30
+Den Haag,Heracles,30
+Den Haag,PSV Eindhoven,30
+Den Haag,Vitesse,30
+Den Haag,Feyenoord,29
+Vitesse,Willem II,29
+Den Haag,Groningen,28
+Heerenveen,NAC Breda,28
+Feyenoord,NAC Breda,28
+AZ Alkmaar,NAC Breda,28
+Twente,Willem II,28
+Groningen,NAC Breda,28
+Nijmegen,Vitesse,28
+Ajax,NAC Breda,28
+NAC Breda,Utrecht,28
+NAC Breda,PSV Eindhoven,27
+Den Haag,Twente,27
+Heracles,NAC Breda,27
+Feyenoord,Zwolle,26
+NAC Breda,Twente,26
+AZ Alkmaar,Zwolle,26
+PSV Eindhoven,Zwolle,26
+Utrecht,Zwolle,26
+Heracles,Zwolle,25
+Ajax,Zwolle,25
+Den Haag,Willem II,25
+Heerenveen,Zwolle,25
+AZ Alkmaar,Excelsior,24
+Utrecht,Waalwijk,24
+Excelsior,PSV Eindhoven,24
+Excelsior,Heerenveen,24
+Twente,Waalwijk,24
+Ajax,Waalwijk,24
+AZ Alkmaar,Waalwijk,24
+Groningen,Zwolle,24
+Ajax,Excelsior,24
+Feyenoord,Waalwijk,23
+Heerenveen,Waalwijk,23
+Excelsior,Feyenoord,23
+NAC Breda,Vitesse,23
+PSV Eindhoven,Waalwijk,23
+Twente,Zwolle,23
+Den Haag,NAC Breda,22
+Heracles,Waalwijk,22
+NAC Breda,Nijmegen,22
+Excelsior,Heracles,22
+Excelsior,Twente,22
+Excelsior,Utrecht,22
+Excelsior,Vitesse,22
+Vitesse,Zwolle,22
+Excelsior,Groningen,21
+NAC Breda,Willem II,21
+Nijmegen,Willem II,21
+Vitesse,Waalwijk,21
+Groningen,Waalwijk,21
+Nijmegen,Waalwijk,20
+Willem II,Zwolle,20
+Den Haag,Nijmegen,20
+Groningen,VVV Venlo,18
+VVV Venlo,Vitesse,18
+Heerenveen,VVV Venlo,18
+AZ Alkmaar,Sparta Rotterdam,18
+Sparta Rotterdam,Utrecht,18
+Ajax,Sparta Rotterdam,18
+Utrecht,VVV Venlo,18
+Sparta Rotterdam,Twente,18
+Excelsior,Nijmegen,18
+PSV Eindhoven,VVV Venlo,18
+Heracles,VVV Venlo,18
+Heerenveen,Sparta Rotterdam,17
+AZ Alkmaar,VVV Venlo,17
+Feyenoord,Sparta Rotterdam,17
+Den Haag,Zwolle,17
+PSV Eindhoven,Sparta Rotterdam,17
+Excelsior,Willem II,16
+Go Ahead Eagles,Twente,16
+Ajax,VVV Venlo,16
+Go Ahead Eagles,Heerenveen,16
+Ajax,Go Ahead Eagles,16
+Feyenoord,For Sittard,16
+Den Haag,Excelsior,16
+Excelsior,NAC Breda,16
+Feyenoord,Go Ahead Eagles,16
+Go Ahead Eagles,PSV Eindhoven,16
+Nijmegen,Zwolle,16
+Go Ahead Eagles,Utrecht,16
+AZ Alkmaar,Go Ahead Eagles,16
+Groningen,Sparta Rotterdam,16
+Den Haag,Waalwijk,16
+Feyenoord,VVV Venlo,16
+For Sittard,Heerenveen,16
+Ajax,For Sittard,15
+For Sittard,PSV Eindhoven,15
+Den Haag,VVV Venlo,15
+Waalwijk,Willem II,15
+VVV Venlo,Willem II,15
+AZ Alkmaar,For Sittard,15
+Sparta Rotterdam,Zwolle,15
+Heracles,Sparta Rotterdam,15
+For Sittard,Utrecht,15
+Twente,VVV Venlo,15
+For Sittard,Zwolle,14
+NAC Breda,Zwolle,14
+Go Ahead Eagles,Nijmegen,14
+PSV Eindhoven,Roda,14
+For Sittard,Heracles,14
+NAC Breda,Waalwijk,14
+Ajax,Roda,14
+Go Ahead Eagles,Heracles,14
+Feyenoord,Roda,14
+Roda,Twente,14
+Go Ahead Eagles,Groningen,14
+Go Ahead Eagles,Zwolle,14
+Roda,Utrecht,14
+Excelsior,Zwolle,14
+Waalwijk,Zwolle,14
+Den Haag,Roda,14
+Groningen,Roda,14
+Heerenveen,Roda,14
+AZ Alkmaar,Roda,14
+Roda,Vitesse,14
+Heracles,Roda,14
+For Sittard,Sparta Rotterdam,14
+For Sittard,Twente,13
+NAC Breda,VVV Venlo,13
+Sparta Rotterdam,Vitesse,13
+For Sittard,Groningen,13
+Graafschap,Heracles,12
+Sparta Rotterdam,Waalwijk,12
+For Sittard,Vitesse,12
+Ajax,Graafschap,12
+Graafschap,Groningen,12
+Go Ahead Eagles,Sparta Rotterdam,12
+Graafschap,Heerenveen,12
+Nijmegen,Sparta Rotterdam,12
+Graafschap,Utrecht,12
+Graafschap,PSV Eindhoven,12
+Go Ahead Eagles,Vitesse,12
+Feyenoord,Graafschap,12
+Nijmegen,Roda,11
+For Sittard,Waalwijk,11
+Sparta Rotterdam,Willem II,11
+Graafschap,Vitesse,11
+Cambuur,Heerenveen,10
+NAC Breda,Sparta,10
+Graafschap,NAC Breda,10
+For Sittard,Willem II,10
+Graafschap,Willem II,10
+Cambuur,Groningen,10
+NAC Breda,Roda,10
+NAC Breda,Roda JC,10
+Groningen,Roda JC,10
+Go Ahead Eagles,Waalwijk,10
+Heracles,Roda JC,10
+Graafschap,Nijmegen,10
+Heerenveen,Sparta,10
+For Sittard,Nijmegen,10
+Ajax,Sparta,10
+Excelsior,Sparta Rotterdam,10
+Roda JC,Twente,10
+Roda JC,Vitesse,10
+For Sittard,Go Ahead Eagles,10
+Sparta,Twente,10
+Sparta,Utrecht,10
+Excelsior,VVV Venlo,10
+Sparta,Vitesse,10
+Sparta,Willem II,10
+Excelsior,Roda,10
+Roda,Zwolle,10
+Den Haag,Graafschap,10
+Excelsior,Graafschap,10
+Excelsior,Go Ahead Eagles,10
+AZ Alkmaar,Sparta,10
+AZ Alkmaar,Roda JC,10
+AZ Alkmaar,Graafschap,10
+VVV Venlo,Waalwijk,10
+AZ Alkmaar,Cambuur,10
+Roda JC,Sparta,10
+Feyenoord,Roda JC,10
+Cambuur,PSV Eindhoven,10
+Cambuur,Feyenoord,10
+Nijmegen,Sparta,10
+Ajax,Roda JC,10
+Nijmegen,Roda JC,10
+Cambuur,Twente,10
+Ajax,Cambuur,10
+PSV Eindhoven,Sparta,10
+PSV Eindhoven,Roda JC,10
+Feyenoord,Sparta,10
+Roda,Willem II,10
+Cambuur,Vitesse,10
+Cambuur,Utrecht,10
+Nijmegen,VVV Venlo,9
+Roda JC,Willem II,9
+Heerenveen,Roda JC,9
+VVV Venlo,Zwolle,9
+Heracles,Sparta,9
+Groningen,Sparta,9
+Roda JC,Utrecht,9
+Graafschap,Twente,9
+Den Haag,Sparta,8
+Ajax,Volendam,8
+Utrecht,Volendam,8
+Twente,Volendam,8
+Nijmegen,Volendam,8
+PSV Eindhoven,Volendam,8
+AZ Alkmaar,Volendam,8
+Roda,VVV Venlo,8
+Heerenveen,Volendam,8
+Den Haag,Sparta Rotterdam,8
+Cambuur,Nijmegen,8
+Cambuur,Go Ahead Eagles,8
+Go Ahead Eagles,Willem II,8
+Graafschap,VVV Venlo,8
+FC Emmen,Groningen,8
+FC Emmen,For Sittard,8
+FC Emmen,Feyenoord,8
+Excelsior,Waalwijk,8
+FC Emmen,Vitesse,8
+Cambuur,Heracles,8
+Cambuur,Zwolle,8
+Go Ahead Eagles,NAC Breda,8
+Excelsior,For Sittard,8
+Den Haag,Roda JC,8
+Feyenoord,Volendam,8
+FC Emmen,Utrecht,7
+FC Emmen,Heerenveen,7
+AZ Alkmaar,FC Emmen,7
+FC Emmen,PSV Eindhoven,7
+Ajax,FC Emmen,7
+Go Ahead Eagles,Volendam,6
+For Sittard,VVV Venlo,6
+FC Emmen,VVV Venlo,6
+FC Emmen,Willem II,6
+NAC Breda,Sparta Rotterdam,6
+Heracles,Volendam,6
+Cambuur,Willem II,6
+FC Emmen,Twente,6
+Cambuur,Waalwijk,6
+For Sittard,NAC Breda,6
+For Sittard,Volendam,6
+FC Emmen,Sparta Rotterdam,6
+Cambuur,Excelsior,6
+Graafschap,Roda,6
+Sparta,Waalwijk,6
+Groningen,Volendam,6
+Cambuur,Den Haag,6
+Vitesse,Volendam,6
+Den Haag,Go Ahead Eagles,6
+Sparta Rotterdam,Volendam,6
+Roda,Waalwijk,6
+Roda JC,Waalwijk,6
+FC Emmen,Heracles,6
+Excelsior,Volendam,6
+FC Emmen,Zwolle,5
+Den Haag,For Sittard,5
+Sparta Rotterdam,VVV Venlo,5
+FC Emmen,Waalwijk,5
+Den Haag,FC Emmen,5
+Roda,Sparta Rotterdam,4
+Excelsior,Sparta,4
+Ajax,Almere City,4
+Excelsior,FC Emmen,4
+Roda JC,VVV Venlo,4
+Cambuur,NAC Breda,4
+Volendam,Waalwijk,4
+Cambuur,Sparta Rotterdam,4
+Volendam,Zwolle,4
+Cambuur,Roda,4
+Sparta,VVV Venlo,4
+Cambuur,For Sittard,4
+Almere City,Go Ahead Eagles,4
+Go Ahead Eagles,Roda,4
+Almere City,Utrecht,4
+Graafschap,Zwolle,4
+Almere City,Sparta Rotterdam,4
+Almere City,PSV Eindhoven,4
+Almere City,Nijmegen,4
+Almere City,Heracles,4
+Almere City,Heerenveen,4
+Graafschap,Roda JC,4
+Almere City,Waalwijk,4
+Almere City,For Sittard,4
+Almere City,Feyenoord,4
+Almere City,Twente,4
+Almere City,Zwolle,4
+AZ Alkmaar,Almere City,4
+NAC Breda,Volendam,4
+Graafschap,Sparta,3
+Excelsior,Roda JC,3
+Telstar,Volendam,2
+Telstar,Utrecht,2
+Telstar,Twente,2
+Cambuur,Dordrecht,2
+Cambuur,Graafschap,2
+Heerenveen,Roosendaal,2
+Dordrecht,Feyenoord,2
+Den Haag,Volendam,2
+Groningen,Roosendaal,2
+Cambuur,FC Emmen,2
+Heerenveen,Telstar,2
+Almere City,Vitesse,2
+Excelsior,Telstar,2
+Sparta Rotterdam,Telstar,2
+Den Haag,Roosendaal,2
+Graafschap,Waalwijk,2
+Volendam,Willem II,2
+Telstar,Zwolle,2
+Dordrecht,Excelsior,2
+AZ Alkmaar,Dordrecht,2
+Dordrecht,Go Ahead Eagles,2
+Dordrecht,Groningen,2
+Dordrecht,Heerenveen,2
+Dordrecht,Heracles,2
+Dordrecht,NAC Breda,2
+Dordrecht,PSV Eindhoven,2
+Dordrecht,Twente,2
+Dordrecht,Utrecht,2
+Dordrecht,Vitesse,2
+Almere City,Willem II,2
+Sparta,Volendam,2
+AZ Alkmaar,Roosendaal,2
+Dordrecht,Willem II,2
+Dordrecht,Zwolle,2
+Almere City,Volendam,2
+Roosendaal,Waalwijk,2
+PSV Eindhoven,Telstar,2
+Heracles,Telstar,2
+Cambuur,Volendam,2
+AZ Alkmaar,Telstar,2
+Ajax,Roosendaal,2
+Den Haag,Dordrecht,2
+Almere City,Excelsior,2
+Nijmegen,Telstar,2
+Feyenoord,Telstar,2
+Feyenoord,Roosendaal,2
+Ajax,Dordrecht,2
+Groningen,Telstar,2
+FC Emmen,Volendam,2
+Go Ahead Eagles,Telstar,2
+PSV Eindhoven,Roosendaal,2
+NAC Breda,Roosendaal,2
+NAC Breda,Telstar,2
+Ajax,Telstar,2
+Almere City,Groningen,2
+For Sittard,Telstar,2
+FC Emmen,Nijmegen,2
+Roosendaal,Sparta,2
+Graafschap,Volendam,2
+Roosendaal,Willem II,2
+Nijmegen,Roosendaal,2
+Roosendaal,Vitesse,2
+Roosendaal,Utrecht,2
+Roosendaal,Twente,2
+Roda JC,Volendam,2
+FC Emmen,NAC Breda,2
+Almere City,NAC Breda,2
+For Sittard,Graafschap,2
+FC Emmen,Go Ahead Eagles,2
+FC Emmen,Graafschap,2
+Roda JC,Roosendaal,2
+Heracles,Roosendaal,2
+Excelsior,Utrecht ,1
+Twente,Willem II ,1
+Heracles ,NAC Breda,1
+AZ Alkmaar,Graafschap ,1
+Ajax ,Heerenveen,1
+PSV Eindhoven,Vitesse ,1
+Den Haag,Groningen ,1
+Feyenoord ,VVV Venlo,1
+Nijmegen,Roda ,1

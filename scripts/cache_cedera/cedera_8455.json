@@ -1,0 +1,50 @@
+{
+  "team_name": "Chelsea",
+  "team_id": 8455,
+  "fetched_at": "2026-10-09T03:22:13.806357",
+  "total_cedera": 7,
+  "cedera": [
+    {
+      "nama": "Marco Palestra",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Cole Palmer",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Reece James",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Moisés Caicedo",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "João Pedro",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Jamie Gittens",
+      "posisi": "Attacker",
+      "expectedReturn": "Mid October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Emanuel Emegha",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    }
+  ]
+}

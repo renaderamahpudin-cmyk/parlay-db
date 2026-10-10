@@ -1,0 +1,1103 @@
+tanggal,liga,home,away,pick,conf,win_rate,estimated_odds,hg,ag,menang,profit
+2026-02-03,Argentina Primera,Argentinos Jrs,Belgrano,AWAY,67.7,18.2,1.38,0.0,0.0,False,-100000
+2026-02-03,Serie A,Bologna,Milan,AWAY,81.4,9.1,1.3,0.0,3.0,True,30000
+2026-02-04,Brazil Serie A,Bragantino,Atletico-MG,AWAY,82.5,8.3,1.3,1.0,0.0,False,-100000
+2026-02-04,Romania Liga 1,UTA Arad,CFR Cluj,AWAY,67.7,18.2,1.38,0.0,1.0,True,37500
+2026-02-04,Super League Yunani,Asteras Tripolis,Olympiakos,AWAY,79.6,10.3,1.3,0.0,3.0,True,30000
+2026-02-05,Brazil Serie A,Palmeiras,Vitoria,HOME,75.0,66.7,1.3,5.0,1.0,True,30000
+2026-02-05,Romania Liga 1,FCSB,FC Botosani,HOME,83.6,72.4,1.3,2.0,1.0,True,30000
+2026-02-06,Ligue 1,Metz,Lille,AWAY,78.3,11.1,1.3,0.0,0.0,False,-100000
+2026-02-06,Romania Liga 1,FC Rapid Bucuresti,Petrolul,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-02-06,Romania Liga 1,FC Arges,FC Hermannstadt,AWAY,73.6,14.3,1.3,3.0,1.0,False,-100000
+2026-02-06,Ireland Premier Division,Waterford,Shelbourne,AWAY,65.0,20.0,1.43,1.0,1.0,False,-100000
+2026-02-06,Austria Bundesliga,Salzburg,Austria Vienna,HOME,80.3,70.2,1.3,0.0,2.0,False,-100000
+2026-02-07,Serie B,Modena,Sampdoria,AWAY,73.6,14.3,1.3,1.0,2.0,True,30000
+2026-02-07,Serie B,Mantova,Bari,AWAY,67.7,18.2,1.38,2.0,1.0,False,-100000
+2026-02-07,Mexico Liga MX,Necaxa,Atl. San Luis,HOME,67.3,61.5,1.38,4.0,1.0,True,38298
+2026-02-07,Mexico Liga MX,Queretaro,Club Leon,AWAY,67.2,18.5,1.38,2.0,0.0,False,-100000
+2026-02-07,Mexico Liga MX,Mazatlan FC,Guadalajara Chivas,AWAY,67.7,18.2,1.38,1.0,2.0,True,37500
+2026-02-07,La Liga,Barcelona,Mallorca,HOME,95.0,85.2,1.3,3.0,0.0,True,30000
+2026-02-07,Serie B,Catanzaro,Reggiana,AWAY,95.0,0.0,1.3,2.0,0.0,False,-100000
+2026-02-07,Ligue 1,Nantes,Lyon,AWAY,80.0,10.0,1.3,0.0,1.0,True,30000
+2026-02-07,Eredivisie,For Sittard,Sparta Rotterdam,AWAY,71.9,15.4,1.3,2.0,2.0,False,-100000
+2026-02-07,Championship,Hull,Bristol City,AWAY,65.0,20.0,1.43,2.0,3.0,True,42857
+2026-02-07,Championship,Birmingham,Leicester,AWAY,67.7,18.2,1.38,2.0,1.0,False,-100000
+2026-02-07,Serie A,Genoa,Napoli,AWAY,66.6,18.9,1.4,2.0,3.0,True,39623
+2026-02-07,Bundesliga,St Pauli,Stuttgart,AWAY,78.3,11.1,1.3,2.0,1.0,False,-100000
+2026-02-07,Bundesliga,Wolfsburg,Dortmund,AWAY,69.4,17.1,1.34,1.0,2.0,True,34426
+2026-02-07,La Liga 2,Las Palmas,Burgos,AWAY,95.0,0.0,1.3,0.0,0.0,False,-100000
+2026-02-07,Bundesliga 2,Elversberg,Hertha,HOME,95.0,80.0,1.3,0.0,3.0,False,-100000
+2026-02-07,Primeira Liga,Arouca,Guimaraes,AWAY,68.5,17.6,1.36,3.0,2.0,False,-100000
+2026-02-07,Primeira Liga,Estoril,Tondela,HOME,95.0,88.9,1.3,2.0,2.0,False,-100000
+2026-02-07,Premier League,Newcastle,Brentford,HOME,84.1,72.7,1.3,2.0,3.0,False,-100000
+2026-02-07,Premier League,Arsenal,Sunderland,HOME,66.3,60.9,1.4,3.0,0.0,True,40244
+2026-02-08,Bundesliga 2,Karlsruhe,Fortuna Dusseldorf,AWAY,77.0,12.0,1.3,1.0,1.0,False,-100000
+2026-02-08,Eredivisie,Groningen,PSV Eindhoven,AWAY,71.9,15.4,1.3,1.0,2.0,True,30000
+2026-02-08,Eredivisie,Utrecht,Feyenoord,AWAY,73.0,14.6,1.3,0.0,1.0,True,30000
+2026-02-08,Serie A,Juventus,Lazio,HOME,71.2,64.1,1.31,2.0,2.0,False,-100000
+2026-02-08,Super League Yunani,Panserraikos,AEK,AWAY,78.3,11.1,1.3,0.0,4.0,True,30000
+2026-02-08,La Liga 2,Valladolid,Castellon,HOME,65.0,60.0,1.43,0.0,4.0,False,-100000
+2026-02-08,La Liga 2,La Coruna,Albacete,HOME,82.1,71.4,1.3,2.0,1.0,True,30000
+2026-02-08,Mexico Liga MX,Atlas,UNAM Pumas,AWAY,73.6,14.3,1.3,2.0,2.0,False,-100000
+2026-02-08,Bundesliga,Bayern Munich,Hoffenheim,HOME,73.6,65.7,1.3,5.0,1.0,True,30000
+2026-02-08,Bundesliga,FC Koln,RB Leipzig,AWAY,75.0,13.3,1.3,1.0,2.0,True,30000
+2026-02-08,Austria Bundesliga,Altach,BW Linz,AWAY,73.6,14.3,1.3,1.0,0.0,False,-100000
+2026-02-08,Austria Bundesliga,Sturm Graz,Ried,HOME,80.6,70.4,1.3,1.0,0.0,True,30000
+2026-02-08,Super Lig,Rizespor,Galatasaray,AWAY,72.8,14.8,1.3,0.0,3.0,True,30000
+2026-02-08,La Liga,Ath Madrid,Betis,HOME,73.6,65.7,1.3,0.0,1.0,False,-100000
+2026-02-08,La Liga,Ath Bilbao,Levante,HOME,75.0,66.7,1.3,4.0,2.0,True,30000
+2026-02-08,La Liga,Alaves,Getafe,AWAY,77.4,11.8,1.3,0.0,2.0,True,30000
+2026-02-09,Romania Liga 1,Din. Bucuresti,Univ. Craiova,AWAY,78.3,11.1,1.3,1.0,1.0,False,-100000
+2026-02-09,Argentina Primera,Lanus,Talleres Cordoba,HOME,78.8,69.2,1.3,1.0,1.0,False,-100000
+2026-02-09,Super Lig,Fenerbahce,Genclerbirligi,HOME,81.5,71.0,1.3,3.0,1.0,True,30000
+2026-02-09,Argentina Primera,Velez Sarsfield,Boca Juniors,AWAY,68.5,17.6,1.36,2.0,1.0,False,-100000
+2026-02-09,Argentina Primera,Barracas Central,Gimnasia L.P.,AWAY,70.0,16.7,1.33,2.0,0.0,False,-100000
+2026-02-09,Serie A,Atalanta,Cremonese,HOME,65.0,60.0,1.43,2.0,1.0,True,42857
+2026-02-09,Ligue 2,Amiens,Clermont,AWAY,85.0,6.7,1.3,4.0,3.0,False,-100000
+2026-02-10,Serie B,Sampdoria,Palermo,AWAY,65.0,20.0,1.43,3.0,3.0,False,-100000
+2026-02-10,Serie B,Venezia,Modena,HOME,65.0,60.0,1.43,0.0,2.0,False,-100000
+2026-02-11,Brazil Serie A,Vitoria,Flamengo RJ,AWAY,73.6,14.3,1.3,1.0,2.0,True,30000
+2026-02-11,Premier League,Man City,Fulham,HOME,78.4,69.0,1.3,3.0,0.0,True,30000
+2026-02-11,Premier League,Sunderland,Liverpool,AWAY,82.0,8.7,1.3,0.0,1.0,True,30000
+2026-02-11,Serie B,Avellino,Frosinone,AWAY,81.4,9.1,1.3,1.0,3.0,True,30000
+2026-02-11,Serie B,Empoli,Juve Stabia,HOME,75.0,66.7,1.3,1.0,2.0,False,-100000
+2026-02-11,Eredivisie,Go Ahead Eagles,Heerenveen,AWAY,65.0,20.0,1.43,1.0,3.0,True,42857
+2026-02-12,Brazil Serie A,Corinthians,Bragantino,AWAY,70.0,16.7,1.33,2.0,0.0,False,-100000
+2026-02-12,Argentina Primera,Tigre,Aldosivi,HOME,87.5,75.0,1.3,1.0,0.0,True,30000
+2026-02-12,Premier League,Brentford,Arsenal,AWAY,78.3,11.1,1.3,1.0,1.0,False,-100000
+2026-02-13,Eredivisie,Volendam,PSV Eindhoven,AWAY,95.0,0.0,1.3,2.0,1.0,False,-100000
+2026-02-13,Primeira Liga,Santa Clara,Benfica,AWAY,83.5,7.7,1.3,1.0,2.0,True,30000
+2026-02-13,Denmark Superliga,Randers FC,Vejle,HOME,90.4,76.9,1.3,2.0,0.0,True,30000
+2026-02-13,Argentina Primera,Independiente,Lanus,AWAY,76.2,12.5,1.3,2.0,0.0,False,-100000
+2026-02-13,Ligue 2,Red Star,Nancy,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-02-13,La Liga,Elche,Osasuna,AWAY,83.5,7.7,1.3,0.0,0.0,False,-100000
+2026-02-14,Austria Bundesliga,Tirol,Sturm Graz,AWAY,85.0,6.7,1.3,1.0,0.0,False,-100000
+2026-02-14,Super Lig,Trabzonspor,Fenerbahce,AWAY,69.4,17.1,1.34,2.0,3.0,True,34426
+2026-02-14,Super League Yunani,Levadeiakos,Olympiakos,AWAY,89.8,3.4,1.3,0.0,0.0,False,-100000
+2026-02-14,Bundesliga 2,Braunschweig,Darmstadt,AWAY,67.7,18.2,1.38,2.0,2.0,False,-100000
+2026-02-14,Bundesliga,Werder Bremen,Bayern Munich,AWAY,79.6,10.3,1.3,0.0,3.0,True,30000
+2026-02-14,Ligue 2,Grenoble,Reims,HOME,68.8,62.5,1.36,0.0,0.0,False,-100000
+2026-02-14,Bundesliga,Leverkusen,St Pauli,HOME,95.0,80.0,1.3,4.0,0.0,True,30000
+2026-02-14,Super League Yunani,Panetolikos,Asteras Tripolis,AWAY,70.8,16.1,1.32,3.0,1.0,False,-100000
+2026-02-14,Serie A,Inter,Juventus,AWAY,68.1,17.9,1.37,3.0,2.0,False,-100000
+2026-02-14,Eredivisie,Ajax,For Sittard,HOME,95.0,85.7,1.3,4.0,1.0,True,30000
+2026-02-14,Primeira Liga,Gil Vicente,Sp Braga,AWAY,68.9,17.4,1.35,2.0,1.0,False,-100000
+2026-02-14,Primeira Liga,Guimaraes,Estrela,HOME,95.0,80.0,1.3,2.0,1.0,True,30000
+2026-02-14,La Liga,Real Madrid,Sociedad,HOME,82.1,71.4,1.3,4.0,1.0,True,30000
+2026-02-14,Argentina Primera,Union de Santa Fe,San Lorenzo,AWAY,73.6,14.3,1.3,0.0,0.0,False,-100000
+2026-02-14,Serie B,Catanzaro,Mantova,AWAY,65.0,20.0,1.43,2.0,0.0,False,-100000
+2026-02-14,Argentina Primera,Defensa y Justicia,Velez Sarsfield,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-02-15,Primeira Liga,Nacional,Porto,AWAY,75.6,12.9,1.3,0.0,1.0,True,30000
+2026-02-15,Poland Ekstraklasa,Pogon Szczecin,Arka Gdynia,HOME,80.0,70.0,1.3,1.0,0.0,True,30000
+2026-02-15,Bundesliga 2,Holstein Kiel,Schalke 04,HOME,65.0,60.0,1.43,1.0,2.0,False,-100000
+2026-02-15,Serie B,Avellino,Pescara,AWAY,67.7,18.2,1.38,0.0,1.0,True,37500
+2026-02-15,La Liga,Vallecano,Ath Madrid,AWAY,87.9,4.8,1.3,3.0,0.0,False,-100000
+2026-02-15,Bundesliga,Augsburg,Heidenheim,HOME,65.0,60.0,1.43,1.0,0.0,True,42857
+2026-02-15,Primeira Liga,Sp Lisbon,Famalicao,HOME,67.3,61.5,1.38,1.0,0.0,True,38298
+2026-02-15,Ligue 1,Le Havre,Toulouse,AWAY,67.7,18.2,1.38,2.0,1.0,False,-100000
+2026-02-15,Argentina Primera,Gimnasia L.P.,Estudiantes L.P.,AWAY,88.5,4.3,1.3,0.0,0.0,False,-100000
+2026-02-15,Eredivisie,Feyenoord,Go Ahead Eagles,HOME,85.0,73.3,1.3,1.0,0.0,True,30000
+2026-02-15,Ligue 1,Metz,Auxerre,AWAY,67.7,18.2,1.38,1.0,3.0,True,37500
+2026-02-15,Argentina Primera,Boca Juniors,Platense,HOME,75.0,66.7,1.3,0.0,0.0,False,-100000
+2026-02-16,Argentina Primera,Rosario Central,Barracas Central,AWAY,70.0,16.7,1.33,2.0,0.0,False,-100000
+2026-02-16,La Liga,Girona,Barcelona,AWAY,67.7,18.2,1.38,2.0,1.0,False,-100000
+2026-02-16,Romania Liga 1,FC Hermannstadt,CFR Cluj,AWAY,71.9,15.4,1.3,0.0,1.0,True,30000
+2026-02-17,Championship,Charlton,Portsmouth,HOME,65.0,60.0,1.43,1.0,3.0,False,-100000
+2026-02-18,Premier League,Wolves,Arsenal,AWAY,73.6,14.3,1.3,2.0,2.0,False,-100000
+2026-02-19,Brazil Serie A,Athletico-PR,Corinthians,AWAY,70.0,16.7,1.33,0.0,1.0,True,33333
+2026-02-20,Ireland Premier Division,Dundalk,Drogheda,HOME,66.9,61.3,1.39,1.0,1.0,False,-100000
+2026-02-20,Denmark Superliga,Nordsjaelland,Vejle,HOME,67.3,61.5,1.38,3.0,3.0,False,-100000
+2026-02-20,Ligue 2,Nancy,Grenoble,AWAY,70.0,16.7,1.33,0.0,0.0,False,-100000
+2026-02-20,Argentina Primera,Estudiantes L.P.,Sarmiento Junin,HOME,68.8,62.5,1.36,1.0,0.0,True,35593
+2026-02-21,La Liga,Osasuna,Real Madrid,AWAY,85.9,6.1,1.3,2.0,1.0,False,-100000
+2026-02-21,Premier League,Man City,Newcastle,HOME,88.5,75.7,1.3,2.0,1.0,True,30000
+2026-02-21,Ligue 1,Paris SG,Metz,HOME,95.0,88.9,1.3,3.0,0.0,True,30000
+2026-02-21,Championship,West Brom,Coventry,HOME,65.0,60.0,1.43,0.0,2.0,False,-100000
+2026-02-21,Primeira Liga,Moreirense,Sp Lisbon,AWAY,88.5,4.3,1.3,0.0,3.0,True,30000
+2026-02-21,Championship,Stoke,Leicester,AWAY,68.5,17.6,1.36,2.0,2.0,False,-100000
+2026-02-21,Ligue 1,Toulouse,Paris FC,HOME,65.0,60.0,1.43,1.0,1.0,False,-100000
+2026-02-21,Super Lig,Konyaspor,Galatasaray,AWAY,81.8,8.8,1.3,2.0,0.0,False,-100000
+2026-02-21,Championship,Southampton,Charlton,AWAY,65.0,20.0,1.43,1.0,1.0,False,-100000
+2026-02-21,Serie A,Lecce,Inter,AWAY,86.2,5.9,1.3,0.0,2.0,True,30000
+2026-02-21,Bundesliga,Union Berlin,Leverkusen,AWAY,83.5,7.7,1.3,1.0,0.0,False,-100000
+2026-02-21,Poland Ekstraklasa,Gornik Zabrze,Pogon Szczecin,HOME,75.0,66.7,1.3,0.0,1.0,False,-100000
+2026-02-21,Ligue 2,Reims,Amiens,AWAY,66.9,18.8,1.39,0.0,0.0,False,-100000
+2026-02-21,Bundesliga 2,Elversberg,Braunschweig,HOME,95.0,80.0,1.3,3.0,1.0,True,30000
+2026-02-21,Premier League,Chelsea,Burnley,HOME,77.6,68.4,1.3,1.0,1.0,False,-100000
+2026-02-21,Super League Yunani,Olympiakos,Panetolikos,HOME,95.0,88.9,1.3,2.0,0.0,True,30000
+2026-02-21,Eredivisie,Ajax,Nijmegen,HOME,70.0,63.3,1.33,1.0,1.0,False,-100000
+2026-02-21,Denmark Superliga,Odense,FC Copenhagen,AWAY,70.8,16.1,1.32,2.0,2.0,False,-100000
+2026-02-21,Mexico Liga MX,Puebla,Club America,AWAY,80.5,9.7,1.3,0.0,4.0,True,30000
+2026-02-21,Bundesliga,Bayern Munich,Ein Frankfurt,HOME,78.8,69.2,1.3,3.0,2.0,True,30000
+2026-02-21,Serie B,Padova,Bari,AWAY,73.6,14.3,1.3,1.0,1.0,False,-100000
+2026-02-21,Serie A,Cagliari,Lazio,AWAY,74.7,13.5,1.3,0.0,0.0,False,-100000
+2026-02-22,Super Lig,Gaziantep,Trabzonspor,AWAY,95.0,0.0,1.3,1.0,2.0,True,30000
+2026-02-22,La Liga,Barcelona,Levante,HOME,91.7,77.8,1.3,3.0,0.0,True,30000
+2026-02-22,Primeira Liga,Porto,Rio Ave,HOME,86.4,74.3,1.3,1.0,0.0,True,30000
+2026-02-22,Super Lig,Besiktas,Goztep,HOME,67.3,61.5,1.38,4.0,0.0,True,38298
+2026-02-22,Bundesliga,St Pauli,Werder Bremen,AWAY,95.0,0.0,1.3,2.0,1.0,False,-100000
+2026-02-22,Mexico Liga MX,Necaxa,Toluca,AWAY,71.3,15.8,1.31,0.0,3.0,True,31034
+2026-02-22,Super League Yunani,AEK,Levadeiakos,HOME,83.0,72.0,1.3,4.0,0.0,True,30000
+2026-02-22,Poland Ekstraklasa,Korona Kielce,Lech Poznan,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-02-22,Denmark Superliga,Silkeborg,Midtjylland,AWAY,72.8,14.8,1.3,0.0,4.0,True,30000
+2026-02-22,Serie A,Milan,Parma,HOME,69.4,63.0,1.34,0.0,1.0,False,-100000
+2026-02-22,Austria Bundesliga,Sturm Graz,BW Linz,HOME,95.0,85.7,1.3,1.0,0.0,True,30000
+2026-02-22,Ligue 1,Strasbourg,Lyon,AWAY,66.4,19.0,1.4,3.0,1.0,False,-100000
+2026-02-22,Austria Bundesliga,LASK,Salzburg,AWAY,69.1,17.2,1.35,1.0,5.0,True,34884
+2026-02-22,Super League Yunani,Larisa,PAOK,AWAY,68.9,17.4,1.35,1.0,1.0,False,-100000
+2026-02-23,Super Lig,Fenerbahce,Kasimpasa,HOME,95.0,81.8,1.3,1.0,1.0,False,-100000
+2026-02-23,Premier League,Everton,Man United,AWAY,65.7,19.5,1.41,0.0,1.0,True,41379
+2026-02-23,USA MLS,Seattle Sounders,Colorado Rapids,HOME,69.3,62.9,1.35,2.0,0.0,True,34615
+2026-02-24,Championship,West Brom,Charlton,AWAY,73.6,14.3,1.3,1.0,1.0,False,-100000
+2026-02-24,Championship,Middlesbrough,Leicester,AWAY,75.0,13.3,1.3,1.0,1.0,False,-100000
+2026-02-27,Poland Ekstraklasa,Arka Gdynia,Lechia Gdansk,AWAY,95.0,0.0,1.3,2.0,2.0,False,-100000
+2026-02-27,Ligue 2,Clermont,Dunkerque,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-02-27,Bundesliga 2,Dresden,Darmstadt,AWAY,78.3,11.1,1.3,3.0,1.0,False,-100000
+2026-02-27,Ireland Premier Division,Galway,Sligo Rovers,AWAY,68.5,17.6,1.36,1.0,0.0,False,-100000
+2026-02-27,Super Lig,Trabzonspor,Karagumruk,HOME,75.0,66.7,1.3,3.0,1.0,True,30000
+2026-02-27,Primeira Liga,Sp Lisbon,Estoril,HOME,82.1,71.4,1.3,3.0,0.0,True,30000
+2026-02-27,Primeira Liga,Porto,Arouca,HOME,95.0,82.4,1.3,3.0,1.0,True,30000
+2026-02-28,Premier League,Leeds,Man City,AWAY,73.6,14.3,1.3,0.0,1.0,True,30000
+2026-02-28,Premier League,Liverpool,West Ham,HOME,82.7,71.8,1.3,5.0,2.0,True,30000
+2026-02-28,Russia Premier League,Lokomotiv Moscow,Pari NN,HOME,95.0,88.9,1.3,2.0,1.0,True,30000
+2026-02-28,USA MLS,Minnesota United,FC Cincinnati,HOME,65.0,60.0,1.43,1.0,0.0,True,42857
+2026-02-28,Poland Ekstraklasa,Pogon Szczecin,Widzew Lodz,HOME,84.1,72.7,1.3,1.0,0.0,True,30000
+2026-02-28,Eredivisie,Heracles,PSV Eindhoven,AWAY,91.1,2.6,1.3,1.0,3.0,True,30000
+2026-02-28,Primeira Liga,Nacional,Sp Braga,AWAY,70.8,16.1,1.32,1.0,2.0,True,31915
+2026-02-28,Serie A,Verona,Napoli,AWAY,75.4,13.0,1.3,1.0,2.0,True,30000
+2026-02-28,Mexico Liga MX,Juarez,Atlas,AWAY,82.5,8.3,1.3,3.0,1.0,False,-100000
+2026-02-28,Ligue 2,Pau FC,St Etienne,AWAY,65.0,20.0,1.43,0.0,3.0,True,42857
+2026-02-28,Ligue 1,Monaco,Angers,HOME,72.8,65.2,1.3,2.0,0.0,True,30000
+2026-02-28,Ligue 1,Le Havre,Paris SG,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-02-28,Serie A,Inter,Genoa,HOME,69.3,62.9,1.35,2.0,0.0,True,34615
+2026-02-28,La Liga 2,Zaragoza,Burgos,AWAY,78.3,11.1,1.3,0.0,1.0,True,30000
+2026-02-28,Super Lig,Galatasaray,Alanyaspor,HOME,77.6,68.4,1.3,3.0,1.0,True,30000
+2026-02-28,Championship,Sheffield Weds,Southampton,AWAY,67.7,18.2,1.38,1.0,3.0,True,37500
+2026-02-28,Championship,Preston,Millwall,AWAY,66.4,19.0,1.4,0.0,2.0,True,40000
+2026-02-28,Serie B,Spezia,Reggiana,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-02-28,Serie A,Como,Lecce,HOME,65.0,60.0,1.43,3.0,1.0,True,42857
+2026-02-28,Serie B,Empoli,Cesena,HOME,84.1,72.7,1.3,1.0,1.0,False,-100000
+2026-02-28,La Liga,Vallecano,Ath Bilbao,AWAY,73.6,14.3,1.3,1.0,1.0,False,-100000
+2026-02-28,La Liga,Barcelona,Villarreal,HOME,78.8,69.2,1.3,4.0,1.0,True,30000
+2026-03-01,Super Lig,Antalyaspor,Fenerbahce,AWAY,69.3,17.1,1.35,2.0,2.0,False,-100000
+2026-03-01,Super League Yunani,Volos NFC,AEK,AWAY,65.0,20.0,1.43,2.0,2.0,False,-100000
+2026-03-01,Denmark Superliga,FC Copenhagen,Randers FC,HOME,65.0,60.0,1.43,1.0,2.0,False,-100000
+2026-03-01,Denmark Superliga,Vejle,Aarhus,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-03-01,Denmark Superliga,Viborg,Nordsjaelland,AWAY,73.6,14.3,1.3,2.0,1.0,False,-100000
+2026-03-01,Bundesliga 2,Magdeburg,Karlsruhe,AWAY,73.6,14.3,1.3,1.0,3.0,True,30000
+2026-03-01,Eredivisie,Volendam,Groningen,AWAY,65.0,20.0,1.43,3.0,2.0,False,-100000
+2026-03-01,Eredivisie,Zwolle,Ajax,AWAY,95.0,0.0,1.3,0.0,0.0,False,-100000
+2026-03-01,Mexico Liga MX,Club Leon,Necaxa,HOME,77.6,68.4,1.3,2.0,1.0,True,30000
+2026-03-01,Romania Liga 1,UTA Arad,FCSB,AWAY,67.7,18.2,1.38,2.0,4.0,True,37500
+2026-03-01,Super League Yunani,Panserraikos,Olympiakos,AWAY,95.0,0.0,1.3,1.0,2.0,True,30000
+2026-03-01,Austria Bundesliga,Austria Vienna,LASK,AWAY,68.9,17.4,1.35,2.0,2.0,False,-100000
+2026-03-01,Ligue 1,Lille,Nantes,HOME,66.9,61.3,1.39,1.0,0.0,True,39013
+2026-03-01,Ligue 1,Lorient,Auxerre,AWAY,72.5,15.0,1.3,2.0,2.0,False,-100000
+2026-03-01,Bundesliga,Hamburg,RB Leipzig,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-03-01,Russia Premier League,Dynamo Moscow,Krylya Sovetov,HOME,69.7,63.2,1.34,4.0,0.0,True,33803
+2026-03-01,Russia Premier League,Akhmat Grozny,CSKA Moscow,AWAY,72.8,14.8,1.3,1.0,0.0,False,-100000
+2026-03-01,La Liga,Betis,Sevilla,AWAY,65.0,20.0,1.43,2.0,2.0,False,-100000
+2026-03-01,Argentina Primera,Newells Old Boys,Rosario Central,AWAY,81.4,9.1,1.3,0.0,2.0,True,30000
+2026-03-01,Serie A,Sassuolo,Atalanta,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-03-01,Serie A,Torino,Lazio,AWAY,72.3,15.2,1.3,2.0,0.0,False,-100000
+2026-03-01,Serie A,Roma,Juventus,AWAY,68.1,17.9,1.37,3.0,3.0,False,-100000
+2026-03-01,Austria Bundesliga,Salzburg,Hartberg,HOME,95.0,89.5,1.3,0.0,0.0,False,-100000
+2026-03-01,Primeira Liga,Rio Ave,Famalicao,AWAY,95.0,0.0,1.3,0.0,0.0,False,-100000
+2026-03-02,Ligue 2,Amiens,Troyes,AWAY,76.2,12.5,1.3,0.0,2.0,True,30000
+2026-03-02,La Liga,Real Madrid,Getafe,HOME,90.4,76.9,1.3,0.0,1.0,False,-100000
+2026-03-02,Primeira Liga,Gil Vicente,Benfica,AWAY,75.4,13.0,1.3,1.0,2.0,True,30000
+2026-03-03,Premier League,Wolves,Liverpool,AWAY,80.7,9.5,1.3,2.0,1.0,False,-100000
+2026-03-03,Premier League,Bournemouth,Brentford,AWAY,81.4,9.1,1.3,0.0,0.0,False,-100000
+2026-03-03,Serie B,Reggiana,Sudtirol,AWAY,65.0,20.0,1.43,0.0,4.0,True,42857
+2026-03-03,Championship,Ipswich,Hull,AWAY,66.4,19.0,1.4,1.0,0.0,False,-100000
+2026-03-04,Premier League,Man City,Nott'm Forest,HOME,82.1,71.4,1.3,2.0,2.0,False,-100000
+2026-03-04,Serie B,Juve Stabia,Sampdoria,AWAY,65.0,20.0,1.43,1.0,1.0,False,-100000
+2026-03-05,Mexico Liga MX,Puebla,Tigres UANL,AWAY,65.0,20.0,1.43,3.0,1.0,False,-100000
+2026-03-05,Premier League,Tottenham,Crystal Palace,HOME,83.0,72.0,1.3,1.0,3.0,False,-100000
+2026-03-05,Mexico Liga MX,Club America,Juarez,HOME,67.3,61.5,1.38,1.0,2.0,False,-100000
+2026-03-06,Bundesliga 2,Schalke 04,Bielefeld,HOME,84.1,72.7,1.3,1.0,0.0,True,30000
+2026-03-06,La Liga,Celta,Real Madrid,AWAY,75.6,12.9,1.3,1.0,2.0,True,30000
+2026-03-07,Serie B,Modena,Cesena,AWAY,68.5,17.6,1.36,0.0,0.0,False,-100000
+2026-03-07,Poland Ekstraklasa,Korona Kielce,Termalica B-B.,HOME,75.0,66.7,1.3,2.0,1.0,True,30000
+2026-03-07,Championship,Ipswich,Leicester,AWAY,66.4,19.0,1.4,1.0,1.0,False,-100000
+2026-03-07,Poland Ekstraklasa,Widzew Lodz,Lech Poznan,AWAY,67.7,18.2,1.38,2.0,1.0,False,-100000
+2026-03-07,China Super League,Shanghai Port,Henan Songshan Longmen,HOME,87.5,75.0,1.3,1.0,2.0,False,-100000
+2026-03-07,Primeira Liga,Moreirense,Nacional,HOME,75.0,66.7,1.3,1.0,1.0,False,-100000
+2026-03-07,La Liga,Ath Bilbao,Barcelona,AWAY,84.0,7.3,1.3,0.0,1.0,True,30000
+2026-03-07,La Liga,Ath Madrid,Sociedad,HOME,65.0,60.0,1.43,3.0,2.0,True,42857
+2026-03-07,Bundesliga,FC Koln,Dortmund,AWAY,74.3,13.8,1.3,1.0,2.0,True,30000
+2026-03-07,Super League Yunani,AEK,Larisa,HOME,66.3,60.9,1.4,1.0,0.0,True,40244
+2026-03-07,Ligue 1,Auxerre,Strasbourg,AWAY,67.7,18.2,1.38,0.0,0.0,False,-100000
+2026-03-07,Ligue 1,Toulouse,Marseille,AWAY,78.8,10.8,1.3,0.0,1.0,True,30000
+2026-03-07,Romania Liga 1,FCSB,U. Cluj,HOME,75.0,66.7,1.3,1.0,3.0,False,-100000
+2026-03-07,Mexico Liga MX,Cruz Azul,Atl. San Luis,HOME,75.0,66.7,1.3,3.0,0.0,True,30000
+2026-03-07,Bundesliga,Freiburg,Leverkusen,AWAY,66.0,19.4,1.41,3.0,3.0,False,-100000
+2026-03-07,Bundesliga,Heidenheim,Hoffenheim,AWAY,95.0,0.0,1.3,2.0,4.0,True,30000
+2026-03-07,Eredivisie,PSV Eindhoven,AZ Alkmaar,HOME,72.5,65.0,1.3,2.0,1.0,True,30000
+2026-03-07,Mexico Liga MX,Mazatlan FC,Club Leon,AWAY,67.7,18.2,1.38,4.0,2.0,False,-100000
+2026-03-07,Eredivisie,Groningen,Ajax,AWAY,71.9,15.4,1.3,3.0,1.0,False,-100000
+2026-03-07,Serie A,Cagliari,Como,AWAY,73.6,14.3,1.3,1.0,2.0,True,30000
+2026-03-07,Bundesliga 2,Bochum,Kaiserslautern,AWAY,71.9,15.4,1.3,3.0,2.0,False,-100000
+2026-03-08,La Liga 2,Andorra,Sp Gijon,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-03-08,Serie A,Genoa,Roma,AWAY,69.3,17.1,1.35,2.0,1.0,False,-100000
+2026-03-08,Super League Yunani,Levadeiakos,Panathinaikos,AWAY,79.5,10.3,1.3,1.0,4.0,True,30000
+2026-03-08,La Liga 2,Leganes,Eibar,AWAY,75.0,13.3,1.3,0.0,1.0,True,30000
+2026-03-08,USA MLS,St. Louis City,Seattle Sounders,AWAY,70.0,16.7,1.33,0.0,1.0,True,33333
+2026-03-08,Eredivisie,Go Ahead Eagles,Twente,AWAY,65.0,20.0,1.43,1.0,4.0,True,42857
+2026-03-08,Eredivisie,NAC Breda,Feyenoord,AWAY,67.2,18.5,1.38,3.0,3.0,False,-100000
+2026-03-08,Eredivisie,Nijmegen,Volendam,HOME,82.1,71.4,1.3,3.0,0.0,True,30000
+2026-03-08,Primeira Liga,Estrela,Gil Vicente,AWAY,65.0,20.0,1.43,2.0,2.0,False,-100000
+2026-03-08,USA MLS,Atlanta Utd,Real Salt Lake,HOME,65.0,60.0,1.43,2.0,3.0,False,-100000
+2026-03-08,Bundesliga,St Pauli,Ein Frankfurt,AWAY,73.6,14.3,1.3,0.0,0.0,False,-100000
+2026-03-08,Russia Premier League,Orenburg,Zenit,AWAY,83.5,7.7,1.3,2.0,1.0,False,-100000
+2026-03-08,Russia Premier League,Rubin Kazan,Krasnodar,AWAY,77.0,12.0,1.3,2.0,1.0,False,-100000
+2026-03-08,Poland Ekstraklasa,Legia,Cracovia,HOME,71.4,64.3,1.31,1.0,0.0,True,30841
+2026-03-08,La Liga,Sevilla,Vallecano,HOME,67.9,61.9,1.37,1.0,1.0,False,-100000
+2026-03-08,USA MLS,FC Cincinnati,Toronto FC,HOME,71.4,64.3,1.31,0.0,1.0,False,-100000
+2026-03-08,Austria Bundesliga,Ried,Austria Vienna,AWAY,74.3,13.8,1.3,0.0,2.0,True,30000
+2026-03-08,Austria Bundesliga,Hartberg,BW Linz,HOME,65.0,60.0,1.43,1.0,1.0,False,-100000
+2026-03-08,Austria Bundesliga,Sturm Graz,Altach,HOME,66.9,61.3,1.39,2.0,0.0,True,39013
+2026-03-08,Austria Bundesliga,Tirol,Grazer AK,AWAY,95.0,0.0,1.3,2.0,0.0,False,-100000
+2026-03-08,Austria Bundesliga,SK Rapid,Salzburg,AWAY,68.5,17.6,1.36,1.0,0.0,False,-100000
+2026-03-09,Ireland Premier Division,Shelbourne,Shamrock Rovers,AWAY,76.2,12.5,1.3,2.0,2.0,False,-100000
+2026-03-09,La Liga,Espanol,Oviedo,HOME,65.0,60.0,1.43,1.0,1.0,False,-100000
+2026-03-10,Championship,Sheffield Weds,Watford,AWAY,73.6,14.3,1.3,1.0,1.0,False,-100000
+2026-03-11,Championship,Middlesbrough,Charlton,HOME,75.0,66.7,1.3,0.0,1.0,False,-100000
+2026-03-11,Argentina Primera,Banfield,Gimnasia L.P.,HOME,75.0,66.7,1.3,1.0,2.0,False,-100000
+2026-03-11,Championship,Coventry,Preston,AWAY,82.0,8.7,1.3,3.0,0.0,False,-100000
+2026-03-12,Argentina Primera,Defensa y Justicia,Central Cordoba,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-03-12,Argentina Primera,Talleres Cordoba,Instituto,AWAY,70.0,16.7,1.33,2.0,0.0,False,-100000
+2026-03-12,Brazil Serie A,Corinthians,Coritiba,HOME,75.0,66.7,1.3,0.0,2.0,False,-100000
+2026-03-12,Brazil Serie A,Vasco,Palmeiras,AWAY,78.3,11.1,1.3,2.0,1.0,False,-100000
+2026-03-13,Romania Liga 1,Univ. Craiova,FC Arges,HOME,87.5,75.0,1.3,0.0,1.0,False,-100000
+2026-03-13,Bundesliga 2,Greuther Furth,Elversberg,AWAY,95.0,0.0,1.3,2.0,0.0,False,-100000
+2026-03-13,Ligue 2,Clermont,Pau FC,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-03-13,Super Lig,Antalyaspor,Gaziantep,AWAY,71.9,15.4,1.3,1.0,4.0,True,30000
+2026-03-13,Brazil Serie A,Gremio,Bragantino,AWAY,65.0,20.0,1.43,1.0,1.0,False,-100000
+2026-03-13,Super Lig,Karagumruk,Fenerbahce,AWAY,95.0,0.0,1.3,2.0,0.0,False,-100000
+2026-03-13,La Liga 2,Mirandes,Cadiz,AWAY,73.6,14.3,1.3,0.0,2.0,True,30000
+2026-03-14,Eredivisie,Volendam,For Sittard,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-03-14,USA MLS,Toronto FC,New York Red Bulls,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-03-14,Eredivisie,PSV Eindhoven,Nijmegen,HOME,86.3,74.2,1.3,2.0,3.0,False,-100000
+2026-03-14,Bundesliga,Ein Frankfurt,Heidenheim,HOME,95.0,80.0,1.3,1.0,0.0,True,30000
+2026-03-14,Premier League,West Ham,Man City,AWAY,79.6,10.3,1.3,1.0,1.0,False,-100000
+2026-03-14,Super League Yunani,Panserraikos,Aris,AWAY,78.3,11.1,1.3,0.0,0.0,False,-100000
+2026-03-14,Primeira Liga,Arouca,Benfica,AWAY,86.2,5.9,1.3,1.0,2.0,True,30000
+2026-03-14,Primeira Liga,Guimaraes,Famalicao,HOME,67.3,61.5,1.38,1.0,2.0,False,-100000
+2026-03-14,Super League Yunani,OFI Crete,Olympiakos,AWAY,86.2,5.9,1.3,0.0,3.0,True,30000
+2026-03-14,Bundesliga,Leverkusen,Bayern Munich,AWAY,69.4,17.1,1.34,1.0,1.0,False,-100000
+2026-03-14,Serie A,Udinese,Juventus,AWAY,68.1,17.9,1.37,0.0,1.0,True,36842
+2026-03-14,Serie A,Napoli,Lecce,HOME,72.1,64.7,1.3,2.0,1.0,True,30000
+2026-03-14,Eredivisie,Ajax,Sparta Rotterdam,HOME,95.0,82.4,1.3,4.0,0.0,True,30000
+2026-03-14,Super Lig,Trabzonspor,Rizespor,HOME,69.4,63.0,1.34,1.0,0.0,True,34328
+2026-03-14,Serie B,Bari,Reggiana,AWAY,95.0,0.0,1.3,4.0,1.0,False,-100000
+2026-03-14,Norway Eliteserien,HamKam,Viking,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-03-14,Serie B,Sampdoria,Venezia,AWAY,65.0,20.0,1.43,0.0,0.0,False,-100000
+2026-03-14,Championship,Millwall,Blackburn,AWAY,73.6,14.3,1.3,1.0,2.0,True,30000
+2026-03-14,La Liga,Ath Madrid,Getafe,HOME,78.8,69.2,1.3,1.0,0.0,True,30000
+2026-03-14,La Liga,Real Madrid,Elche,HOME,84.1,72.7,1.3,4.0,1.0,True,30000
+2026-03-14,Russia Premier League,Sochi,Krasnodar,AWAY,67.7,18.2,1.38,1.0,2.0,True,37500
+2026-03-14,Championship,Coventry,Southampton,AWAY,71.9,15.4,1.3,1.0,2.0,True,30000
+2026-03-15,USA MLS,Los Angeles FC,St. Louis City,HOME,75.0,66.7,1.3,2.0,0.0,True,30000
+2026-03-15,Bundesliga,Freiburg,Union Berlin,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-03-15,Bundesliga,Stuttgart,RB Leipzig,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-03-15,China Super League,Chengdu Rongcheng,Qingdao Hainiu,HOME,75.0,66.7,1.3,1.0,0.0,True,30000
+2026-03-15,Russia Premier League,Rubin Kazan,Lokomotiv Moscow,AWAY,65.0,20.0,1.43,3.0,0.0,False,-100000
+2026-03-15,Brazil Serie A,Internacional,Bahia,HOME,65.0,60.0,1.43,0.0,1.0,False,-100000
+2026-03-15,Denmark Superliga,Sonderjyske,Aarhus,AWAY,66.0,19.4,1.41,1.0,1.0,False,-100000
+2026-03-15,Denmark Superliga,Odense,FC Copenhagen,AWAY,71.6,15.6,1.31,2.0,1.0,False,-100000
+2026-03-15,Poland Ekstraklasa,Gornik Zabrze,Rakow,HOME,65.0,60.0,1.43,3.0,1.0,True,42857
+2026-03-15,Romania Liga 1,Farul Constanta,Petrolul,HOME,91.7,77.8,1.3,2.0,0.0,True,30000
+2026-03-15,Serie A,Verona,Genoa,AWAY,66.4,19.0,1.4,0.0,2.0,True,40000
+2026-03-15,Serie A,Lazio,Milan,AWAY,65.7,19.5,1.41,1.0,0.0,False,-100000
+2026-03-15,Norway Eliteserien,Valerenga,Sandefjord,HOME,68.8,62.5,1.36,1.0,0.0,True,35593
+2026-03-15,Argentina Primera,Belgrano,Talleres Cordoba,AWAY,95.0,0.0,1.3,0.0,0.0,False,-100000
+2026-03-15,La Liga,Barcelona,Sevilla,HOME,81.1,70.7,1.3,5.0,2.0,True,30000
+2026-03-15,Ligue 1,Le Havre,Lyon,AWAY,73.6,14.3,1.3,0.0,0.0,False,-100000
+2026-03-15,Ligue 1,Metz,Toulouse,AWAY,73.6,14.3,1.3,3.0,4.0,True,30000
+2026-03-15,Premier League,Man United,Aston Villa,HOME,77.9,68.6,1.3,3.0,1.0,True,30000
+2026-03-15,Super Lig,Genclerbirligi,Besiktas,AWAY,70.8,16.1,1.32,0.0,2.0,True,31915
+2026-03-15,Eredivisie,Feyenoord,Excelsior,HOME,95.0,86.4,1.3,2.0,1.0,True,30000
+2026-03-15,Eredivisie,AZ Alkmaar,Heracles,HOME,80.4,70.3,1.3,4.0,0.0,True,30000
+2026-03-15,Ligue 1,Rennes,Lille,AWAY,65.7,19.5,1.41,1.0,2.0,True,41379
+2026-03-15,Super League Yunani,Atromitos,AEK,AWAY,69.3,17.1,1.35,2.0,2.0,False,-100000
+2026-03-15,La Liga 2,Malaga,Huesca,AWAY,78.3,11.1,1.3,5.0,3.0,False,-100000
+2026-03-15,Super League Yunani,Panathinaikos,Panetolikos,HOME,80.6,70.4,1.3,0.0,0.0,False,-100000
+2026-03-15,Primeira Liga,Porto,Moreirense,HOME,92.4,78.3,1.3,3.0,0.0,True,30000
+2026-03-15,Super League Yunani,PAOK,Levadeiakos,HOME,88.8,75.9,1.3,3.0,0.0,True,30000
+2026-03-16,Denmark Superliga,Silkeborg,Vejle,HOME,65.0,60.0,1.43,1.0,1.0,False,-100000
+2026-03-16,Romania Liga 1,FC Botosani,Unirea Slobozia,HOME,65.0,60.0,1.43,3.0,2.0,True,42857
+2026-03-16,Ireland Premier Division,Drogheda,Shamrock Rovers,AWAY,77.9,11.4,1.3,0.0,0.0,False,-100000
+2026-03-16,Mexico Liga MX,Club America,Mazatlan FC,HOME,84.1,72.7,1.3,2.0,0.0,True,30000
+2026-03-16,Championship,Portsmouth,Derby,AWAY,78.3,11.1,1.3,0.0,1.0,True,30000
+2026-03-16,Argentina Primera,Barracas Central,Atl. Tucuman,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-03-17,Super Lig,Fenerbahce,Gaziantep,HOME,95.0,84.6,1.3,4.0,1.0,True,30000
+2026-03-17,Serie B,Palermo,Juve Stabia,HOME,95.0,80.0,1.3,2.0,2.0,False,-100000
+2026-03-17,Argentina Primera,Instituto,Independiente,AWAY,70.0,16.7,1.33,2.0,1.0,False,-100000
+2026-03-19,Super Lig,Kayserispor,Karagumruk,AWAY,78.3,11.1,1.3,1.0,0.0,False,-100000
+2026-03-19,Brazil Serie A,Santos,Internacional,AWAY,76.2,12.5,1.3,1.0,2.0,True,30000
+2026-03-20,Poland Ekstraklasa,Piast Gliwice,Radomiak Radom,AWAY,78.3,11.1,1.3,3.0,1.0,False,-100000
+2026-03-20,Brazil Serie A,Chapecoense-SC,Corinthians,AWAY,84.3,7.1,1.3,0.0,0.0,False,-100000
+2026-03-20,Ireland Premier Division,Shamrock Rovers,Galway,HOME,89.7,76.5,1.3,2.0,0.0,True,30000
+2026-03-20,Primeira Liga,Estrela,Casa Pia,HOME,65.0,60.0,1.43,4.0,0.0,True,42857
+2026-03-20,China Super League,Qingdao Hainiu,Zhejiang Professional,AWAY,70.0,16.7,1.33,1.0,4.0,True,33333
+2026-03-20,Serie A,Cagliari,Napoli,AWAY,76.8,12.1,1.3,0.0,1.0,True,30000
+2026-03-20,Romania Liga 1,FCSB,UTA Arad,HOME,87.5,75.0,1.3,1.0,0.0,True,30000
+2026-03-21,Ligue 1,Auxerre,Brest,AWAY,66.4,19.0,1.4,3.0,0.0,False,-100000
+2026-03-21,Austria Bundesliga,Tirol,Grazer AK,AWAY,70.0,16.7,1.33,1.0,5.0,True,33333
+2026-03-21,Bundesliga,Bayern Munich,Union Berlin,HOME,67.3,61.5,1.38,4.0,0.0,True,38298
+2026-03-21,Serie B,Padova,Palermo,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-03-21,Serie B,Monza,Venezia,AWAY,65.0,20.0,1.43,1.0,1.0,False,-100000
+2026-03-21,Argentina Primera,Banfield,Tigre,HOME,65.0,60.0,1.43,1.0,0.0,True,42857
+2026-03-21,Championship,QPR,Portsmouth,AWAY,65.0,20.0,1.43,6.0,1.0,False,-100000
+2026-03-21,Russia Premier League,Krasnodar,Pari NN,HOME,95.0,88.9,1.3,5.0,0.0,True,30000
+2026-03-21,Serie A,Juventus,Sassuolo,HOME,79.3,69.6,1.3,1.0,1.0,False,-100000
+2026-03-21,La Liga,Osasuna,Girona,AWAY,67.7,18.2,1.38,1.0,0.0,False,-100000
+2026-03-21,Serie B,Cesena,Catanzaro,HOME,65.0,60.0,1.43,3.0,1.0,True,42857
+2026-03-21,Primeira Liga,Moreirense,Arouca,HOME,67.3,61.5,1.38,0.0,1.0,False,-100000
+2026-03-21,Brazil Serie A,Bragantino,Botafogo RJ,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-03-21,Premier League,Brighton,Liverpool,AWAY,68.5,17.6,1.36,2.0,1.0,False,-100000
+2026-03-21,Primeira Liga,Benfica,Guimaraes,HOME,89.5,76.3,1.3,3.0,0.0,True,30000
+2026-03-21,Mexico Liga MX,Mazatlan FC,Cruz Azul,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-03-21,La Liga 2,Andorra,Eibar,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-03-21,Bundesliga,Heidenheim,Leverkusen,AWAY,95.0,0.0,1.3,3.0,3.0,False,-100000
+2026-03-21,Eredivisie,Sparta Rotterdam,Volendam,HOME,95.0,80.0,1.3,2.0,0.0,True,30000
+2026-03-22,Ligue 1,Rennes,Metz,HOME,83.3,72.2,1.3,0.0,0.0,False,-100000
+2026-03-22,Primeira Liga,Sp Braga,Porto,AWAY,68.8,17.5,1.36,1.0,2.0,True,35593
+2026-03-22,USA MLS,Minnesota United,Seattle Sounders,AWAY,73.6,14.3,1.3,0.0,0.0,False,-100000
+2026-03-22,Super League Yunani,Levadeiakos,Atromitos,AWAY,68.2,17.9,1.37,1.0,0.0,False,-100000
+2026-03-22,Super League Yunani,Olympiakos,Larisa,HOME,85.9,73.9,1.3,0.0,0.0,False,-100000
+2026-03-22,Eredivisie,Feyenoord,Ajax,AWAY,68.8,17.5,1.36,1.0,1.0,False,-100000
+2026-03-22,Bundesliga 2,Bochum,Holstein Kiel,AWAY,67.7,18.2,1.38,2.0,3.0,True,37500
+2026-03-22,Argentina Primera,Belgrano,Racing Club,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-03-22,Serie A,Roma,Lecce,HOME,89.7,76.5,1.3,1.0,0.0,True,30000
+2026-03-22,Denmark Superliga,Viborg,Midtjylland,AWAY,79.2,10.5,1.3,1.0,1.0,False,-100000
+2026-03-22,Norway Eliteserien,Rosenborg,Valerenga,HOME,67.3,61.5,1.38,0.0,2.0,False,-100000
+2026-03-22,La Liga 2,Mirandes,Valladolid,AWAY,81.4,9.1,1.3,2.0,1.0,False,-100000
+2026-03-22,Poland Ekstraklasa,Widzew Lodz,Gornik Zabrze,AWAY,70.0,16.7,1.33,0.0,0.0,False,-100000
+2026-03-22,La Liga,Barcelona,Vallecano,HOME,82.1,71.4,1.3,1.0,0.0,True,30000
+2026-03-22,Poland Ekstraklasa,Lech Poznan,Termalica B-B.,HOME,95.0,80.0,1.3,4.0,1.0,True,30000
+2026-03-22,Serie B,Sudtirol,Frosinone,AWAY,65.0,20.0,1.43,1.0,3.0,True,42857
+2026-03-22,Super League Yunani,Volos NFC,PAOK,AWAY,85.0,6.7,1.3,2.0,1.0,False,-100000
+2026-03-23,Mexico Liga MX,Juarez,Tigres UANL,AWAY,83.5,7.7,1.3,2.0,1.0,False,-100000
+2026-03-23,Romania Liga 1,Unirea Slobozia,Otelul,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-03-27,La Liga 2,Cordoba,Mirandes,AWAY,67.7,18.2,1.38,2.0,2.0,False,-100000
+2026-03-28,La Liga 2,Valladolid,Burgos,HOME,65.0,60.0,1.43,0.0,1.0,False,-100000
+2026-03-31,La Liga 2,Valladolid,Cadiz,AWAY,67.7,18.2,1.38,3.0,0.0,False,-100000
+2026-04-03,Ireland Premier Division,Waterford,Shamrock Rovers,AWAY,81.4,9.1,1.3,1.0,1.0,False,-100000
+2026-04-03,Romania Liga 1,FC Botosani,FCSB,AWAY,80.0,10.0,1.3,3.0,2.0,False,-100000
+2026-04-03,La Liga,Vallecano,Elche,AWAY,71.3,15.8,1.31,1.0,0.0,False,-100000
+2026-04-03,Primeira Liga,Sp Lisbon,Santa Clara,HOME,95.0,84.6,1.3,4.0,2.0,True,30000
+2026-04-03,Ligue 1,Paris SG,Toulouse,HOME,75.0,66.7,1.3,3.0,1.0,True,30000
+2026-04-03,Primeira Liga,Guimaraes,Tondela,HOME,65.0,60.0,1.43,5.0,0.0,True,42857
+2026-04-04,Serie A,Lazio,Parma,HOME,69.4,63.0,1.34,1.0,1.0,False,-100000
+2026-04-04,Russia Premier League,Zenit,Krylya Sovetov,HOME,82.1,71.4,1.3,2.0,1.0,True,30000
+2026-04-04,Finland Veikkausliiga,Gnistan,AC Oulu,HOME,95.0,80.0,1.3,1.0,5.0,False,-100000
+2026-04-04,Poland Ekstraklasa,Rakow,Widzew Lodz,HOME,82.1,71.4,1.3,1.0,1.0,False,-100000
+2026-04-04,Primeira Liga,Porto,Famalicao,HOME,90.4,76.9,1.3,2.0,2.0,False,-100000
+2026-04-04,Primeira Liga,Moreirense,Sp Braga,AWAY,82.0,8.7,1.3,0.0,1.0,True,30000
+2026-04-04,La Liga,Ath Madrid,Barcelona,AWAY,65.7,19.5,1.41,1.0,2.0,True,41379
+2026-04-04,La Liga,Mallorca,Real Madrid,AWAY,72.8,14.8,1.3,2.0,1.0,False,-100000
+2026-04-04,Super League Yunani,Kifisia,Panserraikos,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-04-04,Denmark Superliga,Midtjylland,Sonderjyske,HOME,65.0,60.0,1.43,2.0,2.0,False,-100000
+2026-04-04,Sweden Allsvenskan,Degerfors,Sirius,AWAY,76.2,12.5,1.3,0.0,3.0,True,30000
+2026-04-04,Mexico Liga MX,Club Tijuana,Tigres UANL,AWAY,70.0,16.7,1.33,1.0,0.0,False,-100000
+2026-04-04,Super Lig,Kasimpasa,Kayserispor,AWAY,66.0,19.4,1.41,2.0,0.0,False,-100000
+2026-04-04,Finland Veikkausliiga,HJK,SJK,HOME,69.3,62.9,1.35,3.0,0.0,True,34615
+2026-04-04,Bundesliga 2,Bielefeld,Darmstadt,HOME,75.0,66.7,1.3,2.0,1.0,True,30000
+2026-04-04,Eredivisie,AZ Alkmaar,For Sittard,HOME,92.9,78.6,1.3,2.0,0.0,True,30000
+2026-04-04,Eredivisie,PSV Eindhoven,Utrecht,HOME,83.8,72.5,1.3,4.0,3.0,True,30000
+2026-04-04,Bundesliga,Werder Bremen,RB Leipzig,AWAY,77.4,11.8,1.3,1.0,2.0,True,30000
+2026-04-04,Bundesliga,M'gladbach,Heidenheim,HOME,95.0,80.0,1.3,2.0,2.0,False,-100000
+2026-04-04,Ligue 1,Brest,Rennes,AWAY,71.3,15.8,1.31,3.0,4.0,True,31034
+2026-04-04,Poland Ekstraklasa,Gornik Zabrze,Cracovia,AWAY,65.0,20.0,1.43,3.0,0.0,False,-100000
+2026-04-04,China Super League,Qingdao Hainiu,Henan Songshan Longmen,AWAY,70.0,16.7,1.33,1.0,0.0,False,-100000
+2026-04-04,Bundesliga,Freiburg,Bayern Munich,AWAY,90.2,3.2,1.3,2.0,3.0,True,30000
+2026-04-05,Ligue 1,Angers,Lyon,AWAY,78.3,11.1,1.3,0.0,0.0,False,-100000
+2026-04-05,Super League Yunani,Olympiakos,AEK,HOME,65.0,60.0,1.43,0.0,1.0,False,-100000
+2026-04-05,Bundesliga 2,Hannover,Elversberg,AWAY,95.0,0.0,1.3,1.0,1.0,False,-100000
+2026-04-05,Serie B,Palermo,Avellino,HOME,95.0,80.0,1.3,2.0,0.0,True,30000
+2026-04-05,USA MLS,Chicago Fire,Nashville SC,AWAY,78.3,11.1,1.3,1.0,0.0,False,-100000
+2026-04-05,Mexico Liga MX,Queretaro,Toluca,AWAY,67.2,18.5,1.38,1.0,0.0,False,-100000
+2026-04-05,Brazil Serie A,Bahia,Palmeiras,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-04-05,USA MLS,Houston Dynamo,Seattle Sounders,AWAY,78.9,10.7,1.3,0.0,1.0,True,30000
+2026-04-05,La Liga 2,Andorra,Santander,AWAY,65.0,20.0,1.43,6.0,2.0,False,-100000
+2026-04-05,Eredivisie,NAC Breda,Sparta Rotterdam,AWAY,65.0,20.0,1.43,0.0,0.0,False,-100000
+2026-04-05,Austria Bundesliga,Hartberg,Salzburg,AWAY,95.0,0.0,1.3,1.0,2.0,True,30000
+2026-04-05,Serie A,Cremonese,Bologna,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-04-05,USA MLS,Los Angeles FC,Orlando City,HOME,65.0,60.0,1.43,6.0,0.0,True,42857
+2026-04-05,Eredivisie,Volendam,Feyenoord,AWAY,73.6,14.3,1.3,0.0,0.0,False,-100000
+2026-04-05,La Liga 2,Las Palmas,Huesca,AWAY,68.5,17.6,1.36,2.0,1.0,False,-100000
+2026-04-05,Serie B,Frosinone,Padova,AWAY,65.0,20.0,1.43,2.0,0.0,False,-100000
+2026-04-05,Romania Liga 1,Farul Constanta,Unirea Slobozia,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-04-06,Argentina Primera,Argentinos Jrs,Banfield,HOME,75.0,66.7,1.3,3.0,2.0,True,30000
+2026-04-06,Poland Ekstraklasa,Termalica B-B.,Piast Gliwice,AWAY,65.0,20.0,1.43,3.0,2.0,False,-100000
+2026-04-06,Norway Eliteserien,Kristiansund,Bodo/Glimt,AWAY,95.0,0.0,1.3,0.0,3.0,True,30000
+2026-04-06,Denmark Superliga,Vejle,Randers FC,AWAY,95.0,0.0,1.3,1.0,1.0,False,-100000
+2026-04-06,Serie A,Lecce,Atalanta,AWAY,71.9,15.4,1.3,0.0,3.0,True,30000
+2026-04-06,Serie A,Juventus,Genoa,HOME,72.3,64.9,1.3,2.0,0.0,True,30000
+2026-04-06,Primeira Liga,Casa Pia,Benfica,AWAY,73.6,14.3,1.3,1.0,1.0,False,-100000
+2026-04-06,Sweden Allsvenskan,Hacken,Brommapojkarna,HOME,87.5,75.0,1.3,2.0,2.0,False,-100000
+2026-04-08,Super Lig,Goztep,Galatasaray,AWAY,83.5,7.7,1.3,1.0,3.0,True,30000
+2026-04-08,Super League Yunani,Panserraikos,Asteras Tripolis,HOME,70.5,63.6,1.33,0.0,0.0,False,-100000
+2026-04-10,Ligue 2,Guingamp,Grenoble,AWAY,70.0,16.7,1.33,1.0,1.0,False,-100000
+2026-04-10,Bundesliga 2,Fortuna Dusseldorf,Holstein Kiel,AWAY,67.7,18.2,1.38,1.0,2.0,True,37500
+2026-04-10,Austria Bundesliga,Salzburg,LASK,HOME,65.0,60.0,1.43,2.0,3.0,False,-100000
+2026-04-10,Eredivisie,Twente,Volendam,HOME,82.1,71.4,1.3,2.0,1.0,True,30000
+2026-04-10,Championship,West Brom,Millwall,AWAY,71.9,15.4,1.3,0.0,0.0,False,-100000
+2026-04-10,Super Lig,Besiktas,Antalyaspor,HOME,69.3,62.9,1.35,4.0,2.0,True,34615
+2026-04-10,Finland Veikkausliiga,TPS,Lahti,AWAY,66.9,18.8,1.39,2.0,1.0,False,-100000
+2026-04-10,Primeira Liga,Famalicao,Moreirense,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-04-10,Serie B,Frosinone,Palermo,AWAY,78.3,11.1,1.3,1.0,1.0,False,-100000
+2026-04-10,Bundesliga,Augsburg,Hoffenheim,AWAY,66.0,19.4,1.41,2.0,2.0,False,-100000
+2026-04-11,Bundesliga,Heidenheim,Union Berlin,HOME,65.0,60.0,1.43,3.0,1.0,True,42857
+2026-04-11,Serie B,Virtus Entella,Venezia,AWAY,95.0,0.0,1.3,1.0,1.0,False,-100000
+2026-04-11,Serie B,Sudtirol,Modena,AWAY,73.6,14.3,1.3,1.0,1.0,False,-100000
+2026-04-11,Finland Veikkausliiga,KuPS,Gnistan,HOME,75.0,66.7,1.3,1.0,0.0,True,30000
+2026-04-11,Primeira Liga,Estrela,Sp Lisbon,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-04-11,Ligue 1,Rennes,Angers,HOME,75.0,66.7,1.3,2.0,1.0,True,30000
+2026-04-11,Bundesliga,St Pauli,Bayern Munich,AWAY,95.0,0.0,1.3,0.0,5.0,True,30000
+2026-04-11,Austria Bundesliga,Altach,Grazer AK,AWAY,95.0,0.0,1.3,1.0,0.0,False,-100000
+2026-04-11,Eredivisie,Sparta Rotterdam,PSV Eindhoven,AWAY,95.0,0.0,1.3,0.0,2.0,True,30000
+2026-04-11,Eredivisie,Heracles,Ajax,AWAY,83.5,7.7,1.3,0.0,3.0,True,30000
+2026-04-11,Poland Ekstraklasa,Legia,Gornik Zabrze,HOME,65.0,60.0,1.43,1.0,1.0,False,-100000
+2026-04-11,Bundesliga 2,Hertha,Kaiserslautern,HOME,70.5,63.6,1.33,0.0,1.0,False,-100000
+2026-04-11,Bundesliga 2,Darmstadt,Hannover,HOME,78.8,69.2,1.3,0.0,2.0,False,-100000
+2026-04-11,Argentina Primera,Belgrano,Aldosivi,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-04-11,China Super League,Shanghai Shenhua,Shanghai Port,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-04-11,China Super League,Henan Songshan Longmen,Shandong Taishan,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-04-11,Premier League,Arsenal,Bournemouth,HOME,80.9,70.6,1.3,1.0,2.0,False,-100000
+2026-04-11,Championship,Charlton,Preston,AWAY,78.3,11.1,1.3,1.0,2.0,True,30000
+2026-04-11,Championship,Leicester,Swansea,HOME,75.0,66.7,1.3,0.0,1.0,False,-100000
+2026-04-11,Championship,Middlesbrough,Portsmouth,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-04-11,Championship,Sheffield United,Hull,HOME,72.1,64.7,1.3,2.0,1.0,True,30000
+2026-04-11,La Liga,Barcelona,Espanol,HOME,76.4,67.6,1.3,4.0,1.0,True,30000
+2026-04-11,La Liga,Elche,Valencia,AWAY,67.7,18.2,1.38,1.0,0.0,False,-100000
+2026-04-11,Serie A,Atalanta,Juventus,AWAY,82.1,8.6,1.3,0.0,1.0,True,30000
+2026-04-12,Eredivisie,For Sittard,NAC Breda,HOME,65.0,60.0,1.43,1.0,1.0,False,-100000
+2026-04-12,Premier League,Sunderland,Tottenham,AWAY,75.4,13.0,1.3,1.0,0.0,False,-100000
+2026-04-12,Premier League,Crystal Palace,Newcastle,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-04-12,Eredivisie,Zwolle,Excelsior,HOME,67.3,61.5,1.38,2.0,2.0,False,-100000
+2026-04-12,Argentina Primera,Atl. Tucuman,Tigre,AWAY,73.6,14.3,1.3,0.0,0.0,False,-100000
+2026-04-12,Sweden Allsvenskan,Djurgarden,Kalmar,HOME,67.3,61.5,1.38,3.0,2.0,True,38298
+2026-04-12,Austria Bundesliga,Sturm Graz,Hartberg,HOME,65.0,60.0,1.43,0.0,0.0,False,-100000
+2026-04-12,Primeira Liga,Estoril,Porto,AWAY,73.6,14.3,1.3,1.0,3.0,True,30000
+2026-04-12,Primeira Liga,Sp Braga,Arouca,HOME,72.1,64.7,1.3,1.0,0.0,True,30000
+2026-04-12,Primeira Liga,Benfica,Nacional,HOME,95.0,80.0,1.3,2.0,0.0,True,30000
+2026-04-12,Sweden Allsvenskan,Halmstad,Degerfors,AWAY,70.0,16.7,1.33,0.0,3.0,True,33333
+2026-04-12,Mexico Liga MX,Atlas,Monterrey,AWAY,66.9,18.8,1.39,0.0,0.0,False,-100000
+2026-04-12,Serie B,Padova,Empoli,AWAY,67.7,18.2,1.38,1.0,0.0,False,-100000
+2026-04-12,Serie B,Spezia,Mantova,AWAY,95.0,0.0,1.3,0.0,2.0,True,30000
+2026-04-12,Russia Premier League,Zenit,Krasnodar,HOME,69.4,63.0,1.34,1.0,1.0,False,-100000
+2026-04-12,Norway Eliteserien,Molde,HamKam,HOME,65.0,60.0,1.43,4.0,1.0,True,42857
+2026-04-12,Sweden Allsvenskan,Malmo FF,GAIS,HOME,75.0,66.7,1.3,3.0,1.0,True,30000
+2026-04-12,La Liga 2,Mirandes,Castellon,HOME,65.0,60.0,1.43,2.0,2.0,False,-100000
+2026-04-12,USA MLS,Vancouver Whitecaps,New York City,AWAY,73.6,14.3,1.3,2.0,0.0,False,-100000
+2026-04-12,Romania Liga 1,Unirea Slobozia,Petrolul,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-04-12,China Super League,Tianjin Jinmen Tiger,Qingdao Hainiu,HOME,75.0,66.7,1.3,1.0,1.0,False,-100000
+2026-04-13,Romania Liga 1,U. Cluj,Univ. Craiova,AWAY,81.4,9.1,1.3,4.0,0.0,False,-100000
+2026-04-13,Mexico Liga MX,Toluca,Atl. San Luis,HOME,82.1,71.4,1.3,1.0,1.0,False,-100000
+2026-04-13,Sweden Allsvenskan,Sirius,Hammarby,AWAY,78.3,11.1,1.3,2.0,0.0,False,-100000
+2026-04-13,Sweden Allsvenskan,Brommapojkarna,AIK,AWAY,95.0,0.0,1.3,2.0,2.0,False,-100000
+2026-04-13,Romania Liga 1,FC Rapid Bucuresti,FC Arges,HOME,95.0,83.3,1.3,0.0,0.0,False,-100000
+2026-04-13,Argentina Primera,Sarmiento Junin,Gimnasia L.P.,AWAY,67.7,18.2,1.38,1.0,2.0,True,37500
+2026-04-14,Championship,Portsmouth,Ipswich,AWAY,65.0,20.0,1.43,2.0,0.0,False,-100000
+2026-04-14,Argentina Primera,Velez Sarsfield,Central Cordoba,HOME,82.1,71.4,1.3,1.0,0.0,True,30000
+2026-04-15,Norway Eliteserien,Sarpsborg 08,Bodo/Glimt,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-04-17,Ireland Premier Division,Drogheda,St. Patricks,AWAY,74.2,13.9,1.3,1.0,3.0,True,30000
+2026-04-17,China Super League,Wuhan Three Towns,Chengdu Rongcheng,AWAY,76.2,12.5,1.3,0.0,1.0,True,30000
+2026-04-17,Romania Liga 1,FC Arges,CFR Cluj,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-04-17,Serie A,Inter,Cagliari,HOME,68.2,62.2,1.37,3.0,0.0,True,36531
+2026-04-17,Championship,Blackburn,Coventry,AWAY,81.4,9.1,1.3,1.0,1.0,False,-100000
+2026-04-17,Bundesliga 2,Elversberg,Karlsruhe,AWAY,65.0,20.0,1.43,3.0,0.0,False,-100000
+2026-04-17,Poland Ekstraklasa,Legia,Zaglebie,HOME,76.8,67.9,1.3,1.0,0.0,True,30000
+2026-04-17,Russia Premier League,FK Rostov,Sochi,AWAY,67.7,18.2,1.38,0.0,1.0,True,37500
+2026-04-17,Bundesliga,St Pauli,FC Koln,AWAY,81.4,9.1,1.3,1.0,1.0,False,-100000
+2026-04-17,Super Lig,Fenerbahce,Rizespor,HOME,91.7,77.8,1.3,2.0,2.0,False,-100000
+2026-04-17,Super Lig,Antalyaspor,Konyaspor,AWAY,69.1,17.2,1.35,0.0,2.0,True,34884
+2026-04-17,Sweden Allsvenskan,Degerfors,Elfsborg,AWAY,76.2,12.5,1.3,0.0,1.0,True,30000
+2026-04-17,Ligue 2,Rodez,Amiens,AWAY,67.7,18.2,1.38,3.0,2.0,False,-100000
+2026-04-18,Russia Premier League,Krylya Sovetov,CSKA Moscow,AWAY,80.7,9.5,1.3,1.0,1.0,False,-100000
+2026-04-18,Bundesliga 2,Hannover,Paderborn,AWAY,71.9,15.4,1.3,1.0,1.0,False,-100000
+2026-04-18,Russia Premier League,Orenburg,Lokomotiv Moscow,AWAY,71.9,15.4,1.3,0.0,1.0,True,30000
+2026-04-18,Russia Premier League,Pari NN,Dynamo Moscow,AWAY,78.3,11.1,1.3,1.0,1.0,False,-100000
+2026-04-18,Norway Eliteserien,Sandefjord,Rosenborg,AWAY,78.3,11.1,1.3,0.0,0.0,False,-100000
+2026-04-18,Championship,Swansea,Southampton,AWAY,68.5,17.6,1.36,1.0,2.0,True,36000
+2026-04-18,Bundesliga,Leverkusen,Augsburg,HOME,73.3,65.5,1.3,1.0,2.0,False,-100000
+2026-04-18,Super Lig,Genclerbirligi,Galatasaray,AWAY,70.8,16.1,1.32,1.0,2.0,True,31915
+2026-04-18,Ligue 2,Bastia,St Etienne,AWAY,75.0,13.3,1.3,2.0,0.0,False,-100000
+2026-04-18,Ligue 1,Lorient,Marseille,AWAY,66.0,19.4,1.41,2.0,0.0,False,-100000
+2026-04-18,Sweden Allsvenskan,Halmstad,Goteborg,AWAY,85.6,6.2,1.3,1.0,1.0,False,-100000
+2026-04-18,Super League Yunani,Aris,Volos NFC,HOME,68.8,62.5,1.36,3.0,2.0,True,35593
+2026-04-18,Super League Yunani,Kifisia,Asteras Tripolis,AWAY,65.0,20.0,1.43,0.0,0.0,False,-100000
+2026-04-18,Primeira Liga,Casa Pia,Santa Clara,AWAY,65.0,20.0,1.43,0.0,0.0,False,-100000
+2026-04-19,Primeira Liga,Porto,Tondela,HOME,95.0,86.7,1.3,2.0,0.0,True,30000
+2026-04-19,Premier League,Nott'm Forest,Burnley,AWAY,65.0,20.0,1.43,4.0,1.0,False,-100000
+2026-04-19,Premier League,Everton,Liverpool,AWAY,80.4,9.8,1.3,1.0,2.0,True,30000
+2026-04-19,USA MLS,Seattle Sounders,St. Louis City,HOME,95.0,85.7,1.3,4.0,1.0,True,30000
+2026-04-19,Super Lig,Samsunspor,Besiktas,AWAY,78.3,11.1,1.3,2.0,1.0,False,-100000
+2026-04-19,Mexico Liga MX,Club Leon,Juarez,HOME,67.3,61.5,1.38,3.0,1.0,True,38298
+2026-04-19,Mexico Liga MX,Necaxa,Tigres UANL,AWAY,80.7,9.5,1.3,1.0,1.0,False,-100000
+2026-04-19,Brazil Serie A,Vitoria,Corinthians,AWAY,73.6,14.3,1.3,0.0,0.0,False,-100000
+2026-04-19,Romania Liga 1,Petrolul,FC Hermannstadt,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-04-19,Ligue 1,Metz,Paris FC,HOME,75.0,66.7,1.3,1.0,3.0,False,-100000
+2026-04-19,Sweden Allsvenskan,Hacken,GAIS,AWAY,70.0,16.7,1.33,2.0,1.0,False,-100000
+2026-04-19,Poland Ekstraklasa,Termalica B-B.,Wisla Plock,AWAY,73.6,14.3,1.3,1.0,3.0,True,30000
+2026-04-19,Poland Ekstraklasa,Rakow,Cracovia,AWAY,83.5,7.7,1.3,4.0,1.0,False,-100000
+2026-04-19,Poland Ekstraklasa,Arka Gdynia,Jagiellonia,AWAY,78.3,11.1,1.3,0.0,3.0,True,30000
+2026-04-19,Argentina Primera,Aldosivi,Racing Club,AWAY,81.4,9.1,1.3,1.0,1.0,False,-100000
+2026-04-19,Austria Bundesliga,Austria Vienna,Salzburg,AWAY,82.5,8.3,1.3,1.0,3.0,True,30000
+2026-04-19,Brazil Serie A,Flamengo RJ,Bahia,HOME,77.3,68.2,1.3,2.0,0.0,True,30000
+2026-04-19,Bundesliga 2,Braunschweig,Hertha,AWAY,95.0,0.0,1.3,1.0,1.0,False,-100000
+2026-04-19,Bundesliga,Bayern Munich,Stuttgart,HOME,84.5,73.0,1.3,4.0,2.0,True,30000
+2026-04-19,Denmark Superliga,Vejle,FC Copenhagen,AWAY,82.5,8.3,1.3,1.0,4.0,True,30000
+2026-04-19,Serie A,Juventus,Bologna,HOME,73.6,65.7,1.3,2.0,0.0,True,30000
+2026-04-19,Serie A,Verona,Milan,AWAY,73.6,14.3,1.3,0.0,1.0,True,30000
+2026-04-19,Serie A,Cremonese,Torino,AWAY,95.0,0.0,1.3,0.0,0.0,False,-100000
+2026-04-19,Norway Eliteserien,Start,Molde,AWAY,82.5,8.3,1.3,1.0,1.0,False,-100000
+2026-04-20,La Liga 2,La Coruna,Mirandes,AWAY,73.6,14.3,1.3,3.0,1.0,False,-100000
+2026-04-20,Argentina Primera,Central Cordoba,Platense,AWAY,73.6,14.3,1.3,4.0,3.0,False,-100000
+2026-04-20,USA MLS,Los Angeles FC,San Jose Earthquakes,HOME,65.0,60.0,1.43,1.0,4.0,False,-100000
+2026-04-21,China Super League,Wuhan Three Towns,Zhejiang Professional,AWAY,76.2,12.5,1.3,2.0,0.0,False,-100000
+2026-04-21,China Super League,Tianjin Jinmen Tiger,Shandong Taishan,AWAY,76.2,12.5,1.3,1.0,2.0,True,30000
+2026-04-21,Russia Premier League,Sochi,Krylya Sovetov,AWAY,95.0,0.0,1.3,2.0,1.0,False,-100000
+2026-04-21,Championship,Coventry,Portsmouth,HOME,82.1,71.4,1.3,5.0,1.0,True,30000
+2026-04-21,La Liga,Girona,Betis,AWAY,77.4,11.8,1.3,2.0,3.0,True,30000
+2026-04-21,La Liga,Real Madrid,Alaves,HOME,95.0,89.5,1.3,2.0,1.0,True,30000
+2026-04-22,Denmark Superliga,FC Copenhagen,Odense,HOME,75.0,66.7,1.3,2.0,1.0,True,30000
+2026-04-22,Denmark Superliga,Vejle,Silkeborg,AWAY,67.7,18.2,1.38,1.0,2.0,True,37500
+2026-04-22,La Liga,Barcelona,Celta,HOME,66.9,61.3,1.39,1.0,0.0,True,39013
+2026-04-22,Finland Veikkausliiga,KuPS,AC Oulu,HOME,95.0,80.0,1.3,3.0,2.0,True,30000
+2026-04-22,China Super League,Shanghai Shenhua,Qingdao Hainiu,HOME,95.0,100.0,1.3,2.0,0.0,True,30000
+2026-04-22,Austria Bundesliga,Salzburg,Austria Vienna,HOME,79.1,69.4,1.3,3.0,1.0,True,30000
+2026-04-22,Super League Yunani,Panserraikos,Atromitos,AWAY,95.0,0.0,1.3,0.0,4.0,True,30000
+2026-04-22,Premier League,Burnley,Man City,AWAY,87.1,5.3,1.3,0.0,1.0,True,30000
+2026-04-22,Ligue 1,Paris SG,Nantes,HOME,91.1,77.4,1.3,3.0,0.0,True,30000
+2026-04-22,La Liga,Elche,Ath Madrid,AWAY,81.4,9.1,1.3,3.0,2.0,False,-100000
+2026-04-23,Sweden Allsvenskan,GAIS,Mjallby,AWAY,70.0,16.7,1.33,0.0,0.0,False,-100000
+2026-04-23,La Liga,Levante,Sevilla,AWAY,67.2,18.5,1.38,2.0,0.0,False,-100000
+2026-04-23,Sweden Allsvenskan,Malmo FF,Sirius,HOME,75.0,66.7,1.3,2.0,3.0,False,-100000
+2026-04-23,Eredivisie,PSV Eindhoven,Zwolle,HOME,95.0,84.0,1.3,6.0,1.0,True,30000
+2026-04-23,Eredivisie,Go Ahead Eagles,AZ Alkmaar,AWAY,85.0,6.7,1.3,0.0,0.0,False,-100000
+2026-04-23,Mexico Liga MX,Atlas,Tigres UANL,AWAY,70.0,16.7,1.33,0.0,0.0,False,-100000
+2026-04-23,Mexico Liga MX,Necaxa,Guadalajara Chivas,AWAY,71.3,15.8,1.31,0.0,0.0,False,-100000
+2026-04-24,Finland Veikkausliiga,SJK,Jaro,HOME,87.5,75.0,1.3,1.0,1.0,False,-100000
+2026-04-24,Argentina Primera,Defensa y Justicia,Boca Juniors,AWAY,68.5,17.6,1.36,0.0,4.0,True,36000
+2026-04-24,Super Lig,Buyuksehyr,Kasimpasa,HOME,76.6,67.7,1.3,4.0,0.0,True,30000
+2026-04-24,Bundesliga 2,Fortuna Dusseldorf,Dresden,AWAY,67.7,18.2,1.38,3.0,1.0,False,-100000
+2026-04-24,La Liga,Betis,Real Madrid,AWAY,69.3,17.1,1.35,1.0,1.0,False,-100000
+2026-04-24,Poland Ekstraklasa,Zaglebie,Termalica B-B.,HOME,75.0,66.7,1.3,1.0,2.0,False,-100000
+2026-04-24,Ligue 2,Laval,Rodez,HOME,82.1,71.4,1.3,0.0,0.0,False,-100000
+2026-04-25,Premier League,Liverpool,Crystal Palace,HOME,65.0,60.0,1.43,3.0,1.0,True,42857
+2026-04-25,Ligue 1,Toulouse,Monaco,AWAY,66.9,18.8,1.39,2.0,2.0,False,-100000
+2026-04-25,Super Lig,Goztep,Antalyaspor,HOME,67.3,61.5,1.38,2.0,0.0,True,38298
+2026-04-25,La Liga 2,Malaga,Castellon,HOME,75.0,66.7,1.3,2.0,3.0,False,-100000
+2026-04-25,Ligue 1,Angers,Paris SG,AWAY,95.0,0.0,1.3,0.0,3.0,True,30000
+2026-04-25,Primeira Liga,Benfica,Moreirense,HOME,85.9,73.9,1.3,4.0,1.0,True,30000
+2026-04-25,Championship,Birmingham,Bristol City,HOME,71.0,64.0,1.32,2.0,1.0,True,31579
+2026-04-25,Premier League,Arsenal,Newcastle,HOME,76.4,67.6,1.3,1.0,0.0,True,30000
+2026-04-25,Ligue 2,Reims,Nancy,HOME,95.0,100.0,1.3,1.0,1.0,False,-100000
+2026-04-25,Poland Ekstraklasa,Lechia Gdansk,Rakow,AWAY,67.7,18.2,1.38,1.0,2.0,True,37500
+2026-04-25,Eredivisie,Twente,Nijmegen,HOME,65.0,60.0,1.43,1.0,1.0,False,-100000
+2026-04-25,La Liga,Ath Madrid,Ath Bilbao,HOME,66.5,61.0,1.4,3.0,2.0,True,39932
+2026-04-25,La Liga,Getafe,Barcelona,AWAY,83.5,7.7,1.3,0.0,2.0,True,30000
+2026-04-25,Austria Bundesliga,Wolfsberger AC,Grazer AK,HOME,65.0,60.0,1.43,1.0,0.0,True,42857
+2026-04-25,Argentina Primera,Platense,San Lorenzo,AWAY,67.7,18.2,1.38,0.0,1.0,True,37500
+2026-04-25,Russia Premier League,Krylya Sovetov,Lokomotiv Moscow,AWAY,87.9,4.8,1.3,2.0,0.0,False,-100000
+2026-04-25,Ligue 2,St Etienne,Troyes,HOME,65.0,60.0,1.43,0.0,3.0,False,-100000
+2026-04-25,Eredivisie,NAC Breda,Ajax,AWAY,83.9,7.4,1.3,0.0,2.0,True,30000
+2026-04-25,China Super League,Shanghai Port,Wuhan Three Towns,HOME,87.5,75.0,1.3,4.0,0.0,True,30000
+2026-04-25,Finland Veikkausliiga,Lahti,AC Oulu,AWAY,82.5,8.3,1.3,2.0,1.0,False,-100000
+2026-04-25,Ligue 2,Grenoble,Le Mans,AWAY,76.2,12.5,1.3,1.0,1.0,False,-100000
+2026-04-26,Primeira Liga,Santa Clara,Sp Braga,AWAY,71.9,15.4,1.3,2.0,1.0,False,-100000
+2026-04-26,Argentina Primera,River Plate,Aldosivi,HOME,95.0,85.7,1.3,3.0,1.0,True,30000
+2026-04-26,La Liga 2,Cordoba,Sp Gijon,AWAY,71.9,15.4,1.3,3.0,2.0,False,-100000
+2026-04-26,Bundesliga 2,Paderborn,Schalke 04,AWAY,67.7,18.2,1.38,2.0,3.0,True,37500
+2026-04-26,Eredivisie,Heracles,Volendam,AWAY,95.0,0.0,1.3,0.0,2.0,True,30000
+2026-04-26,Eredivisie,Excelsior,Utrecht,AWAY,80.7,9.5,1.3,5.0,0.0,False,-100000
+2026-04-26,Serie A,Torino,Inter,AWAY,76.8,12.1,1.3,2.0,2.0,False,-100000
+2026-04-26,Serie A,Genoa,Como,AWAY,95.0,0.0,1.3,0.0,2.0,True,30000
+2026-04-26,Bundesliga,Dortmund,Freiburg,HOME,91.1,77.4,1.3,4.0,0.0,True,30000
+2026-04-26,Poland Ekstraklasa,Wisla Plock,Radomiak Radom,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-04-26,Primeira Liga,Estrela,Porto,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-04-26,Russia Premier League,Pari NN,Spartak Moscow,AWAY,78.3,11.1,1.3,1.0,2.0,True,30000
+2026-04-26,China Super League,Qingdao Hainiu,Shandong Taishan,AWAY,95.0,0.0,1.3,4.0,1.0,False,-100000
+2026-04-26,Denmark Superliga,Viborg,Nordsjaelland,AWAY,68.9,17.4,1.35,1.0,0.0,False,-100000
+2026-04-26,USA MLS,San Diego FC,Portland Timbers,HOME,65.0,60.0,1.43,1.0,2.0,False,-100000
+2026-04-26,USA MLS,St. Louis City,San Jose Earthquakes,HOME,95.0,100.0,1.3,2.0,3.0,False,-100000
+2026-04-26,USA MLS,Inter Miami,New England Revolution,HOME,80.0,70.0,1.3,1.0,1.0,False,-100000
+2026-04-26,Romania Liga 1,UTA Arad,Farul Constanta,AWAY,67.7,18.2,1.38,0.0,0.0,False,-100000
+2026-04-26,Sweden Allsvenskan,Djurgarden,Hammarby,AWAY,74.5,13.6,1.3,1.0,1.0,False,-100000
+2026-04-26,Super League Yunani,Larisa,Panserraikos,HOME,75.0,66.7,1.3,0.0,1.0,False,-100000
+2026-04-26,Super League Yunani,Kifisia,Panetolikos,AWAY,95.0,0.0,1.3,0.0,0.0,False,-100000
+2026-04-26,Brazil Serie A,Corinthians,Vasco,HOME,72.5,65.0,1.3,1.0,0.0,True,30000
+2026-04-26,Norway Eliteserien,Aalesund,Kristiansund,AWAY,70.0,16.7,1.33,1.0,1.0,False,-100000
+2026-04-26,Norway Eliteserien,Molde,Valerenga,HOME,78.8,69.2,1.3,5.0,1.0,True,30000
+2026-04-26,Austria Bundesliga,Hartberg,LASK,AWAY,65.0,20.0,1.43,1.0,5.0,True,42857
+2026-04-27,Super Lig,Besiktas,Karagumruk,HOME,91.7,77.8,1.3,0.0,0.0,False,-100000
+2026-04-27,Sweden Allsvenskan,AIK,Malmo FF,AWAY,78.9,10.7,1.3,0.0,1.0,True,30000
+2026-04-27,Denmark Superliga,FC Copenhagen,Vejle,HOME,95.0,84.6,1.3,3.0,0.0,True,30000
+2026-04-29,Primeira Liga,Sp Lisbon,Tondela,HOME,75.0,66.7,1.3,2.0,2.0,False,-100000
+2026-05-01,La Liga 2,La Coruna,Leganes,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-05-01,Serie B,Juve Stabia,Frosinone,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-05-01,Serie B,Palermo,Catanzaro,AWAY,65.0,20.0,1.43,3.0,2.0,False,-100000
+2026-05-01,Serie B,Sampdoria,Sudtirol,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-05-01,Norway Eliteserien,Viking,Rosenborg,AWAY,71.9,15.4,1.3,3.0,0.0,False,-100000
+2026-05-01,China Super League,Shanghai Shenhua,Chengdu Rongcheng,AWAY,76.2,12.5,1.3,2.0,3.0,True,30000
+2026-05-01,Ireland Premier Division,Galway,St. Patricks,AWAY,70.0,16.7,1.33,2.0,2.0,False,-100000
+2026-05-01,La Liga 2,Andorra,Albacete,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-05-01,Ireland Premier Division,Shamrock Rovers,Waterford,HOME,95.0,82.6,1.3,1.0,0.0,True,30000
+2026-05-01,Poland Ekstraklasa,Legia,Widzew Lodz,HOME,70.5,63.6,1.33,1.0,0.0,True,32530
+2026-05-01,Russia Premier League,Krylya Sovetov,Spartak Moscow,AWAY,73.6,14.3,1.3,2.0,1.0,False,-100000
+2026-05-02,Ligue 2,Amiens,Red Star,HOME,65.0,60.0,1.43,1.0,3.0,False,-100000
+2026-05-02,Ligue 2,Le Mans,Reims,AWAY,95.0,0.0,1.3,1.0,1.0,False,-100000
+2026-05-02,Ligue 1,Metz,Monaco,AWAY,72.5,15.0,1.3,1.0,2.0,True,30000
+2026-05-02,La Liga 2,Castellon,Cordoba,AWAY,95.0,0.0,1.3,1.0,2.0,True,30000
+2026-05-02,Primeira Liga,Famalicao,Benfica,AWAY,71.9,15.4,1.3,2.0,2.0,False,-100000
+2026-05-02,Primeira Liga,Moreirense,Estrela,AWAY,65.0,20.0,1.43,3.0,2.0,False,-100000
+2026-05-02,Bundesliga,Bayern Munich,Heidenheim,HOME,95.0,80.0,1.3,3.0,3.0,False,-100000
+2026-05-02,Eredivisie,Groningen,Excelsior,HOME,65.0,60.0,1.43,2.0,3.0,False,-100000
+2026-05-02,Finland Veikkausliiga,AC Oulu,KuPS,AWAY,81.4,9.1,1.3,2.0,0.0,False,-100000
+2026-05-02,La Liga,Villarreal,Levante,HOME,71.0,64.0,1.32,5.0,1.0,True,31579
+2026-05-02,La Liga,Osasuna,Barcelona,AWAY,72.3,15.2,1.3,1.0,2.0,True,30000
+2026-05-02,Super Lig,Samsunspor,Galatasaray,AWAY,95.0,0.0,1.3,4.0,1.0,False,-100000
+2026-05-02,Premier League,Arsenal,Fulham,HOME,68.1,62.1,1.37,3.0,0.0,True,36792
+2026-05-02,Premier League,Brentford,West Ham,HOME,91.7,77.8,1.3,3.0,0.0,True,30000
+2026-05-02,China Super League,Qingdao Hainiu,Shanghai Port,AWAY,95.0,0.0,1.3,3.0,1.0,False,-100000
+2026-05-02,Argentina Primera,Central Cordoba,Boca Juniors,AWAY,80.0,10.0,1.3,1.0,2.0,True,30000
+2026-05-02,Russia Premier League,CSKA Moscow,Zenit,AWAY,72.8,14.8,1.3,1.0,3.0,True,30000
+2026-05-02,Norway Eliteserien,Brann,Fredrikstad,HOME,75.0,66.7,1.3,3.0,1.0,True,30000
+2026-05-03,Argentina Primera,Rosario Central,Tigre,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-05-03,USA MLS,New York Red Bulls,FC Dallas,HOME,65.0,60.0,1.43,0.0,2.0,False,-100000
+2026-05-03,Norway Eliteserien,Start,Tromso,HOME,68.8,62.5,1.36,1.0,1.0,False,-100000
+2026-05-03,Denmark Superliga,Randers FC,Vejle,HOME,85.0,73.3,1.3,1.0,0.0,True,30000
+2026-05-03,USA MLS,New England Revolution,Charlotte,HOME,68.8,62.5,1.36,1.0,0.0,True,35593
+2026-05-03,Russia Premier League,Sochi,Orenburg,AWAY,73.6,14.3,1.3,3.0,1.0,False,-100000
+2026-05-03,Eredivisie,For Sittard,Feyenoord,AWAY,75.0,13.3,1.3,1.0,2.0,True,30000
+2026-05-03,Eredivisie,Volendam,Heerenveen,AWAY,73.6,14.3,1.3,0.0,2.0,True,30000
+2026-05-03,Poland Ekstraklasa,Zaglebie,Cracovia,AWAY,67.2,18.5,1.38,0.0,0.0,False,-100000
+2026-05-03,Argentina Primera,Racing Club,Huracan,HOME,75.0,66.7,1.3,0.0,0.0,False,-100000
+2026-05-03,Serie A,Juventus,Verona,HOME,66.3,60.9,1.4,1.0,1.0,False,-100000
+2026-05-03,Brazil Serie A,Cruzeiro,Atletico-MG,AWAY,67.7,18.2,1.38,1.0,3.0,True,37500
+2026-05-03,Primeira Liga,Sp Braga,Estoril,HOME,75.0,66.7,1.3,1.0,1.0,False,-100000
+2026-05-03,Romania Liga 1,Petrolul,UTA Arad,AWAY,67.7,18.2,1.38,1.0,1.0,False,-100000
+2026-05-03,La Liga,Getafe,Vallecano,AWAY,68.9,17.4,1.35,0.0,2.0,True,35294
+2026-05-03,USA MLS,Austin FC,St. Louis City,AWAY,70.0,16.7,1.33,2.0,0.0,False,-100000
+2026-05-03,Ligue 1,Paris FC,Brest,AWAY,73.6,14.3,1.3,4.0,0.0,False,-100000
+2026-05-03,Ligue 1,Auxerre,Angers,AWAY,71.9,15.4,1.3,3.0,1.0,False,-100000
+2026-05-03,La Liga,Espanol,Real Madrid,AWAY,74.7,13.5,1.3,0.0,2.0,True,30000
+2026-05-03,Ligue 1,Lille,Le Havre,HOME,95.0,85.7,1.3,1.0,1.0,False,-100000
+2026-05-04,Poland Ekstraklasa,Radomiak Radom,Lechia Gdansk,HOME,82.1,71.4,1.3,3.0,1.0,True,30000
+2026-05-04,Ireland Premier Division,Shamrock Rovers,Drogheda,HOME,75.0,66.7,1.3,4.0,1.0,True,30000
+2026-05-04,Primeira Liga,Sp Lisbon,Guimaraes,HOME,71.2,64.1,1.31,5.0,1.0,True,31313
+2026-05-04,Romania Liga 1,Unirea Slobozia,FC Hermannstadt,AWAY,65.0,20.0,1.43,2.0,2.0,False,-100000
+2026-05-05,Finland Veikkausliiga,Gnistan,Inter Turku,AWAY,73.6,14.3,1.3,2.0,0.0,False,-100000
+2026-05-06,China Super League,Wuhan Three Towns,Qingdao Hainiu,HOME,75.0,66.7,1.3,1.0,3.0,False,-100000
+2026-05-08,Finland Veikkausliiga,Ilves,AC Oulu,HOME,75.0,66.7,1.3,1.0,0.0,True,30000
+2026-05-08,Ireland Premier Division,Galway,Shamrock Rovers,AWAY,95.0,0.0,1.3,1.0,3.0,True,30000
+2026-05-08,Serie B,Reggiana,Sampdoria,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-05-08,La Liga 2,Cadiz,La Coruna,AWAY,78.3,11.1,1.3,0.0,1.0,True,30000
+2026-05-09,Bundesliga,Stuttgart,Leverkusen,AWAY,70.7,16.2,1.32,3.0,1.0,False,-100000
+2026-05-09,Bundesliga,Wolfsburg,Bayern Munich,AWAY,84.0,7.3,1.3,0.0,1.0,True,30000
+2026-05-09,Bundesliga 2,Nurnberg,Schalke 04,AWAY,71.0,16.0,1.32,3.0,0.0,False,-100000
+2026-05-09,Ligue 2,Nancy,Dunkerque,HOME,95.0,80.0,1.3,3.0,2.0,True,30000
+2026-05-09,Argentina Primera,Talleres Cordoba,Belgrano,AWAY,81.4,9.1,1.3,0.0,1.0,True,30000
+2026-05-09,Romania Liga 1,Otelul,Farul Constanta,AWAY,73.6,14.3,1.3,3.0,2.0,False,-100000
+2026-05-09,Ligue 2,Annecy,Rodez,AWAY,73.6,14.3,1.3,1.0,2.0,True,30000
+2026-05-09,USA MLS,Toronto FC,Inter Miami,AWAY,70.0,16.7,1.33,2.0,4.0,True,33333
+2026-05-09,La Liga,Ath Madrid,Celta,HOME,71.8,64.5,1.3,0.0,1.0,False,-100000
+2026-05-09,Finland Veikkausliiga,Inter Turku,Jaro,HOME,71.4,64.3,1.31,2.0,0.0,True,30841
+2026-05-09,Finland Veikkausliiga,VPS,Gnistan,AWAY,65.0,20.0,1.43,1.0,1.0,False,-100000
+2026-05-09,Serie A,Lecce,Juventus,AWAY,87.1,5.3,1.3,0.0,1.0,True,30000
+2026-05-09,Brazil Serie A,Coritiba,Internacional,AWAY,76.2,12.5,1.3,2.0,2.0,False,-100000
+2026-05-09,Super Lig,Buyuksehyr,Samsunspor,HOME,82.1,71.4,1.3,3.0,0.0,True,30000
+2026-05-09,Premier League,Man City,Brentford,HOME,75.0,66.7,1.3,3.0,0.0,True,30000
+2026-05-09,Premier League,Sunderland,Man United,AWAY,82.0,8.7,1.3,0.0,0.0,False,-100000
+2026-05-09,Premier League,Fulham,Bournemouth,AWAY,71.9,15.4,1.3,0.0,1.0,True,30000
+2026-05-09,Sweden Allsvenskan,Goteborg,Hammarby,AWAY,67.7,18.2,1.38,0.0,1.0,True,37500
+2026-05-09,Sweden Allsvenskan,Degerfors,Mjallby,AWAY,95.0,0.0,1.3,1.0,4.0,True,30000
+2026-05-10,Premier League,Burnley,Aston Villa,AWAY,71.9,15.4,1.3,2.0,2.0,False,-100000
+2026-05-10,Serie A,Cremonese,Pisa,AWAY,67.7,18.2,1.38,3.0,0.0,False,-100000
+2026-05-10,Premier League,Crystal Palace,Everton,AWAY,77.0,12.0,1.3,2.0,2.0,False,-100000
+2026-05-10,Premier League,West Ham,Arsenal,AWAY,68.1,17.9,1.37,0.0,1.0,True,36842
+2026-05-10,La Liga,Mallorca,Villarreal,AWAY,65.0,20.0,1.43,1.0,1.0,False,-100000
+2026-05-10,China Super League,Zhejiang Professional,Tianjin Jinmen Tiger,HOME,68.8,62.5,1.36,1.0,1.0,False,-100000
+2026-05-10,Sweden Allsvenskan,AIK,Djurgarden,HOME,66.1,60.7,1.41,2.0,4.0,False,-100000
+2026-05-10,Austria Bundesliga,Hartberg,Sturm Graz,AWAY,66.4,19.0,1.4,2.0,4.0,True,40000
+2026-05-10,Austria Bundesliga,LASK,Salzburg,AWAY,66.0,19.4,1.41,2.0,1.0,False,-100000
+2026-05-10,Serie A,Parma,Roma,AWAY,78.3,11.1,1.3,2.0,3.0,True,30000
+2026-05-10,Bundesliga 2,Hertha,Greuther Furth,HOME,75.0,66.7,1.3,2.0,1.0,True,30000
+2026-05-10,Bundesliga 2,Fortuna Dusseldorf,Elversberg,AWAY,65.0,20.0,1.43,3.0,1.0,False,-100000
+2026-05-10,La Liga 2,Mirandes,Eibar,AWAY,67.7,18.2,1.38,0.0,1.0,True,37500
+2026-05-10,La Liga 2,Cordoba,Granada,AWAY,67.7,18.2,1.38,1.0,0.0,False,-100000
+2026-05-10,USA MLS,Atlanta Utd,Los Angeles Galaxy,HOME,65.0,60.0,1.43,1.0,2.0,False,-100000
+2026-05-10,Mexico Liga MX,Guadalajara Chivas,Tigres UANL,AWAY,72.3,15.2,1.3,2.0,0.0,False,-100000
+2026-05-10,Russia Premier League,Zenit,Sochi,HOME,84.1,72.7,1.3,2.0,1.0,True,30000
+2026-05-10,Ligue 1,Le Havre,Marseille,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-05-10,Denmark Superliga,Silkeborg,FC Copenhagen,AWAY,72.8,14.8,1.3,0.0,4.0,True,30000
+2026-05-10,Brazil Serie A,Bahia,Cruzeiro,AWAY,70.0,16.7,1.33,1.0,2.0,True,33333
+2026-05-10,Bundesliga,FC Koln,Heidenheim,AWAY,65.0,20.0,1.43,1.0,3.0,True,42857
+2026-05-10,Ligue 1,Toulouse,Lyon,AWAY,66.6,18.9,1.4,2.0,1.0,False,-100000
+2026-05-10,Ligue 1,Paris SG,Brest,HOME,95.0,88.9,1.3,1.0,0.0,True,30000
+2026-05-10,Brazil Serie A,Santos,Bragantino,AWAY,65.0,20.0,1.43,2.0,0.0,False,-100000
+2026-05-10,Bundesliga,Mainz,Union Berlin,AWAY,83.5,7.7,1.3,1.0,3.0,True,30000
+2026-05-10,Eredivisie,Excelsior,Volendam,HOME,65.0,60.0,1.43,1.0,1.0,False,-100000
+2026-05-10,Eredivisie,Go Ahead Eagles,PSV Eindhoven,AWAY,85.0,6.7,1.3,1.0,4.0,True,30000
+2026-05-10,Eredivisie,NAC Breda,Heerenveen,AWAY,72.8,14.8,1.3,2.0,0.0,False,-100000
+2026-05-11,Primeira Liga,Guimaraes,Casa Pia,AWAY,73.6,14.3,1.3,0.0,1.0,True,30000
+2026-05-11,Premier League,Tottenham,Leeds,HOME,95.0,85.7,1.3,1.0,1.0,False,-100000
+2026-05-11,Primeira Liga,Santa Clara,Nacional,HOME,82.1,71.4,1.3,2.0,0.0,True,30000
+2026-05-11,Primeira Liga,Gil Vicente,Arouca,AWAY,95.0,0.0,1.3,1.0,3.0,True,30000
+2026-05-11,Primeira Liga,Rio Ave,Sp Lisbon,AWAY,77.9,11.4,1.3,1.0,4.0,True,30000
+2026-05-11,Russia Premier League,Pari NN,CSKA Moscow,AWAY,78.3,11.1,1.3,1.0,2.0,True,30000
+2026-05-11,Brazil Serie A,Vasco,Athletico-PR,AWAY,66.9,18.8,1.39,1.0,0.0,False,-100000
+2026-05-13,La Liga,Alaves,Barcelona,AWAY,87.1,5.3,1.3,1.0,0.0,False,-100000
+2026-05-13,Argentina Primera,Argentinos Jrs,Huracan,AWAY,73.6,14.3,1.3,0.0,0.0,False,-100000
+2026-05-13,Ligue 1,Lens,Paris SG,AWAY,68.9,17.4,1.35,0.0,2.0,True,35294
+2026-05-13,Premier League,Man City,Crystal Palace,HOME,77.0,68.0,1.3,3.0,0.0,True,30000
+2026-05-14,La Liga,Girona,Sociedad,AWAY,75.0,13.3,1.3,1.0,1.0,False,-100000
+2026-05-14,Argentina Primera,River Plate,Gimnasia L.P.,HOME,77.6,68.4,1.3,2.0,0.0,True,30000
+2026-05-14,USA MLS,St. Louis City,Los Angeles FC,AWAY,95.0,0.0,1.3,2.0,1.0,False,-100000
+2026-05-15,Premier League,Aston Villa,Liverpool,AWAY,73.6,14.3,1.3,4.0,2.0,False,-100000
+2026-05-15,Romania Liga 1,FC Arges,FC Rapid Bucuresti,AWAY,95.0,0.0,1.3,2.0,2.0,False,-100000
+2026-05-15,Super Lig,Rizespor,Besiktas,AWAY,78.3,11.1,1.3,2.0,2.0,False,-100000
+2026-05-16,Primeira Liga,Porto,Santa Clara,HOME,95.0,84.6,1.3,1.0,0.0,True,30000
+2026-05-16,Primeira Liga,Estoril,Benfica,AWAY,95.0,0.0,1.3,1.0,3.0,True,30000
+2026-05-16,Bundesliga,Union Berlin,Augsburg,AWAY,77.4,11.8,1.3,4.0,0.0,False,-100000
+2026-05-16,Bundesliga,St Pauli,Wolfsburg,AWAY,95.0,0.0,1.3,1.0,3.0,True,30000
+2026-05-16,Sweden Allsvenskan,Halmstad,Elfsborg,AWAY,66.9,18.8,1.39,1.0,1.0,False,-100000
+2026-05-16,Bundesliga,Freiburg,RB Leipzig,AWAY,66.4,19.0,1.4,4.0,1.0,False,-100000
+2026-05-16,Bundesliga,Bayern Munich,FC Koln,HOME,83.6,72.4,1.3,5.0,1.0,True,30000
+2026-05-16,Primeira Liga,Sp Braga,Estrela,HOME,65.0,60.0,1.43,2.0,2.0,False,-100000
+2026-05-16,Norway Eliteserien,Viking,Start,HOME,95.0,80.0,1.3,6.0,3.0,True,30000
+2026-05-16,Norway Eliteserien,Lillestrom,Sandefjord,HOME,82.1,71.4,1.3,3.0,1.0,True,30000
+2026-05-16,Super League Yunani,Asteras Tripolis,Kifisia,AWAY,70.0,16.7,1.33,0.0,0.0,False,-100000
+2026-05-16,Super League Yunani,Larisa,Atromitos,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-05-16,Primeira Liga,Sp Lisbon,Gil Vicente,HOME,85.9,73.9,1.3,3.0,0.0,True,30000
+2026-05-16,Austria Bundesliga,BW Linz,Grazer AK,AWAY,65.0,20.0,1.43,0.0,3.0,True,42857
+2026-05-16,Poland Ekstraklasa,Radomiak Radom,Lech Poznan,AWAY,78.3,11.1,1.3,1.0,3.0,True,30000
+2026-05-16,Super Lig,Karagumruk,Alanyaspor,AWAY,78.3,11.1,1.3,2.0,1.0,False,-100000
+2026-05-17,USA MLS,New England Revolution,Minnesota United,HOME,65.0,60.0,1.43,2.0,1.0,True,42857
+2026-05-17,USA MLS,Austin FC,Sporting Kansas City,HOME,70.5,63.6,1.33,1.0,2.0,False,-100000
+2026-05-17,Super League Yunani,Panserraikos,Panetolikos,AWAY,78.3,11.1,1.3,1.0,1.0,False,-100000
+2026-05-17,Argentina Primera,Argentinos Jrs,Belgrano,AWAY,70.0,16.7,1.33,1.0,1.0,False,-100000
+2026-05-17,Eredivisie,Nijmegen,Go Ahead Eagles,AWAY,71.9,15.4,1.3,2.0,1.0,False,-100000
+2026-05-17,Eredivisie,Heerenveen,Ajax,AWAY,76.2,12.5,1.3,0.0,0.0,False,-100000
+2026-05-17,Eredivisie,Zwolle,Feyenoord,AWAY,65.0,20.0,1.43,0.0,2.0,True,42857
+2026-05-17,Austria Bundesliga,Austria Vienna,LASK,AWAY,71.0,16.0,1.32,0.0,3.0,True,31579
+2026-05-17,Austria Bundesliga,Salzburg,Hartberg,HOME,95.0,85.7,1.3,1.0,3.0,False,-100000
+2026-05-17,La Liga,Ath Madrid,Girona,HOME,70.5,63.6,1.33,1.0,0.0,True,32530
+2026-05-17,La Liga,Oviedo,Alaves,AWAY,65.0,20.0,1.43,0.0,1.0,True,42857
+2026-05-17,La Liga,Barcelona,Betis,HOME,82.1,71.4,1.3,3.0,1.0,True,30000
+2026-05-17,Serie A,Genoa,Milan,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-05-17,Serie A,Inter,Verona,HOME,95.0,81.0,1.3,1.0,1.0,False,-100000
+2026-05-17,Premier League,Leeds,Brighton,AWAY,80.7,9.5,1.3,1.0,0.0,False,-100000
+2026-05-17,Russia Premier League,FK Rostov,Zenit,AWAY,78.3,11.1,1.3,0.0,1.0,True,30000
+2026-05-17,Russia Premier League,Sochi,Akhmat Grozny,HOME,70.5,63.6,1.33,1.0,1.0,False,-100000
+2026-05-17,Mexico Liga MX,Guadalajara Chivas,Cruz Azul,AWAY,66.0,19.4,1.41,1.0,2.0,True,40909
+2026-05-17,Bundesliga 2,Bielefeld,Hertha,AWAY,65.0,20.0,1.43,6.0,1.0,False,-100000
+2026-05-17,Bundesliga 2,Dresden,Holstein Kiel,AWAY,95.0,0.0,1.3,2.0,1.0,False,-100000
+2026-05-18,Premier League,Arsenal,Burnley,HOME,85.5,73.7,1.3,1.0,0.0,True,30000
+2026-05-18,Sweden Allsvenskan,Djurgarden,Sirius,HOME,83.3,72.2,1.3,2.0,3.0,False,-100000
+2026-05-18,Poland Ekstraklasa,Arka Gdynia,Termalica B-B.,AWAY,70.0,16.7,1.33,2.0,3.0,True,33333
+2026-05-18,Romania Liga 1,FC Hermannstadt,FCSB,AWAY,73.6,14.3,1.3,2.0,0.0,False,-100000
+2026-05-19,China Super League,Chengdu Rongcheng,Shanghai Port,HOME,68.8,62.5,1.36,0.0,1.0,False,-100000
+2026-05-19,Premier League,Bournemouth,Man City,AWAY,86.2,5.9,1.3,1.0,1.0,False,-100000
+2026-05-20,Norway Eliteserien,Aalesund,Brann,AWAY,84.3,7.1,1.3,2.0,1.0,False,-100000
+2026-05-20,Norway Eliteserien,Lillestrom,Kristiansund,AWAY,70.0,16.7,1.33,1.0,2.0,True,33333
+2026-05-21,Super League Yunani,Panetolikos,Asteras Tripolis,AWAY,67.7,18.2,1.38,1.0,2.0,True,37500
+2026-05-22,Romania Liga 1,CFR Cluj,FC Arges,HOME,95.0,81.8,1.3,1.0,1.0,False,-100000
+2026-05-22,Finland Veikkausliiga,VPS,HJK,AWAY,67.7,18.2,1.38,2.0,1.0,False,-100000
+2026-05-22,Sweden Allsvenskan,Djurgarden,Brommapojkarna,HOME,75.0,66.7,1.3,1.0,2.0,False,-100000
+2026-05-23,Poland Ekstraklasa,Lech Poznan,Wisla Plock,HOME,68.8,62.5,1.36,2.0,2.0,False,-100000
+2026-05-23,La Liga,Valencia,Barcelona,AWAY,76.7,12.2,1.3,3.0,1.0,False,-100000
+2026-05-23,La Liga,Real Madrid,Ath Bilbao,HOME,92.1,78.0,1.3,4.0,2.0,True,30000
+2026-05-23,Finland Veikkausliiga,Jaro,Mariehamn,AWAY,65.0,20.0,1.43,3.0,0.0,False,-100000
+2026-05-23,China Super League,Shanghai Port,Tianjin Jinmen Tiger,HOME,80.0,70.0,1.3,1.0,1.0,False,-100000
+2026-05-23,Sweden Allsvenskan,Kalmar,Degerfors,HOME,95.0,83.3,1.3,2.0,1.0,True,30000
+2026-05-24,Premier League,Crystal Palace,Arsenal,AWAY,77.0,12.0,1.3,1.0,2.0,True,30000
+2026-05-24,Premier League,Liverpool,Brentford,HOME,75.0,66.7,1.3,1.0,1.0,False,-100000
+2026-05-24,Serie A,Verona,Roma,AWAY,73.6,14.3,1.3,0.0,2.0,True,30000
+2026-05-24,Serie A,Torino,Juventus,AWAY,90.2,3.2,1.3,2.0,2.0,False,-100000
+2026-05-24,Serie A,Milan,Cagliari,HOME,88.5,75.7,1.3,1.0,2.0,False,-100000
+2026-05-24,Serie A,Lecce,Genoa,AWAY,75.0,13.3,1.3,1.0,0.0,False,-100000
+2026-05-24,La Liga 2,Mirandes,Granada,AWAY,65.0,20.0,1.43,3.0,1.0,False,-100000
+2026-05-24,La Liga 2,Eibar,Cordoba,HOME,70.5,63.6,1.33,2.0,0.0,True,32530
+2026-05-24,Serie A,Cremonese,Como,HOME,95.0,80.0,1.3,1.0,4.0,False,-100000
+2026-05-24,Romania Liga 1,FCSB,FC Botosani,HOME,81.5,71.0,1.3,3.0,3.0,False,-100000
+2026-05-24,Premier League,Man City,Aston Villa,HOME,77.9,68.6,1.3,1.0,2.0,False,-100000
+2026-05-24,Premier League,Nott'm Forest,Bournemouth,AWAY,75.0,13.3,1.3,1.0,1.0,False,-100000
+2026-05-24,Premier League,Sunderland,Chelsea,AWAY,68.9,17.4,1.35,2.0,1.0,False,-100000
+2026-05-26,Brazil Serie A,Coritiba,Bahia,AWAY,70.0,16.7,1.33,3.0,2.0,False,-100000
+2026-05-30,Sweden Allsvenskan,AIK,Sirius,HOME,75.0,66.7,1.3,0.0,3.0,False,-100000
+2026-05-30,Brazil Serie A,Flamengo RJ,Coritiba,HOME,75.0,66.7,1.3,3.0,0.0,True,30000
+2026-05-30,Finland Veikkausliiga,HJK,Mariehamn,HOME,92.6,78.4,1.3,1.0,0.0,True,30000
+2026-05-30,Sweden Allsvenskan,Malmo FF,Halmstad,HOME,87.5,75.0,1.3,5.0,2.0,True,30000
+2026-05-30,Finland Veikkausliiga,Gnistan,SJK,AWAY,70.0,16.7,1.33,3.0,2.0,False,-100000
+2026-05-31,Brazil Serie A,Bragantino,Internacional,AWAY,82.5,8.3,1.3,3.0,1.0,False,-100000
+2026-05-31,Brazil Serie A,Santos,Vitoria,HOME,87.5,75.0,1.3,3.0,1.0,True,30000
+2026-05-31,Romania Liga 1,Farul Constanta,Chindia Targoviste,AWAY,95.0,0.0,1.3,1.0,1.0,False,-100000
+2026-06-12,Ireland Premier Division,Shelbourne,Shamrock Rovers,AWAY,77.7,11.5,1.3,2.0,1.0,False,-100000
+2026-06-13,Finland Veikkausliiga,Ilves,TPS,HOME,95.0,100.0,1.3,1.0,0.0,True,30000
+2026-06-13,Finland Veikkausliiga,Jaro,HJK,AWAY,84.3,7.1,1.3,2.0,5.0,True,30000
+2026-06-13,Finland Veikkausliiga,Mariehamn,Gnistan,AWAY,95.0,0.0,1.3,0.0,3.0,True,30000
+2026-06-17,Finland Veikkausliiga,Ilves,Jaro,HOME,65.0,60.0,1.43,5.0,0.0,True,42857
+2026-06-19,Ireland Premier Division,Waterford,Shamrock Rovers,AWAY,82.5,8.3,1.3,0.0,2.0,True,30000
+2026-06-23,Finland Veikkausliiga,Mariehamn,HJK,AWAY,87.1,5.3,1.3,0.0,4.0,True,30000
+2026-06-26,Ireland Premier Division,Shamrock Rovers,Galway,HOME,93.4,78.9,1.3,3.0,1.0,True,30000
+2026-06-27,China Super League,Shenzhen Xinpengcheng,Chengdu Rongcheng,AWAY,95.0,0.0,1.3,2.0,3.0,True,30000
+2026-07-03,Sweden Allsvenskan,Sirius,Mjallby,AWAY,70.0,16.7,1.33,4.0,4.0,False,-100000
+2026-07-04,China Super League,Qingdao West Coast,Shanghai Port,AWAY,95.0,0.0,1.3,2.0,1.0,False,-100000
+2026-07-04,China Super League,Beijing Guoan,Shandong Taishan,AWAY,67.7,18.2,1.38,2.0,0.0,False,-100000
+2026-07-04,China Super League,Tianjin Jinmen Tiger,Shenzhen Xinpengcheng,HOME,65.0,60.0,1.43,3.0,0.0,True,42857
+2026-07-04,Sweden Allsvenskan,Degerfors,Malmo FF,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-07-04,Finland Veikkausliiga,SJK,TPS,HOME,75.0,66.7,1.3,3.0,1.0,True,30000
+2026-07-05,China Super League,Qingdao Hainiu,Chengdu Rongcheng,AWAY,73.6,14.3,1.3,1.0,1.0,False,-100000
+2026-07-11,Norway Eliteserien,Tromso,Valerenga,AWAY,67.7,18.2,1.38,4.0,0.0,False,-100000
+2026-07-11,Norway Eliteserien,Aalesund,Molde,AWAY,78.3,11.1,1.3,2.0,2.0,False,-100000
+2026-07-11,Finland Veikkausliiga,Gnistan,Mariehamn,HOME,95.0,83.3,1.3,4.0,2.0,True,30000
+2026-07-11,China Super League,Shenzhen Xinpengcheng,Qingdao West Coast,AWAY,95.0,0.0,1.3,3.0,0.0,False,-100000
+2026-07-12,Norway Eliteserien,Sandefjord,HamKam,AWAY,65.0,20.0,1.43,2.0,2.0,False,-100000
+2026-07-12,Sweden Allsvenskan,Brommapojkarna,Sirius,AWAY,76.2,12.5,1.3,1.0,2.0,True,30000
+2026-07-13,Sweden Allsvenskan,Djurgarden,Halmstad,HOME,68.8,62.5,1.36,3.0,0.0,True,35593
+2026-07-17,China Super League,Qingdao West Coast,Chengdu Rongcheng,AWAY,95.0,0.0,1.3,1.0,1.0,False,-100000
+2026-07-17,Mexico Liga MX,Club Tijuana,Tigres UANL,AWAY,66.0,19.4,1.41,3.0,1.0,False,-100000
+2026-07-17,Romania Liga 1,FCSB,FC Arges,HOME,65.0,60.0,1.43,2.0,0.0,True,42857
+2026-07-18,Mexico Liga MX,Atl. San Luis,Cruz Azul,AWAY,66.9,18.8,1.39,2.0,3.0,True,39130
+2026-07-18,Romania Liga 1,Otelul,CFR Cluj,AWAY,70.0,16.7,1.33,2.0,1.0,False,-100000
+2026-07-18,Norway Eliteserien,Start,Rosenborg,AWAY,95.0,0.0,1.3,0.0,3.0,True,30000
+2026-07-18,Norway Eliteserien,Molde,Brann,HOME,75.0,66.7,1.3,1.0,2.0,False,-100000
+2026-07-18,Norway Eliteserien,Viking,Sandefjord,HOME,68.8,62.5,1.36,2.0,1.0,True,35593
+2026-07-18,Finland Veikkausliiga,AC Oulu,Gnistan,AWAY,70.0,16.7,1.33,0.0,2.0,True,33333
+2026-07-18,Norway Eliteserien,HamKam,Tromso,AWAY,95.0,0.0,1.3,1.0,4.0,True,30000
+2026-07-19,Sweden Allsvenskan,Hammarby,Degerfors,HOME,87.5,75.0,1.3,4.0,0.0,True,30000
+2026-07-19,Finland Veikkausliiga,Jaro,Inter Turku,AWAY,75.0,13.3,1.3,0.0,0.0,False,-100000
+2026-07-20,Sweden Allsvenskan,Kalmar,Malmo FF,AWAY,71.9,15.4,1.3,2.0,2.0,False,-100000
+2026-07-20,Finland Veikkausliiga,TPS,Ilves,AWAY,95.0,0.0,1.3,1.0,3.0,True,30000
+2026-07-23,USA MLS,Los Angeles Galaxy,St. Louis City,AWAY,95.0,0.0,1.3,1.0,3.0,True,30000
+2026-07-23,Brazil Serie A,Chapecoense-SC,Flamengo RJ,AWAY,73.6,14.3,1.3,0.0,4.0,True,30000
+2026-07-23,USA MLS,San Jose Earthquakes,Orlando City,AWAY,73.6,14.3,1.3,0.0,4.0,True,30000
+2026-07-23,USA MLS,Los Angeles FC,Real Salt Lake,HOME,83.3,72.2,1.3,3.0,1.0,True,30000
+2026-07-23,USA MLS,Austin FC,Seattle Sounders,AWAY,65.0,20.0,1.43,3.0,1.0,False,-100000
+2026-07-23,USA MLS,Charlotte,Atlanta Utd,HOME,68.8,62.5,1.36,2.0,2.0,False,-100000
+2026-07-24,Romania Liga 1,FC Arges,Petrolul,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-07-25,Poland Ekstraklasa,Gornik Zabrze,Slask Wroclaw,HOME,95.0,80.0,1.3,2.0,1.0,True,30000
+2026-07-25,Brazil Serie A,Santos,Chapecoense-SC,HOME,65.0,60.0,1.43,2.0,2.0,False,-100000
+2026-07-25,Argentina Primera,River Plate,Barracas Central,HOME,95.0,85.7,1.3,0.0,1.0,False,-100000
+2026-07-25,Russia Premier League,Dynamo Moscow,Krylya Sovetov,HOME,72.5,65.0,1.3,0.0,0.0,False,-100000
+2026-07-26,Finland Veikkausliiga,HJK,TPS,HOME,65.0,60.0,1.43,1.0,0.0,True,42857
+2026-07-26,Norway Eliteserien,Sarpsborg 08,HamKam,HOME,65.0,60.0,1.43,1.0,0.0,True,42857
+2026-07-26,Russia Premier League,Rubin Kazan,Krasnodar,AWAY,71.9,15.4,1.3,1.0,3.0,True,30000
+2026-07-26,Norway Eliteserien,Sandefjord,Bodo/Glimt,AWAY,66.9,18.8,1.39,0.0,3.0,True,39130
+2026-07-26,Sweden Allsvenskan,Brommapojkarna,Hammarby,AWAY,76.2,12.5,1.3,1.0,1.0,False,-100000
+2026-07-26,USA MLS,Los Angeles FC,Sporting Kansas City,HOME,65.0,60.0,1.43,4.0,0.0,True,42857
+2026-07-26,Denmark Superliga,Horsens,Nordsjaelland,AWAY,77.4,11.8,1.3,1.0,1.0,False,-100000
+2026-07-26,Denmark Superliga,FC Copenhagen,Lyngby,HOME,95.0,81.2,1.3,3.0,2.0,True,30000
+2026-07-26,Sweden Allsvenskan,Malmo FF,Elfsborg,HOME,66.1,60.7,1.41,1.0,2.0,False,-100000
+2026-07-27,Mexico Liga MX,Necaxa,Monterrey,AWAY,70.0,16.7,1.33,2.0,1.0,False,-100000
+2026-07-27,Romania Liga 1,FC Botosani,FC Rapid Bucuresti,AWAY,71.9,15.4,1.3,1.0,1.0,False,-100000
+2026-07-27,Romania Liga 1,CFR Cluj,FC Voluntari,HOME,95.0,81.8,1.3,5.0,0.0,True,30000
+2026-07-28,Argentina Primera,Banfield,Sarmiento Junin,AWAY,78.3,11.1,1.3,3.0,2.0,False,-100000
+2026-07-29,Argentina Primera,Barracas Central,Aldosivi,HOME,65.0,60.0,1.43,1.0,0.0,True,42857
+2026-07-29,Argentina Primera,Gimnasia L.P.,River Plate,AWAY,72.5,15.0,1.3,1.0,0.0,False,-100000
+2026-07-30,Argentina Primera,Instituto,Platense,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-07-30,Brazil Serie A,Vitoria,Palmeiras,AWAY,71.9,15.4,1.3,0.0,4.0,True,30000
+2026-07-31,Austria Bundesliga,LASK,Grazer AK,HOME,75.0,66.7,1.3,3.0,0.0,True,30000
+2026-07-31,Ireland Premier Division,Drogheda,Shamrock Rovers,AWAY,78.8,10.8,1.3,0.0,0.0,False,-100000
+2026-08-01,Mexico Liga MX,Juarez,UNAM Pumas,AWAY,65.0,20.0,1.43,1.0,5.0,True,42857
+2026-08-01,Finland Veikkausliiga,TPS,Mariehamn,AWAY,75.0,13.3,1.3,3.0,0.0,False,-100000
+2026-08-01,Finland Veikkausliiga,Gnistan,KuPS,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-08-01,Mexico Liga MX,Atl. San Luis,Club Tijuana,AWAY,65.0,20.0,1.43,0.0,0.0,False,-100000
+2026-08-01,Austria Bundesliga,Salzburg,Hartberg,HOME,95.0,81.8,1.3,1.0,0.0,True,30000
+2026-08-01,Norway Eliteserien,Start,Viking,AWAY,81.4,9.1,1.3,0.0,3.0,True,30000
+2026-08-01,Norway Eliteserien,Fredrikstad,Sandefjord,HOME,65.0,60.0,1.43,1.0,0.0,True,42857
+2026-08-01,Russia Premier League,CSKA Moscow,Krylya Sovetov,HOME,84.1,72.7,1.3,1.0,1.0,False,-100000
+2026-08-01,Romania Liga 1,Univ. Craiova,Petrolul,HOME,68.8,62.5,1.36,4.0,0.0,True,35593
+2026-08-01,Austria Bundesliga,Tirol,Sturm Graz,AWAY,76.2,12.5,1.3,1.0,1.0,False,-100000
+2026-08-02,Ireland Premier Division,Waterford,Shelbourne,AWAY,70.0,16.7,1.33,1.0,0.0,False,-100000
+2026-08-02,Poland Ekstraklasa,Slask Wroclaw,Rakow,AWAY,70.0,16.7,1.33,2.0,1.0,False,-100000
+2026-08-02,Poland Ekstraklasa,Legia,Zaglebie,HOME,78.4,69.0,1.3,3.0,1.0,True,30000
+2026-08-02,Argentina Primera,Aldosivi,Gimnasia L.P.,AWAY,95.0,0.0,1.3,1.0,2.0,True,30000
+2026-08-02,USA MLS,St. Louis City,Real Salt Lake,AWAY,70.0,16.7,1.33,1.0,1.0,False,-100000
+2026-08-02,Denmark Superliga,Silkeborg,FC Copenhagen,AWAY,73.6,14.3,1.3,1.0,3.0,True,30000
+2026-08-02,Mexico Liga MX,Queretaro,Tigres UANL,AWAY,78.3,11.1,1.3,3.0,2.0,False,-100000
+2026-08-02,Finland Veikkausliiga,AC Oulu,Ilves,AWAY,71.9,15.4,1.3,1.0,0.0,False,-100000
+2026-08-02,USA MLS,DC United,Nashville SC,AWAY,67.7,18.2,1.38,2.0,2.0,False,-100000
+2026-08-02,USA MLS,Inter Miami,Columbus Crew,HOME,80.0,70.0,1.3,2.0,2.0,False,-100000
+2026-08-02,Denmark Superliga,Midtjylland,Horsens,HOME,93.4,78.9,1.3,2.0,1.0,True,30000
+2026-08-02,Mexico Liga MX,Atlas,Monterrey,AWAY,67.7,18.2,1.38,0.0,2.0,True,37500
+2026-08-02,Sweden Allsvenskan,Goteborg,Degerfors,HOME,87.5,75.0,1.3,2.0,0.0,True,30000
+2026-08-02,Sweden Allsvenskan,Brommapojkarna,Malmo FF,AWAY,82.5,8.3,1.3,1.0,2.0,True,30000
+2026-08-02,Russia Premier League,Orenburg,Zenit,AWAY,73.6,14.3,1.3,0.0,3.0,True,30000
+2026-08-03,Denmark Superliga,Odense,Sonderjyske,AWAY,68.5,17.6,1.36,1.0,0.0,False,-100000
+2026-08-03,Argentina Primera,Velez Sarsfield,Independiente,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-08-03,Finland Veikkausliiga,SJK,HJK,AWAY,74.2,13.9,1.3,3.0,0.0,False,-100000
+2026-08-07,Romania Liga 1,UTA Arad,FC Rapid Bucuresti,AWAY,95.0,0.0,1.3,0.0,0.0,False,-100000
+2026-08-07,Norway Eliteserien,Sandefjord,KFUM Oslo,HOME,65.0,60.0,1.43,0.0,1.0,False,-100000
+2026-08-08,Poland Ekstraklasa,Korona Kielce,Legia,AWAY,71.9,15.4,1.3,1.0,1.0,False,-100000
+2026-08-08,Japan J-League,Avispa Fukuoka,Vissel Kobe,AWAY,82.5,8.3,1.3,0.0,1.0,True,30000
+2026-08-08,Norway Eliteserien,Valerenga,Bodo/Glimt,AWAY,72.5,15.0,1.3,1.0,2.0,True,30000
+2026-08-08,Austria Bundesliga,Hartberg,Sturm Graz,AWAY,67.7,18.2,1.38,0.0,2.0,True,37500
+2026-08-08,Argentina Primera,Boca Juniors,Velez Sarsfield,HOME,66.7,61.1,1.4,1.0,1.0,False,-100000
+2026-08-08,China Super League,Qingdao Hainiu,Shanghai Shenhua,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-08-09,Norway Eliteserien,Lillestrom,Rosenborg,AWAY,65.0,20.0,1.43,0.0,2.0,True,42857
+2026-08-09,Brazil Serie A,Flamengo RJ,Vitoria,HOME,85.0,73.3,1.3,2.0,0.0,True,30000
+2026-08-09,Argentina Primera,Defensa y Justicia,Newells Old Boys,HOME,66.7,61.1,1.4,2.0,1.0,True,39535
+2026-08-09,China Super League,Henan Songshan Longmen,Qingdao West Coast,AWAY,65.0,20.0,1.43,0.0,0.0,False,-100000
+2026-08-09,Romania Liga 1,Univ. Craiova,FC Arges,HOME,80.0,70.0,1.3,0.0,1.0,False,-100000
+2026-08-09,China Super League,Shandong Taishan,Tianjin Jinmen Tiger,HOME,75.0,66.7,1.3,2.0,1.0,True,30000
+2026-08-09,Denmark Superliga,Randers FC,Lyngby,HOME,72.5,65.0,1.3,2.0,0.0,True,30000
+2026-08-09,Denmark Superliga,Horsens,Brondby,AWAY,68.5,17.6,1.36,0.0,2.0,True,36000
+2026-08-09,Austria Bundesliga,Wolfsberger AC,Salzburg,AWAY,74.0,14.0,1.3,1.0,1.0,False,-100000
+2026-08-09,Austria Bundesliga,Austria Vienna,LASK,AWAY,71.9,15.4,1.3,0.0,2.0,True,30000
+2026-08-09,Sweden Allsvenskan,Halmstad,GAIS,AWAY,65.0,20.0,1.43,0.0,2.0,True,42857
+2026-08-09,Sweden Allsvenskan,Malmo FF,Degerfors,HOME,91.7,77.8,1.3,1.0,2.0,False,-100000
+2026-08-10,Romania Liga 1,Sepsi Sf. Gheorghe,FCSB,AWAY,82.5,8.3,1.3,0.0,0.0,False,-100000
+2026-08-10,Sweden Allsvenskan,Sirius,Brommapojkarna,HOME,91.7,77.8,1.3,2.0,2.0,False,-100000
+2026-08-10,Argentina Primera,Banfield,Belgrano,AWAY,67.7,18.2,1.38,0.0,2.0,True,37500
+2026-08-11,Argentina Primera,Union de Santa Fe,Central Cordoba,AWAY,65.0,20.0,1.43,1.0,2.0,True,42857
+2026-08-12,Argentina Primera,Talleres Cordoba,Lanus,AWAY,73.6,14.3,1.3,0.0,3.0,True,30000
+2026-08-14,Romania Liga 1,FC Voluntari,Petrolul,HOME,65.0,60.0,1.43,1.0,2.0,False,-100000
+2026-08-15,China Super League,Tianjin Jinmen Tiger,Beijing Guoan,AWAY,71.0,16.0,1.32,2.0,4.0,True,31579
+2026-08-15,China Super League,Zhejiang Professional,Chengdu Rongcheng,AWAY,78.3,11.1,1.3,2.0,3.0,True,30000
+2026-08-15,Sweden Allsvenskan,Mjallby,Sirius,HOME,67.3,61.5,1.38,4.0,3.0,True,38298
+2026-08-15,Austria Bundesliga,Sturm Graz,Altach,HOME,68.8,62.5,1.36,1.0,0.0,True,35593
+2026-08-15,Argentina Primera,Aldosivi,Tigre,AWAY,78.3,11.1,1.3,0.0,0.0,False,-100000
+2026-08-16,Argentina Primera,Sarmiento Junin,Huracan,AWAY,95.0,0.0,1.3,2.0,0.0,False,-100000
+2026-08-16,USA MLS,San Jose Earthquakes,St. Louis City,AWAY,73.6,14.3,1.3,1.0,3.0,True,30000
+2026-08-16,Finland Veikkausliiga,HJK,Jaro,HOME,75.0,66.7,1.3,3.0,0.0,True,30000
+2026-08-16,USA MLS,Chicago Fire,Portland Timbers,AWAY,78.3,11.1,1.3,2.0,1.0,False,-100000
+2026-08-16,Romania Liga 1,Otelul,Univ. Craiova,AWAY,70.0,16.7,1.33,1.0,1.0,False,-100000
+2026-08-16,USA MLS,Real Salt Lake,Minnesota United,AWAY,74.5,13.6,1.3,1.0,1.0,False,-100000
+2026-08-16,Sweden Allsvenskan,Kalmar,Hammarby,AWAY,73.6,14.3,1.3,0.0,4.0,True,30000
+2026-08-16,Mexico Liga MX,Monterrey,Juarez,HOME,71.4,64.3,1.31,6.0,1.0,True,30841
+2026-08-16,Brazil Serie A,Vitoria,Botafogo RJ,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-08-16,Norway Eliteserien,Brann,HamKam,HOME,95.0,80.0,1.3,3.0,0.0,True,30000
+2026-08-16,Norway Eliteserien,Molde,Tromso,HOME,71.0,64.0,1.32,3.0,2.0,True,31579
+2026-08-16,USA MLS,Atlanta Utd,New York Red Bulls,AWAY,72.5,15.0,1.3,2.0,1.0,False,-100000
+2026-08-16,Austria Bundesliga,Tirol,Salzburg,AWAY,76.2,12.5,1.3,0.0,3.0,True,30000
+2026-08-16,Sweden Allsvenskan,GAIS,Malmo FF,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-08-16,Argentina Primera,Platense,Boca Juniors,AWAY,73.6,14.3,1.3,1.0,1.0,False,-100000
+2026-08-16,Mexico Liga MX,Atlas,Tigres UANL,AWAY,70.8,16.1,1.32,2.0,1.0,False,-100000
+2026-08-16,Sweden Allsvenskan,Djurgarden,AIK,AWAY,79.5,10.3,1.3,1.0,3.0,True,30000
+2026-08-17,Romania Liga 1,U. Cluj,UTA Arad,AWAY,65.0,20.0,1.43,2.0,1.0,False,-100000
+2026-08-17,Romania Liga 1,FCSB,FC Botosani,HOME,78.1,68.8,1.3,3.0,2.0,True,30000
+2026-08-17,Mexico Liga MX,Club America,Atl. San Luis,HOME,77.6,68.4,1.3,3.0,0.0,True,30000
+2026-08-17,Finland Veikkausliiga,Gnistan,Ilves,AWAY,73.6,14.3,1.3,3.0,2.0,False,-100000
+2026-08-18,China Super League,Shanghai Shenhua,Beijing Guoan,AWAY,68.9,17.4,1.35,0.0,3.0,True,35294
+2026-08-18,Mexico Liga MX,Necaxa,Club Leon,AWAY,72.5,15.0,1.3,1.0,2.0,True,30000
+2026-08-20,USA MLS,Portland Timbers,San Diego FC,AWAY,70.0,16.7,1.33,3.0,1.0,False,-100000
+2026-08-21,Sweden Allsvenskan,Sirius,Hacken,AWAY,71.3,15.8,1.31,0.0,3.0,True,31034
+2026-08-21,Ireland Premier Division,Drogheda,St. Patricks,AWAY,75.3,13.2,1.3,0.0,2.0,True,30000
+2026-08-22,Austria Bundesliga,Altach,Hartberg,AWAY,66.2,19.2,1.41,1.0,2.0,True,40541
+2026-08-22,Japan J-League,Yokohama F. Marinos,Vissel Kobe,HOME,67.3,61.5,1.38,1.0,0.0,True,38298
+2026-08-22,China Super League,Shenzhen Xinpengcheng,Zhejiang Professional,AWAY,65.0,20.0,1.43,1.0,1.0,False,-100000
+2026-08-22,China Super League,Qingdao West Coast,Shandong Taishan,AWAY,65.0,20.0,1.43,2.0,0.0,False,-100000
+2026-08-23,Sweden Allsvenskan,Hammarby,GAIS,AWAY,95.0,0.0,1.3,2.0,0.0,False,-100000
+2026-08-23,Sweden Allsvenskan,Brommapojkarna,Degerfors,AWAY,65.0,20.0,1.43,2.0,0.0,False,-100000
+2026-08-23,Brazil Serie A,Vitoria,Bahia,AWAY,71.9,15.4,1.3,0.0,2.0,True,30000
+2026-08-23,USA MLS,CF Montreal,Los Angeles Galaxy,AWAY,78.3,11.1,1.3,2.0,2.0,False,-100000
+2026-08-23,USA MLS,Charlotte,DC United,HOME,68.8,62.5,1.36,3.0,1.0,True,35593
+2026-08-23,USA MLS,Inter Miami,Toronto FC,HOME,78.8,69.2,1.3,1.0,2.0,False,-100000
+2026-08-23,Brazil Serie A,Coritiba,Corinthians,AWAY,87.1,5.3,1.3,2.0,1.0,False,-100000
+2026-08-23,Denmark Superliga,Midtjylland,Randers FC,HOME,86.5,74.4,1.3,1.0,0.0,True,30000
+2026-08-23,Denmark Superliga,Viborg,FC Copenhagen,AWAY,72.5,15.0,1.3,4.0,0.0,False,-100000
+2026-08-23,Mexico Liga MX,Puebla,Santos Laguna,AWAY,65.0,20.0,1.43,3.0,2.0,False,-100000
+2026-08-23,China Super League,Shanghai Port,Qingdao Hainiu,HOME,95.0,85.7,1.3,2.0,1.0,True,30000
+2026-08-24,Denmark Superliga,Brondby,Silkeborg,HOME,84.6,73.1,1.3,3.0,1.0,True,30000
+2026-08-28,Romania Liga 1,U. Cluj,Petrolul,AWAY,66.9,18.8,1.39,2.0,3.0,True,39130
+2026-08-28,Poland Ekstraklasa,Legia,Slask Wroclaw,HOME,66.1,60.7,1.41,1.0,1.0,False,-100000
+2026-08-28,China Super League,Shenzhen Xinpengcheng,Shanghai Port,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-08-29,Austria Bundesliga,LASK,Altach,HOME,75.0,66.7,1.3,3.0,0.0,True,30000
+2026-08-29,Romania Liga 1,FC Arges,Sepsi Sf. Gheorghe,AWAY,70.0,16.7,1.33,0.0,1.0,True,33333
+2026-08-29,Austria Bundesliga,Grazer AK,Wolfsberger AC,AWAY,70.0,16.7,1.33,0.0,0.0,False,-100000
+2026-08-29,Sweden Allsvenskan,Elfsborg,Degerfors,HOME,75.0,66.7,1.3,2.0,0.0,True,30000
+2026-08-29,Argentina Primera,Dep. Riestra,Velez Sarsfield,AWAY,65.0,20.0,1.43,1.0,1.0,False,-100000
+2026-08-29,Argentina Primera,Rosario Central,Gimnasia L.P.,HOME,66.7,61.1,1.4,1.0,2.0,False,-100000
+2026-08-29,Sweden Allsvenskan,Halmstad,Kalmar,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-08-30,Austria Bundesliga,Salzburg,Austria Vienna,HOME,80.0,70.0,1.3,4.0,1.0,True,30000
+2026-08-30,Argentina Primera,Banfield,River Plate,AWAY,70.0,16.7,1.33,2.0,3.0,True,33333
+2026-08-30,Norway Eliteserien,Valerenga,Molde,AWAY,78.3,11.1,1.3,3.0,4.0,True,30000
+2026-08-30,Norway Eliteserien,Sandefjord,Brann,AWAY,85.0,6.7,1.3,0.0,0.0,False,-100000
+2026-08-30,Norway Eliteserien,HamKam,Kristiansund,HOME,65.0,60.0,1.43,2.0,2.0,False,-100000
+2026-08-30,Romania Liga 1,FCSB,UTA Arad,HOME,90.4,76.9,1.3,1.0,3.0,False,-100000
+2026-08-30,Denmark Superliga,Silkeborg,Midtjylland,AWAY,73.6,14.3,1.3,1.0,1.0,False,-100000
+2026-08-30,Mexico Liga MX,Club America,Puebla,HOME,68.8,62.5,1.36,2.0,0.0,True,35593
+2026-08-31,Sweden Allsvenskan,GAIS,Brommapojkarna,AWAY,65.0,20.0,1.43,4.0,0.0,False,-100000
+2026-08-31,USA MLS,St. Louis City,FC Dallas,AWAY,73.6,14.3,1.3,3.0,3.0,False,-100000
+2026-08-31,Denmark Superliga,FC Copenhagen,Sonderjyske,HOME,75.0,66.7,1.3,3.0,1.0,True,30000
+2026-09-01,Argentina Primera,Instituto,San Lorenzo,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-09-01,Argentina Primera,Tigre,Barracas Central,AWAY,73.6,14.3,1.3,0.0,0.0,False,-100000
+2026-09-02,Japan J-League,Yokohama F. Marinos,Kyoto,HOME,68.8,62.5,1.36,1.0,1.0,False,-100000
+2026-09-03,Poland Ekstraklasa,Rakow,Gornik Zabrze,AWAY,70.0,16.7,1.33,1.0,2.0,True,33333
+2026-09-04,Norway Eliteserien,Fredrikstad,Bodo/Glimt,AWAY,95.0,0.0,1.3,1.0,2.0,True,30000
+2026-09-05,China Super League,Wuhan Three Towns,Qingdao West Coast,AWAY,65.0,20.0,1.43,2.0,2.0,False,-100000
+2026-09-05,China Super League,Shandong Taishan,Shenzhen Xinpengcheng,HOME,95.0,100.0,1.3,1.0,1.0,False,-100000
+2026-09-06,Norway Eliteserien,Molde,KFUM Oslo,AWAY,65.0,20.0,1.43,2.0,0.0,False,-100000
+2026-09-06,Denmark Superliga,Odense,FC Copenhagen,AWAY,68.5,17.6,1.36,0.0,5.0,True,36000
+2026-09-06,USA MLS,Austin FC,San Jose Earthquakes,AWAY,70.0,16.7,1.33,1.0,1.0,False,-100000
+2026-09-06,USA MLS,Vancouver Whitecaps,St. Louis City,HOME,75.0,66.7,1.3,1.0,3.0,False,-100000
+2026-09-06,Brazil Serie A,Corinthians,Chapecoense-SC,HOME,65.0,60.0,1.43,1.0,2.0,False,-100000
+2026-09-06,Japan J-League,Kawasaki Frontale,Shimizu S-Pulse,HOME,77.3,68.2,1.3,3.0,1.0,True,30000
+2026-09-06,Argentina Primera,Rosario Central,Newells Old Boys,HOME,72.8,65.2,1.3,1.0,1.0,False,-100000
+2026-09-07,Romania Liga 1,FC Voluntari,FC Arges,AWAY,65.0,20.0,1.43,1.0,0.0,False,-100000
+2026-09-08,Brazil Serie A,Vitoria,Gremio,AWAY,75.0,13.3,1.3,1.0,0.0,False,-100000
+2026-09-08,Finland Veikkausliiga,Gnistan,KuPS,AWAY,95.0,0.0,1.3,1.0,1.0,False,-100000
+2026-09-10,USA MLS,Toronto FC,Nashville SC,AWAY,67.7,18.2,1.38,2.0,1.0,False,-100000
+2026-09-10,USA MLS,CF Montreal,Charlotte,HOME,68.8,62.5,1.36,1.0,2.0,False,-100000
+2026-09-11,Romania Liga 1,Farul Constanta,UTA Arad,AWAY,70.0,16.7,1.33,4.0,2.0,False,-100000
+2026-09-11,Japan J-League,Kyoto,Kashiwa Reysol,AWAY,76.2,12.5,1.3,2.0,3.0,True,30000
+2026-09-11,Austria Bundesliga,Ried,Salzburg,AWAY,84.3,7.1,1.3,1.0,1.0,False,-100000
+2026-09-12,Finland Veikkausliiga,AC Oulu,Gnistan,AWAY,73.6,14.3,1.3,1.0,2.0,True,30000
+2026-09-12,Romania Liga 1,Sepsi Sf. Gheorghe,CFR Cluj,AWAY,82.5,8.3,1.3,3.0,1.0,False,-100000
+2026-09-12,Austria Bundesliga,Altach,Grazer AK,AWAY,76.2,12.5,1.3,1.0,2.0,True,30000
+2026-09-12,Argentina Primera,Boca Juniors,Central Cordoba,HOME,84.1,72.7,1.3,3.0,1.0,True,30000
+2026-09-12,Argentina Primera,Atl. Tucuman,River Plate,AWAY,73.6,14.3,1.3,1.0,2.0,True,30000
+2026-09-13,Brazil Serie A,Botafogo RJ,Bragantino,HOME,70.5,63.6,1.33,1.0,1.0,False,-100000
+2026-09-13,Argentina Primera,Sarmiento Junin,Belgrano,AWAY,76.2,12.5,1.3,1.0,1.0,False,-100000
+2026-09-13,Sweden Allsvenskan,Hammarby,Brommapojkarna,HOME,75.0,66.7,1.3,3.0,1.0,True,30000
+2026-09-13,USA MLS,Vancouver Whitecaps,Austin FC,HOME,65.0,60.0,1.43,1.0,2.0,False,-100000
+2026-09-13,Poland Ekstraklasa,Legia,Widzew Lodz,HOME,75.0,66.7,1.3,1.0,1.0,False,-100000
+2026-09-13,Norway Eliteserien,Start,Brann,AWAY,81.4,9.1,1.3,2.0,0.0,False,-100000
+2026-09-13,Norway Eliteserien,HamKam,Molde,AWAY,70.0,16.7,1.33,1.0,5.0,True,33333
+2026-09-13,Norway Eliteserien,Viking,Kristiansund,HOME,95.0,80.0,1.3,8.0,1.0,True,30000
+2026-09-13,USA MLS,Colorado Rapids,CF Montreal,HOME,75.0,66.7,1.3,1.0,0.0,True,30000
+2026-09-13,USA MLS,St. Louis City,Minnesota United,AWAY,70.0,16.7,1.33,4.0,2.0,False,-100000
+2026-09-14,Argentina Primera,Huracan,Racing Club,AWAY,71.9,15.4,1.3,2.0,1.0,False,-100000
+2026-09-14,Sweden Allsvenskan,Sirius,Degerfors,HOME,75.0,66.7,1.3,2.0,0.0,True,30000
+2026-09-14,Norway Eliteserien,Bodo/Glimt,Sandefjord,HOME,72.1,64.7,1.3,3.0,2.0,True,30000
+2026-09-15,Mexico Liga MX,Club Leon,Atl. San Luis,HOME,66.7,61.1,1.4,2.0,0.0,True,39535
+2026-09-15,Poland Ekstraklasa,Korona Kielce,Gornik Zabrze,AWAY,95.0,0.0,1.3,0.0,2.0,True,30000
+2026-09-18,Romania Liga 1,FC Rapid Bucuresti,FC Arges,HOME,68.8,62.5,1.36,3.0,1.0,True,35593
+2026-09-18,Ireland Premier Division,Shamrock Rovers,Waterford,HOME,95.0,84.0,1.3,3.0,2.0,True,30000
+2026-09-18,Austria Bundesliga,SK Rapid,Tirol,HOME,83.3,72.2,1.3,3.0,0.0,True,30000
+2026-09-18,Norway Eliteserien,Sarpsborg 08,KFUM Oslo,HOME,65.0,60.0,1.43,1.0,3.0,False,-100000
+2026-09-18,China Super League,Zhejiang Professional,Wuhan Three Towns,HOME,75.0,66.7,1.3,4.0,1.0,True,30000
+2026-09-19,Mexico Liga MX,Juarez,Tigres UANL,AWAY,73.6,14.3,1.3,2.0,0.0,False,-100000
+2026-09-19,Norway Eliteserien,Molde,Aalesund,HOME,95.0,84.2,1.3,1.0,2.0,False,-100000
+2026-09-19,Norway Eliteserien,Kristiansund,Rosenborg,AWAY,77.4,11.8,1.3,1.0,3.0,True,30000
+2026-09-19,Argentina Primera,Gimnasia L.P.,Banfield,AWAY,66.9,18.8,1.39,2.0,2.0,False,-100000
+2026-09-19,Japan J-League,Avispa Fukuoka,Sanfrecce Hiroshima,AWAY,82.5,8.3,1.3,0.0,1.0,True,30000
+2026-09-19,Finland Veikkausliiga,TPS,Ilves,AWAY,95.0,0.0,1.3,0.0,3.0,True,30000
+2026-09-19,Argentina Primera,Union de Santa Fe,Independiente,AWAY,71.9,15.4,1.3,1.0,2.0,True,30000
+2026-09-20,USA MLS,Portland Timbers,Atlanta Utd,AWAY,70.0,16.7,1.33,0.0,1.0,True,33333
+2026-09-20,USA MLS,Nashville SC,Chicago Fire,HOME,65.0,60.0,1.43,3.0,0.0,True,42857
+2026-09-20,USA MLS,Colorado Rapids,Seattle Sounders,AWAY,65.8,19.4,1.41,3.0,3.0,False,-100000
+2026-09-20,USA MLS,FC Dallas,Austin FC,HOME,65.0,60.0,1.43,0.0,0.0,False,-100000
+2026-09-20,USA MLS,Minnesota United,Los Angeles Galaxy,AWAY,65.0,20.0,1.43,2.0,3.0,True,42857
+2026-09-20,Argentina Primera,Instituto,Talleres Cordoba,AWAY,73.6,14.3,1.3,3.0,1.0,False,-100000
+2026-09-20,Mexico Liga MX,Atlas,UNAM Pumas,AWAY,74.3,13.8,1.3,1.0,1.0,False,-100000
+2026-09-20,Norway Eliteserien,Sandefjord,Start,HOME,75.0,66.7,1.3,3.0,0.0,True,30000
+2026-09-20,Norway Eliteserien,Tromso,HamKam,HOME,75.0,66.7,1.3,3.0,2.0,True,30000
+2026-09-20,Sweden Allsvenskan,Degerfors,Hammarby,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-09-20,Argentina Primera,Platense,Newells Old Boys,AWAY,95.0,0.0,1.3,0.0,1.0,True,30000
+2026-09-20,Brazil Serie A,Gremio,Palmeiras,AWAY,65.0,20.0,1.43,0.0,0.0,False,-100000
+2026-09-20,Brazil Serie A,Vitoria,Cruzeiro,AWAY,95.0,0.0,1.3,1.0,3.0,True,30000
+2026-09-20,Austria Bundesliga,Hartberg,LASK,AWAY,66.2,19.2,1.41,3.0,3.0,False,-100000
+2026-09-21,Argentina Primera,Aldosivi,Atl. Tucuman,AWAY,73.6,14.3,1.3,1.0,0.0,False,-100000
+2026-09-27,USA MLS,Real Salt Lake,New England Revolution,HOME,65.0,60.0,1.43,3.0,0.0,True,42857
+2026-09-27,Mexico Liga MX,UNAM Pumas,Atl. San Luis,HOME,68.8,62.5,1.36,2.0,3.0,False,-100000
+2026-09-27,USA MLS,Seattle Sounders,Minnesota United,HOME,70.5,63.6,1.33,3.0,1.0,True,32530
+2026-09-28,Mexico Liga MX,Club Leon,Juarez,HOME,71.4,64.3,1.31,2.0,1.0,True,30841
+2026-09-28,USA MLS,Columbus Crew,Inter Miami,AWAY,67.7,18.2,1.38,2.0,1.0,False,-100000
+2026-10-04,Argentina Primera,Talleres Cordoba,Belgrano,AWAY,82.5,8.3,1.3,0.0,1.0,True,30000

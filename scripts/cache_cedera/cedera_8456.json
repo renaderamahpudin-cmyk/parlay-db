@@ -1,0 +1,20 @@
+{
+  "team_name": "Manchester City",
+  "team_id": 8456,
+  "fetched_at": "2026-10-09T03:22:10.428773",
+  "total_cedera": 2,
+  "cedera": [
+    {
+      "nama": "Nico O'Reilly",
+      "posisi": "Defender",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Antoine Semenyo",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    }
+  ]
+}

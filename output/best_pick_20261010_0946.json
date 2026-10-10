@@ -1,0 +1,4045 @@
+[
+  {
+    "h2h": 8,
+    "gol_pairs": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        4.0,
+        2.0
+      ],
+      [
+        4.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        4.0,
+        1.0
+      ],
+      [
+        5.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ]
+    ],
+    "win_rate": 87.5,
+    "draw_rate": 12.5,
+    "non_loss_rate": 100.0,
+    "gol_total": 3.62,
+    "btts_rate": 50.0,
+    "skor": 30,
+    "tier": "✅ T3",
+    "pick_jenis": "OU",
+    "pick": "OVER 2.5",
+    "pick_conf": 75.0,
+    "pick_alasan": "Home menang 88% dari H2H",
+    "pick_odds": 1.99,
+    "pick_implied": 71.9,
+    "value_gap": 23.1,
+    "kategori_gap": "VALUE",
+    "sinyal": 1,
+    "sinyal_detail": [
+      "WinRate"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "HOME",
+      "odds": 1.39,
+      "prob": 87.5,
+      "gap": 15.6
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "OVER 2.5",
+      "odds": 1.99,
+      "prob": 75.0,
+      "gap": 24.7,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 75.0,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.25",
+        "odds": 2.31,
+        "prob": 75.0,
+        "gap": 31.7,
+        "line": 2.25
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "odds": 1.99,
+        "prob": 75.0,
+        "gap": 24.7,
+        "line": 2.5
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 1.7,
+        "prob": 75.0,
+        "gap": 16.2,
+        "line": 2.75
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 1.39,
+        "prob": 87.5,
+        "gap": 15.6,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 4.32,
+        "prob": 12.5,
+        "gap": -10.6,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 7.2,
+        "prob": 0.0,
+        "gap": -13.9,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "confidence": 95,
+        "alasan": "Home menang 88% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "confidence": 75.0,
+        "alasan": "Over 2.5: 75% dari H2H"
+      }
+    ],
+    "liga": "ENGLISH PREMIER LEAGUE",
+    "waktu": "19:30",
+    "home": "Arsenal",
+    "away": "Leeds United",
+    "is_live": true,
+    "odds_home": 1.39,
+    "odds_draw": 4.32,
+    "odds_away": 7.2,
+    "ou_lines": [
+      {
+        "line": 2.5,
+        "over": 1.99,
+        "under": 1.91
+      },
+      {
+        "line": 2.75,
+        "over": 1.7,
+        "under": 2.25
+      },
+      {
+        "line": 2.25,
+        "over": 2.31,
+        "under": 1.66
+      }
+    ]
+  },
+  {
+    "h2h": 36,
+    "gol_pairs": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        3.0,
+        3.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        2.0,
+        5.0
+      ],
+      [
+        3.0,
+        3.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        3.0,
+        3.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "win_rate": 8.3,
+    "draw_rate": 50.0,
+    "non_loss_rate": 58.3,
+    "gol_total": 2.5,
+    "btts_rate": 52.8,
+    "skor": 440,
+    "tier": "🔥 T1",
+    "pick_jenis": "OU",
+    "pick": "UNDER 2.5",
+    "pick_conf": 55.6,
+    "pick_alasan": "Away menang 92% dari H2H",
+    "pick_odds": 2.29,
+    "pick_implied": 43.7,
+    "value_gap": 38.8,
+    "kategori_gap": "VALUE",
+    "sinyal": 3,
+    "sinyal_detail": [
+      "HomeKuat",
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "DRAW",
+      "odds": 3.11,
+      "prob": 50.0,
+      "gap": 17.8
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 2.5",
+      "odds": 2.29,
+      "prob": 55.6,
+      "gap": 11.9,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 44.4,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.11,
+        "prob": 50.0,
+        "gap": 17.8,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "odds": 2.29,
+        "prob": 55.6,
+        "gap": 11.9,
+        "line": 2.5
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.25",
+        "odds": 1.95,
+        "prob": 55.6,
+        "gap": 4.3,
+        "line": 2.25
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 2.35,
+        "prob": 44.4,
+        "gap": 1.9,
+        "line": 2.75
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.29,
+        "prob": 41.7,
+        "gap": -2.0,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 3.0,
+        "prob": 8.3,
+        "gap": -25.0,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 82.5,
+        "alasan": "Away menang 92% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "confidence": 55.6,
+        "alasan": "Under 2.5: 56% dari H2H"
+      }
+    ],
+    "liga": "ITALY SERIE A",
+    "waktu": "21:00",
+    "home": "Genoa",
+    "away": "Fiorentina",
+    "is_live": true,
+    "odds_home": 3.0,
+    "odds_draw": 3.11,
+    "odds_away": 2.29,
+    "ou_lines": [
+      {
+        "line": 2.25,
+        "over": 1.95,
+        "under": 1.95
+      },
+      {
+        "line": 2.5,
+        "over": 1.67,
+        "under": 2.29
+      },
+      {
+        "line": 2.75,
+        "over": 2.35,
+        "under": 1.64
+      }
+    ]
+  },
+  {
+    "h2h": 8,
+    "gol_pairs": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        5.0,
+        1.0
+      ],
+      [
+        4.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        2.0,
+        2.0
+      ]
+    ],
+    "win_rate": 75.0,
+    "draw_rate": 25.0,
+    "non_loss_rate": 100.0,
+    "gol_total": 3.62,
+    "btts_rate": 62.5,
+    "skor": 30,
+    "tier": "✅ T3",
+    "pick_jenis": "OU",
+    "pick": "OVER 3.25",
+    "pick_conf": 62.5,
+    "pick_alasan": "Over 2.5: 75% dari H2H",
+    "pick_odds": 1.97,
+    "pick_implied": 52.6,
+    "value_gap": 22.4,
+    "kategori_gap": "VALUE",
+    "sinyal": 1,
+    "sinyal_detail": [
+      "WinRate"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "HOME",
+      "odds": 1.42,
+      "prob": 75.0,
+      "gap": 4.6
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "OVER 3.25",
+      "odds": 1.97,
+      "prob": 62.5,
+      "gap": 11.7
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 75.0,
+      "ada_di_market": false
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "OVER 3.25",
+        "odds": 1.97,
+        "prob": 62.5,
+        "gap": 11.7,
+        "line": 3.25
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 1.42,
+        "prob": 75.0,
+        "gap": 4.6,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 3.0",
+        "odds": 1.71,
+        "prob": 62.5,
+        "gap": 4.0,
+        "line": 3.0
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 4.57,
+        "prob": 25.0,
+        "gap": 3.1,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.5",
+        "odds": 2.58,
+        "prob": 37.5,
+        "gap": -1.3,
+        "line": 3.5
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 5.96,
+        "prob": 0.0,
+        "gap": -16.8,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "confidence": 87.5,
+        "alasan": "Home menang 75% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "confidence": 75.0,
+        "alasan": "Over 2.5: 75% dari H2H"
+      }
+    ],
+    "liga": "ITALY SERIE A",
+    "waktu": "02:45",
+    "home": "Napoli",
+    "away": "Frosinone",
+    "is_live": true,
+    "odds_home": 1.42,
+    "odds_draw": 4.57,
+    "odds_away": 5.96,
+    "ou_lines": [
+      {
+        "line": 3.25,
+        "over": 1.97,
+        "under": 1.93
+      },
+      {
+        "line": 3.0,
+        "over": 1.71,
+        "under": 2.23
+      },
+      {
+        "line": 3.5,
+        "over": 1.53,
+        "under": 2.58
+      }
+    ]
+  },
+  {
+    "h2h": 8,
+    "gol_pairs": [
+      [
+        3.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "win_rate": 75.0,
+    "draw_rate": 12.5,
+    "non_loss_rate": 87.5,
+    "gol_total": 2.38,
+    "btts_rate": 37.5,
+    "skor": 30,
+    "tier": "✅ T3",
+    "pick_jenis": "OU",
+    "pick": "UNDER 3.25",
+    "pick_conf": 87.5,
+    "pick_alasan": "Home menang 75% dari H2H",
+    "pick_odds": 2.25,
+    "pick_implied": 71.4,
+    "value_gap": 16.1,
+    "kategori_gap": "VALUE",
+    "sinyal": 1,
+    "sinyal_detail": [
+      "WinRate"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "HOME",
+      "odds": 1.4,
+      "prob": 75.0,
+      "gap": 3.6
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 3.25",
+      "odds": 2.25,
+      "prob": 87.5,
+      "gap": 43.1
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 50.0,
+      "ada_di_market": false
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.25",
+        "odds": 2.25,
+        "prob": 87.5,
+        "gap": 43.1,
+        "line": 3.25
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.0",
+        "odds": 1.91,
+        "prob": 87.5,
+        "gap": 35.1,
+        "line": 3.0
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 2.2,
+        "prob": 50.0,
+        "gap": 4.5,
+        "line": 2.75
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 1.4,
+        "prob": 75.0,
+        "gap": 3.6,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 6.4,
+        "prob": 12.5,
+        "gap": -3.1,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 4.44,
+        "prob": 12.5,
+        "gap": -10.0,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "confidence": 87.5,
+        "alasan": "Home menang 75% dari H2H"
+      }
+    ],
+    "liga": "FRANCE LIGUE 1",
+    "waktu": "23:15",
+    "home": "Lille",
+    "away": "Le Havre",
+    "is_live": true,
+    "odds_home": 1.4,
+    "odds_draw": 4.44,
+    "odds_away": 6.4,
+    "ou_lines": [
+      {
+        "line": 3.0,
+        "over": 1.99,
+        "under": 1.91
+      },
+      {
+        "line": 2.75,
+        "over": 2.2,
+        "under": 1.73
+      },
+      {
+        "line": 3.25,
+        "over": 1.7,
+        "under": 2.25
+      }
+    ]
+  },
+  {
+    "h2h": 18,
+    "gol_pairs": [
+      [
+        3.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        3.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        3.0,
+        2.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "win_rate": 22.2,
+    "draw_rate": 33.3,
+    "non_loss_rate": 55.6,
+    "gol_total": 2.61,
+    "btts_rate": 61.1,
+    "skor": 195,
+    "tier": "✅ T3",
+    "pick_jenis": "OU",
+    "pick": "UNDER 2.5",
+    "pick_conf": 61.1,
+    "pick_alasan": "Away menang 78% dari H2H",
+    "pick_odds": 1.7,
+    "pick_implied": 37.5,
+    "value_gap": 24.2,
+    "kategori_gap": "VALUE",
+    "sinyal": 1,
+    "sinyal_detail": [
+      "AwayKuat"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "AWAY",
+      "odds": 2.67,
+      "prob": 44.4,
+      "gap": 7.0
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 2.5",
+      "odds": 1.7,
+      "prob": 61.1,
+      "gap": 2.3,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 38.9,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.0",
+        "odds": 2.42,
+        "prob": 61.1,
+        "gap": 19.8,
+        "line": 2.0
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.25",
+        "odds": 2.04,
+        "prob": 61.1,
+        "gap": 12.1,
+        "line": 2.25
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.67,
+        "prob": 44.4,
+        "gap": 7.0,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "odds": 1.7,
+        "prob": 61.1,
+        "gap": 2.3,
+        "line": 2.5
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.1,
+        "prob": 33.3,
+        "gap": 1.1,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.41,
+        "prob": 22.2,
+        "gap": -19.3,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 61.66666666666667,
+        "alasan": "Away menang 78% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "confidence": 61.1,
+        "alasan": "Under 2.5: 61% dari H2H"
+      }
+    ],
+    "liga": "ENGLISH CHAMPIONSHIP",
+    "waktu": "19:30",
+    "home": "West Bromwich Albion",
+    "away": "Birmingham City",
+    "is_live": true,
+    "odds_home": 2.41,
+    "odds_draw": 3.1,
+    "odds_away": 2.67,
+    "ou_lines": [
+      {
+        "line": 2.25,
+        "over": 1.84,
+        "under": 2.04
+      },
+      {
+        "line": 2.5,
+        "over": 2.21,
+        "under": 1.7
+      },
+      {
+        "line": 2.0,
+        "over": 1.58,
+        "under": 2.42
+      }
+    ]
+  },
+  {
+    "h2h": 20,
+    "gol_pairs": [
+      [
+        4.0,
+        1.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        3.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        1.0,
+        5.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ]
+    ],
+    "win_rate": 25.0,
+    "draw_rate": 40.0,
+    "non_loss_rate": 65.0,
+    "gol_total": 2.3,
+    "btts_rate": 55.0,
+    "skor": 225,
+    "tier": "✅ T3",
+    "pick_jenis": "OU",
+    "pick": "UNDER 2.5",
+    "pick_conf": 60.0,
+    "pick_alasan": "Under 2.5: 60% dari H2H",
+    "pick_odds": 1.62,
+    "pick_implied": 52.6,
+    "value_gap": 7.4,
+    "kategori_gap": "FAIR",
+    "sinyal": 1,
+    "sinyal_detail": [
+      "AwayKuat"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "DRAW",
+      "odds": 3.38,
+      "prob": 40.0,
+      "gap": 10.4
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 2.5",
+      "odds": 1.62,
+      "prob": 60.0,
+      "gap": -1.7,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 40.0,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.0",
+        "odds": 2.12,
+        "prob": 75.0,
+        "gap": 27.8,
+        "line": 3.0
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.38,
+        "prob": 40.0,
+        "gap": 10.4,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.75",
+        "odds": 1.79,
+        "prob": 60.0,
+        "gap": 4.1,
+        "line": 2.75
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "odds": 1.62,
+        "prob": 60.0,
+        "gap": -1.7,
+        "line": 2.5
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.29,
+        "prob": 35.0,
+        "gap": -8.7,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.62,
+        "prob": 25.0,
+        "gap": -13.2,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 57.5,
+        "alasan": "Away menang 75% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "confidence": 60.0,
+        "alasan": "Under 2.5: 60% dari H2H"
+      }
+    ],
+    "liga": "ENGLISH CHAMPIONSHIP",
+    "waktu": "22:00",
+    "home": "Blackburn Rovers",
+    "away": "Cardiff City",
+    "is_live": true,
+    "odds_home": 2.62,
+    "odds_draw": 3.38,
+    "odds_away": 2.29,
+    "ou_lines": [
+      {
+        "line": 2.75,
+        "over": 2.09,
+        "under": 1.79
+      },
+      {
+        "line": 3.0,
+        "over": 1.77,
+        "under": 2.12
+      },
+      {
+        "line": 2.5,
+        "over": 2.35,
+        "under": 1.62
+      }
+    ]
+  },
+  {
+    "h2h": 22,
+    "gol_pairs": [
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        4.0,
+        2.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        0.0
+      ]
+    ],
+    "win_rate": 27.3,
+    "draw_rate": 40.9,
+    "non_loss_rate": 68.2,
+    "gol_total": 2.32,
+    "btts_rate": 54.5,
+    "skor": 255,
+    "tier": "⚡ T2",
+    "pick_jenis": "OU",
+    "pick": "UNDER 2.5",
+    "pick_conf": 68.2,
+    "pick_alasan": "Under 2.5: 68% dari H2H",
+    "pick_odds": 2.08,
+    "pick_implied": 52.6,
+    "value_gap": 15.6,
+    "kategori_gap": "VALUE",
+    "sinyal": 2,
+    "sinyal_detail": [
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "DRAW",
+      "odds": 3.14,
+      "prob": 40.9,
+      "gap": 9.1
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 2.5",
+      "odds": 2.08,
+      "prob": 68.2,
+      "gap": 20.1,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 31.8,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.25",
+        "odds": 2.38,
+        "prob": 68.2,
+        "gap": 26.2,
+        "line": 2.25
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "odds": 2.08,
+        "prob": 68.2,
+        "gap": 20.1,
+        "line": 2.5
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.75",
+        "odds": 1.74,
+        "prob": 68.2,
+        "gap": 10.7,
+        "line": 2.75
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.14,
+        "prob": 40.9,
+        "gap": 9.1,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.67,
+        "prob": 27.3,
+        "gap": -10.2,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.38,
+        "prob": 31.8,
+        "gap": -10.2,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 54.09090909090909,
+        "alasan": "Away menang 73% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "confidence": 68.2,
+        "alasan": "Under 2.5: 68% dari H2H"
+      }
+    ],
+    "liga": "ENGLISH CHAMPIONSHIP",
+    "waktu": "22:00",
+    "home": "Preston North End",
+    "away": "Millwall",
+    "is_live": true,
+    "odds_home": 2.67,
+    "odds_draw": 3.14,
+    "odds_away": 2.38,
+    "ou_lines": [
+      {
+        "line": 2.5,
+        "over": 1.8,
+        "under": 2.08
+      },
+      {
+        "line": 2.75,
+        "over": 2.16,
+        "under": 1.74
+      },
+      {
+        "line": 2.25,
+        "over": 1.6,
+        "under": 2.38
+      }
+    ]
+  },
+  {
+    "h2h": 28,
+    "gol_pairs": [
+      [
+        3.0,
+        1.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        3.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        3.0,
+        3.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        2.0
+      ]
+    ],
+    "win_rate": 21.4,
+    "draw_rate": 32.1,
+    "non_loss_rate": 53.6,
+    "gol_total": 2.89,
+    "btts_rate": 67.9,
+    "skor": 320,
+    "tier": "⚡ T2",
+    "pick_jenis": "OU",
+    "pick": "OVER 2.5",
+    "pick_conf": 64.3,
+    "pick_alasan": "Away menang 79% dari H2H",
+    "pick_odds": 2.13,
+    "pick_implied": 42.2,
+    "value_gap": 20.7,
+    "kategori_gap": "VALUE",
+    "sinyal": 3,
+    "sinyal_detail": [
+      "HomeKuat",
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "AWAY",
+      "odds": 2.37,
+      "prob": 46.4,
+      "gap": 4.2
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "OVER 2.5",
+      "odds": 2.13,
+      "prob": 64.3,
+      "gap": 17.4,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 64.3,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.0",
+        "odds": 2.36,
+        "prob": 64.3,
+        "gap": 21.9,
+        "line": 3.0
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "odds": 2.13,
+        "prob": 64.3,
+        "gap": 17.3,
+        "line": 2.5
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 1.8,
+        "prob": 64.3,
+        "gap": 8.7,
+        "line": 2.75
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.37,
+        "prob": 46.4,
+        "gap": 4.2,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.2,
+        "prob": 32.1,
+        "gap": 0.9,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.64,
+        "prob": 21.4,
+        "gap": -16.5,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 62.85714285714286,
+        "alasan": "Away menang 79% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "confidence": 64.3,
+        "alasan": "Over 2.5: 64% dari H2H"
+      },
+      {
+        "jenis": "BTTS",
+        "pick": "BTTS YES",
+        "confidence": 67.85714285714286,
+        "alasan": "Kedua tim cetak gol 68%"
+      }
+    ],
+    "liga": "ENGLISH CHAMPIONSHIP",
+    "waktu": "22:00",
+    "home": "Watford",
+    "away": "Burnley",
+    "is_live": true,
+    "odds_home": 2.64,
+    "odds_draw": 3.2,
+    "odds_away": 2.37,
+    "ou_lines": [
+      {
+        "line": 2.75,
+        "over": 1.8,
+        "under": 2.08
+      },
+      {
+        "line": 2.5,
+        "over": 2.13,
+        "under": 1.76
+      },
+      {
+        "line": 3.0,
+        "over": 1.61,
+        "under": 2.36
+      }
+    ]
+  },
+  {
+    "h2h": 8,
+    "gol_pairs": [
+      [
+        4.0,
+        0.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        2.0,
+        1.0
+      ]
+    ],
+    "win_rate": 62.5,
+    "draw_rate": 12.5,
+    "non_loss_rate": 75.0,
+    "gol_total": 2.88,
+    "btts_rate": 50.0,
+    "skor": 45,
+    "tier": "✅ T3",
+    "pick_jenis": "OU",
+    "pick": "UNDER 3.75",
+    "pick_conf": 75.0,
+    "pick_alasan": "Over 2.5: 88% dari H2H",
+    "pick_odds": 2.25,
+    "pick_implied": 52.6,
+    "value_gap": 34.9,
+    "kategori_gap": "VALUE",
+    "sinyal": 1,
+    "sinyal_detail": [
+      "WinRate"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "HOME",
+      "odds": 2.35,
+      "prob": 62.5,
+      "gap": 19.9
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 3.75",
+      "odds": 2.25,
+      "prob": 75.0,
+      "gap": 30.6
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 87.5,
+      "ada_di_market": false
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.75",
+        "odds": 2.25,
+        "prob": 75.0,
+        "gap": 30.6,
+        "line": 3.75
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.5",
+        "odds": 1.98,
+        "prob": 75.0,
+        "gap": 24.5,
+        "line": 3.5
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.35,
+        "prob": 62.5,
+        "gap": 19.9,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.25",
+        "odds": 1.7,
+        "prob": 75.0,
+        "gap": 16.2,
+        "line": 3.25
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.7,
+        "prob": 12.5,
+        "gap": -14.5,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.44,
+        "prob": 25.0,
+        "gap": -16.0,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "confidence": 68.75,
+        "alasan": "Home menang 62% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "confidence": 87.5,
+        "alasan": "Over 2.5: 88% dari H2H"
+      }
+    ],
+    "liga": "GERMANY BUNDESLIGA 2",
+    "waktu": "19:00",
+    "home": "FC Magdeburg",
+    "away": "Hannover 96",
+    "is_live": true,
+    "odds_home": 2.35,
+    "odds_draw": 3.7,
+    "odds_away": 2.44,
+    "ou_lines": [
+      {
+        "line": 3.5,
+        "over": 1.9,
+        "under": 1.98
+      },
+      {
+        "line": 3.25,
+        "over": 2.21,
+        "under": 1.7
+      },
+      {
+        "line": 3.75,
+        "over": 1.68,
+        "under": 2.25
+      }
+    ]
+  },
+  {
+    "h2h": 31,
+    "gol_pairs": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        4.0,
+        2.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        4.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        4.0,
+        1.0
+      ],
+      [
+        6.0,
+        1.0
+      ],
+      [
+        4.0,
+        1.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        5.0,
+        0.0
+      ],
+      [
+        5.0,
+        1.0
+      ],
+      [
+        5.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "win_rate": 61.3,
+    "draw_rate": 32.3,
+    "non_loss_rate": 93.5,
+    "gol_total": 3.29,
+    "btts_rate": 58.1,
+    "skor": 365,
+    "tier": "⚡ T2",
+    "pick_jenis": "OU",
+    "pick": "UNDER 4.0",
+    "pick_conf": 74.2,
+    "pick_alasan": "Over 2.5: 65% dari H2H",
+    "pick_odds": 1.64,
+    "pick_implied": 52.6,
+    "value_gap": 11.9,
+    "kategori_gap": "VALUE",
+    "sinyal": 4,
+    "sinyal_detail": [
+      "WinRate",
+      "HomeKuat",
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "DRAW",
+      "odds": 5.34,
+      "prob": 32.3,
+      "gap": 13.5
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 4.0",
+      "odds": 1.64,
+      "prob": 74.2,
+      "gap": 13.2
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 64.5,
+      "ada_di_market": false
+    },
+    "value_comparison": [
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 5.34,
+        "prob": 32.3,
+        "gap": 13.5,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 4.0",
+        "odds": 1.64,
+        "prob": 74.2,
+        "gap": 13.2,
+        "line": 4.0
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.5",
+        "odds": 2.07,
+        "prob": 58.1,
+        "gap": 9.8,
+        "line": 3.5
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.75",
+        "odds": 1.86,
+        "prob": 58.1,
+        "gap": 4.3,
+        "line": 3.75
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 6.74,
+        "prob": 6.5,
+        "gap": -8.4,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 1.29,
+        "prob": 61.3,
+        "gap": -16.2,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "confidence": 66.93548387096774,
+        "alasan": "Home menang 61% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "confidence": 64.5,
+        "alasan": "Over 2.5: 65% dari H2H"
+      }
+    ],
+    "liga": "NETHERLANDS EREDIVISIE",
+    "waktu": "03:00",
+    "home": "Ajax",
+    "away": "NEC Nijmegen",
+    "is_live": true,
+    "odds_home": 1.29,
+    "odds_draw": 5.34,
+    "odds_away": 6.74,
+    "ou_lines": [
+      {
+        "line": 3.75,
+        "over": 2.02,
+        "under": 1.86
+      },
+      {
+        "line": 3.5,
+        "over": 1.81,
+        "under": 2.07
+      },
+      {
+        "line": 4.0,
+        "over": 2.31,
+        "under": 1.64
+      }
+    ]
+  },
+  {
+    "h2h": 24,
+    "gol_pairs": [
+      [
+        2.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        3.0,
+        2.0
+      ],
+      [
+        4.0,
+        2.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        3.0,
+        3.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        4.0
+      ]
+    ],
+    "win_rate": 25.0,
+    "draw_rate": 20.8,
+    "non_loss_rate": 45.8,
+    "gol_total": 3.38,
+    "btts_rate": 66.7,
+    "skor": 285,
+    "tier": "⚡ T2",
+    "pick_jenis": "OU",
+    "pick": "OVER 2.5",
+    "pick_conf": 70.8,
+    "pick_alasan": "Over 2.5: 71% dari H2H",
+    "pick_odds": 2.13,
+    "pick_implied": 52.6,
+    "value_gap": 18.2,
+    "kategori_gap": "VALUE",
+    "sinyal": 2,
+    "sinyal_detail": [
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "AWAY",
+      "odds": 2.68,
+      "prob": 54.2,
+      "gap": 16.9
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "OVER 2.5",
+      "odds": 2.13,
+      "prob": 70.8,
+      "gap": 23.9,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 70.8,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "odds": 2.13,
+        "prob": 70.8,
+        "gap": 23.9,
+        "line": 2.5
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.68,
+        "prob": 54.2,
+        "gap": 16.9,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 1.83,
+        "prob": 70.8,
+        "gap": 16.2,
+        "line": 2.75
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.0",
+        "odds": 2.38,
+        "prob": 54.2,
+        "gap": 12.1,
+        "line": 3.0
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.34,
+        "prob": 20.8,
+        "gap": -9.1,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.38,
+        "prob": 25.0,
+        "gap": -17.0,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 57.5,
+        "alasan": "Away menang 75% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "confidence": 70.8,
+        "alasan": "Over 2.5: 71% dari H2H"
+      },
+      {
+        "jenis": "BTTS",
+        "pick": "BTTS YES",
+        "confidence": 66.66666666666666,
+        "alasan": "Kedua tim cetak gol 67%"
+      }
+    ],
+    "liga": "SWEDEN ALLSVENSKAN",
+    "waktu": "21:00",
+    "home": "GAIS Goteborg",
+    "away": "IK Sirius FK",
+    "is_live": true,
+    "odds_home": 2.38,
+    "odds_draw": 3.34,
+    "odds_away": 2.68,
+    "ou_lines": [
+      {
+        "line": 2.75,
+        "over": 1.83,
+        "under": 2.05
+      },
+      {
+        "line": 2.5,
+        "over": 2.13,
+        "under": 1.76
+      },
+      {
+        "line": 3.0,
+        "over": 1.6,
+        "under": 2.38
+      }
+    ]
+  },
+  {
+    "h2h": 36,
+    "gol_pairs": [
+      [
+        2.0,
+        2.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        5.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        3.0,
+        2.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        5.0
+      ],
+      [
+        0.0,
+        2.0
+      ]
+    ],
+    "win_rate": 11.1,
+    "draw_rate": 19.4,
+    "non_loss_rate": 30.6,
+    "gol_total": 2.53,
+    "btts_rate": 41.7,
+    "skor": 440,
+    "tier": "🔥 T1",
+    "pick_jenis": "OU",
+    "pick": "UNDER 2.5",
+    "pick_conf": 55.6,
+    "pick_alasan": "Away menang 89% dari H2H",
+    "pick_odds": 2.02,
+    "pick_implied": 76.9,
+    "value_gap": 1.4,
+    "kategori_gap": "FAIR",
+    "sinyal": 3,
+    "sinyal_detail": [
+      "HomeKuat",
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "HOME",
+      "odds": 8.0,
+      "prob": 11.1,
+      "gap": -1.4
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 2.5",
+      "odds": 2.02,
+      "prob": 55.6,
+      "gap": 6.1,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 44.4,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "odds": 2.02,
+        "prob": 55.6,
+        "gap": 6.1,
+        "line": 2.5
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 2.28,
+        "prob": 44.4,
+        "gap": 0.6,
+        "line": 2.75
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 8.0,
+        "prob": 11.1,
+        "gap": -1.4,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 4.54,
+        "prob": 19.4,
+        "gap": -2.6,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 1.3,
+        "prob": 69.4,
+        "gap": -7.5,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 78.33333333333334,
+        "alasan": "Away menang 89% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "confidence": 55.6,
+        "alasan": "Under 2.5: 56% dari H2H"
+      }
+    ],
+    "liga": "LIGA PORTUGAL",
+    "waktu": "01:00",
+    "home": "Maritimo",
+    "away": "Porto",
+    "is_live": true,
+    "odds_home": 8.0,
+    "odds_draw": 4.54,
+    "odds_away": 1.3,
+    "ou_lines": [
+      {
+        "line": 2.5,
+        "over": 1.86,
+        "under": 2.02
+      },
+      {
+        "line": 2.75,
+        "over": 2.28,
+        "under": 1.66
+      }
+    ]
+  },
+  {
+    "h2h": 28,
+    "gol_pairs": [
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        4.0,
+        2.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        5.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        5.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        4.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        5.0,
+        0.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        5.0,
+        2.0
+      ],
+      [
+        2.0,
+        2.0
+      ]
+    ],
+    "win_rate": 39.3,
+    "draw_rate": 17.9,
+    "non_loss_rate": 57.1,
+    "gol_total": 3.71,
+    "btts_rate": 75.0,
+    "skor": 345,
+    "tier": "⚡ T2",
+    "pick_jenis": "OU",
+    "pick": "OVER 2.5",
+    "pick_conf": 82.1,
+    "pick_alasan": "Over 2.5: 82% dari H2H",
+    "pick_odds": 1.71,
+    "pick_implied": 52.6,
+    "value_gap": 29.5,
+    "kategori_gap": "VALUE",
+    "sinyal": 2,
+    "sinyal_detail": [
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "HOME",
+      "odds": 4.18,
+      "prob": 39.3,
+      "gap": 15.4
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "OVER 2.5",
+      "odds": 1.71,
+      "prob": 82.1,
+      "gap": 23.6,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 82.1,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 2.01,
+        "prob": 82.1,
+        "gap": 32.4,
+        "line": 2.75
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "odds": 1.71,
+        "prob": 82.1,
+        "gap": 23.7,
+        "line": 2.5
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 4.18,
+        "prob": 39.3,
+        "gap": 15.4,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 3.0",
+        "odds": 2.23,
+        "prob": 46.4,
+        "gap": 1.6,
+        "line": 3.0
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.69,
+        "prob": 17.9,
+        "gap": -9.2,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 1.71,
+        "prob": 42.9,
+        "gap": -15.6,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "confidence": 82.1,
+        "alasan": "Over 2.5: 82% dari H2H"
+      },
+      {
+        "jenis": "BTTS",
+        "pick": "BTTS YES",
+        "confidence": 75.0,
+        "alasan": "Kedua tim cetak gol 75%"
+      }
+    ],
+    "liga": "TURKIYE SUPER LEAGUE",
+    "waktu": "23:59",
+    "home": "Caykur Rizespor",
+    "away": "Fenerbahce",
+    "is_live": true,
+    "odds_home": 4.18,
+    "odds_draw": 3.69,
+    "odds_away": 1.71,
+    "ou_lines": [
+      {
+        "line": 2.75,
+        "over": 2.01,
+        "under": 1.88
+      },
+      {
+        "line": 3.0,
+        "over": 2.23,
+        "under": 1.7
+      },
+      {
+        "line": 2.5,
+        "over": 1.71,
+        "under": 2.21
+      }
+    ]
+  },
+  {
+    "h2h": 14,
+    "gol_pairs": [
+      [
+        2.0,
+        3.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        2.0,
+        4.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        3.0,
+        2.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "win_rate": 21.4,
+    "draw_rate": 21.4,
+    "non_loss_rate": 42.9,
+    "gol_total": 3.14,
+    "btts_rate": 71.4,
+    "skor": 135,
+    "tier": "✅ T3",
+    "pick_jenis": "OU",
+    "pick": "UNDER 2.5",
+    "pick_conf": 50.0,
+    "pick_alasan": "Away menang 79% dari H2H",
+    "pick_odds": 1.65,
+    "pick_implied": 41.7,
+    "value_gap": 21.2,
+    "kategori_gap": "VALUE",
+    "sinyal": 1,
+    "sinyal_detail": [
+      "AwayKuat"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "AWAY",
+      "odds": 2.4,
+      "prob": 57.1,
+      "gap": 15.5
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 2.5",
+      "odds": 1.65,
+      "prob": 50.0,
+      "gap": -10.6,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 50.0,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.0",
+        "odds": 2.19,
+        "prob": 64.3,
+        "gap": 18.6,
+        "line": 3.0
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.4,
+        "prob": 57.1,
+        "gap": 15.5,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "odds": 2.31,
+        "prob": 50.0,
+        "gap": 6.7,
+        "line": 2.5
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 2.01,
+        "prob": 50.0,
+        "gap": 0.2,
+        "line": 2.75
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.4,
+        "prob": 21.4,
+        "gap": -8.0,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.58,
+        "prob": 21.4,
+        "gap": -17.3,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 62.85714285714286,
+        "alasan": "Away menang 79% dari H2H"
+      },
+      {
+        "jenis": "BTTS",
+        "pick": "BTTS YES",
+        "confidence": 71.42857142857143,
+        "alasan": "Kedua tim cetak gol 71%"
+      }
+    ],
+    "liga": "AUSTRIA BUNDESLIGA",
+    "waktu": "23:00",
+    "home": "WSG Tirol",
+    "away": "SV Ried",
+    "is_live": true,
+    "odds_home": 2.58,
+    "odds_draw": 3.4,
+    "odds_away": 2.4,
+    "ou_lines": [
+      {
+        "line": 2.75,
+        "over": 2.01,
+        "under": 1.88
+      },
+      {
+        "line": 3.0,
+        "over": 1.73,
+        "under": 2.19
+      },
+      {
+        "line": 2.5,
+        "over": 2.31,
+        "under": 1.65
+      }
+    ]
+  },
+  {
+    "h2h": 44,
+    "gol_pairs": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        3.0,
+        4.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        6.0,
+        2.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        4.0,
+        2.0
+      ]
+    ],
+    "win_rate": 36.4,
+    "draw_rate": 27.3,
+    "non_loss_rate": 63.6,
+    "gol_total": 2.3,
+    "btts_rate": 47.7,
+    "skor": 560,
+    "tier": "🔥 T1",
+    "pick_jenis": "OU",
+    "pick": "UNDER 3.0",
+    "pick_conf": 81.8,
+    "pick_alasan": "Under 2.5: 64% dari H2H",
+    "pick_odds": 1.89,
+    "pick_implied": 52.6,
+    "value_gap": 11.0,
+    "kategori_gap": "VALUE",
+    "sinyal": 3,
+    "sinyal_detail": [
+      "HomeKuat",
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "AWAY",
+      "odds": 2.95,
+      "prob": 36.4,
+      "gap": 2.5
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 3.0",
+      "odds": 1.89,
+      "prob": 81.8,
+      "gap": 28.9
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 36.4,
+      "ada_di_market": false
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.0",
+        "odds": 1.89,
+        "prob": 81.8,
+        "gap": 28.9,
+        "line": 3.0
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.0",
+        "odds": 2.26,
+        "prob": 63.6,
+        "gap": 19.4,
+        "line": 2.0
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.25",
+        "odds": 1.83,
+        "prob": 63.6,
+        "gap": 9.0,
+        "line": 2.25
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.95,
+        "prob": 36.4,
+        "gap": 2.5,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.01,
+        "prob": 27.3,
+        "gap": -5.9,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.25,
+        "prob": 36.4,
+        "gap": -8.1,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "confidence": 63.6,
+        "alasan": "Under 2.5: 64% dari H2H"
+      }
+    ],
+    "liga": "GREECE SUPER LEAGUE",
+    "waktu": "00:30",
+    "home": "Asteras Tripolis",
+    "away": "Atromitos",
+    "is_live": true,
+    "odds_home": 2.25,
+    "odds_draw": 3.01,
+    "odds_away": 2.95,
+    "ou_lines": [
+      {
+        "line": 2.25,
+        "over": 2.01,
+        "under": 1.83
+      },
+      {
+        "line": 2.0,
+        "over": 1.63,
+        "under": 2.26
+      },
+      {
+        "line": 3.0,
+        "over": 1.95,
+        "under": 1.89
+      }
+    ]
+  },
+  {
+    "h2h": 25,
+    "gol_pairs": [
+      [
+        0.0,
+        3.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        2.0,
+        5.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        4.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        3.0,
+        4.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        3.0,
+        4.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "win_rate": 24.0,
+    "draw_rate": 28.0,
+    "non_loss_rate": 52.0,
+    "gol_total": 3.4,
+    "btts_rate": 68.0,
+    "skor": 300,
+    "tier": "⚡ T2",
+    "pick_jenis": "OU",
+    "pick": "OVER 2.75",
+    "pick_conf": 60.0,
+    "pick_alasan": "Kedua tim cetak gol 68%",
+    "pick_odds": 1.95,
+    "pick_implied": 55.6,
+    "value_gap": 12.4,
+    "kategori_gap": "VALUE",
+    "sinyal": 2,
+    "sinyal_detail": [
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "AWAY",
+      "odds": 2.99,
+      "prob": 48.0,
+      "gap": 14.6
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "OVER 2.75",
+      "odds": 1.95,
+      "prob": 60.0,
+      "gap": 8.7
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 60.0,
+      "ada_di_market": false
+    },
+    "value_comparison": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.99,
+        "prob": 48.0,
+        "gap": 14.6,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 1.95,
+        "prob": 60.0,
+        "gap": 8.7,
+        "line": 2.75
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.25",
+        "odds": 1.88,
+        "prob": 56.0,
+        "gap": 2.8,
+        "line": 3.25
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.6,
+        "prob": 28.0,
+        "gap": 0.2,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.0,
+        "prob": 24.0,
+        "gap": -26.0,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 59.0,
+        "alasan": "Away menang 76% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "confidence": 60.0,
+        "alasan": "Over 2.5: 60% dari H2H"
+      },
+      {
+        "jenis": "BTTS",
+        "pick": "BTTS YES",
+        "confidence": 68.0,
+        "alasan": "Kedua tim cetak gol 68%"
+      }
+    ],
+    "liga": "USA MAJOR LEAGUE SOCCER",
+    "waktu": "07:30",
+    "home": "Orlando City SC",
+    "away": "Columbus Crew",
+    "is_live": true,
+    "odds_home": 2.0,
+    "odds_draw": 3.6,
+    "odds_away": 2.99,
+    "ou_lines": [
+      {
+        "line": 3.25,
+        "over": 2.0,
+        "under": 1.88
+      },
+      {
+        "line": 2.75,
+        "over": 1.95,
+        "under": 1.93
+      }
+    ]
+  },
+  {
+    "h2h": 24,
+    "gol_pairs": [
+      [
+        2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        6.0,
+        1.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        3.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        5.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "win_rate": 41.7,
+    "draw_rate": 29.2,
+    "non_loss_rate": 70.8,
+    "gol_total": 3.17,
+    "btts_rate": 62.5,
+    "skor": 260,
+    "tier": "⚡ T2",
+    "pick_jenis": "OU",
+    "pick": "OVER 2.75",
+    "pick_conf": 62.5,
+    "pick_alasan": "Over 2.5: 62% dari H2H",
+    "pick_odds": 2.16,
+    "pick_implied": 52.6,
+    "value_gap": 9.9,
+    "kategori_gap": "FAIR",
+    "sinyal": 3,
+    "sinyal_detail": [
+      "HomeKuat",
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "DRAW",
+      "odds": 3.4,
+      "prob": 29.2,
+      "gap": -0.2
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "OVER 2.75",
+      "odds": 2.16,
+      "prob": 62.5,
+      "gap": 16.2
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 62.5,
+      "ada_di_market": false
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.75",
+        "odds": 2.16,
+        "prob": 62.5,
+        "gap": 16.2,
+        "line": 2.75
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.0",
+        "odds": 2.05,
+        "prob": 62.5,
+        "gap": 13.7,
+        "line": 3.0
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.4,
+        "prob": 29.2,
+        "gap": -0.2,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.31,
+        "prob": 41.7,
+        "gap": -1.6,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.58,
+        "prob": 29.2,
+        "gap": -9.6,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "OU",
+        "pick": "OVER 2.5",
+        "confidence": 62.5,
+        "alasan": "Over 2.5: 62% dari H2H"
+      }
+    ],
+    "liga": "USA MAJOR LEAGUE SOCCER",
+    "waktu": "10:30",
+    "home": "Los Angeles FC",
+    "away": "Vancouver Whitecaps FC",
+    "is_live": true,
+    "odds_home": 2.31,
+    "odds_draw": 3.4,
+    "odds_away": 2.58,
+    "ou_lines": [
+      {
+        "line": 3.0,
+        "over": 1.83,
+        "under": 2.05
+      },
+      {
+        "line": 2.75,
+        "over": 2.16,
+        "under": 1.74
+      }
+    ]
+  },
+  {
+    "h2h": 37,
+    "gol_pairs": [
+      [
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        2.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        3.0,
+        3.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        3.0,
+        2.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        1.0,
+        2.0
+      ]
+    ],
+    "win_rate": 27.0,
+    "draw_rate": 27.0,
+    "non_loss_rate": 54.1,
+    "gol_total": 2.32,
+    "btts_rate": 54.1,
+    "skor": 455,
+    "tier": "🔥 T1",
+    "pick_jenis": "OU",
+    "pick": "UNDER 2.5",
+    "pick_conf": 62.2,
+    "pick_alasan": "Under 2.5: 62% dari H2H",
+    "pick_odds": 1.62,
+    "pick_implied": 52.6,
+    "value_gap": 9.6,
+    "kategori_gap": "FAIR",
+    "sinyal": 3,
+    "sinyal_detail": [
+      "HomeKuat",
+      "AwayKuat",
+      "SkorTinggi"
+    ],
+    "top_1x2": {
+      "jenis": "1X2",
+      "pick": "AWAY",
+      "odds": 2.21,
+      "prob": 45.9,
+      "gap": 0.7
+    },
+    "top_ou": {
+      "jenis": "OU",
+      "pick": "UNDER 2.5",
+      "odds": 1.62,
+      "prob": 62.2,
+      "gap": 0.5,
+      "line": 2.5
+    },
+    "titik_buta": {
+      "line": 2.5,
+      "over_rate": 37.8,
+      "ada_di_market": true
+    },
+    "value_comparison": [
+      {
+        "jenis": "OU",
+        "pick": "UNDER 3.0",
+        "odds": 2.21,
+        "prob": 81.1,
+        "gap": 35.8,
+        "line": 3.0
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.75",
+        "odds": 1.93,
+        "prob": 62.2,
+        "gap": 10.3,
+        "line": 2.75
+      },
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "odds": 2.21,
+        "prob": 45.9,
+        "gap": 0.7,
+        "line": null
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "odds": 1.62,
+        "prob": 62.2,
+        "gap": 0.4,
+        "line": 2.5
+      },
+      {
+        "jenis": "1X2",
+        "pick": "DRAW",
+        "odds": 3.23,
+        "prob": 27.0,
+        "gap": -3.9,
+        "line": null
+      },
+      {
+        "jenis": "1X2",
+        "pick": "HOME",
+        "odds": 2.84,
+        "prob": 27.0,
+        "gap": -8.2,
+        "line": null
+      }
+    ],
+    "semua_kandidat": [
+      {
+        "jenis": "1X2",
+        "pick": "AWAY",
+        "confidence": 54.45945945945946,
+        "alasan": "Away menang 73% dari H2H"
+      },
+      {
+        "jenis": "OU",
+        "pick": "UNDER 2.5",
+        "confidence": 62.2,
+        "alasan": "Under 2.5: 62% dari H2H"
+      }
+    ],
+    "liga": "MEXICO PRIMERA DIVISION",
+    "waktu": "09:00",
+    "home": "Atlas",
+    "away": "Guadalajara Chivas",
+    "is_live": true,
+    "odds_home": 2.84,
+    "odds_draw": 3.23,
+    "odds_away": 2.21,
+    "ou_lines": [
+      {
+        "line": 2.75,
+        "over": 1.96,
+        "under": 1.93
+      },
+      {
+        "line": 3.0,
+        "over": 1.71,
+        "under": 2.21
+      },
+      {
+        "line": 2.5,
+        "over": 2.36,
+        "under": 1.62
+      }
+    ]
+  }
+]

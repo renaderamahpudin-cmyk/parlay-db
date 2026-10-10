@@ -1,0 +1,406 @@
+{
+  "Manchester City": {
+    "team_name": "Manchester City",
+    "team_id": 8456,
+    "fetched_at": "2026-10-09T03:22:10.428773",
+    "total_cedera": 2,
+    "cedera": [
+      {
+        "nama": "Nico O'Reilly",
+        "posisi": "Defender",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Antoine Semenyo",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      }
+    ]
+  },
+  "Manchester United": {
+    "team_name": "Manchester United",
+    "team_id": 10260,
+    "fetched_at": "2026-10-09T03:22:11.126461",
+    "total_cedera": 10,
+    "cedera": [
+      {
+        "nama": "Karl Darlow",
+        "posisi": "Keeper",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Tom Heaton",
+        "posisi": "Keeper",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Noussair Mazraoui",
+        "posisi": "Defender",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Matthijs de Ligt",
+        "posisi": "Defender",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Manuel Ugarte",
+        "posisi": "Midfielder",
+        "expectedReturn": "Early April 2027",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Kobbie Mainoo",
+        "posisi": "Midfielder",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Marcus Rashford",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Patrick Dorgu",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Amad Diallo",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Benjamin Šeško",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      }
+    ]
+  },
+  "Liverpool": {
+    "team_name": "Liverpool",
+    "team_id": 8650,
+    "fetched_at": "2026-10-09T03:22:12.210526",
+    "total_cedera": 6,
+    "cedera": [
+      {
+        "nama": "Conor Bradley",
+        "posisi": "Defender",
+        "expectedReturn": "Early January 2027",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Giovanni Leoni",
+        "posisi": "Defender",
+        "expectedReturn": "Mid October 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Alexander Isak",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Federico Chiesa",
+        "posisi": "Attacker",
+        "expectedReturn": "Mid October 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Cody Gakpo",
+        "posisi": "Attacker",
+        "expectedReturn": "About 1-2 weeks",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Hugo Ekitiké",
+        "posisi": "Attacker",
+        "expectedReturn": "Early January 2027",
+        "severity": "SEDANG"
+      }
+    ]
+  },
+  "Arsenal": {
+    "team_name": "Arsenal",
+    "team_id": 9825,
+    "fetched_at": "2026-10-09T03:22:13.014229",
+    "total_cedera": 8,
+    "cedera": [
+      {
+        "nama": "William Saliba",
+        "posisi": "Defender",
+        "expectedReturn": "Late November 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Cristhian Mosquera",
+        "posisi": "Defender",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Ben White",
+        "posisi": "Defender",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Piero Hincapié",
+        "posisi": "Defender",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Ezri Konsa",
+        "posisi": "Defender",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Max Dowman",
+        "posisi": "Midfielder",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Christos Tzolis",
+        "posisi": "Attacker",
+        "expectedReturn": "Mid October 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Kai Havertz",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      }
+    ]
+  },
+  "Chelsea": {
+    "team_name": "Chelsea",
+    "team_id": 8455,
+    "fetched_at": "2026-10-09T03:22:13.806357",
+    "total_cedera": 7,
+    "cedera": [
+      {
+        "nama": "Marco Palestra",
+        "posisi": "Midfielder",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Cole Palmer",
+        "posisi": "Midfielder",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Reece James",
+        "posisi": "Midfielder",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Moisés Caicedo",
+        "posisi": "Midfielder",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "João Pedro",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Jamie Gittens",
+        "posisi": "Attacker",
+        "expectedReturn": "Mid October 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Emanuel Emegha",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      }
+    ]
+  },
+  "Barcelona": {
+    "team_name": "Barcelona",
+    "team_id": 8634,
+    "fetched_at": "2026-10-09T03:22:14.639651",
+    "total_cedera": 5,
+    "cedera": [
+      {
+        "nama": "Joan García",
+        "posisi": "Keeper",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Andreas Christensen",
+        "posisi": "Defender",
+        "expectedReturn": "Late October 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Frenkie de Jong",
+        "posisi": "Midfielder",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Raphinha",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Roony Bardghji",
+        "posisi": "Attacker",
+        "expectedReturn": "Late February 2027",
+        "severity": "SEDANG"
+      }
+    ]
+  },
+  "Real Madrid": {
+    "team_name": "Real Madrid",
+    "team_id": 8633,
+    "fetched_at": "2026-10-09T03:22:15.451930",
+    "total_cedera": 4,
+    "cedera": [
+      {
+        "nama": "Raúl Asencio",
+        "posisi": "Defender",
+        "expectedReturn": "Early January 2027",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Éder Militao",
+        "posisi": "Defender",
+        "expectedReturn": "Back in training",
+        "severity": "RINGAN"
+      },
+      {
+        "nama": "Ibrahima Konaté",
+        "posisi": "Defender",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Rodrygo",
+        "posisi": "Attacker",
+        "expectedReturn": "Late December 2026",
+        "severity": "SEDANG"
+      }
+    ]
+  },
+  "Bayern Munich": {
+    "team_name": "Bayern Munich",
+    "team_id": 9823,
+    "fetched_at": "2026-10-09T03:22:16.167188",
+    "total_cedera": 1,
+    "cedera": [
+      {
+        "nama": "Jamal Musiala",
+        "posisi": "Midfielder",
+        "expectedReturn": "A few weeks",
+        "severity": "RINGAN"
+      }
+    ]
+  },
+  "PSG": {
+    "team_name": "PSG",
+    "team_id": 9847,
+    "fetched_at": "2026-10-09T03:22:16.900988",
+    "total_cedera": 3,
+    "cedera": [
+      {
+        "nama": "Senny Mayulu",
+        "posisi": "Midfielder",
+        "expectedReturn": "Late October 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Warren Zaïre-Emery",
+        "posisi": "Midfielder",
+        "expectedReturn": "Early October 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Ferrán Torres",
+        "posisi": "Attacker",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      }
+    ]
+  },
+  "Juventus": {
+    "team_name": "Juventus",
+    "team_id": 9885,
+    "fetched_at": "2026-10-09T03:22:17.758471",
+    "total_cedera": 8,
+    "cedera": [
+      {
+        "nama": "Kamil Grabara",
+        "posisi": "Keeper",
+        "expectedReturn": "Out for season",
+        "severity": "LAMA"
+      },
+      {
+        "nama": "Manuel Locatelli",
+        "posisi": "Midfielder",
+        "expectedReturn": "Late March 2027",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Khéphren Thuram-Ulien",
+        "posisi": "Midfielder",
+        "expectedReturn": "Mid January 2027",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Juan Cabal",
+        "posisi": "Midfielder",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Augusto Owusu",
+        "posisi": "Midfielder",
+        "expectedReturn": "Doubtful",
+        "severity": "DOUBTFUL"
+      },
+      {
+        "nama": "Kenan Yıldız",
+        "posisi": "Attacker",
+        "expectedReturn": "Early December 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Jérémie Boga",
+        "posisi": "Attacker",
+        "expectedReturn": "Early November 2026",
+        "severity": "SEDANG"
+      },
+      {
+        "nama": "Jeff Ekhator",
+        "posisi": "Attacker",
+        "expectedReturn": "Early November 2026",
+        "severity": "SEDANG"
+      }
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "saved_at": "2026-10-10T11:20:40.881971",
+  "total_pending_auto": 21,
+  "total_skip_liga": 0,
+  "pending_auto": [
+    {
+      "home": "Arsenal",
+      "away": "Leeds United",
+      "liga": "ENGLISH PREMIER LEAGUE",
+      "waktu": "19:30",
+      "pick": "OVER 2.5",
+      "fotmob_id": 47,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Genoa",
+      "away": "Fiorentina",
+      "liga": "ITALY SERIE A",
+      "waktu": "21:00",
+      "pick": "UNDER 2.5",
+      "fotmob_id": 55,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Napoli",
+      "away": "Frosinone",
+      "liga": "ITALY SERIE A",
+      "waktu": "02:45",
+      "pick": "OVER 3.5",
+      "fotmob_id": 55,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Real Madrid",
+      "away": "Villarreal CF",
+      "liga": "SPAIN LA LIGA",
+      "waktu": "03:00",
+      "pick": "UNDER 4.0",
+      "fotmob_id": 87,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "TSG 1899 Hoffenheim",
+      "away": "Hamburger SV",
+      "liga": "GERMANY BUNDESLIGA",
+      "waktu": "21:30",
+      "pick": "UNDER 3.75",
+      "fotmob_id": 54,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Lille",
+      "away": "Le Havre",
+      "liga": "FRANCE LIGUE 1",
+      "waktu": "23:15",
+      "pick": "UNDER 3.0",
+      "fotmob_id": 53,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "West Bromwich Albion",
+      "away": "Birmingham City",
+      "liga": "ENGLISH CHAMPIONSHIP",
+      "waktu": "19:30",
+      "pick": "UNDER 2.5",
+      "fotmob_id": 48,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Blackburn Rovers",
+      "away": "Cardiff City",
+      "liga": "ENGLISH CHAMPIONSHIP",
+      "waktu": "22:00",
+      "pick": "UNDER 3.25",
+      "fotmob_id": 48,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Preston North End",
+      "away": "Millwall",
+      "liga": "ENGLISH CHAMPIONSHIP",
+      "waktu": "22:00",
+      "pick": "UNDER 2.5",
+      "fotmob_id": 48,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Watford",
+      "away": "Burnley",
+      "liga": "ENGLISH CHAMPIONSHIP",
+      "waktu": "22:00",
+      "pick": "OVER 2.5",
+      "fotmob_id": 48,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "FC Magdeburg",
+      "away": "Hannover 96",
+      "liga": "GERMANY BUNDESLIGA 2",
+      "waktu": "19:00",
+      "pick": "UNDER 3.0",
+      "fotmob_id": 146,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Ajax",
+      "away": "NEC Nijmegen",
+      "liga": "NETHERLANDS EREDIVISIE",
+      "waktu": "03:00",
+      "pick": "UNDER 4.0",
+      "fotmob_id": 57,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "GAIS Goteborg",
+      "away": "IK Sirius FK",
+      "liga": "SWEDEN ALLSVENSKAN",
+      "waktu": "21:00",
+      "pick": "OVER 2.5",
+      "fotmob_id": 67,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Maritimo",
+      "away": "Porto",
+      "liga": "LIGA PORTUGAL",
+      "waktu": "01:00",
+      "pick": "UNDER 2.5",
+      "fotmob_id": 61,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Caykur Rizespor",
+      "away": "Fenerbahce",
+      "liga": "TURKIYE SUPER LEAGUE",
+      "waktu": "00:00",
+      "pick": "OVER 2.75",
+      "fotmob_id": 71,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "WSG Tirol",
+      "away": "SV Ried",
+      "liga": "AUSTRIA BUNDESLIGA",
+      "waktu": "23:00",
+      "pick": "UNDER 2.5",
+      "fotmob_id": 38,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Asteras Tripolis",
+      "away": "Atromitos",
+      "liga": "GREECE SUPER LEAGUE",
+      "waktu": "00:30",
+      "pick": "UNDER 3.0",
+      "fotmob_id": 135,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Orlando City SC",
+      "away": "Columbus Crew",
+      "liga": "USA MAJOR LEAGUE SOCCER",
+      "waktu": "07:30",
+      "pick": "UNDER 3.5",
+      "fotmob_id": 130,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Minnesota United FC",
+      "away": "Houston Dynamo",
+      "liga": "USA MAJOR LEAGUE SOCCER",
+      "waktu": "08:30",
+      "pick": "OVER 2.5",
+      "fotmob_id": 130,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Los Angeles FC",
+      "away": "Vancouver Whitecaps FC",
+      "liga": "USA MAJOR LEAGUE SOCCER",
+      "waktu": "10:30",
+      "pick": "UNDER 3.25",
+      "fotmob_id": 130,
+      "alasan": "Belum kick-off — cek nanti"
+    },
+    {
+      "home": "Atlas",
+      "away": "Guadalajara Chivas",
+      "liga": "MEXICO PRIMERA DIVISION",
+      "waktu": "09:00",
+      "pick": "UNDER 2.5",
+      "fotmob_id": 230,
+      "alasan": "Belum kick-off — cek nanti"
+    }
+  ],
+  "skip_liga": []
+}

@@ -1,0 +1,68 @@
+{
+  "team_name": "Manchester United",
+  "team_id": 10260,
+  "fetched_at": "2026-10-09T03:22:11.126461",
+  "total_cedera": 10,
+  "cedera": [
+    {
+      "nama": "Karl Darlow",
+      "posisi": "Keeper",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Tom Heaton",
+      "posisi": "Keeper",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Noussair Mazraoui",
+      "posisi": "Defender",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Matthijs de Ligt",
+      "posisi": "Defender",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Manuel Ugarte",
+      "posisi": "Midfielder",
+      "expectedReturn": "Early April 2027",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Kobbie Mainoo",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Marcus Rashford",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Patrick Dorgu",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Amad Diallo",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Benjamin Šeško",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    }
+  ]
+}

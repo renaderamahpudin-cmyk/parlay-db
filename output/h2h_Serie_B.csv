@@ -1,0 +1,1712 @@
+Team_A,Team_B,H2H_Count
+Bari,Brescia,28
+Brescia,Cittadella,28
+Brescia,Modena,26
+Ascoli,Cittadella,26
+Ascoli,Brescia,26
+Bari,Modena,26
+Brescia,Vicenza,24
+Bari,Spezia,22
+Cittadella,Frosinone,22
+Brescia,Frosinone,22
+Brescia,Spezia,22
+Cittadella,Modena,20
+Ascoli,Frosinone,20
+Brescia,Ternana,20
+Bari,Cittadella,20
+Brescia,Crotone,20
+Bari,Cesena,20
+Brescia,Cesena,20
+Modena,Vicenza,20
+Ascoli,Vicenza,20
+Bari,Frosinone,18
+Crotone,Modena,18
+Crotone,Vicenza,18
+Cittadella,Crotone,18
+Brescia,Pescara,18
+Frosinone,Modena,18
+Modena,Spezia,18
+Crotone,Pescara,18
+Cesena,Modena,18
+Bari,Ternana,18
+Bari,Vicenza,18
+Frosinone,Vicenza,18
+Cittadella,Spezia,18
+Ascoli,Modena,18
+Avellino,Bari,18
+Cittadella,Vicenza,18
+Cesena,Spezia,18
+Cittadella,Empoli,18
+Ascoli,Bari,18
+Cittadella,Pescara,16
+Modena,Pescara,16
+Cittadella,Pisa,16
+Cittadella,Ternana,16
+Cittadella,Reggina,16
+Brescia,Pisa,16
+Ascoli,Salernitana,16
+Bari,Pescara,16
+Ascoli,Empoli,16
+Pescara,Spezia,16
+Ascoli,Spezia,16
+Frosinone,Spezia,16
+Avellino,Brescia,16
+Ascoli,Pisa,16
+Brescia,Salernitana,16
+Frosinone,Pisa,16
+Cittadella,Salernitana,16
+Ascoli,Crotone,16
+Avellino,Spezia,14
+Cittadella,Perugia,14
+Pescara,Vicenza,14
+Empoli,Modena,14
+Ascoli,Ternana,14
+Frosinone,Pescara,14
+Avellino,Modena,14
+Cesena,Vicenza,14
+Ascoli,Reggina,14
+Mantova,Modena,14
+Brescia,Perugia,14
+Cittadella,Cosenza,14
+Cesena,Frosinone,14
+Cittadella,Livorno,14
+Ascoli,Pescara,14
+Ascoli,Perugia,14
+Avellino,Cesena,14
+Frosinone,Salernitana,14
+Ascoli,Livorno,14
+Cittadella,Cremonese,14
+Brescia,Reggina,14
+Empoli,Pescara,14
+Empoli,Frosinone,14
+Albinoleffe,Vicenza,14
+Albinoleffe,Modena,14
+Bari,Crotone,14
+Brescia,Cremonese,14
+Spezia,Ternana,14
+Brescia,Empoli,14
+Crotone,Livorno,14
+Modena,Ternana,14
+Crotone,Spezia,14
+Ascoli,Grosseto,12
+Modena,Reggina,12
+Frosinone,Perugia,12
+Perugia,Ternana,12
+Avellino,Frosinone,12
+Perugia,Spezia,12
+Ascoli,Cosenza,12
+Bari,Mantova,12
+Ascoli,Cesena,12
+Cosenza,Cremonese,12
+Cesena,Pescara,12
+Crotone,Frosinone,12
+Albinoleffe,Piacenza,12
+Crotone,Padova,12
+Modena,Sassuolo,12
+Cittadella,Sassuolo,12
+Cesena,Mantova,12
+Cesena,Cittadella,12
+Pescara,Virtus Entella,12
+Piacenza,Vicenza,12
+Grosseto,Modena,12
+Ascoli,Venezia,12
+Livorno,Modena,12
+Frosinone,Virtus Entella,12
+Albinoleffe,Brescia,12
+Livorno,Pescara,12
+Livorno,Vicenza,12
+Ternana,Vicenza,12
+Cesena,Crotone,12
+Bari,Pisa,12
+Crotone,Empoli,12
+Modena,Triestina,12
+Triestina,Vicenza,12
+Cosenza,Pisa,12
+Bari,Palermo,12
+Brescia,Verona,12
+Crotone,Reggina,12
+Ascoli,Cremonese,12
+Avellino,Pescara,12
+Empoli,Padova,12
+Avellino,Ternana,12
+Empoli,Reggina,12
+Spezia,Virtus Entella,12
+Spezia,Vicenza,12
+Brescia,Cosenza,12
+Reggina,Vicenza,12
+Brescia,Livorno,12
+Brescia,Lecce,12
+Empoli,Vicenza,12
+Salernitana,Spezia,12
+Cittadella,Padova,12
+Cittadella,Palermo,12
+Avellino,Vicenza,12
+Cittadella,Venezia,12
+Palermo,Spezia,12
+Modena,Padova,12
+Bari,Empoli,12
+Brescia,Mantova,12
+Grosseto,Vicenza,12
+Crotone,Ternana,12
+Brescia,Palermo,12
+Modena,Piacenza,12
+Albinoleffe,Triestina,12
+Frosinone,Mantova,12
+Cesena,Ternana,12
+Piacenza,Triestina,11
+Lecce,Vicenza,10
+Novara,Spezia,10
+Novara,Ternana,10
+Carpi,Cittadella,10
+Brescia,Pro Vercelli,10
+Pescara,Salernitana,10
+Padova,Pescara,10
+Brescia,Sassuolo,10
+Avellino,Virtus Entella,10
+Bari,Juve Stabia,10
+Livorno,Spezia,10
+Bari,Verona,10
+Bari,Virtus Entella,10
+Pescara,Ternana,10
+Cremonese,Pescara,10
+Carpi,Spezia,10
+Pescara,Venezia,10
+Padova,Reggina,10
+Modena,Palermo,10
+Benevento,Perugia,10
+Perugia,Salernitana,10
+Bari,Salernitana,10
+Bari,Perugia,10
+Brescia,Novara,10
+Mantova,Triestina,10
+Brescia,Triestina,10
+Bari,Novara,10
+Brescia,Padova,10
+Brescia,Parma,10
+Juve Stabia,Spezia,10
+Brescia,Virtus Entella,10
+Avellino,Cittadella,10
+Brescia,Grosseto,10
+Brescia,Venezia,10
+Brescia,Carpi,10
+Brescia,Piacenza,10
+Mantova,Vicenza,10
+Mantova,Piacenza,10
+Perugia,Virtus Entella,10
+Perugia,Pescara,10
+Bari,Pro Vercelli,10
+Palermo,Venezia,10
+Modena,Varese,10
+Bari,Livorno,10
+Modena,Pisa,10
+Benevento,Cittadella,10
+Ascoli,Novara,10
+Crotone,Perugia,10
+Frosinone,Lecce,10
+Cosenza,Frosinone,10
+Pro Vercelli,Ternana,10
+Pro Vercelli,Spezia,10
+Ascoli,Avellino,10
+Ascoli,Benevento,10
+Albinoleffe,Mantova,10
+Cesena,Salernitana,10
+Frosinone,Piacenza,10
+Pisa,Vicenza,10
+Albinoleffe,Grosseto,10
+Albinoleffe,Frosinone,10
+Cesena,Novara,10
+Ascoli,Lecce,10
+Empoli,Spezia,10
+Empoli,Sassuolo,10
+Empoli,Salernitana,10
+Empoli,Livorno,10
+Empoli,Grosseto,10
+Empoli,Juve Stabia,10
+Cittadella,Virtus Entella,10
+Spezia,Trapani,10
+Crotone,Verona,10
+Cittadella,Varese,10
+Crotone,Varese,10
+Cittadella,Grosseto,10
+Sassuolo,Vicenza,10
+Salernitana,Virtus Entella,10
+Salernitana,Vicenza,10
+Cittadella,Parma,10
+Cittadella,Novara,10
+Cittadella,Juve Stabia,10
+Frosinone,Reggina,10
+Spezia,Venezia,10
+Frosinone,Venezia,10
+Cremonese,Venezia,10
+Ascoli,Virtus Entella,10
+Cremonese,Frosinone,10
+Ascoli,Sassuolo,10
+Cosenza,Venezia,10
+Pisa,Salernitana,10
+Cremonese,Spezia,10
+Cremonese,Salernitana,10
+Albinoleffe,Bari,10
+Frosinone,Ternana,10
+Cremonese,Pisa,10
+Frosinone,Triestina,10
+Grosseto,Sassuolo,10
+Albinoleffe,Crotone,10
+Pisa,Spezia,10
+Cesena,Empoli,10
+Albinoleffe,Ascoli,10
+Ascoli,Parma,10
+Juve Stabia,Modena,10
+Ascoli,Padova,10
+Verona,Vicenza,10
+Crotone,Piacenza,8
+Como,Ternana,8
+Crotone,Salernitana,8
+Crotone,Sassuolo,8
+Bologna,Modena,8
+Crotone,Torino,8
+Novara,Vicenza,8
+Crotone,Trapani,8
+Benevento,Frosinone,8
+Cremonese,Palermo,8
+Benevento,Cosenza,8
+Crotone,Triestina,8
+Modena,Salernitana,8
+Cremonese,Crotone,8
+Benevento,Pisa,8
+Modena,Verona,8
+Cosenza,Spezia,8
+Cosenza,Salernitana,8
+Crotone,Virtus Lanciano,8
+Modena,Torino,8
+Cosenza,Palermo,8
+Modena,Virtus Lanciano,8
+Crotone,Grosseto,8
+Modena,Sudtirol,8
+Bologna,Brescia,8
+Crotone,Juve Stabia,8
+Novara,Pescara,8
+Crotone,Lecce,8
+Novara,Pro Vercelli,8
+Modena,Sampdoria,8
+Crotone,Novara,8
+Cremonese,Ternana,8
+Bologna,Vicenza,8
+Modena,Rimini,8
+Cosenza,Perugia,8
+Juve Stabia,Padova,8
+Brescia,Como,8
+Cesena,Palermo,8
+Cesena,Juve Stabia,8
+Brescia,Virtus Lanciano,8
+Mantova,Rimini,8
+Frosinone,Sassuolo,8
+Frosinone,Spal,8
+Livorno,Varese,8
+Padova,Sassuolo,8
+Livorno,Sassuolo,8
+Livorno,Salernitana,8
+Livorno,Perugia,8
+Livorno,Padova,8
+Grosseto,Livorno,8
+Catanzaro,Modena,8
+Carpi,Perugia,8
+Grosseto,Padova,8
+Carpi,Pescara,8
+Grosseto,Piacenza,8
+Carpi,Ternana,8
+Latina,Trapani,8
+Grosseto,Reggina,8
+Latina,Ternana,8
+Grosseto,Triestina,8
+Latina,Spezia,8
+Cesena,Padova,8
+Brescia,Varese,8
+Cittadella,Verona,8
+Brescia,Trapani,8
+Cittadella,Trapani,8
+Cittadella,Spal,8
+Cittadella,Pro Vercelli,8
+Brescia,Juve Stabia,8
+Modena,Novara,8
+Brescia,Latina,8
+Juve Stabia,Pescara,8
+Cittadella,Lecce,8
+Empoli,Varese,8
+Empoli,Venezia,8
+Empoli,Virtus Entella,8
+Frosinone,Grosseto,8
+Cesena,Virtus Entella,8
+Cesena,Verona,8
+Frosinone,Livorno,8
+Cesena,Triestina,8
+Mantova,Spezia,8
+Brescia,Rimini,8
+Frosinone,Palermo,8
+Frosinone,Parma,8
+Brescia,Spal,8
+Cesena,Pro Vercelli,8
+Cesena,Piacenza,8
+Empoli,Novara,8
+Cremonese,Perugia,8
+Perugia,Vicenza,8
+Rimini,Vicenza,8
+Ascoli,Piacenza,8
+Pro Vercelli,Vicenza,8
+Albinoleffe,Torino,8
+Padova,Varese,8
+Ascoli,Pro Vercelli,8
+Ternana,Virtus Entella,8
+Bari,Padova,8
+Bari,Parma,8
+Albinoleffe,Sassuolo,8
+Ternana,Virtus Lanciano,8
+Perugia,Pisa,8
+Pisa,Spal,8
+Bari,Piacenza,8
+Albinoleffe,Rimini,8
+Avellino,Perugia,8
+Pescara,Trapani,8
+Torino,Vicenza,8
+Bari,Rimini,8
+Albinoleffe,Pescara,8
+Bari,Sampdoria,8
+Ascoli,Palermo,8
+Padova,Vicenza,8
+Bari,Latina,8
+Avellino,Pro Vercelli,8
+Avellino,Trapani,8
+Parma,Pisa,8
+Ascoli,Como,8
+Palermo,Ternana,8
+Bari,Bologna,8
+Palermo,Sudtirol,8
+Pisa,Venezia,8
+Bari,Carpi,8
+Bari,Catanzaro,8
+Parma,Ternana,8
+Avellino,Salernitana,8
+Spezia,Verona,8
+Bari,Cremonese,8
+Spezia,Virtus Lanciano,8
+Salernitana,Venezia,8
+Bari,Grosseto,8
+Ternana,Trapani,8
+Palermo,Pescara,8
+Pisa,Ternana,8
+Ascoli,Spal,8
+Bari,Reggina,8
+Pro Vercelli,Virtus Entella,8
+Albinoleffe,Cesena,8
+Bari,Sudtirol,8
+Albinoleffe,Empoli,8
+Rimini,Triestina,8
+Avellino,Crotone,8
+Albinoleffe,Cittadella,8
+Bari,Trapani,8
+Venezia,Virtus Entella,8
+Perugia,Trapani,8
+Vicenza,Virtus Entella,8
+Reggina,Ternana,8
+Bari,Triestina,8
+Perugia,Venezia,8
+Bari,Varese,8
+Bari,Venezia,8
+Reggina,Sassuolo,8
+Piacenza,Rimini,8
+Bari,Virtus Lanciano,8
+Benevento,Brescia,8
+Avellino,Empoli,8
+Padova,Spezia,8
+Ascoli,Verona,8
+Ascoli,Triestina,8
+Trapani,Virtus Entella,8
+Avellino,Novara,8
+Perugia,Pro Vercelli,8
+Varese,Vicenza,8
+Bari,Sassuolo,8
+Avellino,Carpi,8
+Avellino,Mantova,8
+Pescara,Reggina,8
+Reggina,Varese,8
+Pescara,Varese,8
+Pescara,Verona,8
+Avellino,Latina,8
+Frosinone,Juve Stabia,6
+Cesena,Reggina,6
+Chievo,Pisa,6
+Pro Vercelli,Virtus Lanciano,6
+Pro Vercelli,Trapani,6
+Cesena,Rimini,6
+Ascoli,Carpi,6
+Cesena,Sassuolo,6
+Reggiana,Venezia,6
+Cesena,Virtus Lanciano,6
+Reggiana,Spezia,6
+Cesena,Trapani,6
+Frosinone,Monza,6
+Frosinone,Padova,6
+Frosinone,Novara,6
+Reggiana,Sudtirol,6
+Chievo,Frosinone,6
+Pro Vercelli,Salernitana,6
+Reggiana,Sampdoria,6
+Piacenza,Treviso,6
+Ascoli,Chievo,6
+Pisa,Pordenone,6
+Catanzaro,Sampdoria,6
+Ascoli,Trapani,6
+Catanzaro,Reggiana,6
+Pisa,Reggiana,6
+Catanzaro,Palermo,6
+Grosseto,Mantova,6
+Ascoli,Varese,6
+Catanzaro,Mantova,6
+Catanzaro,Cremonese,6
+Cesena,Pisa,6
+Catanzaro,Cesena,6
+Piacenza,Torino,6
+Grosseto,Torino,6
+Grosseto,Varese,6
+Piacenza,Sassuolo,6
+Juve Stabia,Livorno,6
+Juve Stabia,Palermo,6
+Juve Stabia,Reggina,6
+Ascoli,Torino,6
+Catanzaro,Spezia,6
+Catanzaro,Sudtirol,6
+Pisa,Reggina,6
+Cesena,Perugia,6
+Pisa,Virtus Entella,6
+Ascoli,Juve Stabia,6
+Frosinone,Pordenone,6
+Ascoli,Mantova,6
+Frosinone,Pro Vercelli,6
+Frosinone,Reggiana,6
+Cesena,Lecce,6
+Cesena,Latina,6
+Pisa,Sudtirol,6
+Empoli,Triestina,6
+Frosinone,Rimini,6
+Ascoli,Pordenone,6
+Cesena,Cremonese,6
+Frosinone,Sudtirol,6
+Frosinone,Trapani,6
+Frosinone,Treviso,6
+Cesena,Grosseto,6
+Cittadella,Piacenza,6
+Empoli,Torino,6
+Cosenza,Lecce,6
+Cosenza,Parma,6
+Albinoleffe,Livorno,6
+Treviso,Triestina,6
+Trapani,Virtus Lanciano,6
+Cosenza,Modena,6
+Crotone,Latina,6
+Trapani,Vicenza,6
+Albinoleffe,Padova,6
+Cosenza,Pescara,6
+Crotone,Mantova,6
+Cosenza,Crotone,6
+Albinoleffe,Reggina,6
+Torino,Triestina,6
+Crotone,Pro Vercelli,6
+Ternana,Verona,6
+Albinoleffe,Treviso,6
+Albinoleffe,Lecce,6
+Treviso,Vicenza,6
+Ternana,Venezia,6
+Cremonese,Empoli,6
+Vicenza,Virtus Lanciano,6
+Albinoleffe,Avellino,6
+Cremonese,Pordenone,6
+Cremonese,Reggiana,6
+Cremonese,Modena,6
+Albinoleffe,Bologna,6
+Cremonese,Lecce,6
+Varese,Virtus Lanciano,6
+Cosenza,Pordenone,6
+Cremonese,Vicenza,6
+Cosenza,Ternana,6
+Cosenza,Sudtirol,6
+Cosenza,Spal,6
+Cremonese,Virtus Entella,6
+Cosenza,Reggina,6
+Cosenza,Reggiana,6
+Como,Pisa,6
+Como,Perugia,6
+Empoli,Ternana,6
+Cittadella,Mantova,6
+Cittadella,Reggiana,6
+Sampdoria,Spezia,6
+Cittadella,Pordenone,6
+Juve Stabia,Sassuolo,6
+Salernitana,Trapani,6
+Salernitana,Ternana,6
+Salernitana,Sassuolo,6
+Empoli,Palermo,6
+Cittadella,Sampdoria,6
+Rimini,Treviso,6
+Cittadella,Latina,6
+Empoli,Piacenza,6
+Empoli,Pisa,6
+Reggina,Torino,6
+Cittadella,Como,6
+Reggina,Spal,6
+Sampdoria,Sudtirol,6
+Sassuolo,Torino,6
+Como,Parma,6
+Cittadella,Virtus Lanciano,6
+Albinoleffe,Verona,6
+Ternana,Varese,6
+Como,Modena,6
+Sudtirol,Venezia,6
+Crotone,Virtus Entella,6
+Spezia,Varese,6
+Como,Cosenza,6
+Spezia,Sudtirol,6
+Empoli,Mantova,6
+Spal,Vicenza,6
+Cittadella,Triestina,6
+Spal,Ternana,6
+Cittadella,Torino,6
+Cittadella,Sudtirol,6
+Sassuolo,Varese,6
+Sassuolo,Triestina,6
+Juve Stabia,Sampdoria,6
+Cremonese,Parma,6
+Carpi,Crotone,6
+Modena,Venezia,6
+Bologna,Piacenza,6
+Carpi,Cesena,6
+Bologna,Pescara,6
+Livorno,Novara,6
+Modena,Treviso,6
+Mantova,Salernitana,6
+Parma,Perugia,6
+Bari,Reggiana,6
+Carpi,Frosinone,6
+Avellino,Triestina,6
+Bologna,Mantova,6
+Carpi,Latina,6
+Lecce,Triestina,6
+Brescia,Treviso,6
+Modena,Virtus Entella,6
+Carpi,Novara,6
+Lecce,Spezia,6
+Carpi,Palermo,6
+Perugia,Spal,6
+Pescara,Torino,6
+Lecce,Salernitana,6
+Bologna,Frosinone,6
+Carpi,Pro Vercelli,6
+Bologna,Crotone,6
+Palermo,Salernitana,6
+Lecce,Reggina,6
+Pescara,Pro Vercelli,6
+Modena,Trapani,6
+Avellino,Virtus Lanciano,6
+Bologna,Rimini,6
+Bari,Como,6
+Bari,Cosenza,6
+Palermo,Reggiana,6
+Modena,Perugia,6
+Palermo,Pisa,6
+Mantova,Pescara,6
+Livorno,Virtus Lanciano,6
+Brescia,Catanzaro,6
+Livorno,Virtus Entella,6
+Livorno,Verona,6
+Modena,Pro Vercelli,6
+Modena,Reggiana,6
+Pescara,Piacenza,6
+Palermo,Perugia,6
+Palermo,Parma,6
+Livorno,Trapani,6
+Bologna,Triestina,6
+Padova,Verona,6
+Livorno,Ternana,6
+Avellino,Bologna,6
+Mantova,Pisa,6
+Modena,Parma,6
+Livorno,Reggina,6
+Livorno,Pro Vercelli,6
+Bologna,Spezia,6
+Avellino,Livorno,6
+Carpi,Salernitana,6
+Benevento,Spal,6
+Latina,Pro Vercelli,6
+Bologna,Cesena,6
+Benevento,Salernitana,6
+Latina,Pescara,6
+Padova,Torino,6
+Brescia,Sudtirol,6
+Novara,Reggina,6
+Latina,Perugia,6
+Latina,Novara,6
+Novara,Salernitana,6
+Latina,Modena,6
+Mantova,Sassuolo,6
+Brescia,Sampdoria,6
+Bari,Treviso,6
+Novara,Trapani,6
+Avellino,Palermo,6
+Novara,Varese,6
+Avellino,Rimini,6
+Brescia,Reggiana,6
+Novara,Virtus Entella,6
+Avellino,Piacenza,6
+Novara,Virtus Lanciano,6
+Padova,Palermo,6
+Avellino,Pisa,6
+Benevento,Crotone,6
+Juve Stabia,Varese,6
+Benevento,Cremonese,6
+Parma,Venezia,6
+Benevento,Spezia,6
+Palermo,Sampdoria,6
+Lecce,Mantova,6
+Carpi,Trapani,6
+Mantova,Treviso,6
+Novara,Padova,6
+Lecce,Modena,6
+Lecce,Pescara,6
+Lecce,Piacenza,6
+Benevento,Venezia,6
+Lecce,Pisa,6
+Carpi,Virtus Entella,6
+Benevento,Ternana,6
+Latina,Virtus Lanciano,6
+Latina,Virtus Entella,6
+Latina,Vicenza,6
+Novara,Perugia,6
+Pescara,Virtus Lanciano,6
+Brescia,Torino,6
+Pescara,Triestina,6
+Spezia,Treviso,4
+Parma,Spal,4
+Sampdoria,Sassuolo,4
+Mantova,Verona,4
+Palermo,Virtus Entella,4
+Sassuolo,Spezia,4
+Sampdoria,Venezia,4
+Parma,Sudtirol,4
+Spal,Virtus Entella,4
+Parma,Reggina,4
+Empoli,Monza,4
+Mantova,Torino,4
+Sassuolo,Verona,4
+Spal,Venezia,4
+Siena,Varese,4
+Parma,Spezia,4
+Parma,Salernitana,4
+Juve Stabia,Ternana,4
+Empoli,Lecce,4
+Cremonese,Verona,4
+Monza,Spal,4
+Monza,Venezia,4
+Monza,Vicenza,4
+Monza,Virtus Entella,4
+Novara,Palermo,4
+Triestina,Verona,4
+Varese,Verona,4
+Padova,Ternana,4
+Novara,Sassuolo,4
+Spezia,Triestina,4
+Novara,Siena,4
+Cremonese,Sudtirol,4
+Novara,Verona,4
+Cremonese,Spal,4
+Cremonese,Sampdoria,4
+Cremonese,Reggina,4
+Padova,Piacenza,4
+Padova,Siena,4
+Monza,Reggina,4
+Monza,Reggiana,4
+Monza,Pordenone,4
+Monza,Pisa,4
+Palermo,Reggina,4
+Sudtirol,Ternana,4
+Crotone,Venezia,4
+Padova,Virtus Lanciano,4
+Modena,Siena,4
+Padova,Venezia,4
+Crotone,Siena,4
+Crotone,Rimini,4
+Crotone,Pordenone,4
+Crotone,Pisa,4
+Parma,Vicenza,4
+Padova,Triestina,4
+Crotone,Palermo,4
+Torino,Varese,4
+Torino,Verona,4
+Trapani,Varese,4
+Monza,Pescara,4
+Salernitana,Verona,4
+Empoli,Reggiana,4
+Salernitana,Triestina,4
+Pisa,Sampdoria,4
+Grosseto,Lecce,4
+Grosseto,Juve Stabia,4
+Genoa,Modena,4
+Lecce,Monza,4
+Frosinone,Verona,4
+Lecce,Padova,4
+Lecce,Perugia,4
+Frosinone,Varese,4
+Frosinone,Torino,4
+Lecce,Pordenone,4
+Pisa,Rimini,4
+Pisa,Sassuolo,4
+Latina,Salernitana,4
+Lecce,Rimini,4
+Frosinone,Sampdoria,4
+Pescara,Siena,4
+Lecce,Spal,4
+Lecce,Treviso,4
+Pisa,Trapani,4
+Lecce,Venezia,4
+Lecce,Verona,4
+Pisa,Treviso,4
+Pisa,Triestina,4
+Pescara,Sassuolo,4
+Latina,Varese,4
+Grosseto,Novara,4
+Pordenone,Reggina,4
+Juve Stabia,Mantova,4
+Piacenza,Pisa,4
+Juve Stabia,Trapani,4
+Juve Stabia,Salernitana,4
+Juve Stabia,Venezia,4
+Juve Stabia,Reggiana,4
+Juve Stabia,Pisa,4
+Piacenza,Reggina,4
+Juve Stabia,Verona,4
+Juve Stabia,Vicenza,4
+Juve Stabia,Novara,4
+Piacenza,Salernitana,4
+Juve Stabia,Virtus Entella,4
+Grosseto,Pescara,4
+Juve Stabia,Virtus Lanciano,4
+Grosseto,Verona,4
+Latina,Livorno,4
+Piacenza,Spezia,4
+Grosseto,Treviso,4
+Grosseto,Spezia,4
+Grosseto,Salernitana,4
+Grosseto,Rimini,4
+Padova,Salernitana,4
+Grosseto,Pisa,4
+Piacenza,Verona,4
+Pescara,Sampdoria,4
+Pordenone,Salernitana,4
+Mantova,Sudtirol,4
+Empoli,Pordenone,4
+Mantova,Palermo,4
+Reggina,Salernitana,4
+Empoli,Trapani,4
+Mantova,Reggiana,4
+Perugia,Verona,4
+Empoli,Siena,4
+Reggina,Siena,4
+Empoli,Sampdoria,4
+Reggina,Spezia,4
+Juve Stabia,Sudtirol,4
+Empoli,Pro Vercelli,4
+Mantova,Sampdoria,4
+Empoli,Verona,4
+Reggina,Triestina,4
+Perugia,Reggina,4
+Reggina,Venezia,4
+Reggina,Verona,4
+Empoli,Perugia,4
+Reggina,Virtus Lanciano,4
+Empoli,Parma,4
+Rimini,Spezia,4
+Perugia,Pordenone,4
+Rimini,Verona,4
+Salernitana,Spal,4
+Reggiana,Virtus Entella,4
+Mantova,Padova,4
+Pescara,Rimini,4
+Livorno,Torino,4
+Pordenone,Spal,4
+Pescara,Reggiana,4
+Livorno,Piacenza,4
+Pordenone,Venezia,4
+Livorno,Pisa,4
+Pordenone,Vicenza,4
+Pordenone,Virtus Entella,4
+Pescara,Pordenone,4
+Pescara,Pisa,4
+Pro Vercelli,Varese,4
+Pro Vercelli,Verona,4
+Livorno,Triestina,4
+Perugia,Virtus Lanciano,4
+Reggiana,Salernitana,4
+Livorno,Venezia,4
+Frosinone,Latina,4
+Frosinone,Genoa,4
+Foggia,Venezia,4
+Foggia,Spezia,4
+Foggia,Salernitana,4
+Foggia,Pescara,4
+Foggia,Perugia,4
+Foggia,Palermo,4
+Empoli,Virtus Lanciano,4
+Padova,Sampdoria,4
+Albinoleffe,Ancona,4
+Albinoleffe,Arezzo,4
+Carpi,Cremonese,4
+Brescia,Monza,4
+Brescia,Pordenone,4
+Cagliari,Como,4
+Cagliari,Modena,4
+Cagliari,Perugia,4
+Cagliari,Ternana,4
+Carpi,Empoli,4
+Brescia,Foggia,4
+Carpi,Foggia,4
+Carpi,Livorno,4
+Carpi,Modena,4
+Carpi,Padova,4
+Carpi,Varese,4
+Carpi,Venezia,4
+Brescia,Genoa,4
+Brescia,Chievo,4
+Carpi,Vicenza,4
+Benevento,Vicenza,4
+Benevento,Parma,4
+Benevento,Pescara,4
+Benevento,Pordenone,4
+Benevento,Reggina,4
+Benevento,Trapani,4
+Benevento,Verona,4
+Benevento,Virtus Entella,4
+Brescia,Catania,4
+Bologna,Catania,4
+Bologna,Lecce,4
+Bologna,Ternana,4
+Bologna,Treviso,4
+Bologna,Verona,4
+Brescia,Cagliari,4
+Carpi,Verona,4
+Carpi,Virtus Lanciano,4
+Benevento,Livorno,4
+Cesena,Reggiana,4
+Catanzaro,Juve Stabia,4
+Catanzaro,Pescara,4
+Catanzaro,Pisa,4
+Catanzaro,Ternana,4
+Catanzaro,Venezia,4
+Cesena,Livorno,4
+Cesena,Sampdoria,4
+Catanzaro,Cosenza,4
+Cesena,Sudtirol,4
+Cesena,Torino,4
+Cesena,Treviso,4
+Cesena,Varese,4
+Cesena,Venezia,4
+Chievo,Cittadella,4
+Catanzaro,Frosinone,4
+Catanzaro,Cittadella,4
+Carrarese,Catanzaro,4
+Carrarese,Reggiana,4
+Carrarese,Cesena,4
+Carrarese,Frosinone,4
+Carrarese,Juve Stabia,4
+Carrarese,Mantova,4
+Carrarese,Modena,4
+Carrarese,Palermo,4
+Carrarese,Sampdoria,4
+Catania,Vicenza,4
+Carrarese,Spezia,4
+Carrarese,Sudtirol,4
+Catania,Crotone,4
+Catania,Modena,4
+Catania,Pescara,4
+Catania,Ternana,4
+Benevento,Palermo,4
+Benevento,Lecce,4
+Chievo,Cremonese,4
+Arezzo,Modena,4
+Arezzo,Bari,4
+Arezzo,Bologna,4
+Arezzo,Brescia,4
+Arezzo,Cesena,4
+Arezzo,Crotone,4
+Arezzo,Mantova,4
+Arezzo,Pescara,4
+Ancona,Triestina,4
+Arezzo,Piacenza,4
+Arezzo,Rimini,4
+Arezzo,Triestina,4
+Arezzo,Verona,4
+Arezzo,Vicenza,4
+Ascoli,Cagliari,4
+Ancona,Vicenza,4
+Ancona,Sassuolo,4
+Ascoli,Latina,4
+Ancona,Brescia,4
+Albinoleffe,Atalanta,4
+Albinoleffe,Pisa,4
+Albinoleffe,Salernitana,4
+Albinoleffe,Spezia,4
+Albinoleffe,Varese,4
+Ancona,Ascoli,4
+Ancona,Cittadella,4
+Ancona,Salernitana,4
+Ancona,Empoli,4
+Ancona,Frosinone,4
+Ancona,Grosseto,4
+Ancona,Mantova,4
+Ancona,Modena,4
+Ancona,Piacenza,4
+Ascoli,Foggia,4
+Ascoli,Monza,4
+Benevento,Como,4
+Bari,Cagliari,4
+Avellino,Parma,4
+Avellino,Treviso,4
+Avellino,Varese,4
+Avellino,Venezia,4
+Avellino,Verona,4
+Bari,Benevento,4
+Bari,Carrarese,4
+Avellino,Juve Stabia,4
+Bari,Catania,4
+Bari,Genoa,4
+Bari,Lecce,4
+Bari,Spal,4
+Bari,Torino,4
+Benevento,Carpi,4
+Avellino,Padova,4
+Avellino,Grosseto,4
+Ascoli,Reggiana,4
+Atalanta,Modena,4
+Ascoli,Rimini,4
+Ascoli,Sampdoria,4
+Ascoli,Sudtirol,4
+Ascoli,Treviso,4
+Ascoli,Virtus Lanciano,4
+Atalanta,Crotone,4
+Atalanta,Pescara,4
+Avellino,Cremonese,4
+Atalanta,Piacenza,4
+Atalanta,Torino,4
+Atalanta,Triestina,4
+Atalanta,Vicenza,4
+Avellino,Catania,4
+Avellino,Catanzaro,4
+Chievo,Cosenza,4
+Virtus Entella,Virtus Lanciano,4
+Chievo,Salernitana,4
+Cosenza,Sampdoria,4
+Como,Reggina,4
+Chievo,Vicenza,4
+Cremonese,Monza,4
+Cosenza,Livorno,4
+Cremonese,Mantova,4
+Como,Palermo,4
+Cittadella,Monza,4
+Como,Frosinone,4
+Cremonese,Livorno,4
+Cremonese,Juve Stabia,4
+Como,Spal,4
+Como,Vicenza,4
+Como,Spezia,4
+Como,Venezia,4
+Cosenza,Monza,4
+Chievo,Spezia,4
+Como,Sudtirol,4
+Chievo,Virtus Entella,4
+Cosenza,Vicenza,4
+Cittadella,Foggia,4
+Chievo,Venezia,4
+Como,Crotone,4
+Chievo,Empoli,4
+Chievo,Pescara,4
+Cittadella,Siena,4
+Chievo,Pordenone,4
+Cosenza,Virtus Entella,4
+Chievo,Lecce,4
+Como,Cremonese,4
+Cosenza,Empoli,4
+Cosenza,Juve Stabia,4
+Cremonese,Foggia,4
+Perugia,Varese,2
+Avellino,Cagliari,2
+Atalanta,Ternana,2
+Crotone,Portogruaro,2
+Atalanta,Varese,2
+Avellino,Reggina,2
+Avellino,Messina,2
+Atalanta,Verona,2
+Pescara,Portogruaro,2
+Avellino,Reggiana,2
+Crotone,Sampdoria,2
+Avellino,Benevento,2
+Parma,Virtus Entella,2
+Avellino,Como,2
+Avellino,Carrarese,2
+Avellino,Ravenna,2
+Perugia,Sudtirol,2
+Como,Sampdoria,2
+Avellino,Lecce,2
+Crotone,Spal,2
+Avellino,Foggia,2
+Atalanta,Siena,2
+Avellino,Chievo,2
+Como,Reggiana,2
+Como,Salernitana,2
+Avellino,Monza,2
+Chievo,Crotone,2
+Como,Trapani,2
+Atalanta,Sassuolo,2
+Atalanta,Rimini,2
+Atalanta,Catanzaro,2
+Piacenza,Ternana,2
+Atalanta,Catania,2
+Atalanta,Brescia,2
+Atalanta,Bologna,2
+Piacenza,Varese,2
+Atalanta,Bari,2
+Atalanta,Avellino,2
+Crotone,Parma,2
+Pisa,Pro Vercelli,2
+Pisa,Ravenna,2
+Como,Virtus Lanciano,2
+Ascoli,Siena,2
+Cosenza,FeralpiSalo,2
+Crotone,Nocerina,2
+Crotone,Napoli,2
+Ascoli,Ravenna,2
+Piacenza,Siena,2
+Atalanta,Cesena,2
+Atalanta,Cittadella,2
+Atalanta,Novara,2
+Pescara,Spal,2
+Atalanta,Reggina,2
+Pescara,Sudtirol,2
+Atalanta,Portogruaro,2
+Parma,Treviso,2
+Pescara,Treviso,2
+Atalanta,Padova,2
+Atalanta,Mantova,2
+Atalanta,Cremonese,2
+Atalanta,Livorno,2
+Atalanta,Grosseto,2
+Atalanta,Frosinone,2
+Atalanta,Empoli,2
+Piacenza,Portogruaro,2
+Piacenza,Ravenna,2
+Como,Virtus Entella,2
+Parma,Triestina,2
+Parma,Rimini,2
+Avellino,Sampdoria,2
+Como,FeralpiSalo,2
+Benevento,Latina,2
+Benevento,Juve Stabia,2
+Benevento,Genoa,2
+Padova,Perugia,2
+Benevento,Foggia,2
+Benevento,Empoli,2
+Padova,Portogruaro,2
+Padova,Pro Vercelli,2
+Padova,Reggiana,2
+Benevento,Chievo,2
+Benevento,Cesena,2
+Empoli,Foggia,2
+Benevento,Cagliari,2
+Como,Genoa,2
+Padova,Sudtirol,2
+Como,Latina,2
+Bari,Siena,2
+Empoli,Gallipoli,2
+Novara,Venezia,2
+Bari,Ravenna,2
+Benevento,Modena,2
+Nocerina,Vicenza,2
+Cittadella,Rimini,2
+Novara,Parma,2
+Benevento,Sudtirol,2
+Cittadella,Treviso,2
+Novara,Piacenza,2
+Novara,Pisa,2
+Novara,Portogruaro,2
+Benevento,Pro Vercelli,2
+Empoli,Latina,2
+Empoli,Gubbio,2
+Novara,Spal,2
+Benevento,Padova,2
+Benevento,Novara,2
+Novara,Torino,2
+Benevento,Monza,2
+Novara,Triestina,2
+Padova,Trapani,2
+Bari,Nocerina,2
+Avellino,Sassuolo,2
+Palermo,Trapani,2
+Palermo,Verona,2
+Como,Pescara,2
+Palermo,Virtus Lanciano,2
+Como,Pordenone,2
+Parma,Pescara,2
+Parma,Piacenza,2
+Como,Pro Vercelli,2
+Parma,Pordenone,2
+Parma,Pro Vercelli,2
+Parma,Reggiana,2
+Avellino,Torino,2
+Ascoli,Nocerina,2
+Avellino,Sudtirol,2
+Parma,Sampdoria,2
+Parma,Sassuolo,2
+Avellino,Spal,2
+Avellino,Siena,2
+Palermo,Varese,2
+Crotone,Treviso,2
+Bari,Napoli,2
+Como,Novara,2
+Bari,Monza,2
+Bari,Messina,2
+Padova,Virtus Entella,2
+Bari,Lecco,2
+Como,Lecce,2
+Bari,Juventus,2
+Bari,Gubbio,2
+Como,Lecco,2
+Palermo,Pro Vercelli,2
+Bari,Foggia,2
+Bari,FeralpiSalo,2
+Bari,Chievo,2
+Como,Livorno,2
+Palermo,Sassuolo,2
+Palermo,Siena,2
+Palermo,Spal,2
+Como,Monza,2
+Ascoli,Portogruaro,2
+Ascoli,Genoa,2
+Crotone,Monza,2
+Alessandria,Ternana,2
+Siena,Triestina,2
+Cremonese,Rimini,2
+Siena,Vicenza,2
+Siena,Virtus Lanciano,2
+Spal,Spezia,2
+Spal,Sudtirol,2
+Alessandria,Vicenza,2
+Spal,Trapani,2
+Spal,Verona,2
+Siena,Torino,2
+Alessandria,Spal,2
+Alessandria,Reggina,2
+Alessandria,Pordenone,2
+Alessandria,Pisa,2
+Alessandria,Perugia,2
+Alessandria,Parma,2
+Alessandria,Monza,2
+Alessandria,Lecce,2
+Siena,Trapani,2
+Siena,Ternana,2
+Ancona,Lecce,2
+Sassuolo,Siena,2
+Ancona,Gallipoli,2
+Sampdoria,Ternana,2
+Sampdoria,Torino,2
+Sampdoria,Varese,2
+Cremonese,Sassuolo,2
+Sampdoria,Verona,2
+Sampdoria,Vicenza,2
+Sampdoria,Virtus Entella,2
+Ancona,Crotone,2
+Siena,Spezia,2
+Sassuolo,Sudtirol,2
+Sassuolo,Ternana,2
+Cremonese,Lecco,2
+Sassuolo,Treviso,2
+Ancona,Cesena,2
+Ancona,Bari,2
+Ancona,Avellino,2
+Sassuolo,Virtus Lanciano,2
+Alessandria,Frosinone,2
+Alessandria,Crotone,2
+Alessandria,Cremonese,2
+Varese,Virtus Entella,2
+Albinoleffe,Messina,2
+Treviso,Verona,2
+Albinoleffe,Juventus,2
+Triestina,Varese,2
+Albinoleffe,Juve Stabia,2
+Albinoleffe,Gubbio,2
+Albinoleffe,Genoa,2
+Albinoleffe,Gallipoli,2
+Albinoleffe,Cremonese,2
+Alessandria,Cosenza,2
+Venezia,Verona,2
+Venezia,Vicenza,2
+Albinoleffe,Chievo,2
+Albinoleffe,Catanzaro,2
+Verona,Virtus Entella,2
+Verona,Virtus Lanciano,2
+Albinoleffe,Catania,2
+Cremonese,Padova,2
+Albinoleffe,Napoli,2
+Albinoleffe,Nocerina,2
+Albinoleffe,Novara,2
+Trapani,Verona,2
+Alessandria,Como,2
+Alessandria,Cittadella,2
+Alessandria,Brescia,2
+Sudtirol,Virtus Entella,2
+Ternana,Torino,2
+Alessandria,Benevento,2
+Ternana,Triestina,2
+Alessandria,Ascoli,2
+Albinoleffe,Ternana,2
+Albinoleffe,Siena,2
+Albinoleffe,Sampdoria,2
+Cremonese,Pro Vercelli,2
+Albinoleffe,Ravenna,2
+Albinoleffe,Portogruaro,2
+Cremonese,Novara,2
+Albinoleffe,Parma,2
+Trapani,Venezia,2
+Salernitana,Virtus Lanciano,2
+Ancona,Livorno,2
+Ascoli,Messina,2
+Arezzo,Ternana,2
+Pro Vercelli,Reggina,2
+Cosenza,Lecco,2
+Pro Vercelli,Sassuolo,2
+Pro Vercelli,Spal,2
+Crotone,Juventus,2
+Arezzo,Treviso,2
+Arezzo,Torino,2
+Pro Vercelli,Venezia,2
+Arezzo,Spezia,2
+Portogruaro,Varese,2
+Cosenza,Mantova,2
+Crotone,Gubbio,2
+Ravenna,Rimini,2
+Ravenna,Spezia,2
+Ravenna,Treviso,2
+Ravenna,Triestina,2
+Ravenna,Vicenza,2
+Reggiana,Reggina,2
+Portogruaro,Vicenza,2
+Portogruaro,Triestina,2
+Cremonese,FeralpiSalo,2
+Ascoli,FeralpiSalo,2
+Ascoli,Lecco,2
+Cosenza,Foggia,2
+Ascoli,Gubbio,2
+Pisa,Verona,2
+Nocerina,Varese,2
+Ascoli,Gallipoli,2
+Pordenone,Reggiana,2
+Cosenza,Genoa,2
+Ascoli,Catanzaro,2
+Portogruaro,Torino,2
+Pordenone,Spezia,2
+Pordenone,Ternana,2
+Pordenone,Trapani,2
+Ascoli,Bologna,2
+Ascoli,Atalanta,2
+Portogruaro,Reggina,2
+Portogruaro,Sassuolo,2
+Portogruaro,Siena,2
+Arezzo,Napoli,2
+Reggiana,Sassuolo,2
+Reggiana,Spal,2
+Salernitana,Sampdoria,2
+Rimini,Salernitana,2
+Rimini,Sassuolo,2
+Rimini,Ternana,2
+Rimini,Torino,2
+Ancona,Treviso,2
+Ancona,Torino,2
+Cremonese,Triestina,2
+Cremonese,Trapani,2
+Ancona,Rimini,2
+Crotone,Genoa,2
+Ancona,Reggina,2
+Ancona,Pisa,2
+Salernitana,Sudtirol,2
+Cremonese,Torino,2
+Salernitana,Torino,2
+Ancona,Parma,2
+Salernitana,Treviso,2
+Ancona,Padova,2
+Cosenza,Verona,2
+Reggina,Virtus Entella,2
+Arezzo,Atalanta,2
+Arezzo,Avellino,2
+Crotone,Gallipoli,2
+Reggiana,Ternana,2
+Arezzo,Lecce,2
+Reggiana,Vicenza,2
+Arezzo,Juventus,2
+Arezzo,Genoa,2
+Reggina,Sampdoria,2
+Arezzo,Frosinone,2
+Cosenza,Padova,2
+Arezzo,Cremonese,2
+Crotone,Foggia,2
+Reggina,Sudtirol,2
+Arezzo,Catanzaro,2
+Arezzo,Catania,2
+Reggina,Trapani,2
+Cosenza,Sassuolo,2
+Cosenza,Trapani,2
+Nocerina,Verona,2
+Nocerina,Padova,2
+Nocerina,Torino,2
+Juve Stabia,Latina,2
+Gubbio,Pescara,2
+Gubbio,Reggina,2
+Gubbio,Sampdoria,2
+Gubbio,Sassuolo,2
+Gubbio,Torino,2
+Gubbio,Varese,2
+Gubbio,Verona,2
+Gubbio,Vicenza,2
+FeralpiSalo,Ternana,2
+Gubbio,Nocerina,2
+Catania,Spezia,2
+Catania,Rimini,2
+Juve Stabia,Monza,2
+Juve Stabia,Nocerina,2
+Catania,Pro Vercelli,2
+Catania,Piacenza,2
+FeralpiSalo,Sudtirol,2
+Juve Stabia,Perugia,2
+Gubbio,Padova,2
+Gubbio,Modena,2
+FeralpiSalo,Spezia,2
+Catania,Virtus Entella,2
+Grosseto,Pro Vercelli,2
+Grosseto,Ravenna,2
+Foggia,Lecce,2
+Catanzaro,Como,2
+Foggia,Frosinone,2
+Grosseto,Sampdoria,2
+Catania,Virtus Lanciano,2
+Grosseto,Siena,2
+Grosseto,Ternana,2
+Gubbio,Livorno,2
+FeralpiSalo,Venezia,2
+Catania,Verona,2
+Catania,Varese,2
+Catania,Triestina,2
+Catania,Trapani,2
+Catania,Torino,2
+Grosseto,Virtus Lanciano,2
+Gubbio,Juve Stabia,2
+Catania,Perugia,2
+Juve Stabia,Pordenone,2
+Catanzaro,Crotone,2
+FeralpiSalo,Palermo,2
+Juventus,Piacenza,2
+Juventus,Rimini,2
+Juventus,Spezia,2
+Juventus,Treviso,2
+Juventus,Triestina,2
+Juventus,Verona,2
+Juventus,Vicenza,2
+Carrarese,Salernitana,2
+Carrarese,Pisa,2
+Juventus,Napoli,2
+Latina,Padova,2
+Latina,Palermo,2
+Carrarese,Pescara,2
+FeralpiSalo,Modena,2
+Latina,Pisa,2
+Carrarese,Padova,2
+Latina,Reggina,2
+Carrarese,Monza,2
+Juventus,Pescara,2
+Juventus,Modena,2
+Juve Stabia,Pro Vercelli,2
+Catania,Cesena,2
+Catania,Mantova,2
+Catania,Livorno,2
+Catania,Latina,2
+Catania,Frosinone,2
+FeralpiSalo,Sampdoria,2
+Juve Stabia,Siena,2
+Catania,Cremonese,2
+Catania,Cittadella,2
+Juve Stabia,Torino,2
+Juventus,Mantova,2
+Catania,Catanzaro,2
+Carrarese,Virtus Entella,2
+Carrarese,Venezia,2
+FeralpiSalo,Reggiana,2
+FeralpiSalo,Pisa,2
+Carrarese,Sassuolo,2
+FeralpiSalo,Parma,2
+Juventus,Lecce,2
+Grosseto,Portogruaro,2
+Catanzaro,Empoli,2
+Nocerina,Sassuolo,2
+Chievo,Mantova,2
+Cesena,Foggia,2
+Cesena,Cosenza,2
+Frosinone,Siena,2
+Cesena,Como,2
+Cesena,Chievo,2
+Catanzaro,Virtus Entella,2
+Catanzaro,Vicenza,2
+Catanzaro,Verona,2
+Catanzaro,Triestina,2
+Cesena,Genoa,2
+Catanzaro,Torino,2
+Foggia,Parma,2
+Catanzaro,Sassuolo,2
+Catanzaro,Salernitana,2
+Catanzaro,Rimini,2
+Chievo,Messina,2
+Frosinone,Virtus Lanciano,2
+Gallipoli,Grosseto,2
+Cesena,Gallipoli,2
+Cesena,Juventus,2
+Gallipoli,Mantova,2
+Cesena,Spal,2
+Frosinone,Gallipoli,2
+Foggia,Virtus Entella,2
+Foggia,Verona,2
+Frosinone,Messina,2
+Chievo,Grosseto,2
+Foggia,Ternana,2
+Frosinone,Napoli,2
+Chievo,Juve Stabia,2
+Cesena,Siena,2
+Chievo,Livorno,2
+Foggia,Pro Vercelli,2
+Cesena,Ravenna,2
+Cesena,Parma,2
+Cesena,Napoli,2
+Cesena,Monza,2
+Frosinone,Portogruaro,2
+Cesena,Messina,2
+Frosinone,Ravenna,2
+Gallipoli,Lecce,2
+Gallipoli,Modena,2
+Catanzaro,FeralpiSalo,2
+Foggia,Padova,2
+Genoa,Sudtirol,2
+Genoa,Ternana,2
+Genoa,Treviso,2
+Genoa,Triestina,2
+Genoa,Venezia,2
+Genoa,Verona,2
+Genoa,Vicenza,2
+Grosseto,Gubbio,2
+Catanzaro,Parma,2
+Genoa,Spal,2
+Catanzaro,Padova,2
+Catanzaro,Monza,2
+Grosseto,Messina,2
+Catanzaro,Lecco,2
+Grosseto,Nocerina,2
+Foggia,Novara,2
+Foggia,Livorno,2
+Grosseto,Parma,2
+Genoa,Spezia,2
+Genoa,Rimini,2
+Gallipoli,Padova,2
+Genoa,Lecce,2
+Gallipoli,Piacenza,2
+Gallipoli,Reggina,2
+Gallipoli,Salernitana,2
+Gallipoli,Sassuolo,2
+Gallipoli,Torino,2
+Gallipoli,Triestina,2
+Gallipoli,Vicenza,2
+Genoa,Juventus,2
+Genoa,Mantova,2
+Genoa,Reggina,2
+Catanzaro,Piacenza,2
+Genoa,Napoli,2
+Genoa,Palermo,2
+Genoa,Parma,2
+Genoa,Perugia,2
+Genoa,Pescara,2
+Genoa,Piacenza,2
+Genoa,Pisa,2
+Latina,Siena,2
+Latina,Spal,2
+FeralpiSalo,Lecco,2
+Cittadella,FeralpiSalo,2
+Modena,Monza,2
+Modena,Napoli,2
+Modena,Nocerina,2
+Brescia,Juventus,2
+Brescia,Gubbio,2
+Empoli,Portogruaro,2
+Brescia,Gallipoli,2
+Brescia,FeralpiSalo,2
+Modena,Portogruaro,2
+Messina,Triestina,2
+Brescia,Carrarese,2
+Modena,Ravenna,2
+Cittadella,Gallipoli,2
+Bologna,Virtus Lanciano,2
+Bologna,Virtus Entella,2
+Cittadella,Genoa,2
+Bologna,Varese,2
+Cittadella,Gubbio,2
+Messina,Vicenza,2
+Messina,Treviso,2
+Modena,Spal,2
+Brescia,Napoli,2
+Mantova,Reggina,2
+Chievo,Triestina,2
+Cagliari,Cittadella,2
+Cagliari,Cesena,2
+Brescia,Siena,2
+Brescia,Ravenna,2
+Mantova,Ternana,2
+Brescia,Nocerina,2
+Mantova,Venezia,2
+Messina,Spezia,2
+Brescia,Messina,2
+Cremonese,Piacenza,2
+Mantova,Virtus Entella,2
+Messina,Modena,2
+Messina,Piacenza,2
+Messina,Pisa,2
+Messina,Ravenna,2
+Messina,Rimini,2
+Bologna,Trapani,2
+Bologna,Torino,2
+Chievo,Modena,2
+Napoli,Rimini,2
+Monza,Spezia,2
+Monza,Sudtirol,2
+Monza,Ternana,2
+Bologna,Carpi,2
+Empoli,Nocerina,2
+Cittadella,Portogruaro,2
+Napoli,Pescara,2
+Napoli,Piacenza,2
+Napoli,Spezia,2
+Monza,Sampdoria,2
+Napoli,Treviso,2
+Napoli,Triestina,2
+Napoli,Verona,2
+Napoli,Vicenza,2
+Frosinone,Juventus,2
+Nocerina,Pescara,2
+Nocerina,Reggina,2
+Nocerina,Sampdoria,2
+Cittadella,Nocerina,2
+Monza,Salernitana,2
+Cittadella,Lecco,2
+Bologna,Juventus,2
+Bologna,Ravenna,2
+Bologna,Pro Vercelli,2
+Bologna,Pisa,2
+Bologna,Perugia,2
+Bologna,Napoli,2
+Bologna,Messina,2
+Bologna,Livorno,2
+Bologna,Latina,2
+Bologna,Grosseto,2
+Bologna,Catanzaro,2
+Monza,Padova,2
+Monza,Palermo,2
+Monza,Parma,2
+Monza,Perugia,2
+Bologna,Genoa,2
+Bologna,Cremonese,2
+Bologna,Cittadella,2
+Bologna,Chievo,2
+Cagliari,Cosenza,2
+Mantova,Ravenna,2
+Cagliari,Crotone,2
+Carpi,Lecce,2
+Carpi,Reggina,2
+Carpi,Pisa,2
+Lecce,Sassuolo,2
+Carpi,Parma,2
+Chievo,Rimini,2
+Lecce,Ternana,2
+Lecce,Torino,2
+Empoli,Sudtirol,2
+Carpi,Juve Stabia,2
+Cagliari,Frosinone,2
+Empoli,Spal,2
+Lecce,Virtus Entella,2
+Lecco,Modena,2
+Lecco,Palermo,2
+Lecco,Parma,2
+Lecco,Pisa,2
+Lecco,Reggiana,2
+Lecco,Sampdoria,2
+Carpi,Siena,2
+Lecce,Reggiana,2
+Lecce,Ravenna,2
+Carpi,Spal,2
+Chievo,Monza,2
+Chievo,Perugia,2
+Latina,Verona,2
+Carrarese,Empoli,2
+Carrarese,Cremonese,2
+Carrarese,Cosenza,2
+Lecce,Livorno,2
+Carrarese,Cittadella,2
+Lecce,Messina,2
+Chievo,Piacenza,2
+Lecce,Napoli,2
+Lecce,Palermo,2
+Lecce,Parma,2
+Chievo,Ravenna,2
+Empoli,Treviso,2
+Chievo,Reggiana,2
+Chievo,Reggina,2
+Lecco,Spezia,2
+Lecco,Sudtirol,2
+Lecco,Ternana,2
+Cagliari,Palermo,2
+Cagliari,Salernitana,2
+Cagliari,Reggina,2
+Livorno,Treviso,2
+Cagliari,Pro Vercelli,2
+Cagliari,Pisa,2
+Cagliari,Pescara,2
+Chievo,Treviso,2
+Cagliari,Parma,2
+Cagliari,Novara,2
+Lecco,Venezia,2
+Mantova,Messina,2
+Empoli,Rimini,2
+Mantova,Monza,2
+Mantova,Napoli,2
+Cagliari,Livorno,2
+Cagliari,Latina,2
+Mantova,Parma,2
+Cagliari,Genoa,2
+Cagliari,Spal,2
+Cagliari,Spezia,2
+Cagliari,Vicenza,2
+Cagliari,Virtus Entella,2
+Livorno,Mantova,2
+Chievo,Spal,2
+Livorno,Nocerina,2
+Carpi,Cosenza,2
+Livorno,Palermo,2
+Livorno,Parma,2
+Carpi,Catania,2
+Cagliari,Virtus Lanciano,2
+Brescia,Lecco,2
+Livorno,Siena,2
+Livorno,Pordenone,2
+Livorno,Portogruaro,2
+Cagliari,Venezia,2
+Cagliari,Trapani,2
+Livorno,Rimini,2
+Chievo,Trapani,2
+Livorno,Sampdoria,2
+Cagliari,Sudtirol,2
+Piacenza ,Triestina,1

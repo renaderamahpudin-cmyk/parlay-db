@@ -1,0 +1,30 @@
+{
+  "team_id": 8593,
+  "total_cedera": 4,
+  "cedera": [
+    {
+      "nama": "Daley Blind",
+      "posisi": "Defender",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Aaron Bouwman",
+      "posisi": "Defender",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Simon Adingra",
+      "posisi": "Attacker",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Kasper Dolberg",
+      "posisi": "Attacker",
+      "expectedReturn": "Early November 2026",
+      "severity": "SEDANG"
+    }
+  ]
+}

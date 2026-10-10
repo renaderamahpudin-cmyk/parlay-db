@@ -1,0 +1,30 @@
+[
+  {
+    "nama": "SLIP UTAMA 1X2",
+    "n": 3,
+    "total_odds": 24.65,
+    "potensi": 2464896.0000000005,
+    "kategori": "1x2"
+  },
+  {
+    "nama": "HIBURAN 4",
+    "n": 4,
+    "total_odds": 63.36,
+    "potensi": 6335788.8,
+    "kategori": "1x2"
+  },
+  {
+    "nama": "HIBURAN 5",
+    "n": 5,
+    "total_odds": 372.54,
+    "potensi": 37254438.144,
+    "kategori": "1x2"
+  },
+  {
+    "nama": "SLIP BTTS",
+    "n": 3,
+    "total_odds": 6.33,
+    "potensi": 633162.5000000001,
+    "kategori": "btts"
+  }
+]

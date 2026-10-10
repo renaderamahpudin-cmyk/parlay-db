@@ -1,0 +1,42 @@
+{
+  "team_id": 8640,
+  "total_cedera": 6,
+  "cedera": [
+    {
+      "nama": "Jerdy Schouten",
+      "posisi": "Defender",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Kilian Sildillia",
+      "posisi": "Defender",
+      "expectedReturn": "Early December 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Adamo Nagalo",
+      "posisi": "Defender",
+      "expectedReturn": "Out for season",
+      "severity": "LAMA"
+    },
+    {
+      "nama": "Sami Ouaissa",
+      "posisi": "Midfielder",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Sam Lammers",
+      "posisi": "Attacker",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Alassane Pléa",
+      "posisi": "Attacker",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    }
+  ]
+}

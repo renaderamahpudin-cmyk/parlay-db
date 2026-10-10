@@ -1,0 +1,44 @@
+{
+  "team_name": "Liverpool",
+  "team_id": 8650,
+  "fetched_at": "2026-10-09T03:22:12.210526",
+  "total_cedera": 6,
+  "cedera": [
+    {
+      "nama": "Conor Bradley",
+      "posisi": "Defender",
+      "expectedReturn": "Early January 2027",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Giovanni Leoni",
+      "posisi": "Defender",
+      "expectedReturn": "Mid October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Alexander Isak",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Federico Chiesa",
+      "posisi": "Attacker",
+      "expectedReturn": "Mid October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Cody Gakpo",
+      "posisi": "Attacker",
+      "expectedReturn": "About 1-2 weeks",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Hugo Ekitiké",
+      "posisi": "Attacker",
+      "expectedReturn": "Early January 2027",
+      "severity": "SEDANG"
+    }
+  ]
+}

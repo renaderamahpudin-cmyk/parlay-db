@@ -1,0 +1,56 @@
+{
+  "team_name": "Juventus",
+  "team_id": 9885,
+  "fetched_at": "2026-10-09T03:22:17.758471",
+  "total_cedera": 8,
+  "cedera": [
+    {
+      "nama": "Kamil Grabara",
+      "posisi": "Keeper",
+      "expectedReturn": "Out for season",
+      "severity": "LAMA"
+    },
+    {
+      "nama": "Manuel Locatelli",
+      "posisi": "Midfielder",
+      "expectedReturn": "Late March 2027",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Khéphren Thuram-Ulien",
+      "posisi": "Midfielder",
+      "expectedReturn": "Mid January 2027",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Juan Cabal",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Augusto Owusu",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Kenan Yıldız",
+      "posisi": "Attacker",
+      "expectedReturn": "Early December 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Jérémie Boga",
+      "posisi": "Attacker",
+      "expectedReturn": "Early November 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Jeff Ekhator",
+      "posisi": "Attacker",
+      "expectedReturn": "Early November 2026",
+      "severity": "SEDANG"
+    }
+  ]
+}

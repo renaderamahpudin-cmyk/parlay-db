@@ -1,0 +1,24 @@
+{
+  "team_id": 10228,
+  "total_cedera": 3,
+  "cedera": [
+    {
+      "nama": "Mees Hilgers",
+      "posisi": "Defender",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Mats Egbring",
+      "posisi": "Defender",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Dirk Proper",
+      "posisi": "Midfielder",
+      "expectedReturn": "Day to day",
+      "severity": "SEDANG"
+    }
+  ]
+}

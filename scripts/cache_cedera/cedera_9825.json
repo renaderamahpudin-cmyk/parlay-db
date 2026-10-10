@@ -1,0 +1,56 @@
+{
+  "team_name": "Arsenal",
+  "team_id": 9825,
+  "fetched_at": "2026-10-09T03:22:13.014229",
+  "total_cedera": 8,
+  "cedera": [
+    {
+      "nama": "William Saliba",
+      "posisi": "Defender",
+      "expectedReturn": "Late November 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Cristhian Mosquera",
+      "posisi": "Defender",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Ben White",
+      "posisi": "Defender",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Piero Hincapié",
+      "posisi": "Defender",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Ezri Konsa",
+      "posisi": "Defender",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Max Dowman",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Christos Tzolis",
+      "posisi": "Attacker",
+      "expectedReturn": "Mid October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Kai Havertz",
+      "posisi": "Attacker",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    }
+  ]
+}

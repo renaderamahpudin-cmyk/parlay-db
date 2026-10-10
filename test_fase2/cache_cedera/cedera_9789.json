@@ -1,0 +1,42 @@
+{
+  "team_id": 9789,
+  "total_cedera": 6,
+  "cedera": [
+    {
+      "nama": "Nico Schlotterbeck",
+      "posisi": "Defender",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Emre Can",
+      "posisi": "Defender",
+      "expectedReturn": "Mid November 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Filippo Mane",
+      "posisi": "Defender",
+      "expectedReturn": "Mid October 2026",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Julian Ryerson",
+      "posisi": "Midfielder",
+      "expectedReturn": "Doubtful",
+      "severity": "DOUBTFUL"
+    },
+    {
+      "nama": "Justin Lerma",
+      "posisi": "Midfielder",
+      "expectedReturn": "About 1-2 weeks",
+      "severity": "SEDANG"
+    },
+    {
+      "nama": "Giannis Konstantelias",
+      "posisi": "Midfielder",
+      "expectedReturn": "Late May 2027",
+      "severity": "SEDANG"
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+Team_A,Team_B,H2H_Count
+Leverkusen,Wolfsburg,42
+Bayern Munich,Wolfsburg,42
+Bayern Munich,Dortmund,42
+Dortmund,Wolfsburg,42
+Bayern Munich,Leverkusen,42
+Dortmund,Leverkusen,42
+Werder Bremen,Wolfsburg,40
+Dortmund,Ein Frankfurt,40
+Bayern Munich,Werder Bremen,40
+Bayern Munich,Ein Frankfurt,40
+Ein Frankfurt,Wolfsburg,40
+Ein Frankfurt,Leverkusen,40
+Dortmund,Werder Bremen,40
+Leverkusen,M'gladbach,40
+Dortmund,M'gladbach,40
+Leverkusen,Werder Bremen,40
+Bayern Munich,M'gladbach,40
+M'gladbach,Wolfsburg,40
+Mainz,Wolfsburg,38
+Ein Frankfurt,M'gladbach,38
+Dortmund,Stuttgart,38
+M'gladbach,Mainz,38
+Bayern Munich,Stuttgart,38
+Ein Frankfurt,Werder Bremen,38
+Dortmund,Mainz,38
+M'gladbach,Werder Bremen,38
+Stuttgart,Wolfsburg,38
+Bayern Munich,Mainz,38
+Leverkusen,Mainz,38
+Leverkusen,Stuttgart,38
+Mainz,Werder Bremen,36
+Ein Frankfurt,Stuttgart,36
+Ein Frankfurt,Mainz,36
+Stuttgart,Werder Bremen,36
+Dortmund,Hoffenheim,36
+Bayern Munich,Hoffenheim,36
+M'gladbach,Stuttgart,36
+Hoffenheim,Leverkusen,36
+Hoffenheim,M'gladbach,36
+Hoffenheim,Wolfsburg,36
+Mainz,Stuttgart,34
+Hoffenheim,Werder Bremen,34
+Schalke 04,Wolfsburg,34
+Leverkusen,Schalke 04,34
+Schalke 04,Werder Bremen,34
+Dortmund,Schalke 04,34
+Hoffenheim,Mainz,34
+Ein Frankfurt,Hoffenheim,34
+Bayern Munich,Schalke 04,34
+Bayern Munich,Hertha,32
+Freiburg,M'gladbach,32
+Freiburg,Mainz,32
+Bayern Munich,Freiburg,32
+Freiburg,Wolfsburg,32
+Hertha,Leverkusen,32
+Dortmund,Freiburg,32
+Freiburg,Leverkusen,32
+Freiburg,Hoffenheim,32
+Ein Frankfurt,Schalke 04,32
+Dortmund,Hertha,32
+Hoffenheim,Stuttgart,32
+M'gladbach,Schalke 04,32
+Hertha,Wolfsburg,32
+FC Koln,Wolfsburg,30
+FC Koln,M'gladbach,30
+FC Koln,Leverkusen,30
+Ein Frankfurt,Hertha,30
+Freiburg,Werder Bremen,30
+Ein Frankfurt,Freiburg,30
+Dortmund,FC Koln,30
+Bayern Munich,FC Koln,30
+Augsburg,M'gladbach,30
+Schalke 04,Stuttgart,30
+Hertha,M'gladbach,30
+Mainz,Schalke 04,30
+Augsburg,Bayern Munich,30
+Augsburg,Dortmund,30
+Hertha,Schalke 04,30
+Augsburg,Hoffenheim,30
+Augsburg,Wolfsburg,30
+Hertha,Werder Bremen,30
+Augsburg,Leverkusen,30
+Augsburg,Mainz,30
+Hertha,Mainz,28
+Hertha,Stuttgart,28
+Augsburg,Werder Bremen,28
+Ein Frankfurt,FC Koln,28
+Hoffenheim,Schalke 04,28
+Augsburg,Freiburg,28
+Augsburg,Ein Frankfurt,28
+Dortmund,Hamburg,28
+Hamburg,Leverkusen,28
+Bayern Munich,Hamburg,28
+Hamburg,Werder Bremen,28
+Hamburg,Wolfsburg,28
+FC Koln,Mainz,28
+FC Koln,Werder Bremen,28
+Freiburg,Stuttgart,28
+FC Koln,Hoffenheim,28
+Hannover,Schalke 04,26
+Hannover,Stuttgart,26
+Hamburg,Schalke 04,26
+Bayern Munich,Hannover,26
+Hannover,Leverkusen,26
+Dortmund,Hannover,26
+Hamburg,Stuttgart,26
+Ein Frankfurt,Hamburg,26
+FC Koln,Stuttgart,26
+Hamburg,M'gladbach,26
+Hannover,Werder Bremen,26
+Augsburg,Stuttgart,26
+Hertha,Hoffenheim,26
+Hannover,Wolfsburg,26
+Hamburg,Mainz,24
+FC Koln,Hertha,24
+Freiburg,Schalke 04,24
+Hannover,M'gladbach,24
+Ein Frankfurt,Hannover,24
+FC Koln,Schalke 04,24
+Hamburg,Hannover,24
+FC Koln,Freiburg,24
+Augsburg,Hertha,22
+Hannover,Mainz,22
+Freiburg,Hertha,22
+Hamburg,Hoffenheim,22
+Augsburg,FC Koln,22
+Hannover,Hertha,22
+Hamburg,Hertha,22
+Augsburg,Schalke 04,22
+Hannover,Hoffenheim,20
+Freiburg,RB Leipzig,20
+M'gladbach,RB Leipzig,20
+Mainz,RB Leipzig,20
+Ein Frankfurt,RB Leipzig,20
+Augsburg,RB Leipzig,20
+Hoffenheim,RB Leipzig,20
+Bayern Munich,RB Leipzig,20
+Leverkusen,RB Leipzig,20
+RB Leipzig,Wolfsburg,20
+Dortmund,RB Leipzig,20
+FC Koln,Hamburg,20
+Dortmund,Nurnberg,18
+Nurnberg,Schalke 04,18
+Nurnberg,Stuttgart,18
+Nurnberg,Werder Bremen,18
+RB Leipzig,Werder Bremen,18
+Nurnberg,Wolfsburg,18
+Freiburg,Hamburg,18
+Bayern Munich,Nurnberg,18
+Leverkusen,Nurnberg,18
+Hannover,Nurnberg,18
+Mainz,Nurnberg,16
+FC Koln,Hannover,16
+Augsburg,Hamburg,16
+Ein Frankfurt,Nurnberg,16
+M'gladbach,Nurnberg,16
+Bochum,Dortmund,16
+Hamburg,Nurnberg,16
+Bochum,Ein Frankfurt,16
+Bayern Munich,Bochum,16
+Freiburg,Hannover,16
+FC Koln,RB Leipzig,16
+RB Leipzig,Stuttgart,16
+Bochum,Stuttgart,16
+Bochum,Leverkusen,16
+Bochum,Wolfsburg,16
+Augsburg,Hannover,14
+Union Berlin,Wolfsburg,14
+Augsburg,Union Berlin,14
+Mainz,Union Berlin,14
+Hertha,RB Leipzig,14
+M'gladbach,Union Berlin,14
+Bayern Munich,Union Berlin,14
+Bochum,Werder Bremen,14
+RB Leipzig,Union Berlin,14
+Bochum,M'gladbach,14
+Hertha,Nurnberg,14
+Ein Frankfurt,Union Berlin,14
+Dortmund,Union Berlin,14
+Freiburg,Union Berlin,14
+Leverkusen,Union Berlin,14
+Hoffenheim,Union Berlin,14
+Bayern Munich,Bielefeld,12
+Bochum,Mainz,12
+Bielefeld,Wolfsburg,12
+Hoffenheim,Nurnberg,12
+RB Leipzig,Schalke 04,12
+FC Koln,Union Berlin,12
+Bielefeld,Hertha,12
+Bielefeld,Ein Frankfurt,12
+Bochum,Hoffenheim,12
+Bielefeld,Leverkusen,12
+Bielefeld,Dortmund,12
+Stuttgart,Union Berlin,12
+Union Berlin,Werder Bremen,12
+Bielefeld,Stuttgart,12
+Freiburg,Nurnberg,12
+Bochum,Hertha,12
+Bielefeld,Schalke 04,10
+Bochum,Freiburg,10
+Bochum,FC Koln,10
+Bielefeld,M'gladbach,10
+Bielefeld,Werder Bremen,10
+Bochum,Schalke 04,10
+Bielefeld,Hamburg,8
+Bielefeld,Hannover,8
+Hertha,Union Berlin,8
+FC Koln,Nurnberg,8
+Bielefeld,FC Koln,8
+Bielefeld,Mainz,8
+Augsburg,Nurnberg,8
+Bochum,RB Leipzig,8
+Bochum,Union Berlin,8
+Augsburg,Bochum,8
+Bochum,Hannover,8
+Bielefeld,Bochum,8
+Bochum,Hamburg,8
+Hannover,Kaiserslautern,6
+Schalke 04,Union Berlin,6
+Bielefeld,Cottbus,6
+Augsburg,Fortuna Dusseldorf,6
+St Pauli,Wolfsburg,6
+Freiburg,Heidenheim,6
+Bayern Munich,St Pauli,6
+Bielefeld,Hoffenheim,6
+Cottbus,Dortmund,6
+Freiburg,St Pauli,6
+Ein Frankfurt,St Pauli,6
+Leverkusen,St Pauli,6
+St Pauli,Werder Bremen,6
+Bayern Munich,Heidenheim,6
+St Pauli,Stuttgart,6
+Cottbus,Schalke 04,6
+Fortuna Dusseldorf,Werder Bremen,6
+Hamburg,Kaiserslautern,6
+Fortuna Dusseldorf,Schalke 04,6
+Bayern Munich,Kaiserslautern,6
+FC Koln,Kaiserslautern,6
+Augsburg,Darmstadt,6
+Fortuna Dusseldorf,Mainz,6
+Fortuna Dusseldorf,M'gladbach,6
+Fortuna Dusseldorf,Leverkusen,6
+Fortuna Dusseldorf,Hoffenheim,6
+Bayern Munich,Fortuna Dusseldorf,6
+Hamburg,RB Leipzig,6
+M'gladbach,St Pauli,6
+Fortuna Dusseldorf,Wolfsburg,6
+Fortuna Dusseldorf,Freiburg,6
+Dortmund,Kaiserslautern,6
+Kaiserslautern,Mainz,6
+Cottbus,Hannover,6
+Dortmund,St Pauli,6
+Kaiserslautern,M'gladbach,6
+Cottbus,Hertha,6
+Heidenheim,Hoffenheim,6
+Kaiserslautern,Leverkusen,6
+Heidenheim,Leverkusen,6
+Cottbus,Ein Frankfurt,6
+Heidenheim,M'gladbach,6
+Cottbus,Leverkusen,6
+Heidenheim,Mainz,6
+Dortmund,Heidenheim,6
+Heidenheim,RB Leipzig,6
+Darmstadt,Hoffenheim,6
+Heidenheim,Stuttgart,6
+Heidenheim,Union Berlin,6
+Darmstadt,Leverkusen,6
+Dortmund,Fortuna Dusseldorf,6
+Heidenheim,Werder Bremen,6
+Darmstadt,Wolfsburg,6
+Darmstadt,Werder Bremen,6
+Heidenheim,Wolfsburg,6
+Darmstadt,M'gladbach,6
+Hoffenheim,St Pauli,6
+Bochum,Cottbus,6
+Darmstadt,Mainz,6
+Bayern Munich,Darmstadt,6
+Cottbus,Wolfsburg,6
+Augsburg,Heidenheim,6
+Bochum,Nurnberg,6
+Bayern Munich,Cottbus,6
+Ein Frankfurt,Fortuna Dusseldorf,6
+Cottbus,Werder Bremen,6
+Cottbus,Stuttgart,6
+Kaiserslautern,Wolfsburg,6
+Kaiserslautern,Werder Bremen,6
+Ein Frankfurt,Heidenheim,6
+Kaiserslautern,Stuttgart,6
+Darmstadt,Dortmund,6
+Kaiserslautern,Schalke 04,6
+Kaiserslautern,Nurnberg,6
+Cottbus,Hamburg,6
+Darmstadt,Ein Frankfurt,6
+Darmstadt,FC Koln,6
+Bielefeld,Nurnberg,6
+Mainz,St Pauli,6
+Hertha,Karlsruhe,4
+Hertha,Kaiserslautern,4
+Greuther Furth,Stuttgart,4
+Leverkusen,Paderborn,4
+Ingolstadt,Wolfsburg,4
+Greuther Furth,Wolfsburg,4
+Augsburg,St Pauli,4
+Bayern Munich,Karlsruhe,4
+Bayern Munich,Duisburg,4
+Hertha,Ingolstadt,4
+Augsburg,Paderborn,4
+Hannover,Karlsruhe,4
+Greuther Furth,M'gladbach,4
+Hannover,RB Leipzig,4
+Karlsruhe,Schalke 04,4
+Karlsruhe,Leverkusen,4
+Karlsruhe,Stuttgart,4
+Bayern Munich,Greuther Furth,4
+Hamburg,Ingolstadt,4
+Karlsruhe,Werder Bremen,4
+Karlsruhe,Wolfsburg,4
+Hamburg,St Pauli,4
+Bayern Munich,Ingolstadt,4
+Hamburg,Karlsruhe,4
+Heidenheim,St Pauli,4
+Greuther Furth,Mainz,4
+Cottbus,Nurnberg,4
+Greuther Furth,Leverkusen,4
+Ein Frankfurt,Ingolstadt,4
+Dortmund,Paderborn,4
+RB Leipzig,St Pauli,4
+Duisburg,Ein Frankfurt,4
+Duisburg,Hamburg,4
+Duisburg,Hannover,4
+Duisburg,Hertha,4
+Hoffenheim,Paderborn,4
+Duisburg,Leverkusen,4
+Duisburg,Nurnberg,4
+Duisburg,Schalke 04,4
+Duisburg,Stuttgart,4
+Duisburg,Werder Bremen,4
+Duisburg,Wolfsburg,4
+Ein Frankfurt,Greuther Furth,4
+Bielefeld,Union Berlin,4
+Cottbus,Karlsruhe,4
+Dortmund,Karlsruhe,4
+Dortmund,Ingolstadt,4
+Darmstadt,RB Leipzig,4
+Darmstadt,Freiburg,4
+Darmstadt,Hamburg,4
+Paderborn,Werder Bremen,4
+Augsburg,Greuther Furth,4
+Darmstadt,Hertha,4
+Darmstadt,Ingolstadt,4
+Darmstadt,Schalke 04,4
+Cottbus,M'gladbach,4
+Darmstadt,Stuttgart,4
+Dortmund,Duisburg,4
+Bochum,Heidenheim,4
+Dortmund,Greuther Furth,4
+Paderborn,Schalke 04,4
+Paderborn,Wolfsburg,4
+Bielefeld,RB Leipzig,4
+Ein Frankfurt,Kaiserslautern,4
+Greuther Furth,Hoffenheim,4
+Ingolstadt,Werder Bremen,4
+Fortuna Dusseldorf,RB Leipzig,4
+Fortuna Dusseldorf,Stuttgart,4
+M'gladbach,Paderborn,4
+Freiburg,Greuther Furth,4
+Ingolstadt,M'gladbach,4
+St Pauli,Union Berlin,4
+Freiburg,Kaiserslautern,4
+Ein Frankfurt,Karlsruhe,4
+Freiburg,Paderborn,4
+Bayern Munich,Paderborn,4
+Ingolstadt,Leverkusen,4
+Bochum,Karlsruhe,4
+Augsburg,Ingolstadt,4
+Augsburg,Bielefeld,4
+Ingolstadt,Mainz,4
+Fortuna Dusseldorf,Nurnberg,4
+Fortuna Dusseldorf,Hertha,4
+Fortuna Dusseldorf,Hannover,4
+Ein Frankfurt,Paderborn,4
+Bielefeld,Karlsruhe,4
+Mainz,Paderborn,4
+FC Koln,Heidenheim,4
+Ingolstadt,Schalke 04,4
+FC Koln,Ingolstadt,4
+FC Koln,Paderborn,4
+Hoffenheim,Kaiserslautern,4
+Bielefeld,Freiburg,4
+FC Koln,St Pauli,4
+Bielefeld,Duisburg,4
+Hoffenheim,Ingolstadt,4
+Hertha,Paderborn,4
+Ingolstadt,Stuttgart,2
+Holstein Kiel,Wolfsburg,2
+Ingolstadt,RB Leipzig,2
+Bochum,Holstein Kiel,2
+Kaiserslautern,St Pauli,2
+Aachen,Hannover,2
+Aachen,Bochum,2
+Aachen,Cottbus,2
+Aachen,Dortmund,2
+Aachen,Ein Frankfurt,2
+Aachen,Hamburg,2
+Schalke 04,St Pauli,2
+Paderborn,Union Berlin,2
+Paderborn,Stuttgart,2
+Paderborn,RB Leipzig,2
+Nurnberg,St Pauli,2
+Nurnberg,RB Leipzig,2
+Aachen,Hertha,2
+Karlsruhe,M'gladbach,2
+Aachen,Leverkusen,2
+Aachen,M'gladbach,2
+Aachen,Mainz,2
+Aachen,Nurnberg,2
+Aachen,Schalke 04,2
+Holstein Kiel,Union Berlin,2
+Aachen,Stuttgart,2
+Aachen,Werder Bremen,2
+Aachen,Wolfsburg,2
+Augsburg,Braunschweig,2
+Karlsruhe,Nurnberg,2
+Holstein Kiel,Werder Bremen,2
+Greuther Furth,Hamburg,2
+Holstein Kiel,Stuttgart,2
+Bielefeld,Hansa Rostock,2
+Darmstadt,Heidenheim,2
+Darmstadt,Union Berlin,2
+Bochum,Hansa Rostock,2
+Dortmund,Hansa Rostock,2
+Bochum,Greuther Furth,2
+Dortmund,Holstein Kiel,2
+Bochum,Duisburg,2
+Bochum,Darmstadt,2
+Duisburg,FC Koln,2
+Duisburg,Hansa Rostock,2
+Duisburg,Kaiserslautern,2
+Duisburg,Karlsruhe,2
+Duisburg,M'gladbach,2
+Duisburg,Mainz,2
+Ein Frankfurt,Hansa Rostock,2
+Ein Frankfurt,Holstein Kiel,2
+Bielefeld,Kaiserslautern,2
+FC Koln,Fortuna Dusseldorf,2
+Aachen,Bielefeld,2
+Darmstadt,Hannover,2
+Cottbus,Mainz,2
+Cottbus,Hoffenheim,2
+Braunschweig,Leverkusen,2
+Bochum,St Pauli,2
+Braunschweig,Dortmund,2
+Braunschweig,Ein Frankfurt,2
+Braunschweig,Freiburg,2
+Braunschweig,Hamburg,2
+Braunschweig,Hannover,2
+Braunschweig,Hertha,2
+Braunschweig,Hoffenheim,2
+Braunschweig,M'gladbach,2
+Cottbus,Hansa Rostock,2
+Braunschweig,Mainz,2
+Braunschweig,Nurnberg,2
+Braunschweig,Schalke 04,2
+Braunschweig,Stuttgart,2
+Braunschweig,Werder Bremen,2
+Braunschweig,Wolfsburg,2
+Cottbus,Duisburg,2
+Cottbus,FC Koln,2
+FC Koln,Greuther Furth,2
+FC Koln,Karlsruhe,2
+Holstein Kiel,St Pauli,2
+Bielefeld,Greuther Furth,2
+Hannover,St Pauli,2
+Bayern Munich,Braunschweig,2
+Hansa Rostock,Hertha,2
+Hansa Rostock,Karlsruhe,2
+Hansa Rostock,Leverkusen,2
+Hansa Rostock,Nurnberg,2
+Hansa Rostock,Schalke 04,2
+Hansa Rostock,Stuttgart,2
+Hansa Rostock,Werder Bremen,2
+Hansa Rostock,Wolfsburg,2
+Heidenheim,Holstein Kiel,2
+Augsburg,Kaiserslautern,2
+Hoffenheim,Holstein Kiel,2
+Hoffenheim,Karlsruhe,2
+Augsburg,Holstein Kiel,2
+Holstein Kiel,Leverkusen,2
+Holstein Kiel,M'gladbach,2
+Holstein Kiel,Mainz,2
+Holstein Kiel,RB Leipzig,2
+Hannover,Paderborn,2
+Hannover,Ingolstadt,2
+Hannover,Hansa Rostock,2
+Greuther Furth,Nurnberg,2
+Fortuna Dusseldorf,Greuther Furth,2
+Fortuna Dusseldorf,Hamburg,2
+Fortuna Dusseldorf,Paderborn,2
+Fortuna Dusseldorf,Union Berlin,2
+Freiburg,Holstein Kiel,2
+Freiburg,Ingolstadt,2
+Greuther Furth,Hannover,2
+Greuther Furth,Hertha,2
+Greuther Furth,RB Leipzig,2
+Hamburg,Union Berlin,2
+Greuther Furth,Schalke 04,2
+Greuther Furth,Union Berlin,2
+Greuther Furth,Werder Bremen,2
+Hamburg,Hansa Rostock,2
+Hamburg,Heidenheim,2
+Bayern Munich,Holstein Kiel,2
+Hamburg,Paderborn,2
+Bayern Munich,Hansa Rostock,2
+Aachen,Bayern Munich,2
