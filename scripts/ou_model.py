@@ -1,17 +1,36 @@
 """Point-in-time goal model and Asian O/U settlement calculations."""
 from collections import defaultdict, deque
 import math
+import os
 import re
+import sys
 
 import pandas as pd
 
+# Add scripts directory to path for config imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-RECENT_MATCHES = 10
-MIN_FORM_MATCHES = 5
-H2H_WEIGHT = 0.10
+try:
+    from prediction_config import (
+        H2H_WEIGHT,
+        MAX_LAMBDA,
+        MIN_LAMBDA,
+        MIN_FORM_MATCHES,
+        PRIOR_MATCHES,
+        RECENT_MATCHES,
+    )
+except ImportError:
+    # Fallback defaults if config not found
+    RECENT_MATCHES = 10
+    MIN_FORM_MATCHES = 5
+    H2H_WEIGHT = 0.10
+    PRIOR_MATCHES = 5
+    MIN_LAMBDA = 0.08
+    MAX_LAMBDA = 4.0
+
+
 LEAGUE_BASELINE_DAYS = 730
 MIN_LEAGUE_BASELINE_MATCHES = 30
-PRIOR_MATCHES = 5
 
 
 TEAM_ALIASES = {
@@ -131,9 +150,7 @@ def _mean(values, weights):
 
 
 def _smoothed(observed, sample_size, prior):
-    return (
-        observed * sample_size + prior * PRIOR_MATCHES
-    ) / (sample_size + PRIOR_MATCHES)
+    return (observed * sample_size + prior * PRIOR_MATCHES) / (sample_size + PRIOR_MATCHES)
 
 
 class WalkForwardModel:
@@ -246,8 +263,6 @@ class WalkForwardModel:
             conceded = row[goals_against_key]
             shots_for = row[shots_for_key]
             shots_against = row[shots_against_key]
-            # Shot-on-target estimates supplement goals where they are present;
-            # this is a transparent proxy, not an xG feed.
             goals_for.append(
                 0.75 * scored + 0.25 * shots_for * conversion_for
                 if shots_for is not None else float(scored)
@@ -287,27 +302,19 @@ class WalkForwardModel:
             }
 
         baseline = self._baseline(str(league or "?").strip().casefold(), cutoff)
-        home_attack, home_defense = self._form_rates(
-            home_rows, "home", baseline
-        )
-        away_attack, away_defense = self._form_rates(
-            away_rows, "away", baseline
-        )
-        home_attack = _smoothed(
-            home_attack, len(home_rows), baseline["home_goals"]
-        )
-        home_defense = _smoothed(
-            home_defense, len(home_rows), baseline["home_goals"]
-        )
-        away_attack = _smoothed(
-            away_attack, len(away_rows), baseline["away_goals"]
-        )
-        away_defense = _smoothed(
-            away_defense, len(away_rows), baseline["away_goals"]
-        )
+        home_attack, home_defense = self._form_rates(home_rows, "home", baseline)
+        away_attack, away_defense = self._form_rates(away_rows, "away", baseline)
 
-        lambda_home = home_attack * away_defense / baseline["home_goals"]
-        lambda_away = away_attack * home_defense / baseline["away_goals"]
+        home_attack = _smoothed(home_attack, len(home_rows), baseline["home_goals"])
+        home_defense = _smoothed(home_defense, len(home_rows), baseline["away_goals"])
+        away_attack = _smoothed(away_attack, len(away_rows), baseline["away_goals"])
+        away_defense = _smoothed(away_defense, len(away_rows), baseline["home_goals"])
+
+        home_baseline = max(baseline["home_goals"], 0.35)
+        away_baseline = max(baseline["away_goals"], 0.35)
+        lambda_home = (home_attack * away_defense) / away_baseline
+        lambda_away = (away_attack * home_defense) / home_baseline
+
         h2h_rows = [
             row for row in self.h2h_form.get((home_key, away_key), ())
             if row["date"] < cutoff
@@ -325,8 +332,8 @@ class WalkForwardModel:
             lambda_home = (1 - H2H_WEIGHT) * lambda_home + H2H_WEIGHT * h2h_home
             lambda_away = (1 - H2H_WEIGHT) * lambda_away + H2H_WEIGHT * h2h_away
 
-        lambda_home = min(max(lambda_home, 0.05), 5.0)
-        lambda_away = min(max(lambda_away, 0.05), 5.0)
+        lambda_home = min(max(lambda_home, MIN_LAMBDA), MAX_LAMBDA)
+        lambda_away = min(max(lambda_away, MIN_LAMBDA), MAX_LAMBDA)
         return {
             "available": True,
             "lambda_home": lambda_home,
@@ -413,8 +420,8 @@ def settlement_distribution(lambda_home, lambda_away, side, line, odds):
 
     win_mass = category_mass["full_win"] + 0.5 * category_mass["half_win"]
     loss_mass = category_mass["full_loss"] + 0.5 * category_mass["half_loss"]
-    resolved_mass = win_mass + loss_mass
-    conditional_probability = win_mass / resolved_mass if resolved_mass else None
+    resolved_mass = win_mass + loss_mass + category_mass["push"]
+    conditional_probability = (win_mass / resolved_mass) if resolved_mass else None
     return {
         **category_mass,
         "conditional_probability": conditional_probability,
