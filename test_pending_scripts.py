@@ -10,6 +10,7 @@ import unittest
 sys.path.insert(0, str(Path(__file__).parent / "scripts"))
 
 import auto_track
+import backtest_ou_walkforward
 import save_draft
 from parlay_builder_v3 import analisa_ou, bandingkan_opsi, bandingkan_opsi_2
 from pick_policy import is_eligible_ou_pick
@@ -104,6 +105,65 @@ class ValueComparisonTests(unittest.TestCase):
             {"pick_jenis": "BTTS", "pick": "BTTS YES", "pick_odds": 1.8, "value_gap": 12},
         ):
             self.assertFalse(is_eligible_ou_pick(invalid))
+
+
+class WalkForwardBacktestTests(unittest.TestCase):
+    def setUp(self):
+        import pandas as pd
+
+        self.matches = backtest_ou_walkforward.prepare_matches(pd.DataFrame([
+            {"Date": "2024-01-01", "HomeTeam": "A", "AwayTeam": "B",
+             "FTHG": 3, "FTAG": 0, "League": "Test",
+             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
+            {"Date": "2024-02-01", "HomeTeam": "B", "AwayTeam": "A",
+             "FTHG": 0, "FTAG": 1, "League": "Test",
+             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
+            {"Date": "2024-03-01", "HomeTeam": "A", "AwayTeam": "B",
+             "FTHG": 3, "FTAG": 1, "League": "Test",
+             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
+            {"Date": "2024-04-01", "HomeTeam": "B", "AwayTeam": "A",
+             "FTHG": 1, "FTAG": 2, "League": "Test",
+             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
+            {"Date": "2024-05-01", "HomeTeam": "A", "AwayTeam": "B",
+             "FTHG": 4, "FTAG": 0, "League": "Test",
+             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
+            # A same-day result and a future result must not leak into June 1.
+            {"Date": "2024-06-01", "HomeTeam": "B", "AwayTeam": "A",
+             "FTHG": 0, "FTAG": 0, "League": "Test",
+             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
+            {"Date": "2024-06-01", "HomeTeam": "A", "AwayTeam": "B",
+             "FTHG": 2, "FTAG": 1, "League": "Test",
+             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
+            {"Date": "2024-07-01", "HomeTeam": "A", "AwayTeam": "B",
+             "FTHG": 0, "FTAG": 0, "League": "Test",
+             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
+        ]))
+
+    def test_h2h_excludes_same_day_target_and_future_results(self):
+        from datetime import datetime
+
+        index = backtest_ou_walkforward.build_h2h_index(self.matches)
+        count, over_count = backtest_ou_walkforward.history_summary_before(
+            index, "A", "B", datetime(2024, 6, 1)
+        )
+        self.assertEqual(count, 5)
+        self.assertEqual(over_count, 4)
+
+    def test_walk_forward_pick_uses_prior_h2h_and_real_market_odds(self):
+        import pandas as pd
+
+        index = backtest_ou_walkforward.build_h2h_index(self.matches)
+        target = self.matches.loc[
+            (self.matches["date"] == pd.Timestamp("2024-06-01"))
+            & (self.matches["home"] == "A")
+        ].iloc[0]
+        result = backtest_ou_walkforward.evaluate_fixture(target, index)
+        self.assertEqual(result["h2h_before"], 5)
+        self.assertEqual(result["model_over25_pct"], 80.0)
+        self.assertEqual(result["pick"], "OVER 2.5")
+        self.assertEqual(result["market_source"], "Avg")
+        self.assertEqual(result["market_odds"], 1.5)
+        self.assertTrue(result["won"])
 
 
 class PendingDraftTests(unittest.TestCase):

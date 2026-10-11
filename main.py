@@ -178,23 +178,25 @@ def menu_cek_slip():
 # ============================================================
 def menu_backtest():
     clear()
-    print_header("🔬 BACKTEST — Test Akurasi (Versi Bug, Jangan Dipercaya)")
-    
-    print(f"{C.YELLOW}⚠️  PERINGATAN:{C.END}")
-    print(f"   Backtest ini masih ada BUG (data leakage).")
-    print(f"   Hasilnya TIDAK BISA dipercaya.")
-    print(f"   Sistem live tetap VALID karena H2H historis real.")
+    print_header("⚽ BACKTEST O/U 2.5 — Walk-Forward Kronologis")
+
+    print("   Uji memakai 20% tanggal pertandingan paling baru.")
+    print("   H2H hanya dihitung dari pertandingan sebelum tanggal uji.")
+    print("   Odds memakai data historis; line yang tersedia di arsip: 2.5.")
     print()
-    
+
     lanjut = input(f"{C.YELLOW}Lanjut jalankan? (y/n): {C.END}").strip().lower()
     if lanjut != "y":
         return
-    
-    if os.path.exists("scripts/backtest.py"):
-        run_script("Backtest", "scripts/backtest.py")
+
+    if os.path.exists("scripts/backtest_ou_walkforward.py"):
+        run_script(
+            "Backtest O/U Walk-Forward",
+            "scripts/backtest_ou_walkforward.py",
+        )
     else:
-        print(f"{C.RED}❌ scripts/backtest.py tidak ada{C.END}")
-    
+        print(f"{C.RED}❌ Script backtest O/U tidak ditemukan{C.END}")
+
     pause()
 
 
