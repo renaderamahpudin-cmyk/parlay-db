@@ -1,4 +1,4 @@
-"""Chronological walk-forward backtest for the current O/U 2.5 baseline."""
+"""Chronological, point-in-time walk-forward backtest for O/U forecasts."""
 import argparse
 from bisect import bisect_left
 from collections import Counter, defaultdict
@@ -11,15 +11,23 @@ import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pick_policy import MAX_OU_GAP, MAX_OU_ODDS, MIN_OU_GAP, MIN_OU_ODDS
+from ou_model import (
+    WalkForwardModel,
+    compare_market_line,
+    total_goal_distribution,
+)
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(BASE_DIR)
 
 DATA_FILE = "data/football_data/all_football_data.csv"
-DEFAULT_OUTPUT = "output/backtest_ou_walkforward.csv"
+DEFAULT_OUTPUT = "output/backtest_ou_poisson_walkforward.csv"
 MIN_H2H = 5
 DEFAULT_TEST_FRACTION = 0.20
+DEFAULT_SUMMARY_OUTPUT = "output/backtest_ou_poisson_summary.csv"
+ODDS_BANDS = ((1.2, 1.5), (1.5, 1.8), (1.8, 2.1), (2.1, 2.5), (2.5, 4.0))
+GAP_THRESHOLDS = (0, 2.5, 5, 7.5, 10, 15)
 ODDS_COLUMNS = (
     ("Avg", "avg_over_odds", "avg_under_odds"),
     ("B365", "b365_over_odds", "b365_under_odds"),
@@ -70,6 +78,13 @@ def prepare_matches(raw):
             source[input_column], errors="coerce"
         ) if input_column in source else float("nan")
 
+    for output_column, input_column in (
+        ("hs", "HS"), ("as", "AS"), ("hst", "HST"), ("ast", "AST"),
+    ):
+        source[output_column] = pd.to_numeric(
+            source[input_column], errors="coerce"
+        ) if input_column in source else float("nan")
+
     valid_scores = (
         source["hg"].notna()
         & source["ag"].notna()
@@ -88,6 +103,7 @@ def prepare_matches(raw):
     )
     result = source.loc[valid, [
         "date", "home", "away", "hg", "ag", "league",
+        "hs", "as", "hst", "ast",
         "avg_over_odds", "avg_under_odds", "b365_over_odds", "b365_under_odds",
     ]].copy()
     result["hg"] = result["hg"].astype(int)
@@ -110,6 +126,7 @@ def load_matches(path=DATA_FILE):
         raise FileNotFoundError(f"Data historis tidak ditemukan: {path}")
     wanted_columns = {
         "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "League",
+        "HS", "AS", "HST", "AST",
         "Avg>2.5", "Avg<2.5", "B365>2.5", "B365<2.5",
     }
     raw = pd.read_csv(
@@ -173,10 +190,10 @@ def market_odds(row):
     return None
 
 
-def evaluate_fixture(row, history_index, min_h2h=MIN_H2H):
-    """Evaluate one O/U 2.5 fixture using only pair results before its date."""
-    h2h_count, h2h_over_count = history_summary_before(
-        history_index, row["home_key"], row["away_key"], row["date"]
+def _score_forecast(row, model):
+    """Forecast one fixture from the model state available before its date."""
+    prediction = model.predict(
+        row["home"], row["away"], row["date"], league=row["league"]
     )
     actual_over = int(row["hg"] + row["ag"] > 2.5)
     detail = {
@@ -184,7 +201,13 @@ def evaluate_fixture(row, history_index, min_h2h=MIN_H2H):
         "league": row["league"],
         "home": row["home"],
         "away": row["away"],
-        "h2h_before": h2h_count,
+        "home_form_n": prediction.get("home_form_count", 0),
+        "away_form_n": prediction.get("away_form_count", 0),
+        "h2h_before": prediction.get("h2h_before", 0),
+        "baseline_source": prediction.get("baseline_source", ""),
+        "lambda_home": None,
+        "lambda_away": None,
+        "expected_total_goals": None,
         "model_over25_pct": None,
         "brier_over25": None,
         "actual_total": int(row["hg"] + row["ag"]),
@@ -194,70 +217,111 @@ def evaluate_fixture(row, history_index, min_h2h=MIN_H2H):
         "market_odds": None,
         "market_source": "",
         "market_implied_raw": None,
+        "market_implied_no_vig": None,
         "market_overround_pct": None,
         "value_gap": None,
+        "candidate_pick": "",
+        "candidate_odds": None,
+        "candidate_expected_return": None,
         "expected_profit_unit": None,
         "won": None,
+        "settlement": "",
         "profit_unit": None,
         "skip_reason": "",
     }
-    if h2h_count < min_h2h:
-        detail["skip_reason"] = "h2h_kurang_dari_minimum"
+    if not prediction["available"]:
+        detail["skip_reason"] = prediction["reason"]
         return detail
 
-    model_over_probability = h2h_over_count / h2h_count
-    detail["model_over25_pct"] = round(model_over_probability * 100, 1)
-    detail["brier_over25"] = (model_over_probability - actual_over) ** 2
+    lambda_home = prediction["lambda_home"]
+    lambda_away = prediction["lambda_away"]
+    detail.update({
+        "lambda_home": round(lambda_home, 4),
+        "lambda_away": round(lambda_away, 4),
+        "expected_total_goals": round(lambda_home + lambda_away, 4),
+        "home_form_n": prediction["home_form_count"],
+        "away_form_n": prediction["away_form_count"],
+        "h2h_before": prediction["h2h_before"],
+        "baseline_source": prediction["baseline_source"],
+    })
 
     prices = market_odds(row)
+    if prices is not None:
+        market_source, odds_over, odds_under = prices
+        comparison = compare_market_line(
+            lambda_home, lambda_away, 2.5, odds_over, odds_under
+        )
+        model_over_probability = sum(
+            comparison["over"]["total_pmf"][3:]
+        )
+    else:
+        # Calibration is still measured for every eligible forecast even if
+        # the historical archive did not record O/U prices for that match.
+        model_over_probability = sum(
+            total_goal_distribution(lambda_home, lambda_away)[3:]
+        )
+
+    detail["model_over25_pct"] = round(model_over_probability * 100, 2)
+    detail["brier_over25"] = (model_over_probability - actual_over) ** 2
+
     if prices is None:
         detail["skip_reason"] = "odds_ou_tidak_tersedia"
         return detail
 
     market_source, odds_over, odds_under = prices
-    detail["market_source"] = market_source
-    detail["market_overround_pct"] = round(
-        ((1 / odds_over) + (1 / odds_under) - 1) * 100, 2
+    comparison = compare_market_line(
+        lambda_home, lambda_away, 2.5, odds_over, odds_under
     )
+    detail["market_source"] = market_source
     options = [
-        {
-            "pick": "OVER 2.5",
-            "probability": model_over_probability,
-            "odds": odds_over,
-        },
-        {
-            "pick": "UNDER 2.5",
-            "probability": 1 - model_over_probability,
-            "odds": odds_under,
-        },
+        ("OVER", odds_over, comparison["over"]),
+        ("UNDER", odds_under, comparison["under"]),
     ]
-    for option in options:
-        option["implied"] = 1 / option["odds"]
-        option["gap"] = (option["probability"] - option["implied"]) * 100
-
-    best = max(options, key=lambda option: option["gap"])
-    detail["market_implied_raw"] = round(best["implied"] * 100, 1)
-    detail["value_gap"] = round(best["gap"], 1)
-    if best["gap"] < MIN_OU_GAP:
+    best = max(options, key=lambda item: (
+        item[2]["expected_return"], item[2]["value_gap"]
+    ))
+    side, odds, metrics = best
+    detail["market_overround_pct"] = round(
+        comparison["market_overround_pct"], 2
+    )
+    detail["market_implied_raw"] = round(100 / odds, 2)
+    detail["market_implied_no_vig"] = round(
+        metrics["market_no_vig_probability"] * 100, 2
+    )
+    detail["value_gap"] = metrics["value_gap"]
+    detail["candidate_pick"] = f"{side} 2.5"
+    detail["candidate_odds"] = round(odds, 2)
+    detail["candidate_expected_return"] = round(
+        metrics["expected_return"], 5
+    )
+    if metrics["value_gap"] < MIN_OU_GAP:
         detail["skip_reason"] = "gap_di_bawah_minimum"
         return detail
-    if best["gap"] > MAX_OU_GAP:
+    if metrics["value_gap"] > MAX_OU_GAP:
         detail["skip_reason"] = "gap_di_atas_batas_wajar"
         return detail
-    if not MIN_OU_ODDS <= best["odds"] <= MAX_OU_ODDS:
+    if not MIN_OU_ODDS <= odds <= MAX_OU_ODDS:
         detail["skip_reason"] = "odds_di_luar_batas"
         return detail
+    if metrics["expected_return"] <= 0:
+        detail["skip_reason"] = "expected_return_tidak_positif"
+        return detail
 
-    won = (best["pick"] == "OVER 2.5" and actual_over) or (
-        best["pick"] == "UNDER 2.5" and not actual_over
+    side_result = (
+        "OVER 2.5" if actual_over else "UNDER 2.5"
     )
+    settlement = "WIN" if side_result == f"{side} 2.5" else "LOSE"
+    won = settlement == "WIN"
     detail.update({
-        "pick": best["pick"],
-        "pick_conf": round(best["probability"] * 100, 1),
-        "market_odds": round(best["odds"], 2),
-        "expected_profit_unit": round(best["probability"] * best["odds"] - 1, 4),
+        "pick": f"{side} 2.5",
+        "pick_conf": round(
+            metrics["conditional_probability"] * 100, 2
+        ),
+        "market_odds": round(odds, 2),
+        "expected_profit_unit": round(metrics["expected_return"], 5),
         "won": bool(won),
-        "profit_unit": round(best["odds"] - 1, 4) if won else -1.0,
+        "settlement": settlement,
+        "profit_unit": round(odds - 1, 4) if won else -1.0,
     })
     return detail
 
@@ -286,13 +350,20 @@ def run_backtest(matches, test_fraction=DEFAULT_TEST_FRACTION, test_start=None):
     if test_matches.empty:
         raise ValueError(f"Tidak ada pertandingan pada/setelah {start_date.date()}.")
 
-    # The index includes the full archive intentionally; every query uses bisect_left
-    # so same-day and future results cannot enter a fixture's historical sample.
-    history_index = build_h2h_index(matches)
-    details = pd.DataFrame([
-        evaluate_fixture(row, history_index)
-        for row in test_matches.to_dict(orient="records")
-    ])
+    # Warm the online model only with rows strictly before the holdout. Then
+    # forecast an entire date before updating it, excluding same-day results.
+    model = WalkForwardModel()
+    training_matches = matches.loc[matches["date"] < start_date]
+    for row in training_matches.to_dict(orient="records"):
+        model.update(row)
+
+    detail_rows = []
+    for _, day_matches in test_matches.groupby("date", sort=True):
+        rows = day_matches.to_dict(orient="records")
+        detail_rows.extend(_score_forecast(row, model) for row in rows)
+        for row in rows:
+            model.update(row)
+    details = pd.DataFrame(detail_rows)
     forecast_rows = details.loc[details["model_over25_pct"].notna()]
     bet_rows = details.loc[details["pick"].ne("")]
     brier = (
@@ -310,13 +381,21 @@ def run_backtest(matches, test_fraction=DEFAULT_TEST_FRACTION, test_start=None):
                  + (1 - outcomes) * (1 - probabilities).map(math.log))).mean())
         if len(forecast_rows) else None
     )
+    historical_base_rate = (
+        float((training_matches["hg"] + training_matches["ag"] > 2.5).mean())
+        if len(training_matches) else 0.5
+    )
+    baseline_brier = (
+        float(((outcomes - historical_base_rate) ** 2).mean())
+        if len(forecast_rows) else None
+    )
     bet_count = len(bet_rows)
     net_profit = float(bet_rows["profit_unit"].sum()) if bet_count else 0.0
     summary = {
         "test_start": pd.Timestamp(test_matches["date"].min()).date().isoformat(),
         "test_end": pd.Timestamp(test_matches["date"].max()).date().isoformat(),
         "test_matches": len(test_matches),
-        "h2h_forecasts": len(forecast_rows),
+        "model_forecasts": len(forecast_rows),
         "bets": bet_count,
         "wins": int(bet_rows["won"].sum()) if bet_count else 0,
         "losses": int(bet_count - bet_rows["won"].sum()) if bet_count else 0,
@@ -330,13 +409,145 @@ def run_backtest(matches, test_fraction=DEFAULT_TEST_FRACTION, test_start=None):
             if bet_count else None
         ),
         "brier_score_over25": brier,
+        "historical_base_rate_over25_pct": historical_base_rate * 100,
+        "historical_base_rate_brier": baseline_brier,
+        "brier_skill_vs_historical_rate": (
+            1 - brier / baseline_brier
+            if brier is not None and baseline_brier else None
+        ),
         "log_loss_over25": log_loss,
+        "mean_absolute_calibration_error": _calibration_error(forecast_rows),
         "skip_reasons": dict(Counter(
             details.loc[details["pick"].eq("") & details["skip_reason"].ne(""), "skip_reason"]
         )),
         "details": details,
     }
+    summary["breakdowns"] = build_breakdowns(details)
     return summary
+
+
+def _calibration_error(forecast_rows):
+    if forecast_rows.empty:
+        return None
+    bins = pd.cut(
+        forecast_rows["model_over25_pct"] / 100,
+        bins=[0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1],
+        include_lowest=True,
+    )
+    grouped = forecast_rows.assign(_bin=bins).groupby(
+        "_bin", observed=True
+    )
+    return float(sum(
+        len(group) / len(forecast_rows)
+        * abs(
+            group["model_over25_pct"].mean() / 100
+            - group["actual_ou25"].eq("OVER").mean()
+        )
+        for _, group in grouped
+    ))
+
+
+def _aggregate_rows(rows, group_type, group_value):
+    forecast_rows = rows.loc[rows["model_over25_pct"].notna()]
+    bets = rows.loc[rows["pick"].ne("")]
+    count = len(bets)
+    net = float(bets["profit_unit"].sum()) if count else 0.0
+    return {
+        "group_type": group_type,
+        "group": group_value,
+        "forecasts": len(forecast_rows),
+        "bets": count,
+        "wins": int(bets["won"].sum()) if count else 0,
+        "win_rate_pct": float(bets["won"].mean() * 100) if count else None,
+        "net_profit_units": net,
+        "realized_roi_pct": net / count * 100 if count else None,
+        "expected_roi_pct": (
+            float(bets["expected_profit_unit"].mean() * 100) if count else None
+        ),
+        "brier_score_over25": (
+            float(forecast_rows["brier_over25"].mean())
+            if len(forecast_rows) else None
+        ),
+    }
+
+
+def build_breakdowns(details):
+    """Create per-line, odds, league, calibration, and gap-threshold diagnostics."""
+    output = []
+    candidates = details.loc[
+        details["candidate_pick"].ne("")
+        & details["candidate_expected_return"].notna()
+        & details["candidate_odds"].between(MIN_OU_ODDS, MAX_OU_ODDS)
+        & details["value_gap"].le(MAX_OU_GAP)
+        & details["candidate_expected_return"].gt(0)
+    ].copy()
+    if not candidates.empty:
+        candidates["pick_line"] = candidates["candidate_pick"].str.extract(
+            r"(\d+(?:\.\d+)?)$"
+        )[0].astype(float)
+        for line, group in candidates.groupby("pick_line"):
+            output.append(_aggregate_rows(group, "line", f"{line:g}"))
+
+        def odds_band(odds):
+            for low, high in ODDS_BANDS:
+                if low <= odds < high or (high == MAX_OU_ODDS and odds <= high):
+                    return f"{low:.2f}-{high:.2f}"
+            return "di_luar_rentang"
+
+        candidates["odds_band"] = candidates["candidate_odds"].map(odds_band)
+        for band, group in candidates.groupby("odds_band"):
+            output.append(_aggregate_rows(group, "rentang_odds", band))
+        for league, group in candidates.groupby("league"):
+            output.append(_aggregate_rows(group, "liga", league))
+
+        for threshold in GAP_THRESHOLDS:
+            selected = candidates.loc[candidates["value_gap"] >= threshold].copy()
+            selected["pick"] = selected["candidate_pick"]
+            selected["market_odds"] = selected["candidate_odds"]
+            selected["expected_profit_unit"] = selected["candidate_expected_return"]
+            selected["won"] = (
+                selected["candidate_pick"].str.split().str[0]
+                == selected["actual_ou25"]
+            )
+            selected["profit_unit"] = selected.apply(
+                lambda row: (
+                    row["candidate_odds"] - 1 if row["won"] else -1.0
+                ),
+                axis=1,
+            )
+            output.append(_aggregate_rows(
+                selected, "batas_gap_pp", f">={threshold:g}"
+            ))
+
+    forecasts = details.loc[details["model_over25_pct"].notna()].copy()
+    if not forecasts.empty:
+        forecasts["probability_bin"] = pd.cut(
+            forecasts["model_over25_pct"] / 100,
+            bins=[0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1],
+            include_lowest=True,
+        )
+        for bin_name, group in forecasts.groupby(
+            "probability_bin", observed=True
+        ):
+            output.append({
+                "group_type": "kalibrasi_probabilitas",
+                "group": str(bin_name),
+                "forecasts": len(group),
+                "bets": None,
+                "wins": None,
+                "win_rate_pct": None,
+                "net_profit_units": None,
+                "realized_roi_pct": None,
+                "expected_roi_pct": None,
+                "mean_predicted_over_pct": float(
+                    group["model_over25_pct"].mean()
+                ),
+                "actual_over_pct": float(
+                    group["actual_ou25"].eq("OVER").mean() * 100
+                ),
+                "brier_score_over25": float(group["brier_over25"].mean()),
+            })
+    return pd.DataFrame(output)
 
 
 def _print_percent(value):
@@ -345,7 +556,10 @@ def _print_percent(value):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Backtest O/U 2.5 secara kronologis tanpa data masa depan."
+        description=(
+            "Backtest Poisson O/U 2.5 secara kronologis; "
+            "fitur hanya memakai hasil dari tanggal sebelumnya."
+        )
     )
     parser.add_argument(
         "--test-fraction", type=float, default=DEFAULT_TEST_FRACTION,
@@ -358,6 +572,10 @@ def main():
     parser.add_argument(
         "--output", default=DEFAULT_OUTPUT,
         help=f"Lokasi CSV detail hasil (default: {DEFAULT_OUTPUT}).",
+    )
+    parser.add_argument(
+        "--summary-output", default=DEFAULT_SUMMARY_OUTPUT,
+        help=f"Lokasi CSV diagnosis (default: {DEFAULT_SUMMARY_OUTPUT}).",
     )
     args = parser.parse_args()
 
@@ -377,20 +595,36 @@ def main():
     print("=" * 68)
     print(f"Holdout tanggal: {summary['test_start']} s/d {summary['test_end']}")
     print(
-        f"Aturan: H2H sebelum tanggal laga, minimum {MIN_H2H}; "
-        f"gap +{MIN_OU_GAP:.0f} s/d +{MAX_OU_GAP:.0f} pp; "
-        f"odds {MIN_OU_ODDS:.2f}–{MAX_OU_ODDS:.2f}"
+        "Model: form 10 kandang terakhir + 10 tandang terakhir, "
+        "shot-on-target proxy, Poisson; H2H hanya koreksi 10%."
+    )
+    print(
+        f"Aturan pick awal: gap no-vig +{MIN_OU_GAP:.0f} s/d "
+        f"+{MAX_OU_GAP:.0f} pp; EV positif; odds "
+        f"{MIN_OU_ODDS:.2f}–{MAX_OU_ODDS:.2f}"
     )
     print(
         f"Pertandingan uji: {summary['test_matches']:,} | "
-        f"Forecast H2H valid: {summary['h2h_forecasts']:,} | "
+        f"Forecast model valid: {summary['model_forecasts']:,} | "
         f"Pick taruhan: {summary['bets']:,}"
     )
     print(f"Win rate: {_print_percent(summary['win_rate_pct'])}")
     print(f"ROI aktual: {_print_percent(summary['roi_pct'])}")
     print(f"ROI ekspektasian model: {_print_percent(summary['expected_roi_pct'])}")
     print(f"Brier score O2.5: {summary['brier_score_over25']}")
+    print(
+        f"Brier rate historis train ({summary['historical_base_rate_over25_pct']:.2f}%): "
+        f"{summary['historical_base_rate_brier']}"
+    )
+    print(
+        f"Brier skill vs rate historis: "
+        f"{summary['brier_skill_vs_historical_rate']}"
+    )
     print(f"Log loss O2.5: {summary['log_loss_over25']}")
+    print(
+        "Rata-rata galat kalibrasi: "
+        f"{_print_percent(summary['mean_absolute_calibration_error'] * 100) if summary['mean_absolute_calibration_error'] is not None else 'n/a'}"
+    )
     print(f"Profit bersih: {summary['net_profit_units']:+.2f} unit")
     if summary["skip_reasons"]:
         print("Alasan dilewati:")
@@ -401,10 +635,16 @@ def main():
     if output_dir:
         os.makedirs(output_dir, exist_ok=True)
     summary["details"].to_csv(args.output, index=False)
-    print(f"\n💾 Detail backtest disimpan: {args.output}")
+    summary_dir = os.path.dirname(args.summary_output)
+    if summary_dir:
+        os.makedirs(summary_dir, exist_ok=True)
+    summary["breakdowns"].to_csv(args.summary_output, index=False)
+    print(f"\n💾 Detail per pertandingan: {args.output}")
+    print(f"💾 Diagnosis line/odds/liga/gap/kalibrasi: {args.summary_output}")
     print(
-        "\nCatatan: ini baseline H2H O/U 2.5 dengan odds arsip; "
-        "hasil bukan jaminan prediksi dan belum menguji line O/U lain."
+        "\nCatatan: arsip historis hanya memiliki odds O/U 2.5 yang konsisten; "
+        "Asian line diuji penuh pada prediksi aktif, belum pada arsip hasil. "
+        "Gap +5 pp tetap ambang awal, bukan jaminan nilai atau ambang tervalidasi."
     )
     return 0
 

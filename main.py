@@ -160,10 +160,14 @@ def menu_cek_slip():
         print(f"   {m.get('home', '?')} vs {m.get('away', '?')}")
         print(
             f"   ⚽ {m.get('pick', '?')} "
-            f"(peluang bersyarat {m.get('pick_conf', 0)}%) "
+            f"(peluang settlement {m.get('pick_conf', 0)}%) "
             f"| odds {m.get('pick_odds', 0)}"
         )
-        print(f"   💡 Gap: {m.get('value_gap', 0):+.1f}% | {m.get('kategori_gap', '-')}")
+        print(
+            f"   💡 Gap no-vig: {m.get('value_gap', 0):+.2f} pp "
+            f"| EV model: {m.get('pick_expected_return', 0):+.3f} unit "
+            f"| {m.get('kategori_gap', '-')}"
+        )
         print()
     
     fair = sum(1 for m in eligible if m.get("kategori_gap") == "FAIR")
@@ -178,11 +182,11 @@ def menu_cek_slip():
 # ============================================================
 def menu_backtest():
     clear()
-    print_header("⚽ BACKTEST O/U 2.5 — Walk-Forward Kronologis")
+    print_header("⚽ BACKTEST O/U POISSON — Walk-Forward Kronologis")
 
     print("   Uji memakai 20% tanggal pertandingan paling baru.")
-    print("   H2H hanya dihitung dari pertandingan sebelum tanggal uji.")
-    print("   Odds memakai data historis; line yang tersedia di arsip: 2.5.")
+    print("   Form kandang/tandang hanya memakai hasil sebelum tanggal uji.")
+    print("   Poisson + settlement; odds arsip yang tersedia konsisten di line 2.5.")
     print()
 
     lanjut = input(f"{C.YELLOW}Lanjut jalankan? (y/n): {C.END}").strip().lower()
@@ -283,7 +287,7 @@ def menu_utama():
         print(f"{C.BOLD}{C.CYAN}")
         print("=" * 50)
         print("        🎯 PARLAY BUILDER 🎯")
-        print("     Sistem Analisa H2H + Value Bet")
+        print("     Model Gol Home/Away + Value O/U")
         print("=" * 50)
         print(f"{C.END}")
         

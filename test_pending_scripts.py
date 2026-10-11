@@ -1,4 +1,5 @@
 import contextlib
+from datetime import date, timedelta
 import io
 import json
 import os
@@ -15,6 +16,49 @@ import save_draft
 from parlay_builder_v3 import analisa_ou, bandingkan_opsi, bandingkan_opsi_2
 from pick_policy import is_eligible_ou_pick
 from settlement import settle_pick
+from ou_model import WalkForwardModel, settlement_distribution
+
+
+def build_recent_form_model():
+    model = WalkForwardModel()
+    rows = []
+    for index in range(40):
+        rows.append({
+            "date": (date(2024, 1, 1) + timedelta(days=index)).isoformat(),
+            "home": f"League Home {index}",
+            "away": f"League Away {index}",
+            "hg": 2,
+            "ag": 1,
+            "league": "Test",
+            "hst": 5,
+            "ast": 3,
+        })
+    for index in range(8):
+        rows.extend([
+            {
+                "date": f"2024-03-{index + 1:02d}",
+                "home": "Home FC",
+                "away": f"Home Opponent {index}",
+                "hg": (2, 2, 1, 2, 1, 2, 1, 2)[index],
+                "ag": (0, 1, 1, 0, 1, 0, 1, 1)[index],
+                "league": "Test",
+                "hst": 5,
+                "ast": 3,
+            },
+            {
+                "date": f"2024-03-{index + 1:02d}",
+                "home": f"Away Opponent {index}",
+                "away": "Away FC",
+                "hg": (1, 2, 1, 1, 2, 1, 2, 1)[index],
+                "ag": (1, 1, 2, 1, 1, 2, 1, 1)[index],
+                "league": "Test",
+                "hst": 4,
+                "ast": 4,
+            },
+        ])
+    for row in sorted(rows, key=lambda item: item["date"]):
+        model.update(row)
+    return model
 
 
 class SettlementTests(unittest.TestCase):
@@ -62,36 +106,38 @@ class ValueComparisonTests(unittest.TestCase):
         self.assertTrue(blind_spot["ada_di_market"])
 
     def test_ou_analyzer_returns_only_positive_gap_market_pick(self):
-        import pandas as pd
-
-        h2h = pd.DataFrame([
-            {"home": "Home FC", "away": "Away FC", "hg": home, "ag": away}
-            for home, away in ((2, 1), (1, 2), (3, 1), (2, 2), (2, 0))
-        ])
-        result = analisa_ou(h2h, "Home FC", [
-            {"line": 2.5, "over": 1.2, "under": 3.5},
-            {"line": 3.0, "over": 1.5, "under": 2.5},
-            {"line": 3.5, "over": 3.0, "under": 1.9},
-        ])
+        result = analisa_ou(
+            None,
+            "Home FC",
+            [
+                {"line": 2.5, "over": 3.4, "under": 1.3},
+                {"line": 3.0, "over": 3.2, "under": 1.35},
+            ],
+            away_web="Away FC",
+            model=build_recent_form_model(),
+            as_of="2024-06-01",
+            league="Test",
+        )
         self.assertIsNotNone(result)
         self.assertEqual(result["pick_jenis"], "OU")
         self.assertGreaterEqual(result["value_gap"], 5)
+        self.assertGreater(result["pick_expected_return"], 0)
+        self.assertEqual(result["home_form_n"], 8)
+        self.assertEqual(result["away_form_n"], 8)
         self.assertNotIn("top_1x2", result)
         self.assertNotIn("btts_rate", result)
         self.assertTrue(is_eligible_ou_pick(result))
 
     def test_ou_analyzer_skips_negative_and_small_gaps(self):
-        import pandas as pd
-
-        h2h = pd.DataFrame([
-            {"home": "Home FC", "away": "Away FC", "hg": home, "ag": away}
-            for home, away in ((2, 1), (1, 2), (3, 1), (2, 2), (2, 0))
-        ])
-        result = analisa_ou(h2h, "Home FC", [
-            {"line": 2.5, "over": 1.2, "under": 3.5},
-            {"line": 3.0, "over": 1.5, "under": 2.5},
-            {"line": 3.5, "over": 2.2, "under": 1.7},
-        ])
+        result = analisa_ou(
+            None,
+            "Home FC",
+            [{"line": 2.5, "over": 1.01, "under": 1.01}],
+            away_web="Away FC",
+            model=build_recent_form_model(),
+            as_of="2024-06-01",
+            league="Test",
+        )
         self.assertIsNone(result)
 
     def test_policy_rejects_non_ou_and_negative_gap(self):
@@ -111,59 +157,111 @@ class WalkForwardBacktestTests(unittest.TestCase):
     def setUp(self):
         import pandas as pd
 
-        self.matches = backtest_ou_walkforward.prepare_matches(pd.DataFrame([
-            {"Date": "2024-01-01", "HomeTeam": "A", "AwayTeam": "B",
-             "FTHG": 3, "FTAG": 0, "League": "Test",
-             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
-            {"Date": "2024-02-01", "HomeTeam": "B", "AwayTeam": "A",
-             "FTHG": 0, "FTAG": 1, "League": "Test",
-             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
+        raw = []
+        for index in range(1, 6):
+            raw.append({
+                "Date": f"2024-01-{index:02d}",
+                "HomeTeam": "A",
+                "AwayTeam": f"Home Opp {index}",
+                "FTHG": 2,
+                "FTAG": 1,
+                "League": "Test",
+                "Avg>2.5": 1.9,
+                "Avg<2.5": 1.9,
+                "HST": 5,
+                "AST": 3,
+            })
+            raw.append({
+                "Date": f"2024-02-{index:02d}",
+                "HomeTeam": f"Away Opp {index}",
+                "AwayTeam": "B",
+                "FTHG": 1,
+                "FTAG": 1,
+                "League": "Test",
+                "Avg>2.5": 1.9,
+                "Avg<2.5": 1.9,
+                "HST": 3,
+                "AST": 4,
+            })
+        raw.extend([
             {"Date": "2024-03-01", "HomeTeam": "A", "AwayTeam": "B",
-             "FTHG": 3, "FTAG": 1, "League": "Test",
-             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
-            {"Date": "2024-04-01", "HomeTeam": "B", "AwayTeam": "A",
-             "FTHG": 1, "FTAG": 2, "League": "Test",
-             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
-            {"Date": "2024-05-01", "HomeTeam": "A", "AwayTeam": "B",
-             "FTHG": 4, "FTAG": 0, "League": "Test",
-             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
-            # A same-day result and a future result must not leak into June 1.
-            {"Date": "2024-06-01", "HomeTeam": "B", "AwayTeam": "A",
-             "FTHG": 0, "FTAG": 0, "League": "Test",
-             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
-            {"Date": "2024-06-01", "HomeTeam": "A", "AwayTeam": "B",
              "FTHG": 2, "FTAG": 1, "League": "Test",
-             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
-            {"Date": "2024-07-01", "HomeTeam": "A", "AwayTeam": "B",
+             "Avg>2.5": 1.9, "Avg<2.5": 1.9},
+            # Same-day and future meetings must not leak into a June 1 forecast.
+            {"Date": "2024-06-01", "HomeTeam": "A", "AwayTeam": "B",
              "FTHG": 0, "FTAG": 0, "League": "Test",
-             "Avg>2.5": 1.5, "Avg<2.5": 2.5},
-        ]))
-
-    def test_h2h_excludes_same_day_target_and_future_results(self):
-        from datetime import datetime
-
-        index = backtest_ou_walkforward.build_h2h_index(self.matches)
-        count, over_count = backtest_ou_walkforward.history_summary_before(
-            index, "A", "B", datetime(2024, 6, 1)
+             "Avg>2.5": 1.9, "Avg<2.5": 1.9},
+            {"Date": "2024-06-01", "HomeTeam": "B", "AwayTeam": "A",
+             "FTHG": 5, "FTAG": 0, "League": "Test",
+             "Avg>2.5": 1.9, "Avg<2.5": 1.9},
+            {"Date": "01/07/2024", "HomeTeam": "A", "AwayTeam": "B",
+             "FTHG": 0, "FTAG": 0, "League": "Test",
+             "Avg>2.5": 1.9, "Avg<2.5": 1.9},
+        ])
+        self.matches = backtest_ou_walkforward.prepare_matches(
+            pd.DataFrame(raw)
         )
-        self.assertEqual(count, 5)
-        self.assertEqual(over_count, 4)
 
-    def test_walk_forward_pick_uses_prior_h2h_and_real_market_odds(self):
+    def test_dates_parse_iso_and_day_first_without_mixing_formats(self):
         import pandas as pd
 
-        index = backtest_ou_walkforward.build_h2h_index(self.matches)
-        target = self.matches.loc[
-            (self.matches["date"] == pd.Timestamp("2024-06-01"))
-            & (self.matches["home"] == "A")
+        june_match = self.matches.loc[
+            (self.matches["home"] == "A")
+            & (self.matches["away"] == "B")
+            & (self.matches["date"] == pd.Timestamp("2024-06-01"))
+        ]
+        july_match = self.matches.loc[
+            (self.matches["home"] == "A")
+            & (self.matches["away"] == "B")
+            & (self.matches["date"] == pd.Timestamp("2024-07-01"))
+        ]
+        self.assertEqual(len(june_match), 1)
+        self.assertEqual(len(july_match), 1)
+
+    def test_walk_forward_excludes_same_day_h2h_and_future_results(self):
+        result = backtest_ou_walkforward.run_backtest(
+            self.matches, test_start="2024-06-01"
+        )
+        target = result["details"].loc[
+            (result["details"]["home"] == "A")
+            & (result["details"]["away"] == "B")
+            & (result["details"]["date"] == "2024-06-01")
         ].iloc[0]
-        result = backtest_ou_walkforward.evaluate_fixture(target, index)
-        self.assertEqual(result["h2h_before"], 5)
-        self.assertEqual(result["model_over25_pct"], 80.0)
-        self.assertEqual(result["pick"], "OVER 2.5")
-        self.assertEqual(result["market_source"], "Avg")
-        self.assertEqual(result["market_odds"], 1.5)
-        self.assertTrue(result["won"])
+        self.assertEqual(target["h2h_before"], 1)
+        self.assertEqual(target["home_form_n"], 6)
+        self.assertEqual(target["away_form_n"], 6)
+        self.assertIsNotNone(target["model_over25_pct"])
+
+
+class AsianPoissonTests(unittest.TestCase):
+    def test_poisson_distribution_is_normalized(self):
+        settlement = settlement_distribution(1.7, 1.2, "OVER", 2.5, 1.9)
+        self.assertAlmostEqual(
+            sum(settlement["total_pmf"]), 1.0, places=10
+        )
+
+    def test_quarter_line_reports_half_win_and_half_loss(self):
+        over = settlement_distribution(1.5, 1.3, "OVER", 2.75, 2.0)
+        under = settlement_distribution(1.5, 1.3, "UNDER", 2.75, 2.0)
+        self.assertGreater(over["half_win"], 0)
+        self.assertGreater(under["half_loss"], 0)
+        self.assertEqual(over["push"], 0)
+        self.assertAlmostEqual(sum(
+            over[key] for key in
+            ("full_win", "half_win", "push", "half_loss", "full_loss")
+        ), 1.0, places=9)
+
+    def test_market_probabilities_are_no_vig_and_integer_push_is_counted(self):
+        from ou_model import compare_market_line
+
+        result = compare_market_line(1.5, 1.2, 3.0, 1.9, 2.1)
+        self.assertAlmostEqual(
+            result["market_over_no_vig_pct"]
+            + result["market_under_no_vig_pct"],
+            100,
+        )
+        self.assertGreater(result["over"]["push"], 0)
+        self.assertIsInstance(result["under"]["expected_return"], float)
 
 
 class PendingDraftTests(unittest.TestCase):

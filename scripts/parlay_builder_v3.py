@@ -2,6 +2,7 @@
 import warnings
 warnings.filterwarnings("ignore")
 import json
+import math
 import pandas as pd
 import re
 import sys
@@ -12,6 +13,13 @@ from pick_policy import (
     MAX_OU_GAP, MAX_OU_ODDS, MIN_OU_GAP, MIN_OU_ODDS, is_eligible_ou_pick,
 )
 from settlement import settle_pick
+from backtest_ou_walkforward import load_matches
+from ou_model import (
+    TEAM_ALIASES,
+    WalkForwardModel,
+    compare_market_line,
+    normalize_team,
+)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(BASE_DIR)
 
@@ -55,61 +63,16 @@ MIN_CONF_PICK = 60
 
 
 # ========== ALIAS TIM ==========
-ALIAS = {
-    "hjk helsinki": ["hjk", "hjk helsinki", "helsinki"],
-    "vaasa vps": ["vps", "vaasa", "vaasan"],
-    "kups": ["kups", "kuopio"],
-    "ac oulu": ["oulu", "ac oulu"],
-    "shamrock rovers": ["shamrock", "shamrock rovers"],
-    "drogheda united": ["drogheda", "drogheda united"],
-    "santos sp": ["santos"],
-    "flamengo rj": ["flamengo"],
-    "fluminense rj": ["fluminense"],
-    "coritiba pr": ["coritiba"],
-    "palmeiras sp": ["palmeiras"],
-    "bahia ec ba": ["bahia"],
-    "ceara ce": ["ceara"],
-    "criciuma ec sc": ["criciuma"],
-    "nautico pe": ["nautico"],
-    "gremio novorizontino sp": ["novorizontino", "gremio novorizontino"],
-    "atletico fc": ["atletico"],
-    "real cartagena": ["cartagena"],
-    "independiente valle del cauca": ["independiente"],
-    "tigres fc": ["tigres"],
-}
+ALIAS = TEAM_ALIASES
 
 
 def normalize(name):
-    if not isinstance(name, str):
-        return ""
-    return re.sub(r'\s*\[[RW]\]\s*', '', name.strip()).lower()
+    return normalize_team(name)
 
 
 def load_h2h():
-    data = []
-    try:
-        df = pd.read_csv("data/football_data/all_football_data.csv", low_memory=False)
-        df = df.dropna(subset=["HomeTeam", "AwayTeam", "FTHG", "FTAG"])
-        df = df[["HomeTeam", "AwayTeam", "FTHG", "FTAG", "League"]].copy()
-        df.columns = ["home", "away", "hg", "ag", "league"]
-        df["source"] = "top"
-        data.append(df)
-    except Exception:
-        pass
-    try:
-        df = pd.read_csv("data/football_data_extra/all_extra.csv", low_memory=False)
-        df = df.dropna(subset=["Home", "Away", "HG", "AG"])
-        liga_col = "LeagueName" if "LeagueName" in df.columns else "League"
-        df = df[["Home", "Away", "HG", "AG", liga_col]].copy()
-        df.columns = ["home", "away", "hg", "ag", "league"]
-        df["source"] = "extra"
-        data.append(df)
-    except Exception:
-        pass
-    df = pd.concat(data, ignore_index=True)
-    df["hg"] = pd.to_numeric(df["hg"], errors="coerce")
-    df["ag"] = pd.to_numeric(df["ag"], errors="coerce")
-    return df.dropna(subset=["hg", "ag"])
+    """Load dated match results and shot data used by the point-in-time model."""
+    return load_matches()
 
 
 def cari_h2h(df, home_web, away_web):
@@ -863,58 +826,78 @@ def bandingkan_opsi_2(gol_pairs, ou_lines, odds_home, odds_draw, odds_away,
     return top_1x2, top_ou, titik_buta
 
 
-def analisa_ou(h2h, home_web, ou_lines=None):
-    """Build one O/U-only pick; 1X2 and BTTS are not prediction candidates."""
-    if ou_lines is None:
-        ou_lines = []
-    if h2h is None or len(h2h) < MIN_H2H or not ou_lines:
+def analisa_ou(
+    h2h,
+    home_web,
+    ou_lines=None,
+    *,
+    away_web=None,
+    model=None,
+    as_of=None,
+    league="?",
+):
+    """Build an O/U recommendation from recent venue form and Poisson pricing."""
+    if not ou_lines or model is None or not away_web or as_of is None:
         return None
-
-    home_norm = normalize(home_web)
-    h2h = h2h.copy()
-    h2h["home_is_A"] = h2h["home"].apply(
-        lambda name: (
-            normalize(name) == home_norm
-            or (len(home_norm) >= 5 and home_norm in normalize(name))
-        )
+    prediction = model.predict(
+        home_web, away_web, as_of, league=league
     )
-
-    goal_pairs = [
-        (row.hg, row.ag) if row.home_is_A else (row.ag, row.hg)
-        for row in h2h[["hg", "ag", "home_is_A"]].itertuples(index=False)
-    ]
-    if not goal_pairs:
+    if not prediction.get("available"):
         return None
-
-    total_goals = [home_goals + away_goals for home_goals, away_goals in goal_pairs]
-    home_a = int(h2h["home_is_A"].sum())
-    home_b = len(h2h) - home_a
-    score = (
-        max(0, len(h2h) - MIN_H2H) * BOBOT_H2H
-        + max(0, home_a - MIN_HOME) * BOBOT_HOME
-        + max(0, home_b - MIN_AWAY) * BOBOT_AWAY
-    )
-    tier = "🔥 T1" if score >= 400 else "⚡ T2" if score >= 250 else "✅ T3"
 
     candidates = []
+    all_lines = []
     for market_line in ou_lines:
-        line = market_line.get("line")
-        for side, odds in (
-            ("OVER", market_line.get("over")),
-            ("UNDER", market_line.get("under")),
-        ):
-            metrics = _nilai_ou_historis(goal_pairs, side, line, odds)
-            if metrics is None:
+        try:
+            line = float(market_line.get("line"))
+            odds_over = float(market_line.get("over"))
+            odds_under = float(market_line.get("under"))
+            if (
+                not math.isfinite(line)
+                or not math.isfinite(odds_over)
+                or not math.isfinite(odds_under)
+                or odds_over <= 1
+                or odds_under <= 1
+            ):
+                continue
+            comparison = compare_market_line(
+                prediction["lambda_home"],
+                prediction["lambda_away"],
+                line,
+                odds_over,
+                odds_under,
+            )
+        except (TypeError, ValueError):
+            continue
+        all_lines.append(comparison)
+        for side in ("over", "under"):
+            metrics = comparison[side]
+            odds = metrics["odds"]
+            gap = metrics["value_gap"]
+            expected_return = metrics["expected_return"]
+            if gap is None or not MIN_OU_ODDS <= odds <= MAX_OU_ODDS:
                 continue
             option = {
                 "jenis": "OU",
-                "pick": f"{side} {float(line):g}",
-                "odds": round(float(odds), 2),
-                "prob": metrics["prob"],
-                "gap": metrics["gap"],
-                "push_rate": metrics["push_rate"],
-                "expected_profit": metrics["expected_profit"],
-                "line": float(line),
+                "pick": f"{side.upper()} {line:g}",
+                "odds": round(odds, 2),
+                "prob": round(metrics["conditional_probability"] * 100, 2),
+                "gap": round(gap, 2),
+                "market_no_vig": round(
+                    metrics["market_no_vig_probability"] * 100, 2
+                ),
+                "overround": round(
+                    comparison["market_overround_pct"], 2
+                ),
+                "expected_profit": round(expected_return, 5),
+                "line": line,
+                "settlement_probabilities": {
+                    "full_win": round(metrics["full_win"] * 100, 2),
+                    "half_win": round(metrics["half_win"] * 100, 2),
+                    "push": round(metrics["push"] * 100, 2),
+                    "half_loss": round(metrics["half_loss"] * 100, 2),
+                    "full_loss": round(metrics["full_loss"] * 100, 2),
+                },
             }
             eligibility_record = {
                 "pick_jenis": "OU",
@@ -924,50 +907,64 @@ def analisa_ou(h2h, home_web, ou_lines=None):
                 "value_gap": option["gap"],
             }
             if (
-                MIN_OU_ODDS <= option["odds"] <= MAX_OU_ODDS
-                and MIN_OU_GAP <= option["gap"] <= MAX_OU_GAP
+                MIN_OU_GAP <= option["gap"] <= MAX_OU_GAP
+                and expected_return > 0
                 and is_eligible_ou_pick(eligibility_record)
             ):
                 candidates.append(option)
 
     if not candidates:
         return None
-    best = max(candidates, key=lambda option: (option["gap"], option["prob"]))
-    over_25_rate = round(
-        sum(goals > 2.5 for goals in total_goals) / len(total_goals) * 100, 1
+    # Expected return is the primary ranking; gap is a secondary tie-breaker.
+    best = max(
+        candidates,
+        key=lambda option: (option["expected_profit"], option["gap"]),
     )
-    market_has_25 = False
-    for item in ou_lines:
-        try:
-            if abs(float(item.get("line")) - 2.5) < 0.01:
-                market_has_25 = True
-                break
-        except (TypeError, ValueError):
-            continue
+    form_score = round(
+        100 * min(prediction["home_form_count"], prediction["away_form_count"])
+        / 10
+    )
+    tier = "🔥 T1" if form_score >= 90 else "⚡ T2" if form_score >= 70 else "✅ T3"
+    h2h_count = prediction["h2h_before"]
+    best_25 = next(
+        (item for item in all_lines if math.isclose(item["line"], 2.5)),
+        None,
+    )
 
     return {
-        "h2h": len(h2h),
-        "gol_pairs": [tuple(pair) for pair in goal_pairs],
-        "gol_total": round(sum(total_goals) / len(total_goals), 2),
-        "skor": int(score),
+        "h2h": h2h_count,
+        "gol_pairs": [],
+        "gol_total": round(prediction["expected_total"], 2),
+        "lambda_home": round(prediction["lambda_home"], 3),
+        "lambda_away": round(prediction["lambda_away"], 3),
+        "home_form_n": prediction["home_form_count"],
+        "away_form_n": prediction["away_form_count"],
+        "baseline_source": prediction["baseline_source"],
+        "uses_shot_proxy": prediction["uses_shot_proxy"],
+        "skor": form_score,
         "tier": tier,
         "pick_jenis": "OU",
         "pick": best["pick"],
         "pick_conf": best["prob"],
-        "pick_push_rate": best["push_rate"],
+        "pick_push_rate": best["settlement_probabilities"]["push"],
         "pick_odds": best["odds"],
-        "pick_implied": round(100 / best["odds"], 1),
+        "pick_implied": best["market_no_vig"],
         "value_gap": best["gap"],
+        "pick_expected_return": best["expected_profit"],
         "kategori_gap": "VALUE" if best["gap"] >= 10 else "FAIR",
         "pick_alasan": (
-            f"{best['pick']}: peluang bersyarat {best['prob']}%, "
-            f"push {best['push_rate']}%, gap {best['gap']:+.1f}%"
+            f"{best['pick']}: peluang settlement efektif {best['prob']}%, "
+            f"gap no-vig {best['gap']:+.2f} pp, "
+            f"EV {best['expected_profit']:+.3f} unit"
         ),
         "top_ou": best,
         "titik_buta": {
             "line": 2.5,
-            "over_rate": over_25_rate,
-            "ada_di_market": market_has_25,
+            "over_rate": (
+                round(best_25["over"]["conditional_probability"] * 100, 2)
+                if best_25 else None
+            ),
+            "ada_di_market": best_25 is not None,
         },
     }
 
@@ -981,16 +978,35 @@ def main():
         matches = json.load(f)
     print(f"\n📥 {len(matches)} match dari web")
 
-    print("\n📊 Load database H2H...")
+    print("\n📊 Load database pertandingan, gol, dan tembakan...")
     df = load_h2h()
     print(f"   ✅ {len(df):,} baris")
 
-    print("\n🔍 Analisa H2H + cari BEST PICK...")
+    as_of = pd.Timestamp.now().normalize()
+    model = WalkForwardModel()
+    prior_matches = df.loc[df["date"] < as_of]
+    print(
+        f"   🔒 Muat {len(prior_matches):,} laga sebelum "
+        f"{as_of.date().isoformat()} (tanggal yang sama tidak dipakai)"
+    )
+    print(
+        "   ⚠️ Model masih eksperimental; EV adalah estimasi dan "
+        "gap +5 pp belum terbukti menghasilkan ROI positif."
+    )
+    for row in prior_matches.to_dict(orient="records"):
+        model.update(row)
+
+    print("\n🔍 Analisa form kandang/tandang + Poisson + expected return...")
     hasil = []
     for m in matches:
-        h2h = cari_h2h(df, m["home"], m["away"])
         stats = analisa_ou(
-            h2h, m["home"], ou_lines=m.get("ou_lines", [])
+            None,
+            m["home"],
+            ou_lines=m.get("ou_lines", []),
+            away_web=m["away"],
+            model=model,
+            as_of=as_of,
+            league=m.get("liga", "?"),
         )
         if stats is None or not is_eligible_ou_pick(stats):
             continue
@@ -1009,7 +1025,9 @@ def main():
     # Sorting
     by_conf = sorted(
         hasil,
-        key=lambda x: (-x["value_gap"], -x["pick_conf"], -x["skor"]),
+        key=lambda x: (
+            -x["pick_expected_return"], -x["value_gap"], -x["pick_conf"]
+        ),
     )
     by_skor = sorted(hasil, key=lambda x: -x["skor"])
 
@@ -1024,12 +1042,17 @@ def main():
             f"{m.get('home', '?')} vs {m.get('away', '?')} — {m['tier']}"
         )
         print(
-            f"   ⚽ {m['pick']} | peluang bersyarat {m['pick_conf']}% "
+            f"   ⚽ {m['pick']} | peluang settlement efektif {m['pick_conf']}% "
             f"| push {m['pick_push_rate']}% | odds {m['pick_odds']:.2f}"
         )
         print(
-            f"   Gap +{m['value_gap']:.1f}% | {m['kategori_gap']} "
-            f"| H2H {m['h2h']} | skor {m['skor']}"
+            f"   Gap no-vig {m['value_gap']:+.2f} pp | "
+            f"EV {m['pick_expected_return']:+.3f} unit "
+            f"| λ gol {m['lambda_home']:.2f}-{m['lambda_away']:.2f}"
+        )
+        print(
+            f"   Form kandang/tandang {m['home_form_n']}/{m['away_form_n']} "
+            f"| H2H {m['h2h']} (bobot 10%) | {m['kategori_gap']}"
         )
 
     # ===== GENERATE SLIP =====
@@ -1044,7 +1067,7 @@ def main():
     for m in by_conf:
         print(f"   {m['home']:25} vs {m['away']:25} | "
               f"O/U={m['pick']:12} | peluang={m['pick_conf']:5}% | "
-              f"odds={m['pick_odds']:.2f} | gap=+{m['value_gap']:.1f}%")
+              f"odds={m['pick_odds']:.2f} | EV={m['pick_expected_return']:+.3f}")
     
     # ===== PISAHKAN PER TIER =====
     # Tier: T1 (skor >= 400), T2 (250-399), T3 (<250)
@@ -1066,7 +1089,8 @@ def main():
             print(f"   {i}. {m['home'][:20]:20} vs {m['away'][:20]:20}")
             print(
                 f"      ⚽ {m['pick']:15} ({m['pick_conf']}%) "
-                f"| gap +{m['value_gap']:.1f}% | odds {m['pick_odds']:.2f}"
+                f"| EV {m['pick_expected_return']:+.3f} "
+                f"| odds {m['pick_odds']:.2f}"
             )
     
     # ===== GENERATE SLIP PER TIER =====
@@ -1087,7 +1111,9 @@ def main():
         n = min(n_max, len(eligible))
         slip = sorted(
             eligible,
-            key=lambda x: (-x["value_gap"], -x["pick_conf"]),
+            key=lambda x: (
+                -x["pick_expected_return"], -x["value_gap"], -x["pick_conf"]
+            ),
         )[:n]
         
         total_odds = 1.0
@@ -1103,11 +1129,13 @@ def main():
             print(f"   {m['home']} vs {m['away']} ({m['waktu']})")
             print(f"   H2H: {m['h2h']}x | Skor: {m['skor']} | {m['tier']}")
             print(
-                f"   ⚽ {m['pick']} | peluang bersyarat {m['pick_conf']}% "
+                f"   ⚽ {m['pick']} | peluang settlement efektif {m['pick_conf']}% "
                 f"| push {m['pick_push_rate']}% | odds {m['pick_odds']:.2f}"
             )
             print(
-                f"   Gap +{m['value_gap']:.1f}% | {m['kategori_gap']}"
+                f"   Gap no-vig {m['value_gap']:+.2f} pp "
+                f"| EV {m['pick_expected_return']:+.3f} unit "
+                f"| {m['kategori_gap']}"
             )
         
         potensi = 100_000 * total_odds
