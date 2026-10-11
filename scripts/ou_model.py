@@ -91,7 +91,9 @@ def _record(row):
         "as": _number(row.get("as", row.get("AS"))),
         "hst": _number(row.get("hst", row.get("HST"))),
         "ast": _number(row.get("ast", row.get("AST"))),
-        "league": str(row.get("league", row.get("League", "?")) or "?").strip(),
+        "league": str(
+            row.get("league", row.get("League", "?")) or "?"
+        ).strip().casefold(),
     }
 
 
@@ -284,7 +286,7 @@ class WalkForwardModel:
                 "away_form_count": len(away_rows),
             }
 
-        baseline = self._baseline(str(league or "?"), cutoff)
+        baseline = self._baseline(str(league or "?").strip().casefold(), cutoff)
         home_attack, home_defense = self._form_rates(
             home_rows, "home", baseline
         )

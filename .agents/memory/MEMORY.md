@@ -1,2 +1,2 @@
 - [Development status](project-stage.md) — the project is still being built; distinguish pending decisions from confirmed requirements.
-- [Slip market scope](prediction-market-scope.md) — prediction and slip output should be O/U-only, with a minimum +5% value gap.
+- [Slip market scope](prediction-market-scope.md) — O/U only; use venue form, Poisson/no-vig settlement EV, and validate the initial +5 pp gap through chronological backtests.

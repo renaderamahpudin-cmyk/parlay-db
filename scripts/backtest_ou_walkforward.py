@@ -22,10 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(BASE_DIR)
 
 DATA_FILE = "data/football_data/all_football_data.csv"
-DEFAULT_OUTPUT = "output/backtest_ou_poisson_walkforward.csv"
+DEFAULT_OUTPUT = "generated-artifacts/backtest_ou_poisson_walkforward.csv"
 MIN_H2H = 5
 DEFAULT_TEST_FRACTION = 0.20
-DEFAULT_SUMMARY_OUTPUT = "output/backtest_ou_poisson_summary.csv"
+DEFAULT_SUMMARY_OUTPUT = "generated-artifacts/backtest_ou_poisson_summary.csv"
 ODDS_BANDS = ((1.2, 1.5), (1.5, 1.8), (1.8, 2.1), (2.1, 2.5), (2.5, 4.0))
 GAP_THRESHOLDS = (0, 2.5, 5, 7.5, 10, 15)
 ODDS_COLUMNS = (

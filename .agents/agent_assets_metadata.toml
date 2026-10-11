@@ -1,0 +1,30 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "HpPp_N8ni0LBsRRnvPJR7"
+uri = "file://generated-artifacts/backtest_ou_poisson_summary.csv"
+type = "table"
+title = "Poisson O/U backtest summary"
+description = "Calibration, settled return, and breakdowns by historical line, odds range, league, and gap threshold."
+logical_id = "7a25406e-c216-4ef1-8ce5-fc18a030a6d6"
+content_hash = "sha256:9bd5c5bf3b96208f8f67fbb4a7f62b8855858c7cbe08ce08ba22961bc281fc8b"
+size = 4307
+mtime_ms = 1791695015289
+storage_uri = "gcs://replit-rams-assets-sisko/rams/assets/repl:f97c57c0-1ef6-4246-86f4-83c0b80b5d9d/7a25406e-c216-4ef1-8ce5-fc18a030a6d6/c2286b59-6879-4167-8c70-e260da37f747"
+storage_version_token = "1791695071399131"
+content_type = "text/csv"
+
+[[outputs]]
+id = "lgVvdWqwtPuwpcl-44bkY"
+uri = "file://generated-artifacts/backtest_ou_poisson_walkforward.csv"
+type = "table"
+title = "Poisson O/U match-by-match backtest"
+description = "20,696 chronological holdout fixtures with pre-match forecast, no-vig comparison, and settled result."
+logical_id = "3baf3745-1c3c-4296-a862-294ddd94998f"
+content_hash = "sha256:5e81bcf5019d9eda5a8a9382451176e196760b42f9635afb740e43dcb5a856a2"
+size = 4407486
+mtime_ms = 1791695015285
+storage_uri = "gcs://replit-rams-assets-sisko/rams/assets/repl:f97c57c0-1ef6-4246-86f4-83c0b80b5d9d/3baf3745-1c3c-4296-a862-294ddd94998f/09ea340a-18dd-4c29-85d9-da1947dfaa93"
+storage_version_token = "1791695072764533"
+content_type = "text/csv"
