@@ -1,6 +1,11 @@
 """Selection rules for current prediction and slip output."""
 import math
+import os
 import re
+import sys
+
+# Add scripts directory to path so we can import prediction_config
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from prediction_config import MAX_OU_GAP, MAX_OU_ODDS, MIN_OU_GAP, MIN_OU_ODDS
 
