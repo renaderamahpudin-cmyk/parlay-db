@@ -4,7 +4,6 @@ Ambil semua pasar dari mainbolakaki.pro
 """
 import warnings
 warnings.filterwarnings("ignore")
-import ast
 import json
 import re
 import requests
@@ -35,9 +34,28 @@ def fetch_odds():
 
 def parse_full(raw):
     """Parse semua baris (1X2 + O/U multi-line) per match"""
-    cleaned = raw.strip()
-    cleaned = cleaned[cleaned.find("["):cleaned.rfind("]")+1]
-    data = ast.literal_eval(cleaned)
+    try:
+        cleaned = raw.strip()
+        # Cari posisi array JSON yang valid
+        start_idx = cleaned.find("[")
+        end_idx = cleaned.rfind("]")
+        
+        if start_idx == -1 or end_idx == -1:
+            raise ValueError("Tidak ditemukan format array JSON")
+        
+        cleaned = cleaned[start_idx:end_idx + 1]
+        
+        # Parse JSON dengan error handling
+        try:
+            data = json.loads(cleaned)
+        except json.JSONDecodeError as e:
+            print(f"⚠️  JSON parse error: {e}")
+            print("   Coba dengan ast.literal_eval...")
+            import ast
+            data = ast.literal_eval(cleaned)
+    except Exception as e:
+        print(f"❌ Parse error: {e}")
+        raise ValueError(f"Gagal parse data dari web: {e}")
 
     ligas_raw = data[3]
     hasil = []
@@ -178,14 +196,23 @@ def main():
         print(f"    ✅ {len(raw):,} karakter")
     except Exception as e:
         print(f"    ❌ {e} — pakai file lokal")
-        with open("pargen_raw.html", "r", encoding="utf-8", errors="ignore") as f:
-            raw = f.read()
+        try:
+            with open("pargen_raw.html", "r", encoding="utf-8", errors="ignore") as f:
+                raw = f.read()
+        except FileNotFoundError:
+            print(f"    ❌ File lokal juga tidak ditemukan")
+            return []
 
     print("\n[2] Parse...")
-    matches = parse_full(raw)
-    print(f"    ✅ {len(matches)} match unik (setelah dedup)")
+    try:
+        matches = parse_full(raw)
+        print(f"    ✅ {len(matches)} match unik (setelah dedup)")
+    except Exception as e:
+        print(f"    ❌ Parse gagal: {e}")
+        return []
 
     # Simpan
+    os.makedirs("output", exist_ok=True)
     with open("output/match_full.json", "w", encoding="utf-8") as f:
         json.dump(matches, f, indent=2, ensure_ascii=False)
     print(f"    💾 Disimpan: output/match_full.json")
