@@ -2,11 +2,7 @@
 import math
 import re
 
-
-MIN_OU_GAP = 5.0
-MIN_OU_ODDS = 1.2
-MAX_OU_ODDS = 4.0
-MAX_OU_GAP = 40.0
+from prediction_config import MAX_OU_GAP, MAX_OU_ODDS, MIN_OU_GAP, MIN_OU_ODDS
 
 
 _OU_PICK_RE = re.compile(r"^(OVER|UNDER)\s+\d+(?:\.\d+)?$")
