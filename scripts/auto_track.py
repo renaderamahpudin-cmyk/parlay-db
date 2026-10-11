@@ -9,6 +9,7 @@ import pandas as pd
 from datetime import datetime
 import re
 
+from pick_policy import is_eligible_ou_pick, is_over_under_pick
 from settlement import TRACK_COLUMNS, match_key, settle_pick
 
 MAPPING_FILE = "output/mapping_liga.json"
@@ -35,6 +36,7 @@ def load_picks():
         pending = draft.get("pending_auto")
         if not isinstance(pending, list):
             raise ValueError(f"Format {DRAFT_FILE} tidak memiliki pending_auto berupa list.")
+        pending = [item for item in pending if is_over_under_pick(item)]
 
     if not os.path.exists(PICK_FILE):
         if pending is not None:
@@ -44,12 +46,14 @@ def load_picks():
         latest_picks = json.load(f)
 
     if pending is None:
-        return latest_picks
+        return [item for item in latest_picks if is_eligible_ou_pick(item)]
 
     # Lengkapi draft lama yang belum menyimpan odds/confidence tanpa mengganti
     # pilihan historisnya dengan pick baru yang berbeda.
     latest_by_key = {}
     for item in latest_picks:
+        if not is_eligible_ou_pick(item):
+            continue
         key = (*match_key(item.get("liga"), item.get("home"), item.get("away")),
                str(item.get("waktu", "")).strip(),
                str(item.get("pick", "")).strip().upper())

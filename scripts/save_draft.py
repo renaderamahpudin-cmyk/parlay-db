@@ -5,6 +5,7 @@ import json
 import os
 from datetime import datetime
 
+from pick_policy import is_eligible_ou_pick, is_over_under_pick
 from settlement import match_key
 
 PICK_FILE = "output/best_pick.json"
@@ -53,6 +54,8 @@ def main():
             with open(DRAFT_FILE, encoding="utf-8") as f:
                 old_draft = json.load(f)
             for old_pick in old_draft.get("pending_auto", []):
+                if not is_over_under_pick(old_pick):
+                    continue
                 key = match_key(
                     old_pick.get("liga"), old_pick.get("home"), old_pick.get("away")
                 )
@@ -64,6 +67,8 @@ def main():
     skip_liga = []
     added = 0
     for p in picks:
+        if not is_eligible_ou_pick(p):
+            continue
         fixture_key = match_key(p.get("liga"), p.get("home"), p.get("away"))
         if fixture_key in tracked:
             continue

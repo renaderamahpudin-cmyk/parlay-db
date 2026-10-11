@@ -1,7 +1,4 @@
-"""
-Parlay Builder v3 — BEST PICK
-Pilih 1 rekomendasi terbaik per match (1X2 / O/U / BTTS)
-"""
+"""Parlay builder focused on market-priced Over/Under recommendations."""
 import warnings
 warnings.filterwarnings("ignore")
 import json
@@ -923,6 +920,7 @@ def analisa_ou(h2h, home_web, ou_lines=None):
                 "pick_jenis": "OU",
                 "pick": option["pick"],
                 "pick_odds": option["odds"],
+                "pick_conf": option["prob"],
                 "value_gap": option["gap"],
             }
             if (
@@ -938,11 +936,14 @@ def analisa_ou(h2h, home_web, ou_lines=None):
     over_25_rate = round(
         sum(goals > 2.5 for goals in total_goals) / len(total_goals) * 100, 1
     )
-    market_has_25 = any(
-        abs(float(item.get("line")) - 2.5) < 0.01
-        for item in ou_lines
-        if item.get("line") is not None
-    )
+    market_has_25 = False
+    for item in ou_lines:
+        try:
+            if abs(float(item.get("line")) - 2.5) < 0.01:
+                market_has_25 = True
+                break
+        except (TypeError, ValueError):
+            continue
 
     return {
         "h2h": len(h2h),
@@ -973,7 +974,7 @@ def analisa_ou(h2h, home_web, ou_lines=None):
 
 def main():
     print("=" * 70)
-    print("🎯 PARLAY BUILDER v3 — BEST PICK")
+    print("⚽ PARLAY BUILDER v3 — O/U ONLY")
     print("=" * 70)
 
     with open("output/match_full.json", "r", encoding="utf-8") as f:
@@ -988,235 +989,52 @@ def main():
     hasil = []
     for m in matches:
         h2h = cari_h2h(df, m["home"], m["away"])
-        stats = analisa(
-            h2h, m["home"], m["away"],
-            odds_home=m.get("odds_home", 0),
-            odds_draw=m.get("odds_draw", 0),
-            odds_away=m.get("odds_away", 0),
-            ou_lines=m.get("ou_lines", []),
+        stats = analisa_ou(
+            h2h, m["home"], ou_lines=m.get("ou_lines", [])
         )
-
-        # ===== Pilih market dari harga yang benar-benar tersedia =====
-        if stats is not None:
-            if stats.get("pick_jenis") in {"1X2", "OU"}:
-                market_options = [
-                    option for option in (stats.get("top_1x2"), stats.get("top_ou"))
-                    if option and option.get("gap", 0) >= 5
-                ]
-                best_market = max(
-                    market_options, key=lambda option: option["gap"]
-                ) if market_options else None
-
-                if best_market:
-                    # Jangan paksa line 2.5; bandingkan pick terbaik yang
-                    # tersedia dengan odds riil pada market 1X2 dan O/U.
-                    odds_real = best_market["odds"]
-                    stats["pick"] = best_market["pick"]
-                    stats["pick_jenis"] = best_market["jenis"]
-                    stats["pick_odds"] = odds_real
-                    stats["pick_conf"] = best_market["prob"]
-                    stats["pick_push_rate"] = best_market.get("push_rate", 0)
-                    stats["pick_implied"] = round(100 / odds_real, 1)
-                    stats["value_gap"] = best_market["gap"]
-                    stats["kategori_gap"] = (
-                        "VALUE" if best_market["gap"] >= 10 else "FAIR"
-                    )
-                    stats["pick_alasan"] = (
-                        f"{best_market['pick']}: peluang bersyarat "
-                        f"{best_market['prob']}%, gap {best_market['gap']:+.1f}%"
-                    )
-                elif stats.get("pick_jenis") == "OU":
-                    # Jangan terbitkan O/U dari odds asumsi 1.90.
-                    stats = None
-
-        if stats is None:
+        if stats is None or not is_eligible_ou_pick(stats):
             continue
 
-        stats.update(m)
-        hasil.append(stats)
+        hasil.append({**m, **stats})
 
     print(f"   ✅ {len(hasil)} match punya BEST PICK")
+    print(f"   ⏭️  Skip/tidak layak O/U: {len(matches) - len(hasil)}")
 
     if not hasil:
-        print("\n❌ Tidak ada. Coba turunkan MIN_H2H atau MIN_CONF_PICK.")
-        return
+        print(
+            f"\n❌ Tidak ada pick O/U yang memenuhi gap minimum "
+            f"+{MIN_OU_GAP:.0f}% dan odds pasar yang valid."
+        )
 
     # Sorting
-    by_conf = sorted(hasil, key=lambda x: (-x["pick_conf"], -x["skor"]))
+    by_conf = sorted(
+        hasil,
+        key=lambda x: (-x["value_gap"], -x["pick_conf"], -x["skor"]),
+    )
     by_skor = sorted(hasil, key=lambda x: -x["skor"])
 
-    # ===== TAMPILKAN SEMUA BEST PICK =====
+    # ===== TAMPILKAN PICK O/U YANG LOLOS FILTER =====
     print(f"\n\n{'='*70}")
-    print(f"🎯 BEST PICK PER MATCH")
+    print(f"⚽ REKOMENDASI O/U — GAP MINIMUM +{MIN_OU_GAP:.0f}%")
     print(f"{'='*70}")
 
-    # Hitung event count dulu
-    event_count = hitung_event_tersedia(hasil)
-    
-    # ===== EVENT TERSEDIA =====
-    event_count = hitung_event_tersedia(hasil)
     for i, m in enumerate(by_conf, 1):
-        emoji = {
-            "1X2": "🏠",
-            "OU": "⚽",
-            "BTTS": "🥅",
-        }.get(m["pick_jenis"], "🎯")
-
-        # ===== FORMAT RINGKAS =====
-        # Baris 1: Nomor, Liga (pendek), Tier
-        liga_pendek = m['liga'].split()[0][:15] if m['liga'] else "?"
-        # ===== FORMAT RINGKAS =====
-        liga_pendek = m["liga"].split()[0][:15] if m["liga"] else "?"
-        print(f"\n#{i} [{liga_pendek}] {m['home'][:18]} vs {m['away'][:18]} — {m['tier']}")
-        # Ambil pick dari top_ou kalau ada (override)
-        pick_display = m.get("pick", "?")
-        conf_display = m.get("pick_conf", 0)
-        odds_display = m.get("pick_odds", 0)
-        jenis_display = m.get("pick_jenis", "")
-        
-        # Kalau pick_jenis OU dan top_ou ada, pakai top_ou
-        if jenis_display == "OU" and m.get("top_ou"):
-            pick_display = m["top_ou"]["pick"]
-            conf_display = m["top_ou"]["prob"]
-            odds_display = m["top_ou"]["odds"]
-        push_display = (
-            f" | push {m.get('pick_push_rate', 0)}%"
-            if jenis_display == "OU" else ""
+        print(
+            f"\n#{i} [{m.get('liga', '?')}] "
+            f"{m.get('home', '?')} vs {m.get('away', '?')} — {m['tier']}"
         )
-        
-        print(f"    H2H:{m['h2h']} Skor:{m['skor']} Gol:{m['gol_total']} | {emoji} {pick_display} {conf_display}%{push_display} ({odds_display})")
-        gol_pairs_m = m.get("gol_pairs", [])
-        if gol_pairs_m:
-            total_gols = [g[0] + g[1] for g in gol_pairs_m]
-            ou_info = []
-            for line_cek in [2.5, 3.0, 3.5, 4.0]:
-                over_count = sum(1 for g in total_gols if g > line_cek)
-                rate = (over_count / len(total_gols)) * 100
-                ou_info.append(f"{line_cek}={rate:.0f}%")
-            print(f"    📊 {' '.join(ou_info)}")
-            # Rekomendasi line O/U terbaik
-            if gol_pairs_m:
-                _total = [g[0] + g[1] for g in gol_pairs_m]
-                _lines = [2.5, 3.0, 3.5, 4.0]
-                _best = None
-                for _l in _lines:
-                    _cnt = sum(1 for g in _total if g > _l)
-                    _rate = (_cnt / len(_total)) * 100
-                    if _rate >= 60:
-                        _best = (_l, _rate)
-                if _best:
-                    # ===== PREDIKSI MENTAH =====
-                    top_1x2_m = m.get("top_1x2")
-                    top_ou_m = m.get("top_ou")
-                    titik_m = m.get("titik_buta")
-
-                    # Titik buta
-                    if titik_m:
-                        status_market = "ada di market" if titik_m.get("ada_di_market") else "TIDAK ADA di market"
-                        over_rate = titik_m["over_rate"]
-                        under_rate = 100 - over_rate
-
-                        # ===== 5 ZONA =====
-                        if over_rate >= 70:
-                            label = f"OVER 2.5 = {over_rate:.0f}% 🔥 KUAT"
-                            info = "Jelas over — aman"
-                        elif over_rate >= 60:
-                            label = f"OVER 2.5 = {over_rate:.0f}% ⚠️ MEPET"
-                            info = "1 gol bisa ubah — cek line 2.75 / 3.0"
-                        elif over_rate >= 40:
-                            label = f"NETRAL = O{over_rate:.0f}% / U{under_rate:.0f}% 🟡"
-                            info = "Tidak jelas — hindari 2.5"
-                        elif over_rate >= 30:
-                            label = f"UNDER 2.5 = {under_rate:.0f}% ⚠️ MEPET"
-                            info = "1 gol bisa ubah — cek line 2.75 / 3.0"
-                        else:
-                            label = f"UNDER 2.5 = {under_rate:.0f}% 🔥 KUAT"
-                            info = "Jelas under — aman"
-
-                        print(f"    📌 TITIK BUTA: {label} ({status_market})")
-                        print(f"       💡 {info}")
-                    # UTAMA (1X2)
-                    if top_1x2_m:
-                        status_gap = "✅" if top_1x2_m["gap"] >= 10 else "⚠️" if top_1x2_m["gap"] >= 5 else "🟡" if top_1x2_m["gap"] >= 0 else "❌"
-                        print(f"    🎯 UTAMA (1X2): {top_1x2_m['pick']} @ {top_1x2_m['odds']} | prob {top_1x2_m['prob']}% | gap {top_1x2_m['gap']:+}% {status_gap}")
-
-                    # ALTERNATIF (O/U)
-                    if top_ou_m:
-                        status_gap = "✅" if top_ou_m["gap"] >= 10 else "⚠️" if top_ou_m["gap"] >= 5 else "🟡" if top_ou_m["gap"] >= 0 else "❌"
-                        push_text = (
-                            f" | push {top_ou_m.get('push_rate', 0)}%"
-                            if "push_rate" in top_ou_m else ""
-                        )
-                        print(f"    ⚽ ALTERNATIF (O/U): {top_ou_m['pick']} @ {top_ou_m['odds']} | prob {top_ou_m['prob']}%{push_text} | gap {top_ou_m['gap']:+}% {status_gap}")
+        print(
+            f"   ⚽ {m['pick']} | peluang bersyarat {m['pick_conf']}% "
+            f"| push {m['pick_push_rate']}% | odds {m['pick_odds']:.2f}"
+        )
+        print(
+            f"   Gap +{m['value_gap']:.1f}% | {m['kategori_gap']} "
+            f"| H2H {m['h2h']} | skor {m['skor']}"
+        )
 
     # ===== GENERATE SLIP =====
-
-    def bikin_slip(matches, n, nama, kategori_filter=None):
-        # Filter berdasarkan jenis
-        if kategori_filter:
-            ms = [m for m in matches if m["pick_jenis"] == kategori_filter]
-        else:
-            ms = matches
-
-        if len(ms) < n:
-            print(f"\n⚠️ {nama}: butuh {n} match, cuma ada {len(ms)}")
-            return None
-
-        slip = ms[:n]
-        total_odds = 1.0
-
-        print(f"\n{'='*70}")
-        print(f"🎯 {nama} ({n} MATCH)")
-        print(f"{'='*70}")
-
-        for i, m in enumerate(slip, 1):
-            # Ambil odds sesuai pick
-            if m["pick_jenis"] == "1X2":
-                if m["pick"] == "HOME":
-                    odds = m["odds_home"]
-                else:
-                    odds = m["odds_away"]
-            elif m["pick_jenis"] == "OU":
-                if "OVER" in m["pick"]:
-                    odds = m.get("ou_over") or 1.90
-                else:
-                    odds = m.get("ou_under") or 1.90
-            elif m["pick_jenis"] == "BTTS":
-                odds = 1.85  # default BTTS
-            else:
-                odds = 1.85
-
-            total_odds *= odds
-
-            print(f"\n{i}. [{m['liga']}] {m['home']} vs {m['away']}")
-            print(f"   H2H: {m['h2h']}x | Skor: {m['skor']} | {m['tier']}")
-            print(f"   🎯 {m['pick']} ({m['pick_conf']}%) | odds {odds:.2f}")
-            # Alasan sesuai pick (dari market)
-            pick_now = m.get("pick", "")
-            if pick_now.startswith("OVER") or pick_now.startswith("UNDER"):
-                top_ou_a = m.get("top_ou")
-                if top_ou_a:
-                    print(f"   └─ {top_ou_a['pick']}: prob bersyarat {top_ou_a['prob']}% | push {top_ou_a.get('push_rate', 0)}% | gap {top_ou_a['gap']:+}%")
-                else:
-                    print(f"   └─ {m['pick_alasan']}")
-            else:
-                print(f"   └─ {m['pick_alasan']}")
-
-        potensi = MODAL * total_odds
-        print(f"\n💰 Odds Gabungan: {total_odds:.2f}")
-        print(f"💰 Modal: Rp {MODAL:,}")
-        print(f"💰 Potensi Return: Rp {potensi:,.0f}")
-        print(f"💰 Potensi Profit: Rp {potensi - MODAL:,.0f}")
-
-        return {
-            "nama": nama,
-            "n": n,
-            "total_odds": round(total_odds, 2),
-            "potensi": potensi,
-        }
-
     print(f"\n\n{'#'*70}")
-    print(f"# GENERATE SLIP")
+    print(f"# GENERATE SLIP O/U — GAP MINIMUM +{MIN_OU_GAP:.0f}%")
     print(f"{'#'*70}")
 
     # ===== KATEGORI SLIP BARU =====
@@ -1225,9 +1043,8 @@ def main():
     print(f"\n📊 Detail semua {len(by_conf)} match:")
     for m in by_conf:
         print(f"   {m['home']:25} vs {m['away']:25} | "
-              f"pick={m['pick']:12} | conf={m['pick_conf']:5}% | "
-              f"odds={m.get('pick_odds', 0):.2f} | gap={m.get('value_gap', 0):+.1f}% | "
-              f"kat={m.get('kategori_gap', '-')}")
+              f"O/U={m['pick']:12} | peluang={m['pick_conf']:5}% | "
+              f"odds={m['pick_odds']:.2f} | gap=+{m['value_gap']:.1f}%")
     
     # ===== PISAHKAN PER TIER =====
     # Tier: T1 (skor >= 400), T2 (250-399), T3 (<250)
@@ -1246,10 +1063,11 @@ def main():
             continue
         print(f"\n{nama_tier}:")
         for i, m in enumerate(tim_list, 1):
-            jenis = m.get("pick_jenis", "")
-            emoji = {"1X2": "🏠", "OU": "⚽", "BTTS": "🥅"}.get(jenis, "🎯")
             print(f"   {i}. {m['home'][:20]:20} vs {m['away'][:20]:20}")
-            print(f"      {emoji} {m['pick']:15} ({m['pick_conf']}%) | odds {m.get('pick_odds', 0)} | skor {m['skor']}")
+            print(
+                f"      ⚽ {m['pick']:15} ({m['pick_conf']}%) "
+                f"| gap +{m['value_gap']:.1f}% | odds {m['pick_odds']:.2f}"
+            )
     
     # ===== GENERATE SLIP PER TIER =====
     print(f"\n{'#'*60}")
@@ -1257,45 +1075,40 @@ def main():
     print(f"{'#'*60}")
     
     def bikin_slip_tier(tim_list, nama, n_min=2, n_max=5):
-        """Bikin slip dari 1 tier saja"""
-        if len(tim_list) < n_min:
-            print(f"\n⚠️ {nama}: tidak cukup match (butuh min {n_min}, ada {len(tim_list)})")
+        """Build a slip only from approved O/U picks."""
+        eligible = [pick for pick in tim_list if is_eligible_ou_pick(pick)]
+        if len(eligible) < n_min:
+            print(
+                f"\n⚠️ {nama}: tidak cukup pick O/U dengan gap "
+                f">=+{MIN_OU_GAP:.0f}% (butuh {n_min}, ada {len(eligible)})"
+            )
             return None
         
-        n = min(n_max, len(tim_list))
-        slip = sorted(tim_list, key=lambda x: -x.get("pick_conf", 0))[:n]
+        n = min(n_max, len(eligible))
+        slip = sorted(
+            eligible,
+            key=lambda x: (-x["value_gap"], -x["pick_conf"]),
+        )[:n]
         
         total_odds = 1.0
         for p in slip:
-            total_odds *= p.get("pick_odds", 1)
+            total_odds *= p["pick_odds"]
         
         print(f"\n{'='*60}")
         print(f"🎯 {nama} ({n} MATCH)")
         print(f"{'='*60}")
         
         for i, m in enumerate(slip, 1):
-            jenis = m.get("pick_jenis", "")
-            emoji = {"1X2": "🏠", "OU": "⚽", "BTTS": "🥅"}.get(jenis, "🎯")
             print(f"\n{i}. [{m['liga']}]")
             print(f"   {m['home']} vs {m['away']} ({m['waktu']})")
             print(f"   H2H: {m['h2h']}x | Skor: {m['skor']} | {m['tier']}")
-            print(f"   {emoji} {m['pick']} ({m['pick_conf']}%) | odds {m.get('pick_odds', 0)}")
-            # Alasan sesuai pick (dari market)
-            pick_now = m.get("pick", "")
-            if pick_now.startswith("OVER") or pick_now.startswith("UNDER"):
-                top_ou_a = m.get("top_ou")
-                if top_ou_a:
-                    print(f"   └─ {top_ou_a['pick']}: prob bersyarat {top_ou_a['prob']}% | push {top_ou_a.get('push_rate', 0)}% | gap {top_ou_a['gap']:+}%")
-                else:
-                    print(f"   └─ {m['pick_alasan']}")
-            else:
-                print(f"   └─ {m['pick_alasan']}")
-            
-            # Info non-loss untuk 1X2
-            if m.get("pick_jenis") == "1X2":
-                non_loss = m.get("non_loss_rate", 0)
-                if non_loss > 0:
-                    print(f"   📊 Non-Loss: {non_loss}%")
+            print(
+                f"   ⚽ {m['pick']} | peluang bersyarat {m['pick_conf']}% "
+                f"| push {m['pick_push_rate']}% | odds {m['pick_odds']:.2f}"
+            )
+            print(
+                f"   Gap +{m['value_gap']:.1f}% | {m['kategori_gap']}"
+            )
         
         potensi = 100_000 * total_odds
         print(f"\n💰 Total Odds: {total_odds:.2f}")

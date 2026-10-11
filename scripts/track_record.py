@@ -6,6 +6,7 @@ import os
 import pandas as pd
 from datetime import datetime
 
+from pick_policy import is_eligible_ou_pick
 from settlement import TRACK_COLUMNS, match_key, settle_pick
 
 TRACK_FILE = "output/track_record.csv"
@@ -50,7 +51,8 @@ def add_match_manual():
     }
     picks = [
         p for p in picks
-        if match_key(p.get("liga"), p.get("home"), p.get("away")) not in tracked
+        if is_eligible_ou_pick(p)
+        and match_key(p.get("liga"), p.get("home"), p.get("away")) not in tracked
     ]
     
     print(f"\nTotal pick tersedia: {len(picks)}")

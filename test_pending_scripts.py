@@ -11,7 +11,8 @@ sys.path.insert(0, str(Path(__file__).parent / "scripts"))
 
 import auto_track
 import save_draft
-from parlay_builder_v3 import bandingkan_opsi, bandingkan_opsi_2
+from parlay_builder_v3 import analisa_ou, bandingkan_opsi, bandingkan_opsi_2
+from pick_policy import is_eligible_ou_pick
 from settlement import settle_pick
 
 
@@ -59,8 +60,96 @@ class ValueComparisonTests(unittest.TestCase):
         self.assertEqual(top_ou["pick"], "UNDER 3")
         self.assertTrue(blind_spot["ada_di_market"])
 
+    def test_ou_analyzer_returns_only_positive_gap_market_pick(self):
+        import pandas as pd
+
+        h2h = pd.DataFrame([
+            {"home": "Home FC", "away": "Away FC", "hg": home, "ag": away}
+            for home, away in ((2, 1), (1, 2), (3, 1), (2, 2), (2, 0))
+        ])
+        result = analisa_ou(h2h, "Home FC", [
+            {"line": 2.5, "over": 1.2, "under": 3.5},
+            {"line": 3.0, "over": 1.5, "under": 2.5},
+            {"line": 3.5, "over": 3.0, "under": 1.9},
+        ])
+        self.assertIsNotNone(result)
+        self.assertEqual(result["pick_jenis"], "OU")
+        self.assertGreaterEqual(result["value_gap"], 5)
+        self.assertNotIn("top_1x2", result)
+        self.assertNotIn("btts_rate", result)
+        self.assertTrue(is_eligible_ou_pick(result))
+
+    def test_ou_analyzer_skips_negative_and_small_gaps(self):
+        import pandas as pd
+
+        h2h = pd.DataFrame([
+            {"home": "Home FC", "away": "Away FC", "hg": home, "ag": away}
+            for home, away in ((2, 1), (1, 2), (3, 1), (2, 2), (2, 0))
+        ])
+        result = analisa_ou(h2h, "Home FC", [
+            {"line": 2.5, "over": 1.2, "under": 3.5},
+            {"line": 3.0, "over": 1.5, "under": 2.5},
+            {"line": 3.5, "over": 2.2, "under": 1.7},
+        ])
+        self.assertIsNone(result)
+
+    def test_policy_rejects_non_ou_and_negative_gap(self):
+        self.assertTrue(is_eligible_ou_pick({
+            "pick_jenis": "OU", "pick": "OVER 2.5",
+            "pick_odds": 1.9, "pick_conf": 60, "value_gap": 5,
+        }))
+        for invalid in (
+            {"pick_jenis": "OU", "pick": "OVER 2.5", "pick_odds": 1.54, "value_gap": -3},
+            {"pick_jenis": "1X2", "pick": "AWAY", "pick_odds": 3.0, "value_gap": 23.8},
+            {"pick_jenis": "BTTS", "pick": "BTTS YES", "pick_odds": 1.8, "value_gap": 12},
+        ):
+            self.assertFalse(is_eligible_ou_pick(invalid))
+
 
 class PendingDraftTests(unittest.TestCase):
+    def test_auto_track_excludes_non_ou_predictions_but_keeps_legacy_ou(self):
+        valid_pick = {
+            "liga": "TEST LEAGUE",
+            "home": "Home FC",
+            "away": "Away FC",
+            "waktu": "20:00",
+            "pick": "OVER 2.5",
+            "pick_jenis": "OU",
+            "pick_conf": 65,
+            "pick_odds": 1.9,
+            "value_gap": 8,
+        }
+        with tempfile.TemporaryDirectory() as temp_dir:
+            original_cwd = os.getcwd()
+            try:
+                os.chdir(temp_dir)
+                os.makedirs("output")
+                Path("output/best_pick.json").write_text(json.dumps([
+                    valid_pick,
+                    {**valid_pick, "pick": "AWAY", "pick_jenis": "1X2"},
+                    {**valid_pick, "pick": "BTTS YES", "pick_jenis": "BTTS"},
+                ]), encoding="utf-8")
+                self.assertEqual(
+                    [p["pick"] for p in auto_track.load_picks()],
+                    ["OVER 2.5"],
+                )
+
+                legacy_ou = {key: value for key, value in valid_pick.items()
+                             if key not in {"pick_jenis", "pick_conf", "pick_odds", "value_gap"}}
+                Path("output/draft_pending.json").write_text(json.dumps({
+                    "pending_auto": [
+                        legacy_ou,
+                        {**valid_pick, "pick": "AWAY", "pick_jenis": "1X2"},
+                    ],
+                }), encoding="utf-8")
+                Path("output/best_pick.json").write_text("[]", encoding="utf-8")
+                self.assertEqual(
+                    [p["pick"] for p in auto_track.load_picks()],
+                    ["OVER 2.5"],
+                )
+            finally:
+                os.chdir(original_cwd)
+
     def test_draft_preserves_original_pick_when_daily_file_changes(self):
         pick = {
             "liga": "TEST LEAGUE",
@@ -82,13 +171,23 @@ class PendingDraftTests(unittest.TestCase):
                 os.chdir(temp_dir)
                 os.makedirs("output")
                 Path("output/best_pick.json").write_text(
-                    json.dumps([pick]), encoding="utf-8"
+                    json.dumps([
+                        pick,
+                        {
+                            **pick, "home": "Home 1X2", "away": "Away 1X2",
+                            "pick": "AWAY", "pick_jenis": "1X2", "value_gap": 20,
+                        },
+                    ]), encoding="utf-8"
                 )
                 Path("output/mapping_liga.json").write_text(
                     json.dumps({"TEST LEAGUE": {"id": 123}}), encoding="utf-8"
                 )
                 with contextlib.redirect_stdout(io.StringIO()):
                     save_draft.main()
+
+                draft = json.loads(Path("output/draft_pending.json").read_text(encoding="utf-8"))
+                self.assertEqual(len(draft["pending_auto"]), 1)
+                self.assertEqual(draft["pending_auto"][0]["pick_jenis"], "OU")
 
                 Path("output/best_pick.json").write_text("[]", encoding="utf-8")
                 with contextlib.redirect_stdout(io.StringIO()):

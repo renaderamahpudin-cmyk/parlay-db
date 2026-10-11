@@ -31,11 +31,13 @@ def is_eligible_ou_pick(pick):
     try:
         gap = float(pick.get("value_gap"))
         odds = float(pick.get("pick_odds"))
+        confidence = float(pick.get("pick_conf"))
     except (TypeError, ValueError):
         return False
     return (
         math.isfinite(gap)
         and math.isfinite(odds)
+        and math.isfinite(confidence)
         and MIN_OU_GAP <= gap <= MAX_OU_GAP
         and MIN_OU_ODDS <= odds <= MAX_OU_ODDS
     )

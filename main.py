@@ -10,6 +10,7 @@ from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 os.chdir(BASE_DIR)
+from scripts.pick_policy import MIN_OU_GAP, is_eligible_ou_pick
 
 class C:
     HEADER = '\033[95m'
@@ -139,22 +140,35 @@ def menu_cek_slip():
     
     with open("output/best_pick.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-    
-    print(f"📊 Total pick: {len(data)} match\n")
-    
-    for i, m in enumerate(data, 1):
-        jenis = m.get("pick_jenis", "")
-        emoji = {"1X2": "🏠", "OU": "⚽", "BTTS": "🥅"}.get(jenis, "🎯")
+
+    eligible = [pick for pick in data if is_eligible_ou_pick(pick)]
+    eligible.sort(key=lambda pick: (-pick["value_gap"], -pick.get("pick_conf", 0)))
+    skipped = len(data) - len(eligible)
+    print(
+        f"📊 Pick O/U lolos gap >=+{MIN_OU_GAP:.0f}%: "
+        f"{len(eligible)} | dilewati: {skipped}\n"
+    )
+
+    if not eligible:
+        print("📭 Belum ada pick O/U dengan gap yang memenuhi batas.")
+        pause()
+        return
+
+    for i, m in enumerate(eligible, 1):
         
         print(f"{C.BOLD}#{i} [{m.get('liga', '?')}]{C.END}")
         print(f"   {m.get('home', '?')} vs {m.get('away', '?')}")
-        print(f"   {emoji} {m.get('pick', '?')} ({m.get('pick_conf', 0)}%) | odds {m.get('pick_odds', 0)}")
+        print(
+            f"   ⚽ {m.get('pick', '?')} "
+            f"(peluang bersyarat {m.get('pick_conf', 0)}%) "
+            f"| odds {m.get('pick_odds', 0)}"
+        )
         print(f"   💡 Gap: {m.get('value_gap', 0):+.1f}% | {m.get('kategori_gap', '-')}")
         print()
     
-    safe = sum(1 for m in data if m.get("kategori_gap") == "FAIR")
-    value = sum(1 for m in data if m.get("kategori_gap") == "VALUE")
-    print(f"📊 SAFE: {safe} | VALUE: {value} | TOTAL: {len(data)}")
+    fair = sum(1 for m in eligible if m.get("kategori_gap") == "FAIR")
+    value = sum(1 for m in eligible if m.get("kategori_gap") == "VALUE")
+    print(f"📊 FAIR: {fair} | VALUE: {value} | TOTAL O/U: {len(eligible)}")
     
     pause()
 
