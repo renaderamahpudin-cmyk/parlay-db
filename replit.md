@@ -22,10 +22,3 @@ The archive has consistent historical odds for O/U 2.5, not a full history of As
 
 Install project dependencies with `uv sync` if the Replit Python environment needs to be restored.
 
-## Run tests
-
-Run the maintained test suite with:
-
-```sh
-python -m unittest discover -v
-```
