@@ -21,3 +21,11 @@ The default holdout is the most recent 20% of distinct match dates. Forecasts on
 The archive has consistent historical odds for O/U 2.5, not a full history of Asian total lines. Current predictions support Asian lines and account for pushes and half wins/losses, but historical per-line evaluation is currently limited by that archive.
 
 Install project dependencies with `uv sync` if the Replit Python environment needs to be restored.
+
+## Run tests
+
+Run the maintained test suite with:
+
+```sh
+python -m unittest discover -v
+```
